@@ -36,7 +36,7 @@
   .stat-card.cancelada .num { color: #EF4444; }
 
   /* ── TABS ── */
-  .tabs { display: flex; background: #fff; border-bottom: 2px solid #e0e0e0; padding: 0 24px; }
+  .tabs { display: flex; background: #fff; border-bottom: 2px solid #e0e0e0; padding: 0 24px; overflow-x: auto; }
   .tab { padding: 12px 22px; font-size: 14px; font-weight: 600; cursor: pointer; border-bottom: 3px solid transparent; margin-bottom: -2px; color: #666; transition: all 0.2s; white-space: nowrap; }
   .tab:hover { color: #333; background: #f9f9f9; }
   .tab.active { color: #333; border-bottom-color: #FFE600; background: #fffde7; }
@@ -217,11 +217,118 @@
   .loading-bar { position: fixed; top: 0; left: 0; width: 0; height: 3px; background: #2563EB; z-index: 500; transition: width 0.3s; }
   .spinner { display: inline-block; width: 14px; height: 14px; border: 2px solid rgba(255,255,0,0.3); border-top-color: #FFE600; border-radius: 50%; animation: spin 0.7s linear infinite; }
   @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* ══════════════════════════════════════
+     ── INVENTARIO ──
+  ══════════════════════════════════════ */
+  .inv-toolbar {
+    display: flex; gap: 10px; align-items: center; flex-wrap: wrap;
+    background: #fff; padding: 14px 16px; border-radius: 10px;
+    border: 1px solid #e8e8e8; margin-bottom: 16px;
+  }
+  .inv-toolbar h2 { font-size: 15px; font-weight: 800; flex: 1; }
+  .inv-progress-wrap { display: flex; align-items: center; gap: 8px; }
+  .inv-progress-outer { width: 130px; height: 8px; background: #e5e7eb; border-radius: 4px; overflow: hidden; }
+  .inv-progress-inner { height: 100%; background: #10B981; border-radius: 4px; transition: width .3s; }
+  .inv-progress-label { font-size: 11px; font-weight: 700; color: #6b7280; white-space: nowrap; }
+  .inv-progress-label.done { color: #10B981; }
+  .inv-alert {
+    background: #fff3cd; border: 1.5px solid #ffc107; color: #856404;
+    padding: 8px 16px; font-size: 12px; font-weight: 600; border-radius: 7px; margin-bottom: 12px;
+  }
+  .inv-item-row.row-incomplete td:first-child { border-left: 3px solid #fca5a5; }
+  .inv-item-row.row-done td:first-child { border-left: 3px solid #6ee7b7; }
+  .inv-row-status { text-align: center; font-size: 14px; width: 24px; }
+  .inv-num-input.filled { border-color: #10B981; background: #f0fdf4; }
+  .inv-num-input.empty  { border-color: #fca5a5; background: #fff5f5; }
+  @keyframes inv-pulse { 0%,100%{box-shadow:0 0 0 0 rgba(255,230,0,.5)} 50%{box-shadow:0 0 0 6px rgba(255,230,0,0)} }
+  .btn-inv-save.ready { animation: inv-pulse 1.5s infinite; }
+  .btn-inv-csv {
+    background: #f0fdf4; border: 2px solid #10B981; color: #065F46;
+    padding: 7px 16px; border-radius: 6px; font-weight: 700; font-size: 13px; cursor: pointer;
+  }
+  .btn-inv-csv:hover { background: #dcfce7; }
+  .btn-inv-save {
+    background: #FFE600; border: 2px solid #333;
+    padding: 7px 18px; border-radius: 6px; font-weight: 700; font-size: 13px; cursor: pointer;
+  }
+  .btn-inv-save:hover { background: #f0d800; }
+  .btn-inv-save:disabled { background: #ccc; border-color: #aaa; cursor: not-allowed; }
+
+  .inv-table-wrap { background: #fff; border-radius: 10px; border: 1px solid #e8e8e8; overflow: hidden; margin-bottom: 24px; }
+  .inv-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .inv-table thead tr { background: #333; color: #FFE600; }
+  .inv-table thead th { padding: 11px 14px; text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 700; }
+  .inv-table thead th.num { text-align: center; width: 110px; }
+
+  .inv-cat-row td {
+    padding: 8px 14px; font-size: 12px; font-weight: 800;
+    text-transform: uppercase; letter-spacing: 0.5px; border-top: 2px solid #e0e0e0;
+    color: #fff;
+  }
+  .inv-cat-row.cat-operativo td  { background: #3B82F6; }
+  .inv-cat-row.cat-is td         { background: #8B5CF6; }
+  .inv-cat-row.cat-oficina td    { background: #10B981; }
+  .inv-cat-row.cat-she td        { background: #F59E0B; }
+  .inv-cat-row.cat-consumibles td { background: #6B7280; }
+  .inv-cat-row.cat-descanso td   { background: #14B8A6; }
+
+  .inv-item-row td { padding: 7px 14px; border-bottom: 1px solid #f0f0f0; vertical-align: middle; }
+  .inv-item-row:last-child td { border-bottom: none; }
+  .inv-item-row:hover { background: #fafafa; }
+  .inv-item-name { font-size: 13px; color: #333; }
+
+  .inv-num-input {
+    width: 80px; padding: 5px 8px; border: 1.5px solid #e0e0e0; border-radius: 6px;
+    font-size: 13px; text-align: center; outline: none; display: block; margin: 0 auto;
+  }
+  .inv-num-input:focus { border-color: #FFE600; background: #fffde7; }
+  .inv-total-cell { text-align: center; font-weight: 800; font-size: 14px; color: #333; }
+  .inv-total-cell.has-value { color: #2563EB; }
+
+  /* ── HISTORIAL INVENTARIOS ── */
+  .history-section { margin-top: 10px; }
+  .history-section h3 { font-size: 15px; font-weight: 800; margin-bottom: 12px; color: #333; display: flex; align-items: center; gap: 8px; }
+  .history-empty { text-align: center; padding: 30px; color: #aaa; border: 2px dashed #e0e0e0; border-radius: 10px; font-size: 13px; }
+  .history-list { display: flex; flex-direction: column; gap: 8px; }
+  .history-item { background: #fff; border: 1px solid #e8e8e8; border-radius: 10px; overflow: hidden; }
+  .history-item-header {
+    display: flex; align-items: center; gap: 12px; padding: 12px 16px; cursor: pointer;
+  }
+  .history-item-header:hover { background: #fafafa; }
+  .history-meta { display: flex; flex-direction: column; gap: 2px; flex: 1; }
+  .history-date { font-size: 14px; font-weight: 700; color: #333; }
+  .history-count { font-size: 12px; color: #888; }
+  .history-actions { display: flex; gap: 8px; }
+  .btn-view-hist { padding: 5px 14px; border: 1.5px solid #93c5fd; border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer; background: #eff6ff; color: #1d4ed8; }
+  .btn-view-hist:hover { background: #dbeafe; }
+  .btn-del-hist { padding: 5px 10px; border: 1.5px solid #fca5a5; border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer; background: #fff0f0; color: #dc2626; }
+  .btn-del-hist:hover { background: #fee2e2; }
+  .history-chevron { font-size: 12px; color: #94a3b8; transition: transform .25s; }
+  .history-chevron.open { transform: rotate(180deg); }
+  .history-body { display: none; border-top: 1px solid #e8e8e8; overflow: hidden; }
+  .history-body.open { display: block; }
+  .hist-inline-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+  .hist-inline-table thead th { background: #f1f5f9; padding: 6px 12px; text-align: left; font-size: 10px; text-transform: uppercase; color: #64748b; font-weight: 700; }
+  .hist-inline-table thead th.num { text-align: center; }
+  .hist-inline-table td { padding: 5px 12px; border-bottom: 1px solid #f5f5f5; font-size: 12px; }
+  .hist-inline-table td.num { text-align: center; font-weight: 700; }
+  .hist-inline-cat td { font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: .4px; color: #fff; padding: 5px 12px; }
+  .n-op { color: #2563EB; } .n-dan { color: #EF4444; } .n-tot { color: #374151; } .n-zero { color: #d1d5db; }
+
+  /* ── MODAL HISTORIAL ── */
+  .modal-wide { width: 700px; max-width: 96vw; }
+  .hist-table { width: 100%; border-collapse: collapse; font-size: 12px; margin-top: 12px; }
+  .hist-table th { background: #333; color: #FFE600; padding: 8px 12px; text-align: left; font-size: 11px; text-transform: uppercase; }
+  .hist-table th.num { text-align: center; }
+  .hist-table td { padding: 6px 12px; border-bottom: 1px solid #f0f0f0; }
+  .hist-table tr:hover td { background: #fafafa; }
+  .hist-cat-row td { background: #f3f4f6; font-weight: 700; font-size: 11px; text-transform: uppercase; color: #555; padding: 5px 12px; }
+  .hist-num { text-align: center; font-weight: 700; }
 </style>
 </head>
 <body>
 
-<!-- LOADING BAR -->
 <div class="loading-bar" id="loadingBar"></div>
 
 <!-- HEADER -->
@@ -232,9 +339,7 @@
   </div>
   <div class="header-right">
     <div class="save-info" id="saveInfo">Cargando datos...</div>
-    <button class="btn-save" id="btnSave" onclick="saveToGitHub()" disabled>
-      💾 Guardar
-    </button>
+    <button class="btn-save" id="btnSave" onclick="saveToGitHub()" disabled>💾 Guardar</button>
     <button class="btn-config" onclick="openConfig()">⚙️</button>
   </div>
 </div>
@@ -252,6 +357,7 @@
 <div class="tabs">
   <div class="tab active" onclick="switchTab('dashboard',this)">📊 Dashboard</div>
   <div class="tab" onclick="switchTab('planes',this)">📋 Planes de Acción</div>
+  <div class="tab" onclick="switchTab('inventario',this)">📦 Inventario Activos Fijos</div>
 </div>
 
 <div class="content">
@@ -301,6 +407,43 @@
     <div class="plans-list" id="list-planes"></div>
   </div>
 
+  <!-- INVENTARIO -->
+  <div class="section" id="sec-inventario">
+    <div class="inv-toolbar">
+      <h2>📦 Inventario Activos Fijos</h2>
+      <div class="inv-progress-wrap">
+        <div class="inv-progress-outer"><div class="inv-progress-inner" id="invProgBar" style="width:0%"></div></div>
+        <span class="inv-progress-label" id="invProgLabel">0 / 85 ítems</span>
+      </div>
+      <button class="btn-inv-csv" onclick="downloadCSV()">⬇️ Descargar CSV</button>
+      <button class="btn-inv-save" id="btnInvSave" onclick="saveInventory()" disabled>🔒 Completar todo</button>
+    </div>
+    <div class="inv-alert" id="invAlert" style="display:none">
+      ⚠️ Faltan campos — revisá las filas marcadas en rojo. Todos los insumos requieren Operativos Y Dañados (puede ser 0).
+    </div>
+
+    <div class="inv-table-wrap">
+      <table class="inv-table" id="invTable">
+        <thead>
+          <tr>
+            <th style="width:24px"></th>
+            <th>Detalle del Insumo</th>
+            <th class="num">Operativos</th>
+            <th class="num">Dañados</th>
+            <th class="num">Totales</th>
+          </tr>
+        </thead>
+        <tbody id="invBody"></tbody>
+      </table>
+    </div>
+
+    <!-- HISTORIAL -->
+    <div class="history-section">
+      <h3>🕐 Historial de Inventarios</h3>
+      <div id="historyList"></div>
+    </div>
+  </div>
+
 </div>
 
 <!-- MODAL NUEVO PLAN -->
@@ -342,17 +485,9 @@
 <div class="modal-overlay" id="configOverlay">
   <div class="modal">
     <h2>⚙️ Configuración GitHub</h2>
-    <div class="alert-box">
-      Estos datos conectan la página con tu repositorio de GitHub para guardar y cargar los planes de acción. Se almacenan solo en <strong>este navegador</strong> y nunca se comparten.
-    </div>
-    <div class="form-group">
-      <label>👤 Usuario de GitHub</label>
-      <input type="text" id="cfgUser" placeholder="Ej: patocasla3533">
-    </div>
-    <div class="form-group">
-      <label>📁 Nombre del Repositorio</label>
-      <input type="text" id="cfgRepo" placeholder="Ej: tier2-munro">
-    </div>
+    <div class="alert-box">Estos datos conectan la página con tu repositorio de GitHub. Se almacenan solo en <strong>este navegador</strong> y nunca se comparten.</div>
+    <div class="form-group"><label>👤 Usuario de GitHub</label><input type="text" id="cfgUser" placeholder="Ej: patocasla3533"></div>
+    <div class="form-group"><label>📁 Nombre del Repositorio</label><input type="text" id="cfgRepo" placeholder="Ej: tier2-munro"></div>
     <div class="form-group">
       <label>🔑 Personal Access Token (PAT)</label>
       <input type="password" id="cfgToken" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx">
@@ -361,6 +496,19 @@
     <div class="modal-footer">
       <button class="btn-cancel" onclick="closeConfig()">Cancelar</button>
       <button class="btn-primary" onclick="saveConfig()">Guardar configuración</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL VER HISTORIAL -->
+<div class="modal-overlay" id="histModalOverlay">
+  <div class="modal modal-wide">
+    <h2 id="histModalTitle">📋 Inventario guardado</h2>
+    <div style="max-height:60vh;overflow-y:auto;">
+      <table class="hist-table" id="histModalTable"></table>
+    </div>
+    <div class="modal-footer">
+      <button class="btn-primary" onclick="document.getElementById('histModalOverlay').classList.remove('open')">Cerrar</button>
     </div>
   </div>
 </div>
@@ -416,34 +564,137 @@
   <img id="lightboxImg" src="">
 </div>
 
-<!-- TOAST -->
 <div class="toast" id="toast"></div>
 
 <script>
-// ═══════════════════════════════════════════════
-//  CONSTANTES
-// ═══════════════════════════════════════════════
+// ═══════════════════════════════
+//  CONSTANTES PLANES
+// ═══════════════════════════════
 const statusLabel  = {pendiente:'⏳ Pendiente',curso:'🔄 En Curso',realizada:'✅ Realizada',cancelada:'❌ Cancelada'};
 const statusColors = {pendiente:'#F59E0B',curso:'#3B82F6',realizada:'#10B981',cancelada:'#EF4444'};
 const statusNames  = {pendiente:'Pendiente',curso:'En Curso',realizada:'Realizada',cancelada:'Cancelada'};
 const materias     = ['Operación','SHE','5S','Mantenimiento'];
 const statuses     = ['pendiente','curso','realizada','cancelada'];
 
-// ═══════════════════════════════════════════════
+// ═══════════════════════════════
+//  ITEMS INVENTARIO
+// ═══════════════════════════════
+const inventoryItems = [
+  {cat:'Operativo',item:'Conveyor'},
+  {cat:'Operativo',item:'Baker Clasico'},
+  {cat:'Operativo',item:'Baker Negros'},
+  {cat:'Operativo',item:'Baker Pesca'},
+  {cat:'Operativo',item:'Baker Voluminoso'},
+  {cat:'Operativo',item:'Tolva GM'},
+  {cat:'Operativo',item:'Tolva Voluminoso'},
+  {cat:'Operativo',item:'Telescópicas'},
+  {cat:'Operativo',item:'Roll Containers'},
+  {cat:'Operativo',item:'Zorras Manuales'},
+  {cat:'Operativo',item:'Zorras Eléctricas'},
+  {cat:'Operativo',item:'Zorras Eléctricas (HAB)'},
+  {cat:'Operativo',item:'Apiladores Eléctricos'},
+  {cat:'Operativo',item:'Mesas impresoras'},
+  {cat:'Operativo',item:'Sacas'},
+  {cat:'Operativo',item:'Carros H&B (zorritas para traslados)'},
+  {cat:'Operativo',item:'Ventiladores'},
+  {cat:'Operativo',item:'Contenedores de basura'},
+  {cat:'IS',item:'Computadoras'},
+  {cat:'IS',item:'Impresoras de oficina'},
+  {cat:'IS',item:'Changuitos'},
+  {cat:'IS',item:'Impresora ZT'},
+  {cat:'IS',item:'HandHeld'},
+  {cat:'IS',item:'Impresoras portátiles (las chiquitas con correa)'},
+  {cat:'IS',item:'Base de Carga HH'},
+  {cat:'IS',item:'Lectoras 2D'},
+  {cat:'IS',item:'Base de Carga Scanner'},
+  {cat:'IS',item:'Televisores'},
+  {cat:'IS',item:'Monitores'},
+  {cat:'IS',item:'Equipamiento sala de reunión'},
+  {cat:'Oficina',item:'Cafeteras'},
+  {cat:'Oficina',item:'Licuadoras'},
+  {cat:'Oficina',item:'Tostadoras'},
+  {cat:'Oficina',item:'Heladeras Grandes'},
+  {cat:'Oficina',item:'Heladeras Chicas'},
+  {cat:'Oficina',item:'Microondas'},
+  {cat:'Oficina',item:'Hornos Eléctricos'},
+  {cat:'Oficina',item:'Soda'},
+  {cat:'SHE',item:'Alfombra Ergonómica Etiquetador'},
+  {cat:'SHE',item:'Alfombra Ergonómica Pescador'},
+  {cat:'SHE',item:'Punteras'},
+  {cat:'SHE',item:'Cascos'},
+  {cat:'SHE',item:'Kit Antiderrame'},
+  {cat:'SHE',item:'Lava ojos'},
+  {cat:'SHE',item:'Kit de primeros auxilios'},
+  {cat:'SHE',item:'Chalecos'},
+  {cat:'SHE',item:'Conos'},
+  {cat:'SHE',item:'Cadenas'},
+  {cat:'SHE',item:'Escalera Burro'},
+  {cat:'SHE',item:'Silla de Ruedas'},
+  {cat:'SHE',item:'Camilla'},
+  {cat:'SHE',item:'DEA'},
+  {cat:'Consumibles',item:'Bolsas N°1'},
+  {cat:'Consumibles',item:'Bolsas N°2'},
+  {cat:'Consumibles',item:'Bolsas N°3'},
+  {cat:'Consumibles',item:'Bolsas N°3.5'},
+  {cat:'Consumibles',item:'Bolsas N°4'},
+  {cat:'Consumibles',item:'Bolsas N°5'},
+  {cat:'Consumibles',item:'Bolsas N°6'},
+  {cat:'Consumibles',item:'Caja N°1'},
+  {cat:'Consumibles',item:'Caja N°2'},
+  {cat:'Consumibles',item:'Caja N°3'},
+  {cat:'Consumibles',item:'Caja N°4'},
+  {cat:'Consumibles',item:'Caja N°5'},
+  {cat:'Consumibles',item:'Caja N°6'},
+  {cat:'Consumibles',item:'Caja N°7'},
+  {cat:'Consumibles',item:'Caja N°8'},
+  {cat:'Consumibles',item:'Caja N°9'},
+  {cat:'Consumibles',item:'Caja N°10'},
+  {cat:'Consumibles',item:'Caja N°12'},
+  {cat:'Consumibles',item:'Caja N° V4'},
+  {cat:'Consumibles',item:'Caja N° V6'},
+  {cat:'Consumibles',item:'Cinta Transparente'},
+  {cat:'Consumibles',item:'Cinta Papel'},
+  {cat:'Consumibles',item:'Cinta Meli'},
+  {cat:'Consumibles',item:'Ribbon'},
+  {cat:'Consumibles',item:'Etiqueta de Ruta'},
+  {cat:'Consumibles',item:'Etiqueta HU'},
+  {cat:'Consumibles',item:'Film Strech Naranja'},
+  {cat:'Consumibles',item:'Film Strech Transparente'},
+  {cat:'Consumibles',item:'Precintos Blancos'},
+  {cat:'Consumibles',item:'Precintos Amarillos'},
+  {cat:'Zona de descanso',item:'Mesa plástico'},
+  {cat:'Zona de descanso',item:'Silla plástico'},
+  {cat:'Zona de descanso',item:'Lockers'},
+];
+
+const catSlug = {
+  'Operativo':'operativo','IS':'is','Oficina':'oficina',
+  'SHE':'she','Consumibles':'consumibles','Zona de descanso':'descanso'
+};
+const catEmoji = {
+  'Operativo':'⚙️','IS':'💻','Oficina':'🏢',
+  'SHE':'🦺','Consumibles':'📦','Zona de descanso':'☕'
+};
+
+function invKey(cat, item) { return cat + '__' + item; }
+
+// ═══════════════════════════════
 //  ESTADO
-// ═══════════════════════════════════════════════
+// ═══════════════════════════════
 let plans = [];
 let nextId = 1;
 let currentStatus = 'pendiente';
 let pendingUpdateFiles = [];
 let activeDrawerPlanId = null;
 let charts = {};
-let currentFileSha = null;  // SHA del data.json en GitHub (necesario para actualizar)
+let currentFileSha = null;
 let hasUnsavedChanges = false;
+let inventoryData = {};     // { "Cat__Item": { op: N, dan: N } }
+let inventoryHistory = [];  // [ { date, label, data } ]
 
-// ═══════════════════════════════════════════════
-//  CONFIG (guardada en localStorage del browser)
-// ═══════════════════════════════════════════════
+// ═══════════════════════════════
+//  CONFIG
+// ═══════════════════════════════
 function getConfig() {
   return {
     user:  localStorage.getItem('t2_gh_user')  || '',
@@ -464,21 +715,20 @@ function saveConfig() {
   const repo  = document.getElementById('cfgRepo').value.trim();
   const token = document.getElementById('cfgToken').value.trim();
   if (!user || !repo || !token) { alert('Completá todos los campos.'); return; }
-  localStorage.setItem('t2_gh_user',  user);
-  localStorage.setItem('t2_gh_repo',  repo);
+  localStorage.setItem('t2_gh_user', user);
+  localStorage.setItem('t2_gh_repo', repo);
   localStorage.setItem('t2_gh_token', token);
   closeConfig();
   showToast('Configuración guardada ✓', 'success');
   loadFromGitHub();
 }
 
-// ═══════════════════════════════════════════════
-//  GITHUB API — CARGAR
-// ═══════════════════════════════════════════════
+// ═══════════════════════════════
+//  GITHUB — CARGAR
+// ═══════════════════════════════
 async function loadFromGitHub() {
   const c = getConfig();
   setLoading(true);
-
   if (!c.user || !c.repo || !c.token) {
     document.getElementById('saveInfo').textContent = 'Sin configurar — presioná ⚙️';
     document.getElementById('btnSave').disabled = true;
@@ -486,100 +736,351 @@ async function loadFromGitHub() {
     openConfig();
     return;
   }
-
   try {
     const res = await fetch(
       `https://api.github.com/repos/${c.user}/${c.repo}/contents/data.json`,
       { headers: { Authorization: `token ${c.token}`, Accept: 'application/vnd.github.v3+json' } }
     );
-
     if (res.status === 404) {
-      // Archivo no existe aún → empezamos vacíos
       plans = []; nextId = 1; currentFileSha = null;
-      updateStats(); renderCharts(); renderPlanes();
-      document.getElementById('saveInfo').textContent = 'Repositorio vacío — listo para usar';
-      document.getElementById('btnSave').disabled = false;
-      setLoading(false);
+      inventoryData = {}; inventoryHistory = [];
+      finishLoad('Repositorio vacío — listo para usar');
       return;
     }
-
     if (!res.ok) throw new Error(`Error ${res.status}`);
-
     const json = await res.json();
     currentFileSha = json.sha;
     const decoded = JSON.parse(atob(json.content.replace(/\n/g,'')));
-    plans = decoded.plans || [];
-    nextId = decoded.nextId || (plans.length ? Math.max(...plans.map(p=>p.id))+1 : 1);
+    plans            = decoded.plans            || [];
+    nextId           = decoded.nextId           || (plans.length ? Math.max(...plans.map(p=>p.id))+1 : 1);
+    inventoryData    = decoded.inventoryData    || {};
+    inventoryHistory = decoded.inventoryHistory || [];
     hasUnsavedChanges = false;
-    updateStats(); renderCharts(); renderPlanes();
-
-    const ts = decoded.savedAt ? `Últ. guardado: ${decoded.savedAt}` : 'Datos cargados de GitHub';
-    document.getElementById('saveInfo').textContent = ts;
-    document.getElementById('btnSave').disabled = false;
-    setLoading(false);
-
+    finishLoad(decoded.savedAt ? `Últ. guardado: ${decoded.savedAt}` : 'Datos cargados de GitHub');
   } catch(e) {
     setLoading(false);
-    showToast('Error al cargar datos: ' + e.message, 'error');
-    document.getElementById('saveInfo').textContent = 'Error al cargar — revisá la configuración';
+    showToast('Error al cargar: ' + e.message, 'error');
+    document.getElementById('saveInfo').textContent = 'Error — revisá configuración';
   }
 }
+function finishLoad(msg) {
+  updateStats(); renderCharts(); renderPlanes(); renderInventoryTable(); renderHistory(); updateInvProgress();
+  document.getElementById('saveInfo').textContent = msg;
+  document.getElementById('btnSave').disabled = false;
+  document.getElementById('btnInvSave').disabled = false;
+  setLoading(false);
+}
 
-// ═══════════════════════════════════════════════
-//  GITHUB API — GUARDAR
-// ═══════════════════════════════════════════════
+// ═══════════════════════════════
+//  GITHUB — GUARDAR
+// ═══════════════════════════════
 async function saveToGitHub() {
   const c = getConfig();
   if (!c.user || !c.repo || !c.token) { openConfig(); return; }
-
+  collectInventoryFromInputs();
   const btn = document.getElementById('btnSave');
-  btn.disabled = true;
-  btn.innerHTML = '<span class="spinner"></span> Guardando...';
+  btn.disabled = true; btn.innerHTML = '<span class="spinner"></span> Guardando...';
+  const ts = nowStr();
+  const payload = { plans, nextId, inventoryData, inventoryHistory, savedAt: ts };
+  await pushToGitHub(c, payload, ts, btn, '💾 Guardar');
+}
 
-  const now = new Date().toLocaleString('es-AR',{day:'2-digit',month:'2-digit',year:'numeric',hour:'2-digit',minute:'2-digit'});
-  const payload = { plans, nextId, savedAt: now };
+async function pushToGitHub(c, payload, ts, btn, btnLabel) {
   const content = btoa(unescape(encodeURIComponent(JSON.stringify(payload, null, 2))));
-
-  const body = { message: `TIER2 update — ${now}`, content };
+  const body = { message: `TIER2 update — ${ts}`, content };
   if (currentFileSha) body.sha = currentFileSha;
-
   try {
     const res = await fetch(
       `https://api.github.com/repos/${c.user}/${c.repo}/contents/data.json`,
-      {
-        method: 'PUT',
-        headers: { Authorization: `token ${c.token}`, 'Content-Type': 'application/json' },
-        body: JSON.stringify(body)
-      }
+      { method: 'PUT', headers: { Authorization: `token ${c.token}`, 'Content-Type': 'application/json' }, body: JSON.stringify(body) }
     );
-    if (!res.ok) {
-      const err = await res.json();
-      throw new Error(err.message || `Error ${res.status}`);
-    }
+    if (!res.ok) { const e = await res.json(); throw new Error(e.message || `Error ${res.status}`); }
     const json = await res.json();
     currentFileSha = json.content.sha;
     hasUnsavedChanges = false;
-    document.getElementById('saveInfo').textContent = `Guardado: ${now}`;
-    showToast('✅ Datos guardados en GitHub', 'success');
+    document.getElementById('saveInfo').textContent = `Guardado: ${ts}`;
+    showToast('✅ Guardado en GitHub', 'success');
   } catch(e) {
     showToast('❌ Error al guardar: ' + e.message, 'error');
   } finally {
-    btn.disabled = false;
-    btn.innerHTML = '💾 Guardar';
+    if (btn) { btn.disabled = false; btn.innerHTML = btnLabel; }
   }
 }
 
-// ═══════════════════════════════════════════════
-//  HELPERS
-// ═══════════════════════════════════════════════
-function setLoading(v) {
-  document.getElementById('loadingBar').style.width = v ? '70%' : '0';
+// ═══════════════════════════════
+//  INVENTARIO — RENDER TABLA
+// ═══════════════════════════════
+const INV_TOTAL = inventoryItems.length;
+
+function renderInventoryTable() {
+  const tbody = document.getElementById('invBody');
+  let html = '';
+  let lastCat = null;
+  inventoryItems.forEach(({cat, item}) => {
+    if (cat !== lastCat) {
+      const slug  = catSlug[cat]  || 'operativo';
+      const emoji = catEmoji[cat] || '';
+      html += `<tr class="inv-cat-row cat-${slug}"><td colspan="5">${emoji} ${cat}</td></tr>`;
+      lastCat = cat;
+    }
+    const key  = invKey(cat, item);
+    const saved = inventoryData[key] || {};
+    const op   = saved.op  !== undefined ? saved.op  : '';
+    const dan  = saved.dan !== undefined ? saved.dan : '';
+    const tot  = (op !== '' || dan !== '') ? (parseInt(op)||0) + (parseInt(dan)||0) : '';
+    const totClass   = tot !== '' ? 'has-value' : '';
+    const opClass    = op  !== '' ? 'inv-num-input filled' : 'inv-num-input';
+    const danClass   = dan !== '' ? 'inv-num-input filled' : 'inv-num-input';
+    const rowDone    = op !== '' && dan !== '';
+    const rowCls     = rowDone ? 'inv-item-row row-done' : 'inv-item-row';
+    const statusIcon = rowDone ? '✅' : '⬜';
+    html += `
+      <tr class="${rowCls}" id="row__${key}">
+        <td class="inv-row-status" id="st__${key}">${statusIcon}</td>
+        <td class="inv-item-name">${item}</td>
+        <td><input type="number" min="0" class="${opClass}" id="op__${key}"
+            value="${op}" oninput="calcTotal('${key}')" placeholder="0"></td>
+        <td><input type="number" min="0" class="${danClass}" id="dan__${key}"
+            value="${dan}" oninput="calcTotal('${key}')" placeholder="0"></td>
+        <td class="inv-total-cell ${totClass}" id="tot__${key}">${tot !== '' ? tot : '—'}</td>
+      </tr>`;
+  });
+  tbody.innerHTML = html;
+  updateInvProgress();
 }
+
+function isInvRowFilled(key) {
+  const opEl  = document.getElementById('op__'  + key);
+  const danEl = document.getElementById('dan__' + key);
+  return opEl && opEl.value !== '' && danEl && danEl.value !== '';
+}
+
+function updateInvProgress() {
+  const done = inventoryItems.filter(({cat,item}) => isInvRowFilled(invKey(cat,item))).length;
+  const pct  = Math.round(done / INV_TOTAL * 100);
+  const bar  = document.getElementById('invProgBar');
+  const lbl  = document.getElementById('invProgLabel');
+  const btn  = document.getElementById('btnInvSave');
+  if (bar) bar.style.width = pct + '%';
+  if (lbl) {
+    lbl.textContent = done + ' / ' + INV_TOTAL + ' ítems';
+    lbl.className = 'inv-progress-label' + (done === INV_TOTAL ? ' done' : '');
+  }
+  if (btn) {
+    if (done === INV_TOTAL) {
+      btn.disabled = false;
+      btn.textContent = '💾 Guardar Inventario ✓';
+      btn.classList.add('ready');
+    } else {
+      btn.disabled = true;
+      btn.textContent = '🔒 ' + (INV_TOTAL - done) + ' campos pendientes';
+      btn.classList.remove('ready');
+    }
+  }
+}
+
+function calcTotal(key) {
+  const opEl  = document.getElementById('op__'  + key);
+  const danEl = document.getElementById('dan__' + key);
+  const op    = parseInt(opEl.value)  || 0;
+  const dan   = parseInt(danEl.value) || 0;
+  // update total cell
+  const cell = document.getElementById('tot__' + key);
+  if (opEl.value !== '' || danEl.value !== '') {
+    cell.textContent = op + dan;
+    cell.className = 'inv-total-cell has-value';
+  }
+  // input highlight
+  opEl.className  = 'inv-num-input ' + (opEl.value  !== '' ? 'filled' : 'empty');
+  danEl.className = 'inv-num-input ' + (danEl.value !== '' ? 'filled' : 'empty');
+  // row status
+  const filled = opEl.value !== '' && danEl.value !== '';
+  const stEl   = document.getElementById('st__' + key);
+  const rowEl  = document.getElementById('row__' + key);
+  if (stEl)  stEl.textContent = filled ? '✅' : '⬜';
+  if (rowEl) { rowEl.classList.toggle('row-done', filled); rowEl.classList.remove('row-incomplete'); }
+  // hide alert if user is fixing
+  const alert = document.getElementById('invAlert');
+  if (alert) alert.style.display = 'none';
+  updateInvProgress();
+  markDirty();
+}
+
+function collectInventoryFromInputs() {
+  inventoryItems.forEach(({cat, item}) => {
+    const key = invKey(cat, item);
+    const opEl  = document.getElementById('op__'+key);
+    const danEl = document.getElementById('dan__'+key);
+    if (!opEl) return;
+    const op  = opEl.value  !== '' ? parseInt(opEl.value)  : null;
+    const dan = danEl.value !== '' ? parseInt(danEl.value) : null;
+    if (op !== null || dan !== null) {
+      inventoryData[key] = { op: op || 0, dan: dan || 0 };
+    }
+  });
+}
+
+// ═══════════════════════════════
+//  INVENTARIO — GUARDAR CON HIST
+// ═══════════════════════════════
+async function saveInventory() {
+  // Validación: todos los campos deben estar completos
+  const incomplete = inventoryItems.filter(({cat,item}) => !isInvRowFilled(invKey(cat,item)));
+  if (incomplete.length) {
+    incomplete.forEach(({cat,item}) => {
+      const rowEl = document.getElementById('row__' + invKey(cat,item));
+      if (rowEl) rowEl.classList.add('row-incomplete');
+    });
+    const alertEl = document.getElementById('invAlert');
+    if (alertEl) alertEl.style.display = 'block';
+    // scroll al primer incompleto
+    const firstKey = invKey(incomplete[0].cat, incomplete[0].item);
+    const firstEl  = document.getElementById('op__' + firstKey);
+    if (firstEl) firstEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    return;
+  }
+  const c = getConfig();
+  if (!c.user || !c.repo || !c.token) { openConfig(); return; }
+  collectInventoryFromInputs();
+  const ts = nowStr();
+  inventoryHistory.unshift({ date: ts, label: `Inventario ${ts}`, filled: INV_TOTAL, data: JSON.parse(JSON.stringify(inventoryData)) });
+  renderHistory();
+  const btn = document.getElementById('btnInvSave');
+  btn.disabled = true; btn.innerHTML = '<span class="spinner"></span> Guardando...';
+  const payload = { plans, nextId, inventoryData, inventoryHistory, savedAt: ts };
+  await pushToGitHub(c, payload, ts, btn, '💾 Guardar Inventario ✓');
+  btn.classList.add('ready');
+}
+
+// ═══════════════════════════════
+//  HISTORIAL
+// ═══════════════════════════════
+function renderHistory() {
+  const container = document.getElementById('historyList');
+  if (!inventoryHistory.length) {
+    container.innerHTML = '<div class="history-empty">Aún no hay inventarios guardados.<br>Completá todos los campos y presioná "💾 Guardar Inventario".</div>';
+    return;
+  }
+  container.innerHTML = '<div class="history-list">' + inventoryHistory.map((h, idx) => `
+    <div class="history-item">
+      <div class="history-item-header" onclick="toggleHistBody(${idx})">
+        <div style="font-size:20px">📋</div>
+        <div class="history-meta">
+          <div class="history-date">Inventario completo — ${h.date}</div>
+          <div class="history-count">${INV_TOTAL} ítems relevados · Click para ver detalle</div>
+        </div>
+        <div class="history-actions" onclick="event.stopPropagation()">
+          <button class="btn-view-hist" onclick="downloadHistCSV(${idx})">⬇️ CSV</button>
+          <button class="btn-del-hist" onclick="deleteHistory(${idx})">✕</button>
+        </div>
+        <div class="history-chevron" id="hchev_${idx}">▼</div>
+      </div>
+      <div class="history-body" id="hbody_${idx}">
+        ${buildHistInlineTable(h.data)}
+      </div>
+    </div>
+  `).join('') + '</div>';
+}
+
+function toggleHistBody(idx) {
+  const body = document.getElementById('hbody_' + idx);
+  const chev = document.getElementById('hchev_' + idx);
+  if (!body) return;
+  const open = body.classList.toggle('open');
+  if (chev) chev.classList.toggle('open', open);
+}
+
+function buildHistInlineTable(data) {
+  const catColors = {
+    'Operativo':'#2563EB','IS':'#7C3AED','Oficina':'#059669',
+    'SHE':'#D97706','Consumibles':'#4B5563','Zona de descanso':'#0D9488'
+  };
+  let lastCat = null;
+  let html = `<table class="hist-inline-table">
+    <thead><tr>
+      <th>Detalle del Insumo</th>
+      <th class="num">Operativos</th>
+      <th class="num">Dañados</th>
+      <th class="num">Totales</th>
+    </tr></thead><tbody>`;
+  inventoryItems.forEach(({cat, item}) => {
+    if (cat !== lastCat) {
+      const bg = catColors[cat] || '#555';
+      html += `<tr class="hist-inline-cat"><td colspan="4" style="background:${bg}">${catEmoji[cat]||''} ${cat}</td></tr>`;
+      lastCat = cat;
+    }
+    const key = invKey(cat, item);
+    const d   = (data || {})[key] || { op: 0, dan: 0 };
+    const tot = (d.op||0) + (d.dan||0);
+    html += `<tr>
+      <td>${item}</td>
+      <td class="num ${d.op > 0 ? 'n-op' : 'n-zero'}">${d.op || 0}</td>
+      <td class="num ${d.dan > 0 ? 'n-dan' : 'n-zero'}">${d.dan || 0}</td>
+      <td class="num ${tot > 0 ? 'n-tot' : 'n-zero'}">${tot}</td>
+    </tr>`;
+  });
+  html += '</tbody></table>';
+  return html;
+}
+
+function downloadHistCSV(idx) {
+  const h = inventoryHistory[idx];
+  if (!h) return;
+  let csv = 'Categoría,Detalle del Insumo,Operativos,Dañados,Totales\n';
+  inventoryItems.forEach(({cat, item}) => {
+    const key = invKey(cat, item);
+    const d   = (h.data || {})[key] || { op: 0, dan: 0 };
+    const tot = (d.op||0) + (d.dan||0);
+    const safe = item.includes(',') ? `"${item}"` : item;
+    csv += `${cat},${safe},${d.op||0},${d.dan||0},${tot}\n`;
+  });
+  const blob = new Blob(['﻿' + csv], { type: 'text/csv;charset=utf-8;' });
+  const url  = URL.createObjectURL(blob);
+  const a    = document.createElement('a');
+  a.href = url;
+  a.download = `inventario_${h.date.replace(/[/:, ]/g,'_')}.csv`;
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
+function deleteHistory(idx) {
+  if (!confirm('¿Eliminar este historial?')) return;
+  inventoryHistory.splice(idx, 1);
+  renderHistory();
+  markDirty();
+}
+
+// ═══════════════════════════════
+//  CSV DOWNLOAD
+// ═══════════════════════════════
+function downloadCSV() {
+  collectInventoryFromInputs();
+  let csv = 'Categoría,Detalle del Insumo,Operativos,Dañados,Totales\n';
+  inventoryItems.forEach(({cat, item}) => {
+    const key = invKey(cat, item);
+    const d = inventoryData[key] || {};
+    const op  = d.op  !== undefined ? d.op  : '';
+    const dan = d.dan !== undefined ? d.dan : '';
+    const tot = (op !== '' || dan !== '') ? (parseInt(op)||0) + (parseInt(dan)||0) : '';
+    const safeItem = item.includes(',') ? `"${item}"` : item;
+    csv += `${cat},${safeItem},${op},${dan},${tot}\n`;
+  });
+  const blob = new Blob(['﻿' + csv], { type: 'text/csv;charset=utf-8;' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `inventario_${nowStr().replace(/[/:, ]/g,'_')}.csv`;
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
+// ═══════════════════════════════
+//  HELPERS
+// ═══════════════════════════════
+function setLoading(v) { document.getElementById('loadingBar').style.width = v ? '70%' : '0'; }
 function showToast(msg, type='') {
   const t = document.getElementById('toast');
-  t.textContent = msg;
-  t.className = 'toast ' + type;
-  t.classList.add('show');
+  t.textContent = msg; t.className = 'toast ' + type; t.classList.add('show');
   setTimeout(() => t.classList.remove('show'), 3500);
 }
 function markDirty() {
@@ -589,20 +1090,18 @@ function markDirty() {
 function nowStr() {
   return new Date().toLocaleString('es-AR',{day:'2-digit',month:'2-digit',year:'numeric',hour:'2-digit',minute:'2-digit'});
 }
-window.addEventListener('beforeunload', e => {
-  if (hasUnsavedChanges) { e.preventDefault(); e.returnValue = ''; }
-});
+window.addEventListener('beforeunload', e => { if (hasUnsavedChanges) { e.preventDefault(); e.returnValue=''; } });
 
-// ═══════════════════════════════════════════════
-//  TABS PRINCIPALES
-// ═══════════════════════════════════════════════
+// ═══════════════════════════════
+//  TABS
+// ═══════════════════════════════
 function switchTab(tab, el) {
   document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
   document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
   el.classList.add('active');
   document.getElementById('sec-'+tab).classList.add('active');
   if (tab==='planes') { refreshRespFilter(); renderPlanes(); }
-  else renderCharts();
+  else if (tab==='dashboard') renderCharts();
 }
 function quickFilter(status) {
   document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
@@ -613,9 +1112,9 @@ function quickFilter(status) {
   refreshRespFilter(); renderPlanes();
 }
 
-// ═══════════════════════════════════════════════
-//  FILTROS
-// ═══════════════════════════════════════════════
+// ═══════════════════════════════
+//  FILTROS PLANES
+// ═══════════════════════════════
 function refreshRespFilter() {
   const sel = document.getElementById('filt-resp');
   const cur = sel.value;
@@ -628,9 +1127,9 @@ function getFiltered() {
   const resp = document.getElementById('filt-resp').value;
   const txt  = document.getElementById('filt-text').value.toLowerCase();
   return plans.filter(p => {
-    if (mat  && p.materia !== mat) return false;
-    if (st   && p.status  !== st)  return false;
-    if (resp && p.responsable !== resp) return false;
+    if (mat  && p.materia!==mat) return false;
+    if (st   && p.status!==st)  return false;
+    if (resp && p.responsable!==resp) return false;
     if (txt  && !p.title.toLowerCase().includes(txt) && !(p.desc||'').toLowerCase().includes(txt)) return false;
     return true;
   });
@@ -641,9 +1140,9 @@ function resetFilters() {
   renderPlanes();
 }
 
-// ═══════════════════════════════════════════════
+// ═══════════════════════════════
 //  RENDER PLANES
-// ═══════════════════════════════════════════════
+// ═══════════════════════════════
 function renderPlanes() {
   refreshRespFilter();
   const filtered = getFiltered();
@@ -651,7 +1150,6 @@ function renderPlanes() {
     filtered.length < plans.length
       ? `Mostrando ${filtered.length} de ${plans.length} planes`
       : `${plans.length} plan${plans.length!==1?'es':''} de acción`;
-
   const container = document.getElementById('list-planes');
   if (!filtered.length) {
     container.innerHTML = `<div class="empty-state"><div class="icon">📋</div><div>No hay planes que coincidan.<br>Ajustá los filtros o creá un plan nuevo.</div></div>`;
@@ -686,9 +1184,6 @@ function renderPlanes() {
   }).join('');
 }
 
-// ═══════════════════════════════════════════════
-//  STATS
-// ═══════════════════════════════════════════════
 function updateStats() {
   document.getElementById('statTotal').textContent  = plans.length;
   document.getElementById('statPend').textContent   = plans.filter(p=>p.status==='pendiente').length;
@@ -697,9 +1192,9 @@ function updateStats() {
   document.getElementById('statCanc').textContent   = plans.filter(p=>p.status==='cancelada').length;
 }
 
-// ═══════════════════════════════════════════════
-//  ACCIONES SOBRE PLANES
-// ═══════════════════════════════════════════════
+// ═══════════════════════════════
+//  ACCIONES PLANES
+// ═══════════════════════════════
 function cycleStatus(id, e) {
   e && e.stopPropagation();
   const order = ['pendiente','curso','realizada','cancelada'];
@@ -713,20 +1208,19 @@ function cycleStatus(id, e) {
 }
 function deletePlan(id, e) {
   e && e.stopPropagation();
-  if (!confirm('¿Eliminar este plan? Esta acción no se puede deshacer.')) return;
+  if (!confirm('¿Eliminar este plan?')) return;
   plans = plans.filter(p=>p.id!==id);
   if (activeDrawerPlanId===id) closeDrawer();
   renderPlanes(); updateStats(); renderCharts(); markDirty();
 }
 
-// ═══════════════════════════════════════════════
-//  MODAL NUEVO PLAN
-// ═══════════════════════════════════════════════
+// ═══════════════════════════════
+//  MODAL PLAN
+// ═══════════════════════════════
 function openModal() {
   currentStatus='pendiente';
   ['fTitle','fSubtitle','fDesc','fResp'].forEach(id=>document.getElementById(id).value='');
-  document.getElementById('fFecha').value='';
-  document.getElementById('fMateria').value='';
+  document.getElementById('fFecha').value=''; document.getElementById('fMateria').value='';
   document.querySelectorAll('.status-opt').forEach(o=>o.classList.remove('selected'));
   document.querySelector('.status-opt.pendiente').classList.add('selected');
   document.getElementById('modalOverlay').classList.add('open');
@@ -738,32 +1232,26 @@ function selectStatus(st) {
   document.querySelector('.status-opt.'+st).classList.add('selected');
 }
 function savePlan() {
-  const title   = document.getElementById('fTitle').value.trim();
-  const materia = document.getElementById('fMateria').value;
-  const resp    = document.getElementById('fResp').value.trim();
-  if (!title)   { alert('El título es obligatorio'); return; }
-  if (!materia) { alert('Seleccioná un área'); return; }
-  if (!resp)    { alert('El responsable es obligatorio'); return; }
-  plans.push({
-    id: nextId++, materia, title,
-    subtitle: document.getElementById('fSubtitle').value.trim(),
-    desc:     document.getElementById('fDesc').value.trim(),
-    responsable: resp,
-    fecha:    document.getElementById('fFecha').value,
-    status:   currentStatus,
-    updates: [{type:'created',author:'Sistema',date:nowStr(),text:'Plan de acción creado.'}]
-  });
+  const title=document.getElementById('fTitle').value.trim();
+  const materia=document.getElementById('fMateria').value;
+  const resp=document.getElementById('fResp').value.trim();
+  if (!title){alert('Título obligatorio');return;}
+  if (!materia){alert('Seleccioná un área');return;}
+  if (!resp){alert('Responsable obligatorio');return;}
+  plans.push({id:nextId++,materia,title,subtitle:document.getElementById('fSubtitle').value.trim(),
+    desc:document.getElementById('fDesc').value.trim(),responsable:resp,
+    fecha:document.getElementById('fFecha').value,status:currentStatus,
+    updates:[{type:'created',author:'Sistema',date:nowStr(),text:'Plan de acción creado.'}]});
   closeModal(); renderPlanes(); updateStats(); renderCharts(); markDirty();
 }
 
-// ═══════════════════════════════════════════════
-//  DRAWER DETALLE
-// ═══════════════════════════════════════════════
+// ═══════════════════════════════
+//  DRAWER
+// ═══════════════════════════════
 function openDrawer(id) {
-  activeDrawerPlanId = id;
-  pendingUpdateFiles = [];
-  document.getElementById('attachPreview').innerHTML = '';
-  document.getElementById('updateText').value = '';
+  activeDrawerPlanId=id; pendingUpdateFiles=[];
+  document.getElementById('attachPreview').innerHTML='';
+  document.getElementById('updateText').value='';
   renderDrawerContent(id);
   document.getElementById('drawerOverlay').classList.add('open');
   document.getElementById('drawer').classList.add('open');
@@ -775,68 +1263,51 @@ function openDrawer(id) {
 function closeDrawer() {
   document.getElementById('drawerOverlay').classList.remove('open');
   document.getElementById('drawer').classList.remove('open');
-  activeDrawerPlanId = null;
+  activeDrawerPlanId=null;
 }
 function renderDrawerContent(id) {
-  const plan = plans.find(p=>p.id===id);
-  if (!plan) return;
-  document.getElementById('dTitle').textContent    = plan.title;
-  document.getElementById('dSubtitle').textContent = plan.subtitle ? '🏷️ ' + plan.subtitle : '';
-  document.getElementById('dMeta').innerHTML = `
+  const plan=plans.find(p=>p.id===id); if (!plan) return;
+  document.getElementById('dTitle').textContent=plan.title;
+  document.getElementById('dSubtitle').textContent=plan.subtitle?'🏷️ '+plan.subtitle:'';
+  document.getElementById('dMeta').innerHTML=`
     <div class="materia-badge">${plan.materia}</div>
     <span style="font-size:12px;color:#666">👤 ${plan.responsable||'Sin asignar'}</span>
-    ${plan.fecha?`<span style="font-size:12px;color:#666">📅 ${plan.fecha}</span>`:''}
-  `;
-  document.querySelectorAll('.ds-opt').forEach(o => o.classList.toggle('active', o.classList.contains(plan.status)));
-  renderTimeline(plan);
-  renderInfo(plan);
+    ${plan.fecha?`<span style="font-size:12px;color:#666">📅 ${plan.fecha}</span>`:''}`;
+  document.querySelectorAll('.ds-opt').forEach(o=>o.classList.toggle('active',o.classList.contains(plan.status)));
+  renderTimeline(plan); renderInfo(plan);
 }
 function setDrawerStatus(st) {
-  const plan = plans.find(p=>p.id===activeDrawerPlanId);
-  if (!plan || plan.status===st) return;
-  const prev = statusLabel[plan.status];
-  plan.status = st;
-  plan.updates = plan.updates||[];
+  const plan=plans.find(p=>p.id===activeDrawerPlanId); if (!plan||plan.status===st) return;
+  const prev=statusLabel[plan.status]; plan.status=st;
+  plan.updates=plan.updates||[];
   plan.updates.push({type:'status',author:'Usuario',date:nowStr(),text:`Status cambiado de ${prev} a ${statusLabel[st]}.`,images:[]});
-  renderDrawerContent(activeDrawerPlanId);
-  renderPlanes(); updateStats(); renderCharts(); markDirty();
+  renderDrawerContent(activeDrawerPlanId); renderPlanes(); updateStats(); renderCharts(); markDirty();
 }
-function switchDTab(tab, el) {
+function switchDTab(tab,el) {
   document.querySelectorAll('.dtab').forEach(t=>t.classList.remove('active'));
   document.querySelectorAll('.drawer-tab-content').forEach(t=>t.classList.remove('active'));
-  el.classList.add('active');
-  document.getElementById('dtab-'+tab).classList.add('active');
+  el.classList.add('active'); document.getElementById('dtab-'+tab).classList.add('active');
 }
 
-// ═══════════════════════════════════════════════
+// ═══════════════════════════════
 //  TIMELINE
-// ═══════════════════════════════════════════════
+// ═══════════════════════════════
 function renderTimeline(plan) {
-  const updates = plan.updates || [];
-  const icons = {created:'🚀',comment:'💬',image:'🖼️',status:'🔄'};
-  if (!updates.length) {
-    document.getElementById('timeline').innerHTML = '<div class="no-updates">No hay updates aún.</div>';
-    return;
-  }
-  document.getElementById('timeline').innerHTML = [...updates].reverse().map(u => `
+  const icons={created:'🚀',comment:'💬',image:'🖼️',status:'🔄'};
+  const updates=plan.updates||[];
+  if (!updates.length){document.getElementById('timeline').innerHTML='<div class="no-updates">No hay updates aún.</div>';return;}
+  document.getElementById('timeline').innerHTML=[...updates].reverse().map(u=>`
     <div class="timeline-item">
-      <div class="timeline-line">
-        <div class="tl-dot ${u.type}">${icons[u.type]||'📌'}</div>
-        <div class="tl-connector"></div>
-      </div>
+      <div class="timeline-line"><div class="tl-dot ${u.type}">${icons[u.type]||'📌'}</div><div class="tl-connector"></div></div>
       <div class="tl-content">
-        <div class="tl-header">
-          <span class="tl-author">${u.author}</span>
-          <span class="tl-date">${u.date}</span>
-        </div>
+        <div class="tl-header"><span class="tl-author">${u.author}</span><span class="tl-date">${u.date}</span></div>
         <div class="tl-text">${u.text}</div>
         ${u.images&&u.images.length?`<div class="tl-imgs">${u.images.map(img=>`<img class="tl-img" src="${img}" onclick="openLightbox('${img}')">`).join('')}</div>`:''}
       </div>
-    </div>
-  `).join('');
+    </div>`).join('');
 }
 function renderInfo(plan) {
-  document.getElementById('infoGrid').innerHTML = `
+  document.getElementById('infoGrid').innerHTML=`
     <div class="info-row"><div class="info-label">📌 Título</div><div class="info-val">${plan.title}</div></div>
     ${plan.subtitle?`<div class="info-row"><div class="info-label">🏷️ Subtítulo</div><div class="info-val">${plan.subtitle}</div></div>`:''}
     <div class="info-row"><div class="info-label">🏭 Materia</div><div class="info-val">${plan.materia}</div></div>
@@ -844,96 +1315,80 @@ function renderInfo(plan) {
     <div class="info-row"><div class="info-label">📅 Plazo</div><div class="info-val">${plan.fecha||'—'}</div></div>
     <div class="info-row"><div class="info-label">🔄 Status</div><div class="info-val"><span class="status-badge ${plan.status}">${statusLabel[plan.status]}</span></div></div>
     ${plan.desc?`<div><div class="info-label" style="margin-bottom:6px">📝 Descripción</div><div class="info-desc">${plan.desc}</div></div>`:''}
-    <div class="info-row"><div class="info-label">💬 Updates</div><div class="info-val">${(plan.updates||[]).filter(u=>u.type==='comment'||u.type==='image').length} comentarios cargados</div></div>
-  `;
+    <div class="info-row"><div class="info-label">💬 Updates</div><div class="info-val">${(plan.updates||[]).filter(u=>u.type==='comment'||u.type==='image').length} comentarios</div></div>`;
 }
 
-// ═══════════════════════════════════════════════
+// ═══════════════════════════════
 //  UPDATES
-// ═══════════════════════════════════════════════
+// ═══════════════════════════════
 function handleUpdateFiles(event) {
-  Array.from(event.target.files).forEach(file => {
-    const reader = new FileReader();
-    reader.onload = e => {
+  Array.from(event.target.files).forEach(file=>{
+    const reader=new FileReader();
+    reader.onload=e=>{
       pendingUpdateFiles.push(e.target.result);
-      const idx = pendingUpdateFiles.length-1;
-      const wrap = document.createElement('div');
-      wrap.className = 'attach-thumb';
-      wrap.innerHTML = `<img src="${e.target.result}"><button class="attach-remove" onclick="removeAttach(${idx},this.parentNode)">✕</button>`;
+      const idx=pendingUpdateFiles.length-1;
+      const wrap=document.createElement('div'); wrap.className='attach-thumb';
+      wrap.innerHTML=`<img src="${e.target.result}"><button class="attach-remove" onclick="removeAttach(${idx},this.parentNode)">✕</button>`;
       document.getElementById('attachPreview').appendChild(wrap);
     };
     reader.readAsDataURL(file);
   });
 }
-function removeAttach(idx, el) { pendingUpdateFiles[idx]=null; el.remove(); }
+function removeAttach(idx,el){pendingUpdateFiles[idx]=null;el.remove();}
 function submitUpdate() {
-  const plan = plans.find(p=>p.id===activeDrawerPlanId);
-  if (!plan) return;
-  const text   = document.getElementById('updateText').value.trim();
-  const author = document.getElementById('updateAuthor').value.trim() || 'Equipo TIER 2';
-  const images = pendingUpdateFiles.filter(Boolean);
-  if (!text && !images.length) { alert('Escribí un comentario o adjuntá al menos una imagen.'); return; }
-  plan.updates = plan.updates||[];
-  plan.updates.push({
-    type:   images.length && !text ? 'image' : 'comment',
-    author, date: nowStr(),
-    text:   text||'Evidencia adjunta.',
-    images
-  });
+  const plan=plans.find(p=>p.id===activeDrawerPlanId); if (!plan) return;
+  const text=document.getElementById('updateText').value.trim();
+  const author=document.getElementById('updateAuthor').value.trim()||'Equipo TIER 2';
+  const images=pendingUpdateFiles.filter(Boolean);
+  if (!text&&!images.length){alert('Escribí un comentario o adjuntá al menos una imagen.');return;}
+  plan.updates=plan.updates||[];
+  plan.updates.push({type:images.length&&!text?'image':'comment',author,date:nowStr(),text:text||'Evidencia adjunta.',images});
   pendingUpdateFiles=[];
   document.getElementById('attachPreview').innerHTML='';
   document.getElementById('updateText').value='';
   document.getElementById('updateFiles').value='';
   renderTimeline(plan); renderInfo(plan); renderPlanes(); markDirty();
-  showToast('Update publicado ✓', 'success');
+  showToast('Update publicado ✓','success');
 }
 
-// ═══════════════════════════════════════════════
+// ═══════════════════════════════
 //  LIGHTBOX
-// ═══════════════════════════════════════════════
-function openLightbox(src)  { document.getElementById('lightboxImg').src=src; document.getElementById('lightbox').classList.add('open'); }
-function closeLightbox()    { document.getElementById('lightbox').classList.remove('open'); }
+// ═══════════════════════════════
+function openLightbox(src){document.getElementById('lightboxImg').src=src;document.getElementById('lightbox').classList.add('open');}
+function closeLightbox(){document.getElementById('lightbox').classList.remove('open');}
 
-// ═══════════════════════════════════════════════
+// ═══════════════════════════════
 //  CHARTS
-// ═══════════════════════════════════════════════
+// ═══════════════════════════════
 function renderCharts() {
-  const d = k => { if(charts[k]){charts[k].destroy();delete charts[k];} };
-
+  const d=k=>{if(charts[k]){charts[k].destroy();delete charts[k];}};
   d('materia');
-  charts.materia = new Chart(document.getElementById('chartMateria'),{
-    type:'bar',
-    data:{labels:materias,datasets:[{data:materias.map(m=>plans.filter(p=>p.materia===m).length),backgroundColor:['#3B82F6','#F59E0B','#10B981','#EF4444'],borderRadius:6}]},
-    options:{plugins:{legend:{display:false}},scales:{y:{beginAtZero:true,ticks:{stepSize:1}}},responsive:true,maintainAspectRatio:false}
-  });
+  charts.materia=new Chart(document.getElementById('chartMateria'),{
+    type:'bar',data:{labels:materias,datasets:[{data:materias.map(m=>plans.filter(p=>p.materia===m).length),backgroundColor:['#3B82F6','#F59E0B','#10B981','#EF4444'],borderRadius:6}]},
+    options:{plugins:{legend:{display:false}},scales:{y:{beginAtZero:true,ticks:{stepSize:1}}},responsive:true,maintainAspectRatio:false}});
   d('status');
-  charts.status = new Chart(document.getElementById('chartStatus'),{
-    type:'doughnut',
-    data:{labels:statuses.map(s=>statusNames[s]),datasets:[{data:statuses.map(s=>plans.filter(p=>p.status===s).length),backgroundColor:statuses.map(s=>statusColors[s]),borderWidth:2}]},
-    options:{plugins:{legend:{position:'bottom',labels:{font:{size:11}}}},responsive:true,maintainAspectRatio:false}
-  });
+  charts.status=new Chart(document.getElementById('chartStatus'),{
+    type:'doughnut',data:{labels:statuses.map(s=>statusNames[s]),datasets:[{data:statuses.map(s=>plans.filter(p=>p.status===s).length),backgroundColor:statuses.map(s=>statusColors[s]),borderWidth:2}]},
+    options:{plugins:{legend:{position:'bottom',labels:{font:{size:11}}}},responsive:true,maintainAspectRatio:false}});
   d('demanda');
-  charts.demanda = new Chart(document.getElementById('chartDemanda'),{
-    type:'bar',
-    data:{labels:materias,datasets:statuses.map(s=>({label:statusNames[s],data:materias.map(m=>plans.filter(p=>p.materia===m&&p.status===s).length),backgroundColor:statusColors[s],borderRadius:4}))},
-    options:{plugins:{legend:{position:'bottom',labels:{font:{size:11}}}},scales:{x:{stacked:true},y:{stacked:true,beginAtZero:true,ticks:{stepSize:1}}},responsive:true,maintainAspectRatio:false}
-  });
+  charts.demanda=new Chart(document.getElementById('chartDemanda'),{
+    type:'bar',data:{labels:materias,datasets:statuses.map(s=>({label:statusNames[s],data:materias.map(m=>plans.filter(p=>p.materia===m&&p.status===s).length),backgroundColor:statusColors[s],borderRadius:4}))},
+    options:{plugins:{legend:{position:'bottom',labels:{font:{size:11}}}},scales:{x:{stacked:true},y:{stacked:true,beginAtZero:true,ticks:{stepSize:1}}},responsive:true,maintainAspectRatio:false}});
   d('resp');
   const responsables=[...new Set(plans.map(p=>p.responsable).filter(Boolean))].sort();
-  charts.resp = new Chart(document.getElementById('chartResp'),{
-    type:'bar',
-    data:{labels:responsables,datasets:statuses.map(s=>({label:statusNames[s],data:responsables.map(r=>plans.filter(p=>p.responsable===r&&p.status===s).length),backgroundColor:statusColors[s],borderRadius:4}))},
-    options:{plugins:{legend:{position:'bottom',labels:{font:{size:11}}}},scales:{x:{stacked:true},y:{stacked:true,beginAtZero:true,ticks:{stepSize:1}}},responsive:true,maintainAspectRatio:false}
-  });
+  charts.resp=new Chart(document.getElementById('chartResp'),{
+    type:'bar',data:{labels:responsables,datasets:statuses.map(s=>({label:statusNames[s],data:responsables.map(r=>plans.filter(p=>p.responsable===r&&p.status===s).length),backgroundColor:statusColors[s],borderRadius:4}))},
+    options:{plugins:{legend:{position:'bottom',labels:{font:{size:11}}}},scales:{x:{stacked:true},y:{stacked:true,beginAtZero:true,ticks:{stepSize:1}}},responsive:true,maintainAspectRatio:false}});
 }
 
-// ═══════════════════════════════════════════════
+// ═══════════════════════════════
 //  INIT
-// ═══════════════════════════════════════════════
-document.getElementById('modalOverlay').addEventListener('click',  e=>{if(e.target===e.currentTarget)closeModal();});
-document.getElementById('configOverlay').addEventListener('click', e=>{if(e.target===e.currentTarget)closeConfig();});
+// ═══════════════════════════════
+document.getElementById('modalOverlay').addEventListener('click',e=>{if(e.target===e.currentTarget)closeModal();});
+document.getElementById('configOverlay').addEventListener('click',e=>{if(e.target===e.currentTarget)closeConfig();});
+document.getElementById('histModalOverlay').addEventListener('click',e=>{if(e.target===e.currentTarget)document.getElementById('histModalOverlay').classList.remove('open');});
 
-loadFromGitHub();  // ← Al abrir la página, carga datos de GitHub automáticamente
+loadFromGitHub();
 </script>
 </body>
 </html>
