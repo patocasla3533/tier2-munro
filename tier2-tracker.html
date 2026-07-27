@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SVC Munro SBU3 — TIER 2 Tracker</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
+  body { background: #f4f5f7; color: #333; }
+
+  /* ── HEADER ── */
+  .header { background: #FFE600; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; border-bottom: 3px solid #333; }
+  .header-left { display: flex; align-items: center; gap: 12px; }
+  .logo { font-size: 18px; font-weight: 800; color: #333; }
+  .logo span { color: #2563EB; }
+  .badge { background: #333; color: #FFE600; padding: 4px 12px; border-radius: 20px; font-size: 11px; font-weight: 700; letter-spacing: 1px; }
+  .header-right { display: flex; align-items: center; gap: 10px; }
+  .save-info { font-size: 11px; color: #555; }
+  .btn-save { background: #333; color: #FFE600; border: none; padding: 7px 16px; border-radius: 6px; font-weight: 700; font-size: 13px; cursor: pointer; display: flex; align-items: center; gap: 6px; }
+  .btn-save:hover { background: #111; }
+  .btn-save:disabled { background: #999; cursor: not-allowed; }
+  .btn-config { background: transparent; border: 2px solid #333; padding: 6px 12px; border-radius: 6px; font-size: 12px; font-weight: 700; cursor: pointer; }
+  .btn-config:hover { background: rgba(0,0,0,0.08); }
+
+  /* ── STATS ── */
+  .stats-bar { display: flex; gap: 10px; padding: 14px 24px; background: #fff; border-bottom: 1px solid #e0e0e0; flex-wrap: wrap; }
+  .stat-card { flex: 1; min-width: 90px; background: #f9f9f9; border-radius: 8px; padding: 10px 14px; text-align: center; border: 1px solid #e8e8e8; cursor: pointer; transition: all 0.15s; }
+  .stat-card:hover { transform: translateY(-1px); box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+  .stat-card .num { font-size: 26px; font-weight: 800; }
+  .stat-card .label { font-size: 10px; color: #666; margin-top: 2px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .stat-card.total .num { color: #333; }
+  .stat-card.pendiente .num { color: #F59E0B; }
+  .stat-card.curso .num { color: #3B82F6; }
+  .stat-card.realizada .num { color: #10B981; }
+  .stat-card.cancelada .num { color: #EF4444; }
+
+  /* ── TABS ── */
+  .tabs { display: flex; background: #fff; border-bottom: 2px solid #e0e0e0; padding: 0 24px; }
+  .tab { padding: 12px 22px; font-size: 14px; font-weight: 600; cursor: pointer; border-bottom: 3px solid transparent; margin-bottom: -2px; color: #666; transition: all 0.2s; white-space: nowrap; }
+  .tab:hover { color: #333; background: #f9f9f9; }
+  .tab.active { color: #333; border-bottom-color: #FFE600; background: #fffde7; }
+
+  /* ── CONTENT ── */
+  .content { padding: 18px 24px; }
+  .section { display: none; }
+  .section.active { display: block; }
+
+  /* ── DASHBOARD ── */
+  .dashboard-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .chart-box { background: #fff; border-radius: 10px; padding: 18px; border: 1px solid #e8e8e8; }
+  .chart-box h3 { font-size: 13px; font-weight: 700; margin-bottom: 14px; color: #333; }
+  .chart-container { height: 200px; position: relative; }
+  .chart-box.full { grid-column: 1 / -1; }
+
+  /* ── TOOLBAR ── */
+  .planes-toolbar { display: flex; gap: 10px; margin-bottom: 14px; flex-wrap: wrap; align-items: flex-end; background: #fff; padding: 14px 16px; border-radius: 10px; border: 1px solid #e8e8e8; }
+  .filter-group { display: flex; flex-direction: column; gap: 4px; }
+  .filter-group label { font-size: 10px; font-weight: 700; text-transform: uppercase; color: #888; }
+  .filter-group select, .filter-group input { padding: 7px 10px; border: 1.5px solid #e0e0e0; border-radius: 6px; font-size: 12px; outline: none; min-width: 130px; background: #fafafa; }
+  .filter-group select:focus, .filter-group input:focus { border-color: #FFE600; }
+  .toolbar-spacer { flex: 1; }
+  .btn-reset { padding: 7px 14px; border: 1.5px solid #ccc; border-radius: 6px; font-size: 12px; cursor: pointer; background: #f5f5f5; align-self: flex-end; }
+  .btn-reset:hover { background: #e8e8e8; }
+  .btn-add { background: #FFE600; border: 2px solid #333; padding: 7px 18px; border-radius: 6px; font-weight: 700; font-size: 13px; cursor: pointer; align-self: flex-end; }
+  .btn-add:hover { background: #f0d800; }
+  .results-count { font-size: 12px; color: #888; margin-bottom: 10px; }
+
+  /* ── PLAN CARDS ── */
+  .plans-list { display: flex; flex-direction: column; gap: 10px; }
+  .plan-card { background: #fff; border-radius: 10px; padding: 14px 16px; border: 1px solid #e8e8e8; border-left: 5px solid #ccc; transition: box-shadow 0.2s; }
+  .plan-card:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+  .plan-card.pendiente { border-left-color: #F59E0B; }
+  .plan-card.curso { border-left-color: #3B82F6; }
+  .plan-card.realizada { border-left-color: #10B981; }
+  .plan-card.cancelada { border-left-color: #EF4444; }
+  .plan-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; }
+  .plan-titles { flex: 1; cursor: pointer; }
+  .plan-titles:hover .plan-title { color: #2563EB; text-decoration: underline; }
+  .plan-title { font-size: 14px; font-weight: 700; }
+  .plan-subtitle { font-size: 12px; color: #888; margin-top: 2px; font-style: italic; }
+  .plan-badges { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+  .status-badge { padding: 3px 10px; border-radius: 20px; font-size: 11px; font-weight: 700; white-space: nowrap; }
+  .status-badge.pendiente { background: #FEF3C7; color: #92400E; }
+  .status-badge.curso { background: #DBEAFE; color: #1E40AF; }
+  .status-badge.realizada { background: #D1FAE5; color: #065F46; }
+  .status-badge.cancelada { background: #FEE2E2; color: #991B1B; }
+  .materia-badge { padding: 3px 10px; border-radius: 20px; font-size: 11px; font-weight: 600; background: #f3f4f6; color: #374151; }
+  .updates-pill { padding: 2px 8px; border-radius: 20px; font-size: 10px; font-weight: 700; background: #ede9fe; color: #5b21b6; }
+  .plan-meta { display: flex; gap: 14px; margin-top: 8px; flex-wrap: wrap; }
+  .meta-item { font-size: 12px; color: #666; display: flex; align-items: center; gap: 4px; }
+  .plan-desc { font-size: 13px; color: #555; margin-top: 6px; line-height: 1.5; }
+  .plan-actions { display: flex; gap: 8px; margin-top: 10px; }
+  .btn-sm { padding: 4px 12px; border-radius: 5px; font-size: 12px; font-weight: 600; cursor: pointer; border: 1px solid #ccc; background: #f5f5f5; }
+  .btn-sm:hover { background: #e8e8e8; }
+  .btn-sm.danger { background: #fff0f0; border-color: #fca5a5; color: #dc2626; }
+  .btn-sm.danger:hover { background: #fee2e2; }
+  .btn-status { background: #f0f9ff; border-color: #93c5fd; color: #1d4ed8; }
+  .btn-status:hover { background: #dbeafe; }
+  .btn-detail { background: #f5f3ff; border-color: #c4b5fd; color: #5b21b6; }
+  .btn-detail:hover { background: #ede9fe; }
+  .empty-state { text-align: center; padding: 40px; color: #aaa; border: 2px dashed #e0e0e0; border-radius: 10px; }
+  .empty-state .icon { font-size: 36px; margin-bottom: 10px; }
+
+  /* ── MODALS ── */
+  .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 100; align-items: center; justify-content: center; }
+  .modal-overlay.open { display: flex; }
+  .modal { background: #fff; border-radius: 12px; padding: 22px; width: 500px; max-width: 95vw; max-height: 88vh; overflow-y: auto; box-shadow: 0 20px 60px rgba(0,0,0,0.2); }
+  .modal h2 { font-size: 17px; font-weight: 800; margin-bottom: 18px; padding-bottom: 12px; border-bottom: 2px solid #FFE600; }
+  .form-group { margin-bottom: 12px; }
+  .form-group label { display: block; font-size: 11px; font-weight: 700; margin-bottom: 5px; text-transform: uppercase; color: #555; }
+  .form-group input, .form-group textarea, .form-group select { width: 100%; padding: 8px 11px; border: 1.5px solid #e0e0e0; border-radius: 6px; font-size: 13px; outline: none; }
+  .form-group input:focus, .form-group textarea:focus, .form-group select:focus { border-color: #FFE600; }
+  .form-group textarea { height: 70px; resize: vertical; }
+  .form-row { display: flex; gap: 10px; }
+  .form-row .form-group { flex: 1; }
+  .modal-footer { display: flex; gap: 8px; justify-content: flex-end; margin-top: 18px; }
+  .btn-primary { background: #FFE600; border: 2px solid #333; padding: 8px 20px; border-radius: 6px; font-weight: 700; font-size: 13px; cursor: pointer; }
+  .btn-cancel { background: #fff; border: 1.5px solid #ccc; padding: 8px 20px; border-radius: 6px; font-size: 13px; cursor: pointer; }
+  .status-selector { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 6px; }
+  .status-opt { padding: 5px 13px; border-radius: 20px; font-size: 12px; font-weight: 700; cursor: pointer; border: 2px solid transparent; opacity: 0.6; }
+  .status-opt:hover, .status-opt.selected { opacity: 1; border-color: #333; }
+  .status-opt.pendiente { background: #FEF3C7; color: #92400E; }
+  .status-opt.curso { background: #DBEAFE; color: #1E40AF; }
+  .status-opt.realizada { background: #D1FAE5; color: #065F46; }
+  .status-opt.cancelada { background: #FEE2E2; color: #991B1B; }
+  .hint { font-size: 11px; color: #888; margin-top: 4px; }
+  .alert-box { background: #fffbeb; border: 1px solid #fcd34d; border-radius: 8px; padding: 12px 14px; font-size: 12px; color: #78350f; margin-bottom: 14px; line-height: 1.6; }
+
+  /* ── DRAWER ── */
+  .drawer-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.4); z-index: 200; }
+  .drawer-overlay.open { display: block; }
+  .drawer { position: fixed; top: 0; right: -620px; width: 600px; max-width: 96vw; height: 100vh; background: #fff; box-shadow: -8px 0 40px rgba(0,0,0,0.18); z-index: 201; display: flex; flex-direction: column; transition: right 0.3s cubic-bezier(.4,0,.2,1); overflow: hidden; }
+  .drawer.open { right: 0; }
+  .drawer-header { padding: 18px 20px 14px; border-bottom: 1px solid #e8e8e8; flex-shrink: 0; background: #fff; }
+  .drawer-header-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; }
+  .drawer-plan-title { font-size: 16px; font-weight: 800; flex: 1; line-height: 1.3; }
+  .drawer-close { background: none; border: none; font-size: 20px; cursor: pointer; color: #888; padding: 2px 6px; border-radius: 4px; }
+  .drawer-close:hover { background: #f3f4f6; color: #333; }
+  .drawer-meta { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; align-items: center; }
+  .drawer-subtitle { font-size: 12px; color: #888; font-style: italic; margin-top: 4px; }
+  .drawer-status-row { display: flex; gap: 6px; margin-top: 12px; flex-wrap: wrap; align-items: center; }
+  .drawer-status-label { font-size: 11px; font-weight: 700; color: #888; text-transform: uppercase; }
+  .ds-opt { padding: 4px 12px; border-radius: 20px; font-size: 11px; font-weight: 700; cursor: pointer; border: 2px solid transparent; opacity: 0.5; transition: all 0.15s; }
+  .ds-opt:hover { opacity: 0.85; }
+  .ds-opt.active { opacity: 1; border-color: #333; }
+  .ds-opt.pendiente { background: #FEF3C7; color: #92400E; }
+  .ds-opt.curso { background: #DBEAFE; color: #1E40AF; }
+  .ds-opt.realizada { background: #D1FAE5; color: #065F46; }
+  .ds-opt.cancelada { background: #FEE2E2; color: #991B1B; }
+  .drawer-body { flex: 1; overflow-y: auto; display: flex; flex-direction: column; }
+  .drawer-tabs { display: flex; border-bottom: 2px solid #e8e8e8; background: #fafafa; flex-shrink: 0; }
+  .dtab { padding: 10px 18px; font-size: 13px; font-weight: 600; cursor: pointer; border-bottom: 3px solid transparent; margin-bottom: -2px; color: #888; }
+  .dtab.active { color: #333; border-bottom-color: #FFE600; background: #fff; }
+  .drawer-tab-content { display: none; padding: 18px 20px; flex: 1; }
+  .drawer-tab-content.active { display: block; }
+
+  /* ── TIMELINE ── */
+  .timeline { display: flex; flex-direction: column; gap: 0; }
+  .timeline-item { display: flex; gap: 12px; position: relative; padding-bottom: 20px; }
+  .timeline-item:last-child { padding-bottom: 0; }
+  .timeline-line { display: flex; flex-direction: column; align-items: center; flex-shrink: 0; }
+  .tl-dot { width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0; border: 2px solid #e8e8e8; background: #fff; }
+  .tl-dot.comment { background: #ede9fe; border-color: #c4b5fd; }
+  .tl-dot.image { background: #dbeafe; border-color: #93c5fd; }
+  .tl-dot.status { background: #d1fae5; border-color: #6ee7b7; }
+  .tl-dot.created { background: #FEF3C7; border-color: #fcd34d; }
+  .tl-connector { width: 2px; flex: 1; background: #e8e8e8; margin-top: 4px; }
+  .timeline-item:last-child .tl-connector { display: none; }
+  .tl-content { flex: 1; padding-bottom: 4px; }
+  .tl-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px; }
+  .tl-author { font-size: 12px; font-weight: 700; color: #333; }
+  .tl-date { font-size: 11px; color: #aaa; }
+  .tl-text { font-size: 13px; color: #555; line-height: 1.5; background: #f9f9f9; padding: 10px 12px; border-radius: 8px; border: 1px solid #e8e8e8; }
+  .tl-imgs { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+  .tl-img { width: 80px; height: 80px; object-fit: cover; border-radius: 8px; border: 1px solid #e0e0e0; cursor: pointer; transition: transform 0.15s; }
+  .tl-img:hover { transform: scale(1.05); }
+
+  /* ── ADD UPDATE ── */
+  .add-update-box { background: #f9f9f9; border-radius: 10px; border: 1px solid #e8e8e8; padding: 16px; margin-top: 20px; }
+  .add-update-box h4 { font-size: 13px; font-weight: 700; margin-bottom: 12px; color: #333; }
+  .update-textarea { width: 100%; padding: 10px 12px; border: 1.5px solid #e0e0e0; border-radius: 8px; font-size: 13px; resize: vertical; min-height: 80px; outline: none; }
+  .update-textarea:focus { border-color: #FFE600; }
+  .update-author { width: 100%; padding: 8px 12px; border: 1.5px solid #e0e0e0; border-radius: 8px; font-size: 13px; outline: none; margin-bottom: 10px; }
+  .update-author:focus { border-color: #FFE600; }
+  .update-actions { display: flex; gap: 8px; margin-top: 10px; align-items: center; flex-wrap: wrap; }
+  .btn-attach { padding: 6px 14px; border: 1.5px solid #c4b5fd; border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer; background: #f5f3ff; color: #5b21b6; }
+  .btn-attach:hover { background: #ede9fe; }
+  .btn-submit-update { background: #FFE600; border: 2px solid #333; padding: 7px 18px; border-radius: 6px; font-weight: 700; font-size: 13px; cursor: pointer; margin-left: auto; }
+  .btn-submit-update:hover { background: #f0d800; }
+  .attach-preview { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
+  .attach-thumb { position: relative; }
+  .attach-thumb img { width: 56px; height: 56px; object-fit: cover; border-radius: 6px; border: 1px solid #e0e0e0; }
+  .attach-remove { position: absolute; top: -4px; right: -4px; width: 16px; height: 16px; border-radius: 50%; background: #ef4444; color: #fff; border: none; font-size: 10px; cursor: pointer; }
+  .no-updates { text-align: center; padding: 30px; color: #bbb; font-size: 13px; }
+
+  /* ── INFO TAB ── */
+  .info-grid { display: flex; flex-direction: column; gap: 12px; }
+  .info-row { display: flex; gap: 8px; align-items: flex-start; font-size: 13px; }
+  .info-label { font-weight: 700; color: #888; min-width: 120px; font-size: 12px; text-transform: uppercase; }
+  .info-val { color: #333; flex: 1; }
+  .info-desc { background: #f9f9f9; padding: 12px; border-radius: 8px; border: 1px solid #e8e8e8; font-size: 13px; color: #555; line-height: 1.6; margin-top: 4px; }
+
+  /* ── LIGHTBOX ── */
+  .lightbox { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.85); z-index: 300; align-items: center; justify-content: center; }
+  .lightbox.open { display: flex; }
+  .lightbox img { max-width: 90vw; max-height: 88vh; border-radius: 8px; }
+  .lightbox-close { position: fixed; top: 20px; right: 24px; color: #fff; font-size: 28px; cursor: pointer; background: none; border: none; }
+
+  /* ── TOAST ── */
+  .toast { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%) translateY(80px); background: #333; color: #fff; padding: 10px 20px; border-radius: 8px; font-size: 13px; font-weight: 600; z-index: 400; transition: transform 0.3s; pointer-events: none; }
+  .toast.show { transform: translateX(-50%) translateY(0); }
+  .toast.success { background: #10B981; }
+  .toast.error { background: #EF4444; }
+
+  /* ── LOADING ── */
+  .loading-bar { position: fixed; top: 0; left: 0; width: 0; height: 3px; background: #2563EB; z-index: 500; transition: width 0.3s; }
+  .spinner { display: inline-block; width: 14px; height: 14px; border: 2px solid rgba(255,255,0,0.3); border-top-color: #FFE600; border-radius: 50%; animation: spin 0.7s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+</style>
+</head>
+<body>
+
+<!-- LOADING BAR -->
+<div class="loading-bar" id="loadingBar"></div>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="header-left">
+    <div class="logo">SVC Munro <span>SBU3</span></div>
+    <div class="badge">TIER 2</div>
+  </div>
+  <div class="header-right">
+    <div class="save-info" id="saveInfo">Cargando datos...</div>
+    <button class="btn-save" id="btnSave" onclick="saveToGitHub()" disabled>
+      💾 Guardar
+    </button>
+    <button class="btn-config" onclick="openConfig()">⚙️</button>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="stats-bar">
+  <div class="stat-card total" onclick="quickFilter('')"><div class="num" id="statTotal">0</div><div class="label">Total</div></div>
+  <div class="stat-card pendiente" onclick="quickFilter('pendiente')"><div class="num" id="statPend">0</div><div class="label">Pendiente</div></div>
+  <div class="stat-card curso" onclick="quickFilter('curso')"><div class="num" id="statCurso">0</div><div class="label">En Curso</div></div>
+  <div class="stat-card realizada" onclick="quickFilter('realizada')"><div class="num" id="statReal">0</div><div class="label">Realizadas</div></div>
+  <div class="stat-card cancelada" onclick="quickFilter('cancelada')"><div class="num" id="statCanc">0</div><div class="label">Canceladas</div></div>
+</div>
+
+<!-- TABS -->
+<div class="tabs">
+  <div class="tab active" onclick="switchTab('dashboard',this)">📊 Dashboard</div>
+  <div class="tab" onclick="switchTab('planes',this)">📋 Planes de Acción</div>
+</div>
+
+<div class="content">
+
+  <!-- DASHBOARD -->
+  <div class="section active" id="sec-dashboard">
+    <div class="dashboard-grid">
+      <div class="chart-box"><h3>📊 Planes por Materia</h3><div class="chart-container"><canvas id="chartMateria"></canvas></div></div>
+      <div class="chart-box"><h3>🎯 Distribución por Status</h3><div class="chart-container"><canvas id="chartStatus"></canvas></div></div>
+      <div class="chart-box full"><h3>🔥 Demanda por Materia y Status</h3><div class="chart-container"><canvas id="chartDemanda"></canvas></div></div>
+      <div class="chart-box full"><h3>👤 Planes por Responsable</h3><div class="chart-container" style="height:180px"><canvas id="chartResp"></canvas></div></div>
+    </div>
+  </div>
+
+  <!-- PLANES -->
+  <div class="section" id="sec-planes">
+    <div class="planes-toolbar">
+      <div class="filter-group"><label>Materia</label>
+        <select id="filt-materia" onchange="renderPlanes()">
+          <option value="">Todas</option>
+          <option value="Operación">⚙️ Operación</option>
+          <option value="SHE">🦺 SHE</option>
+          <option value="5S">🧹 5S</option>
+          <option value="Mantenimiento">🔧 Mantenimiento</option>
+        </select>
+      </div>
+      <div class="filter-group"><label>Status</label>
+        <select id="filt-status" onchange="renderPlanes()">
+          <option value="">Todos</option>
+          <option value="pendiente">⏳ Pendiente</option>
+          <option value="curso">🔄 En Curso</option>
+          <option value="realizada">✅ Realizada</option>
+          <option value="cancelada">❌ Cancelada</option>
+        </select>
+      </div>
+      <div class="filter-group"><label>Responsable</label>
+        <select id="filt-resp" onchange="renderPlanes()"><option value="">Todos</option></select>
+      </div>
+      <div class="filter-group"><label>Buscar</label>
+        <input type="text" id="filt-text" placeholder="Título o descripción..." oninput="renderPlanes()">
+      </div>
+      <button class="btn-reset" onclick="resetFilters()">✕ Limpiar</button>
+      <div class="toolbar-spacer"></div>
+      <button class="btn-add" onclick="openModal()">+ Nuevo Plan</button>
+    </div>
+    <div class="results-count" id="resultsCount"></div>
+    <div class="plans-list" id="list-planes"></div>
+  </div>
+
+</div>
+
+<!-- MODAL NUEVO PLAN -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal">
+    <h2>Nuevo Plan de Acción</h2>
+    <div class="form-group"><label>📌 Título del Plan *</label><input type="text" id="fTitle" placeholder="Ej: Revisión proceso de paletizado"></div>
+    <div class="form-group"><label>🏷️ Subtítulo / Señalización</label><input type="text" id="fSubtitle" placeholder="Ej: Turno noche · Zona descarga"></div>
+    <div class="form-group"><label>📝 Descripción / Dolor detectado</label><textarea id="fDesc" placeholder="Describí el problema o situación..."></textarea></div>
+    <div class="form-row">
+      <div class="form-group"><label>👤 Responsable *</label><input type="text" id="fResp" placeholder="Nombre del responsable"></div>
+      <div class="form-group"><label>🏭 Área / Materia *</label>
+        <select id="fMateria">
+          <option value="">Seleccionar...</option>
+          <option value="Operación">⚙️ Operación</option>
+          <option value="SHE">🦺 SHE</option>
+          <option value="5S">🧹 5S</option>
+          <option value="Mantenimiento">🔧 Mantenimiento</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group"><label>📅 Plazo Objetivo</label><input type="date" id="fFecha"></div>
+    <div class="form-group"><label>🔄 Status inicial</label>
+      <div class="status-selector">
+        <div class="status-opt pendiente selected" onclick="selectStatus('pendiente')">⏳ Pendiente</div>
+        <div class="status-opt curso" onclick="selectStatus('curso')">🔄 En Curso</div>
+        <div class="status-opt realizada" onclick="selectStatus('realizada')">✅ Realizada</div>
+        <div class="status-opt cancelada" onclick="selectStatus('cancelada')">❌ Cancelada</div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn-cancel" onclick="closeModal()">Cancelar</button>
+      <button class="btn-primary" onclick="savePlan()">Guardar Plan</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL CONFIGURACIÓN -->
+<div class="modal-overlay" id="configOverlay">
+  <div class="modal">
+    <h2>⚙️ Configuración GitHub</h2>
+    <div class="alert-box">
+      Estos datos conectan la página con tu repositorio de GitHub para guardar y cargar los planes de acción. Se almacenan solo en <strong>este navegador</strong> y nunca se comparten.
+    </div>
+    <div class="form-group">
+      <label>👤 Usuario de GitHub</label>
+      <input type="text" id="cfgUser" placeholder="Ej: patocasla3533">
+    </div>
+    <div class="form-group">
+      <label>📁 Nombre del Repositorio</label>
+      <input type="text" id="cfgRepo" placeholder="Ej: tier2-munro">
+    </div>
+    <div class="form-group">
+      <label>🔑 Personal Access Token (PAT)</label>
+      <input type="password" id="cfgToken" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx">
+      <div class="hint">Necesita permiso de escritura en el repo. <a href="https://github.com/settings/tokens/new" target="_blank">Crear token →</a></div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn-cancel" onclick="closeConfig()">Cancelar</button>
+      <button class="btn-primary" onclick="saveConfig()">Guardar configuración</button>
+    </div>
+  </div>
+</div>
+
+<!-- DRAWER DETALLE -->
+<div class="drawer-overlay" id="drawerOverlay" onclick="closeDrawer()"></div>
+<div class="drawer" id="drawer">
+  <div class="drawer-header">
+    <div class="drawer-header-top">
+      <div>
+        <div class="drawer-plan-title" id="dTitle"></div>
+        <div class="drawer-subtitle" id="dSubtitle"></div>
+      </div>
+      <button class="drawer-close" onclick="closeDrawer()">✕</button>
+    </div>
+    <div class="drawer-meta" id="dMeta"></div>
+    <div class="drawer-status-row">
+      <span class="drawer-status-label">Status:</span>
+      <div class="ds-opt pendiente" onclick="setDrawerStatus('pendiente')">⏳ Pendiente</div>
+      <div class="ds-opt curso" onclick="setDrawerStatus('curso')">🔄 En Curso</div>
+      <div class="ds-opt realizada" onclick="setDrawerStatus('realizada')">✅ Realizada</div>
+      <div class="ds-opt cancelada" onclick="setDrawerStatus('cancelada')">❌ Cancelada</div>
+    </div>
+  </div>
+  <div class="drawer-tabs">
+    <div class="dtab active" onclick="switchDTab('progreso',this)">📈 Progreso & Updates</div>
+    <div class="dtab" onclick="switchDTab('info',this)">📄 Información</div>
+  </div>
+  <div class="drawer-body">
+    <div class="drawer-tab-content active" id="dtab-progreso">
+      <div class="timeline" id="timeline"></div>
+      <div class="add-update-box">
+        <h4>➕ Agregar Update</h4>
+        <input type="text" class="update-author" id="updateAuthor" placeholder="Tu nombre / quién reporta">
+        <textarea class="update-textarea" id="updateText" placeholder="Escribí el avance, comentario o novedad del plan..."></textarea>
+        <div class="attach-preview" id="attachPreview"></div>
+        <div class="update-actions">
+          <button class="btn-attach" onclick="document.getElementById('updateFiles').click()">📎 Adjuntar imágenes</button>
+          <input type="file" id="updateFiles" multiple accept="image/*" style="display:none" onchange="handleUpdateFiles(event)">
+          <button class="btn-submit-update" onclick="submitUpdate()">Publicar Update</button>
+        </div>
+      </div>
+    </div>
+    <div class="drawer-tab-content" id="dtab-info">
+      <div class="info-grid" id="infoGrid"></div>
+    </div>
+  </div>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+  <img id="lightboxImg" src="">
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<script>
+// ═══════════════════════════════════════════════
+//  CONSTANTES
+// ═══════════════════════════════════════════════
+const statusLabel  = {pendiente:'⏳ Pendiente',curso:'🔄 En Curso',realizada:'✅ Realizada',cancelada:'❌ Cancelada'};
+const statusColors = {pendiente:'#F59E0B',curso:'#3B82F6',realizada:'#10B981',cancelada:'#EF4444'};
+const statusNames  = {pendiente:'Pendiente',curso:'En Curso',realizada:'Realizada',cancelada:'Cancelada'};
+const materias     = ['Operación','SHE','5S','Mantenimiento'];
+const statuses     = ['pendiente','curso','realizada','cancelada'];
+
+// ═══════════════════════════════════════════════
+//  ESTADO
+// ═══════════════════════════════════════════════
+let plans = [];
+let nextId = 1;
+let currentStatus = 'pendiente';
+let pendingUpdateFiles = [];
+let activeDrawerPlanId = null;
+let charts = {};
+let currentFileSha = null;  // SHA del data.json en GitHub (necesario para actualizar)
+let hasUnsavedChanges = false;
+
+// ═══════════════════════════════════════════════
+//  CONFIG (guardada en localStorage del browser)
+// ═══════════════════════════════════════════════
+function getConfig() {
+  return {
+    user:  localStorage.getItem('t2_gh_user')  || '',
+    repo:  localStorage.getItem('t2_gh_repo')  || '',
+    token: localStorage.getItem('t2_gh_token') || ''
+  };
+}
+function openConfig() {
+  const c = getConfig();
+  document.getElementById('cfgUser').value  = c.user;
+  document.getElementById('cfgRepo').value  = c.repo;
+  document.getElementById('cfgToken').value = c.token;
+  document.getElementById('configOverlay').classList.add('open');
+}
+function closeConfig() { document.getElementById('configOverlay').classList.remove('open'); }
+function saveConfig() {
+  const user  = document.getElementById('cfgUser').value.trim();
+  const repo  = document.getElementById('cfgRepo').value.trim();
+  const token = document.getElementById('cfgToken').value.trim();
+  if (!user || !repo || !token) { alert('Completá todos los campos.'); return; }
+  localStorage.setItem('t2_gh_user',  user);
+  localStorage.setItem('t2_gh_repo',  repo);
+  localStorage.setItem('t2_gh_token', token);
+  closeConfig();
+  showToast('Configuración guardada ✓', 'success');
+  loadFromGitHub();
+}
+
+// ═══════════════════════════════════════════════
+//  GITHUB API — CARGAR
+// ═══════════════════════════════════════════════
+async function loadFromGitHub() {
+  const c = getConfig();
+  setLoading(true);
+
+  if (!c.user || !c.repo || !c.token) {
+    document.getElementById('saveInfo').textContent = 'Sin configurar — presioná ⚙️';
+    document.getElementById('btnSave').disabled = true;
+    setLoading(false);
+    openConfig();
+    return;
+  }
+
+  try {
+    const res = await fetch(
+      `https://api.github.com/repos/${c.user}/${c.repo}/contents/data.json`,
+      { headers: { Authorization: `token ${c.token}`, Accept: 'application/vnd.github.v3+json' } }
+    );
+
+    if (res.status === 404) {
+      // Archivo no existe aún → empezamos vacíos
+      plans = []; nextId = 1; currentFileSha = null;
+      updateStats(); renderCharts(); renderPlanes();
+      document.getElementById('saveInfo').textContent = 'Repositorio vacío — listo para usar';
+      document.getElementById('btnSave').disabled = false;
+      setLoading(false);
+      return;
+    }
+
+    if (!res.ok) throw new Error(`Error ${res.status}`);
+
+    const json = await res.json();
+    currentFileSha = json.sha;
+    const decoded = JSON.parse(atob(json.content.replace(/\n/g,'')));
+    plans = decoded.plans || [];
+    nextId = decoded.nextId || (plans.length ? Math.max(...plans.map(p=>p.id))+1 : 1);
+    hasUnsavedChanges = false;
+    updateStats(); renderCharts(); renderPlanes();
+
+    const ts = decoded.savedAt ? `Últ. guardado: ${decoded.savedAt}` : 'Datos cargados de GitHub';
+    document.getElementById('saveInfo').textContent = ts;
+    document.getElementById('btnSave').disabled = false;
+    setLoading(false);
+
+  } catch(e) {
+    setLoading(false);
+    showToast('Error al cargar datos: ' + e.message, 'error');
+    document.getElementById('saveInfo').textContent = 'Error al cargar — revisá la configuración';
+  }
+}
+
+// ═══════════════════════════════════════════════
+//  GITHUB API — GUARDAR
+// ═══════════════════════════════════════════════
+async function saveToGitHub() {
+  const c = getConfig();
+  if (!c.user || !c.repo || !c.token) { openConfig(); return; }
+
+  const btn = document.getElementById('btnSave');
+  btn.disabled = true;
+  btn.innerHTML = '<span class="spinner"></span> Guardando...';
+
+  const now = new Date().toLocaleString('es-AR',{day:'2-digit',month:'2-digit',year:'numeric',hour:'2-digit',minute:'2-digit'});
+  const payload = { plans, nextId, savedAt: now };
+  const content = btoa(unescape(encodeURIComponent(JSON.stringify(payload, null, 2))));
+
+  const body = { message: `TIER2 update — ${now}`, content };
+  if (currentFileSha) body.sha = currentFileSha;
+
+  try {
+    const res = await fetch(
+      `https://api.github.com/repos/${c.user}/${c.repo}/contents/data.json`,
+      {
+        method: 'PUT',
+        headers: { Authorization: `token ${c.token}`, 'Content-Type': 'application/json' },
+        body: JSON.stringify(body)
+      }
+    );
+    if (!res.ok) {
+      const err = await res.json();
+      throw new Error(err.message || `Error ${res.status}`);
+    }
+    const json = await res.json();
+    currentFileSha = json.content.sha;
+    hasUnsavedChanges = false;
+    document.getElementById('saveInfo').textContent = `Guardado: ${now}`;
+    showToast('✅ Datos guardados en GitHub', 'success');
+  } catch(e) {
+    showToast('❌ Error al guardar: ' + e.message, 'error');
+  } finally {
+    btn.disabled = false;
+    btn.innerHTML = '💾 Guardar';
+  }
+}
+
+// ═══════════════════════════════════════════════
+//  HELPERS
+// ═══════════════════════════════════════════════
+function setLoading(v) {
+  document.getElementById('loadingBar').style.width = v ? '70%' : '0';
+}
+function showToast(msg, type='') {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.className = 'toast ' + type;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 3500);
+}
+function markDirty() {
+  hasUnsavedChanges = true;
+  document.getElementById('saveInfo').textContent = '● Cambios sin guardar';
+}
+function nowStr() {
+  return new Date().toLocaleString('es-AR',{day:'2-digit',month:'2-digit',year:'numeric',hour:'2-digit',minute:'2-digit'});
+}
+window.addEventListener('beforeunload', e => {
+  if (hasUnsavedChanges) { e.preventDefault(); e.returnValue = ''; }
+});
+
+// ═══════════════════════════════════════════════
+//  TABS PRINCIPALES
+// ═══════════════════════════════════════════════
+function switchTab(tab, el) {
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
+  el.classList.add('active');
+  document.getElementById('sec-'+tab).classList.add('active');
+  if (tab==='planes') { refreshRespFilter(); renderPlanes(); }
+  else renderCharts();
+}
+function quickFilter(status) {
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
+  document.querySelectorAll('.tab')[1].classList.add('active');
+  document.getElementById('sec-planes').classList.add('active');
+  document.getElementById('filt-status').value = status;
+  refreshRespFilter(); renderPlanes();
+}
+
+// ═══════════════════════════════════════════════
+//  FILTROS
+// ═══════════════════════════════════════════════
+function refreshRespFilter() {
+  const sel = document.getElementById('filt-resp');
+  const cur = sel.value;
+  const responsables = [...new Set(plans.map(p=>p.responsable).filter(Boolean))].sort();
+  sel.innerHTML = '<option value="">Todos</option>' + responsables.map(r=>`<option value="${r}" ${cur===r?'selected':''}>${r}</option>`).join('');
+}
+function getFiltered() {
+  const mat  = document.getElementById('filt-materia').value;
+  const st   = document.getElementById('filt-status').value;
+  const resp = document.getElementById('filt-resp').value;
+  const txt  = document.getElementById('filt-text').value.toLowerCase();
+  return plans.filter(p => {
+    if (mat  && p.materia !== mat) return false;
+    if (st   && p.status  !== st)  return false;
+    if (resp && p.responsable !== resp) return false;
+    if (txt  && !p.title.toLowerCase().includes(txt) && !(p.desc||'').toLowerCase().includes(txt)) return false;
+    return true;
+  });
+}
+function resetFilters() {
+  ['filt-materia','filt-status','filt-resp'].forEach(id=>document.getElementById(id).value='');
+  document.getElementById('filt-text').value='';
+  renderPlanes();
+}
+
+// ═══════════════════════════════════════════════
+//  RENDER PLANES
+// ═══════════════════════════════════════════════
+function renderPlanes() {
+  refreshRespFilter();
+  const filtered = getFiltered();
+  document.getElementById('resultsCount').textContent =
+    filtered.length < plans.length
+      ? `Mostrando ${filtered.length} de ${plans.length} planes`
+      : `${plans.length} plan${plans.length!==1?'es':''} de acción`;
+
+  const container = document.getElementById('list-planes');
+  if (!filtered.length) {
+    container.innerHTML = `<div class="empty-state"><div class="icon">📋</div><div>No hay planes que coincidan.<br>Ajustá los filtros o creá un plan nuevo.</div></div>`;
+    return;
+  }
+  container.innerHTML = filtered.map(p => {
+    const updCount = (p.updates||[]).filter(u=>u.type==='comment'||u.type==='image').length;
+    return `
+    <div class="plan-card ${p.status}">
+      <div class="plan-top">
+        <div class="plan-titles" onclick="openDrawer(${p.id})">
+          <div class="plan-title">${p.title}</div>
+          ${p.subtitle?`<div class="plan-subtitle">🏷️ ${p.subtitle}</div>`:''}
+        </div>
+        <div class="plan-badges">
+          <div class="materia-badge">${p.materia}</div>
+          <div class="status-badge ${p.status}">${statusLabel[p.status]}</div>
+          ${updCount>0?`<div class="updates-pill">💬 ${updCount}</div>`:''}
+        </div>
+      </div>
+      ${p.desc?`<div class="plan-desc">${p.desc}</div>`:''}
+      <div class="plan-meta">
+        <div class="meta-item">👤 ${p.responsable||'Sin asignar'}</div>
+        ${p.fecha?`<div class="meta-item">📅 Plazo: ${p.fecha}</div>`:''}
+      </div>
+      <div class="plan-actions">
+        <button class="btn-sm btn-detail" onclick="openDrawer(${p.id})">📈 Ver Progreso</button>
+        <button class="btn-sm btn-status" onclick="cycleStatus(${p.id},event)">Cambiar Status</button>
+        <button class="btn-sm danger" onclick="deletePlan(${p.id},event)">Eliminar</button>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+// ═══════════════════════════════════════════════
+//  STATS
+// ═══════════════════════════════════════════════
+function updateStats() {
+  document.getElementById('statTotal').textContent  = plans.length;
+  document.getElementById('statPend').textContent   = plans.filter(p=>p.status==='pendiente').length;
+  document.getElementById('statCurso').textContent  = plans.filter(p=>p.status==='curso').length;
+  document.getElementById('statReal').textContent   = plans.filter(p=>p.status==='realizada').length;
+  document.getElementById('statCanc').textContent   = plans.filter(p=>p.status==='cancelada').length;
+}
+
+// ═══════════════════════════════════════════════
+//  ACCIONES SOBRE PLANES
+// ═══════════════════════════════════════════════
+function cycleStatus(id, e) {
+  e && e.stopPropagation();
+  const order = ['pendiente','curso','realizada','cancelada'];
+  const plan = plans.find(p=>p.id===id);
+  const prev = statusLabel[plan.status];
+  plan.status = order[(order.indexOf(plan.status)+1)%order.length];
+  plan.updates = plan.updates||[];
+  plan.updates.push({type:'status',author:'Usuario',date:nowStr(),text:`Status cambiado de ${prev} a ${statusLabel[plan.status]}.`,images:[]});
+  renderPlanes(); updateStats(); renderCharts(); markDirty();
+  if (activeDrawerPlanId===id) renderDrawerContent(id);
+}
+function deletePlan(id, e) {
+  e && e.stopPropagation();
+  if (!confirm('¿Eliminar este plan? Esta acción no se puede deshacer.')) return;
+  plans = plans.filter(p=>p.id!==id);
+  if (activeDrawerPlanId===id) closeDrawer();
+  renderPlanes(); updateStats(); renderCharts(); markDirty();
+}
+
+// ═══════════════════════════════════════════════
+//  MODAL NUEVO PLAN
+// ═══════════════════════════════════════════════
+function openModal() {
+  currentStatus='pendiente';
+  ['fTitle','fSubtitle','fDesc','fResp'].forEach(id=>document.getElementById(id).value='');
+  document.getElementById('fFecha').value='';
+  document.getElementById('fMateria').value='';
+  document.querySelectorAll('.status-opt').forEach(o=>o.classList.remove('selected'));
+  document.querySelector('.status-opt.pendiente').classList.add('selected');
+  document.getElementById('modalOverlay').classList.add('open');
+}
+function closeModal() { document.getElementById('modalOverlay').classList.remove('open'); }
+function selectStatus(st) {
+  currentStatus=st;
+  document.querySelectorAll('.status-opt').forEach(o=>o.classList.remove('selected'));
+  document.querySelector('.status-opt.'+st).classList.add('selected');
+}
+function savePlan() {
+  const title   = document.getElementById('fTitle').value.trim();
+  const materia = document.getElementById('fMateria').value;
+  const resp    = document.getElementById('fResp').value.trim();
+  if (!title)   { alert('El título es obligatorio'); return; }
+  if (!materia) { alert('Seleccioná un área'); return; }
+  if (!resp)    { alert('El responsable es obligatorio'); return; }
+  plans.push({
+    id: nextId++, materia, title,
+    subtitle: document.getElementById('fSubtitle').value.trim(),
+    desc:     document.getElementById('fDesc').value.trim(),
+    responsable: resp,
+    fecha:    document.getElementById('fFecha').value,
+    status:   currentStatus,
+    updates: [{type:'created',author:'Sistema',date:nowStr(),text:'Plan de acción creado.'}]
+  });
+  closeModal(); renderPlanes(); updateStats(); renderCharts(); markDirty();
+}
+
+// ═══════════════════════════════════════════════
+//  DRAWER DETALLE
+// ═══════════════════════════════════════════════
+function openDrawer(id) {
+  activeDrawerPlanId = id;
+  pendingUpdateFiles = [];
+  document.getElementById('attachPreview').innerHTML = '';
+  document.getElementById('updateText').value = '';
+  renderDrawerContent(id);
+  document.getElementById('drawerOverlay').classList.add('open');
+  document.getElementById('drawer').classList.add('open');
+  document.querySelectorAll('.dtab').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.drawer-tab-content').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.dtab')[0].classList.add('active');
+  document.getElementById('dtab-progreso').classList.add('active');
+}
+function closeDrawer() {
+  document.getElementById('drawerOverlay').classList.remove('open');
+  document.getElementById('drawer').classList.remove('open');
+  activeDrawerPlanId = null;
+}
+function renderDrawerContent(id) {
+  const plan = plans.find(p=>p.id===id);
+  if (!plan) return;
+  document.getElementById('dTitle').textContent    = plan.title;
+  document.getElementById('dSubtitle').textContent = plan.subtitle ? '🏷️ ' + plan.subtitle : '';
+  document.getElementById('dMeta').innerHTML = `
+    <div class="materia-badge">${plan.materia}</div>
+    <span style="font-size:12px;color:#666">👤 ${plan.responsable||'Sin asignar'}</span>
+    ${plan.fecha?`<span style="font-size:12px;color:#666">📅 ${plan.fecha}</span>`:''}
+  `;
+  document.querySelectorAll('.ds-opt').forEach(o => o.classList.toggle('active', o.classList.contains(plan.status)));
+  renderTimeline(plan);
+  renderInfo(plan);
+}
+function setDrawerStatus(st) {
+  const plan = plans.find(p=>p.id===activeDrawerPlanId);
+  if (!plan || plan.status===st) return;
+  const prev = statusLabel[plan.status];
+  plan.status = st;
+  plan.updates = plan.updates||[];
+  plan.updates.push({type:'status',author:'Usuario',date:nowStr(),text:`Status cambiado de ${prev} a ${statusLabel[st]}.`,images:[]});
+  renderDrawerContent(activeDrawerPlanId);
+  renderPlanes(); updateStats(); renderCharts(); markDirty();
+}
+function switchDTab(tab, el) {
+  document.querySelectorAll('.dtab').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.drawer-tab-content').forEach(t=>t.classList.remove('active'));
+  el.classList.add('active');
+  document.getElementById('dtab-'+tab).classList.add('active');
+}
+
+// ═══════════════════════════════════════════════
+//  TIMELINE
+// ═══════════════════════════════════════════════
+function renderTimeline(plan) {
+  const updates = plan.updates || [];
+  const icons = {created:'🚀',comment:'💬',image:'🖼️',status:'🔄'};
+  if (!updates.length) {
+    document.getElementById('timeline').innerHTML = '<div class="no-updates">No hay updates aún.</div>';
+    return;
+  }
+  document.getElementById('timeline').innerHTML = [...updates].reverse().map(u => `
+    <div class="timeline-item">
+      <div class="timeline-line">
+        <div class="tl-dot ${u.type}">${icons[u.type]||'📌'}</div>
+        <div class="tl-connector"></div>
+      </div>
+      <div class="tl-content">
+        <div class="tl-header">
+          <span class="tl-author">${u.author}</span>
+          <span class="tl-date">${u.date}</span>
+        </div>
+        <div class="tl-text">${u.text}</div>
+        ${u.images&&u.images.length?`<div class="tl-imgs">${u.images.map(img=>`<img class="tl-img" src="${img}" onclick="openLightbox('${img}')">`).join('')}</div>`:''}
+      </div>
+    </div>
+  `).join('');
+}
+function renderInfo(plan) {
+  document.getElementById('infoGrid').innerHTML = `
+    <div class="info-row"><div class="info-label">📌 Título</div><div class="info-val">${plan.title}</div></div>
+    ${plan.subtitle?`<div class="info-row"><div class="info-label">🏷️ Subtítulo</div><div class="info-val">${plan.subtitle}</div></div>`:''}
+    <div class="info-row"><div class="info-label">🏭 Materia</div><div class="info-val">${plan.materia}</div></div>
+    <div class="info-row"><div class="info-label">👤 Responsable</div><div class="info-val">${plan.responsable||'—'}</div></div>
+    <div class="info-row"><div class="info-label">📅 Plazo</div><div class="info-val">${plan.fecha||'—'}</div></div>
+    <div class="info-row"><div class="info-label">🔄 Status</div><div class="info-val"><span class="status-badge ${plan.status}">${statusLabel[plan.status]}</span></div></div>
+    ${plan.desc?`<div><div class="info-label" style="margin-bottom:6px">📝 Descripción</div><div class="info-desc">${plan.desc}</div></div>`:''}
+    <div class="info-row"><div class="info-label">💬 Updates</div><div class="info-val">${(plan.updates||[]).filter(u=>u.type==='comment'||u.type==='image').length} comentarios cargados</div></div>
+  `;
+}
+
+// ═══════════════════════════════════════════════
+//  UPDATES
+// ═══════════════════════════════════════════════
+function handleUpdateFiles(event) {
+  Array.from(event.target.files).forEach(file => {
+    const reader = new FileReader();
+    reader.onload = e => {
+      pendingUpdateFiles.push(e.target.result);
+      const idx = pendingUpdateFiles.length-1;
+      const wrap = document.createElement('div');
+      wrap.className = 'attach-thumb';
+      wrap.innerHTML = `<img src="${e.target.result}"><button class="attach-remove" onclick="removeAttach(${idx},this.parentNode)">✕</button>`;
+      document.getElementById('attachPreview').appendChild(wrap);
+    };
+    reader.readAsDataURL(file);
+  });
+}
+function removeAttach(idx, el) { pendingUpdateFiles[idx]=null; el.remove(); }
+function submitUpdate() {
+  const plan = plans.find(p=>p.id===activeDrawerPlanId);
+  if (!plan) return;
+  const text   = document.getElementById('updateText').value.trim();
+  const author = document.getElementById('updateAuthor').value.trim() || 'Equipo TIER 2';
+  const images = pendingUpdateFiles.filter(Boolean);
+  if (!text && !images.length) { alert('Escribí un comentario o adjuntá al menos una imagen.'); return; }
+  plan.updates = plan.updates||[];
+  plan.updates.push({
+    type:   images.length && !text ? 'image' : 'comment',
+    author, date: nowStr(),
+    text:   text||'Evidencia adjunta.',
+    images
+  });
+  pendingUpdateFiles=[];
+  document.getElementById('attachPreview').innerHTML='';
+  document.getElementById('updateText').value='';
+  document.getElementById('updateFiles').value='';
+  renderTimeline(plan); renderInfo(plan); renderPlanes(); markDirty();
+  showToast('Update publicado ✓', 'success');
+}
+
+// ═══════════════════════════════════════════════
+//  LIGHTBOX
+// ═══════════════════════════════════════════════
+function openLightbox(src)  { document.getElementById('lightboxImg').src=src; document.getElementById('lightbox').classList.add('open'); }
+function closeLightbox()    { document.getElementById('lightbox').classList.remove('open'); }
+
+// ═══════════════════════════════════════════════
+//  CHARTS
+// ═══════════════════════════════════════════════
+function renderCharts() {
+  const d = k => { if(charts[k]){charts[k].destroy();delete charts[k];} };
+
+  d('materia');
+  charts.materia = new Chart(document.getElementById('chartMateria'),{
+    type:'bar',
+    data:{labels:materias,datasets:[{data:materias.map(m=>plans.filter(p=>p.materia===m).length),backgroundColor:['#3B82F6','#F59E0B','#10B981','#EF4444'],borderRadius:6}]},
+    options:{plugins:{legend:{display:false}},scales:{y:{beginAtZero:true,ticks:{stepSize:1}}},responsive:true,maintainAspectRatio:false}
+  });
+  d('status');
+  charts.status = new Chart(document.getElementById('chartStatus'),{
+    type:'doughnut',
+    data:{labels:statuses.map(s=>statusNames[s]),datasets:[{data:statuses.map(s=>plans.filter(p=>p.status===s).length),backgroundColor:statuses.map(s=>statusColors[s]),borderWidth:2}]},
+    options:{plugins:{legend:{position:'bottom',labels:{font:{size:11}}}},responsive:true,maintainAspectRatio:false}
+  });
+  d('demanda');
+  charts.demanda = new Chart(document.getElementById('chartDemanda'),{
+    type:'bar',
+    data:{labels:materias,datasets:statuses.map(s=>({label:statusNames[s],data:materias.map(m=>plans.filter(p=>p.materia===m&&p.status===s).length),backgroundColor:statusColors[s],borderRadius:4}))},
+    options:{plugins:{legend:{position:'bottom',labels:{font:{size:11}}}},scales:{x:{stacked:true},y:{stacked:true,beginAtZero:true,ticks:{stepSize:1}}},responsive:true,maintainAspectRatio:false}
+  });
+  d('resp');
+  const responsables=[...new Set(plans.map(p=>p.responsable).filter(Boolean))].sort();
+  charts.resp = new Chart(document.getElementById('chartResp'),{
+    type:'bar',
+    data:{labels:responsables,datasets:statuses.map(s=>({label:statusNames[s],data:responsables.map(r=>plans.filter(p=>p.responsable===r&&p.status===s).length),backgroundColor:statusColors[s],borderRadius:4}))},
+    options:{plugins:{legend:{position:'bottom',labels:{font:{size:11}}}},scales:{x:{stacked:true},y:{stacked:true,beginAtZero:true,ticks:{stepSize:1}}},responsive:true,maintainAspectRatio:false}
+  });
+}
+
+// ═══════════════════════════════════════════════
+//  INIT
+// ═══════════════════════════════════════════════
+document.getElementById('modalOverlay').addEventListener('click',  e=>{if(e.target===e.currentTarget)closeModal();});
+document.getElementById('configOverlay').addEventListener('click', e=>{if(e.target===e.currentTarget)closeConfig();});
+
+loadFromGitHub();  // ← Al abrir la página, carga datos de GitHub automáticamente
+</script>
+</body>
+</html>
