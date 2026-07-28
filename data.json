@@ -53,9 +53,45 @@
           "text": "Plan de acción creado."
         }
       ]
+    },
+    {
+      "id": 4,
+      "materia": "Operación",
+      "title": "Q posiciones de oversize",
+      "subtitle": "",
+      "desc": "Entender hasta cuantas posiciones Munro puede tener de Oversize respetando los estandares de calidad",
+      "responsable": "Tamara y Nicolas",
+      "fecha": "2026-08-29",
+      "status": "pendiente",
+      "updates": [
+        {
+          "type": "created",
+          "author": "Sistema",
+          "date": "28/07/2026, 09:52 a. m.",
+          "text": "Plan de acción creado."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "materia": "Operación",
+      "title": "Meli extra PM",
+      "subtitle": "",
+      "desc": "-Evaluar ETA proxima semana en funcion al FCST\n-Definir tolerancia de espera para suplantar por MLP",
+      "responsable": "Alex",
+      "fecha": "2026-07-30",
+      "status": "pendiente",
+      "updates": [
+        {
+          "type": "created",
+          "author": "Sistema",
+          "date": "28/07/2026, 10:06 a. m.",
+          "text": "Plan de acción creado."
+        }
+      ]
     }
   ],
-  "nextId": 4,
+  "nextId": 6,
   "inventoryData": {
     "Operativo__Conveyor": {
       "op": 1,
@@ -747,5 +783,5 @@
       }
     }
   ],
-  "savedAt": "28/07/2026, 09:50 a. m."
+  "savedAt": "28/07/2026, 10:33 a. m."
 }
