@@ -1,6 +1,43 @@
 {
-  "plans": [],
-  "nextId": 1,
+  "plans": [
+    {
+      "id": 1,
+      "materia": "Operación",
+      "title": "Transicion HH",
+      "subtitle": "Debemos planificar una transicion trazable entre la convivencia de los ciclos para las HH",
+      "desc": "-Colgantes en la HH para tener en picking\n-Transicion entre AM1 y AM2 el pase de HH\n-¿Como hace ARBA01?",
+      "responsable": "Santino",
+      "fecha": "2026-08-08",
+      "status": "pendiente",
+      "updates": [
+        {
+          "type": "created",
+          "author": "Sistema",
+          "date": "28/07/2026, 09:39 a. m.",
+          "text": "Plan de acción creado."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "materia": "Mantenimiento",
+      "title": "Adecuacion de ganchos en BKs",
+      "subtitle": "Adecuar todos los ganchos en BKs",
+      "desc": "Identificar a los BKs sin ganchos y colocarlos en las islas J y K, para que gestam post AM1 los pueda adecuar.",
+      "responsable": "Aldanada",
+      "fecha": "2026-08-01",
+      "status": "curso",
+      "updates": [
+        {
+          "type": "created",
+          "author": "Sistema",
+          "date": "28/07/2026, 09:43 a. m.",
+          "text": "Plan de acción creado."
+        }
+      ]
+    }
+  ],
+  "nextId": 3,
   "inventoryData": {
     "Operativo__Conveyor": {
       "op": 1,
@@ -30,7 +67,7 @@
       "op": 0,
       "dan": 1
     },
-    "Operativo__Telescópicas": {
+    "Operativo__TelescÃ³picas": {
       "op": 0,
       "dan": 0
     },
@@ -42,15 +79,15 @@
       "op": 0,
       "dan": 0
     },
-    "Operativo__Zorras Eléctricas": {
+    "Operativo__Zorras ElÃ©ctricas": {
       "op": 0,
       "dan": 0
     },
-    "Operativo__Zorras Eléctricas (HAB)": {
+    "Operativo__Zorras ElÃ©ctricas (HAB)": {
       "op": 1,
       "dan": 0
     },
-    "Operativo__Apiladores Eléctricos": {
+    "Operativo__Apiladores ElÃ©ctricos": {
       "op": 0,
       "dan": 0
     },
@@ -94,7 +131,7 @@
       "op": 0,
       "dan": 0
     },
-    "IS__Impresoras portátiles (las chiquitas con correa)": {
+    "IS__Impresoras portÃ¡tiles (las chiquitas con correa)": {
       "op": 0,
       "dan": 0
     },
@@ -118,7 +155,7 @@
       "op": 0,
       "dan": 0
     },
-    "IS__Equipamiento sala de reunión": {
+    "IS__Equipamiento sala de reuniÃ³n": {
       "op": 0,
       "dan": 0
     },
@@ -146,7 +183,7 @@
       "op": 0,
       "dan": 0
     },
-    "Oficina__Hornos Eléctricos": {
+    "Oficina__Hornos ElÃ©ctricos": {
       "op": 0,
       "dan": 0
     },
@@ -154,11 +191,11 @@
       "op": 0,
       "dan": 0
     },
-    "SHE__Alfombra Ergonómica Etiquetador": {
+    "SHE__Alfombra ErgonÃ³mica Etiquetador": {
       "op": 0,
       "dan": 0
     },
-    "SHE__Alfombra Ergonómica Pescador": {
+    "SHE__Alfombra ErgonÃ³mica Pescador": {
       "op": 0,
       "dan": 0
     },
@@ -210,83 +247,83 @@
       "op": 0,
       "dan": 0
     },
-    "Consumibles__Bolsas N°1": {
+    "Consumibles__Bolsas NÂ°1": {
       "op": 0,
       "dan": 0
     },
-    "Consumibles__Bolsas N°2": {
+    "Consumibles__Bolsas NÂ°2": {
       "op": 0,
       "dan": 0
     },
-    "Consumibles__Bolsas N°3": {
+    "Consumibles__Bolsas NÂ°3": {
       "op": 0,
       "dan": 0
     },
-    "Consumibles__Bolsas N°3.5": {
+    "Consumibles__Bolsas NÂ°3.5": {
       "op": 0,
       "dan": 0
     },
-    "Consumibles__Bolsas N°4": {
+    "Consumibles__Bolsas NÂ°4": {
       "op": 0,
       "dan": 0
     },
-    "Consumibles__Bolsas N°5": {
+    "Consumibles__Bolsas NÂ°5": {
       "op": 0,
       "dan": 0
     },
-    "Consumibles__Bolsas N°6": {
+    "Consumibles__Bolsas NÂ°6": {
       "op": 0,
       "dan": 0
     },
-    "Consumibles__Caja N°1": {
+    "Consumibles__Caja NÂ°1": {
       "op": 0,
       "dan": 0
     },
-    "Consumibles__Caja N°2": {
+    "Consumibles__Caja NÂ°2": {
       "op": 0,
       "dan": 0
     },
-    "Consumibles__Caja N°3": {
+    "Consumibles__Caja NÂ°3": {
       "op": 0,
       "dan": 0
     },
-    "Consumibles__Caja N°4": {
+    "Consumibles__Caja NÂ°4": {
       "op": 0,
       "dan": 0
     },
-    "Consumibles__Caja N°5": {
+    "Consumibles__Caja NÂ°5": {
       "op": 0,
       "dan": 0
     },
-    "Consumibles__Caja N°6": {
+    "Consumibles__Caja NÂ°6": {
       "op": 0,
       "dan": 0
     },
-    "Consumibles__Caja N°7": {
+    "Consumibles__Caja NÂ°7": {
       "op": 0,
       "dan": 0
     },
-    "Consumibles__Caja N°8": {
+    "Consumibles__Caja NÂ°8": {
       "op": 0,
       "dan": 0
     },
-    "Consumibles__Caja N°9": {
+    "Consumibles__Caja NÂ°9": {
       "op": 0,
       "dan": 0
     },
-    "Consumibles__Caja N°10": {
+    "Consumibles__Caja NÂ°10": {
       "op": 0,
       "dan": 0
     },
-    "Consumibles__Caja N°12": {
+    "Consumibles__Caja NÂ°12": {
       "op": 0,
       "dan": 0
     },
-    "Consumibles__Caja N° V4": {
+    "Consumibles__Caja NÂ° V4": {
       "op": 0,
       "dan": 0
     },
-    "Consumibles__Caja N° V6": {
+    "Consumibles__Caja NÂ° V6": {
       "op": 0,
       "dan": 0
     },
@@ -330,11 +367,11 @@
       "op": 9,
       "dan": 9
     },
-    "Zona de descanso__Mesa plástico": {
+    "Zona de descanso__Mesa plÃ¡stico": {
       "op": 9,
       "dan": 9
     },
-    "Zona de descanso__Silla plástico": {
+    "Zona de descanso__Silla plÃ¡stico": {
       "op": 1,
       "dan": 9
     },
@@ -377,7 +414,7 @@
           "op": 0,
           "dan": 1
         },
-        "Operativo__Telescópicas": {
+        "Operativo__TelescÃ³picas": {
           "op": 0,
           "dan": 0
         },
@@ -389,15 +426,15 @@
           "op": 0,
           "dan": 0
         },
-        "Operativo__Zorras Eléctricas": {
+        "Operativo__Zorras ElÃ©ctricas": {
           "op": 0,
           "dan": 0
         },
-        "Operativo__Zorras Eléctricas (HAB)": {
+        "Operativo__Zorras ElÃ©ctricas (HAB)": {
           "op": 1,
           "dan": 0
         },
-        "Operativo__Apiladores Eléctricos": {
+        "Operativo__Apiladores ElÃ©ctricos": {
           "op": 0,
           "dan": 0
         },
@@ -441,7 +478,7 @@
           "op": 0,
           "dan": 0
         },
-        "IS__Impresoras portátiles (las chiquitas con correa)": {
+        "IS__Impresoras portÃ¡tiles (las chiquitas con correa)": {
           "op": 0,
           "dan": 0
         },
@@ -465,7 +502,7 @@
           "op": 0,
           "dan": 0
         },
-        "IS__Equipamiento sala de reunión": {
+        "IS__Equipamiento sala de reuniÃ³n": {
           "op": 0,
           "dan": 0
         },
@@ -493,7 +530,7 @@
           "op": 0,
           "dan": 0
         },
-        "Oficina__Hornos Eléctricos": {
+        "Oficina__Hornos ElÃ©ctricos": {
           "op": 0,
           "dan": 0
         },
@@ -501,11 +538,11 @@
           "op": 0,
           "dan": 0
         },
-        "SHE__Alfombra Ergonómica Etiquetador": {
+        "SHE__Alfombra ErgonÃ³mica Etiquetador": {
           "op": 0,
           "dan": 0
         },
-        "SHE__Alfombra Ergonómica Pescador": {
+        "SHE__Alfombra ErgonÃ³mica Pescador": {
           "op": 0,
           "dan": 0
         },
@@ -557,83 +594,83 @@
           "op": 0,
           "dan": 0
         },
-        "Consumibles__Bolsas N°1": {
+        "Consumibles__Bolsas NÂ°1": {
           "op": 0,
           "dan": 0
         },
-        "Consumibles__Bolsas N°2": {
+        "Consumibles__Bolsas NÂ°2": {
           "op": 0,
           "dan": 0
         },
-        "Consumibles__Bolsas N°3": {
+        "Consumibles__Bolsas NÂ°3": {
           "op": 0,
           "dan": 0
         },
-        "Consumibles__Bolsas N°3.5": {
+        "Consumibles__Bolsas NÂ°3.5": {
           "op": 0,
           "dan": 0
         },
-        "Consumibles__Bolsas N°4": {
+        "Consumibles__Bolsas NÂ°4": {
           "op": 0,
           "dan": 0
         },
-        "Consumibles__Bolsas N°5": {
+        "Consumibles__Bolsas NÂ°5": {
           "op": 0,
           "dan": 0
         },
-        "Consumibles__Bolsas N°6": {
+        "Consumibles__Bolsas NÂ°6": {
           "op": 0,
           "dan": 0
         },
-        "Consumibles__Caja N°1": {
+        "Consumibles__Caja NÂ°1": {
           "op": 0,
           "dan": 0
         },
-        "Consumibles__Caja N°2": {
+        "Consumibles__Caja NÂ°2": {
           "op": 0,
           "dan": 0
         },
-        "Consumibles__Caja N°3": {
+        "Consumibles__Caja NÂ°3": {
           "op": 0,
           "dan": 0
         },
-        "Consumibles__Caja N°4": {
+        "Consumibles__Caja NÂ°4": {
           "op": 0,
           "dan": 0
         },
-        "Consumibles__Caja N°5": {
+        "Consumibles__Caja NÂ°5": {
           "op": 0,
           "dan": 0
         },
-        "Consumibles__Caja N°6": {
+        "Consumibles__Caja NÂ°6": {
           "op": 0,
           "dan": 0
         },
-        "Consumibles__Caja N°7": {
+        "Consumibles__Caja NÂ°7": {
           "op": 0,
           "dan": 0
         },
-        "Consumibles__Caja N°8": {
+        "Consumibles__Caja NÂ°8": {
           "op": 0,
           "dan": 0
         },
-        "Consumibles__Caja N°9": {
+        "Consumibles__Caja NÂ°9": {
           "op": 0,
           "dan": 0
         },
-        "Consumibles__Caja N°10": {
+        "Consumibles__Caja NÂ°10": {
           "op": 0,
           "dan": 0
         },
-        "Consumibles__Caja N°12": {
+        "Consumibles__Caja NÂ°12": {
           "op": 0,
           "dan": 0
         },
-        "Consumibles__Caja N° V4": {
+        "Consumibles__Caja NÂ° V4": {
           "op": 0,
           "dan": 0
         },
-        "Consumibles__Caja N° V6": {
+        "Consumibles__Caja NÂ° V6": {
           "op": 0,
           "dan": 0
         },
@@ -677,11 +714,11 @@
           "op": 9,
           "dan": 9
         },
-        "Zona de descanso__Mesa plástico": {
+        "Zona de descanso__Mesa plÃ¡stico": {
           "op": 9,
           "dan": 9
         },
-        "Zona de descanso__Silla plástico": {
+        "Zona de descanso__Silla plÃ¡stico": {
           "op": 1,
           "dan": 9
         },
@@ -692,5 +729,5 @@
       }
     }
   ],
-  "savedAt": "27/07/2026, 03:47 p. m."
+  "savedAt": "28/07/2026, 09:43 a. m."
 }
