@@ -168,9 +168,34 @@
           "text": "Plan de acciÃÂ³n creado."
         }
       ]
+    },
+    {
+      "id": 6,
+      "materia": "Operación",
+      "title": "Transicion HH en los ciclos operativos",
+      "subtitle": "🏷️ Debemos planificar una transicion trazable entre la convivencia de los ciclos para las HH",
+      "desc": "-Colgantes en la HH para tener en picking -Transicion entre AM1 y AM2 el pase de HH \n-¿Como hace ARBA01?",
+      "responsable": "Santino",
+      "fecha": "2026-08-08",
+      "status": "curso",
+      "updates": [
+        {
+          "type": "created",
+          "author": "Sistema",
+          "date": "28/07/2026, 01:42 p. m.",
+          "text": "Plan de acción creado."
+        },
+        {
+          "type": "comment",
+          "author": "Santino",
+          "date": "28/07/2026, 01:42 p. m.",
+          "text": "Santi propone correa para sujetar la HH sobre todo en instancia de picking\n\nEjemplo de correa que podemos comprar desde Mercado Libre, dejo link de la publicacion: https://articulo.mercadolibre.com.ar/MLA-1617176240-correa-universal-adaptador-transparente-para-funda-celular-_JM?attributes=Dise%C3%B1o_correa_31785a33_vpp%3ATmVncm8%3D&picker=true&quantity=1",
+          "images": []
+        }
+      ]
     }
   ],
-  "nextId": 6,
+  "nextId": 7,
   "inventoryData": {
     "Operativo__Conveyor": {
       "op": 2,
@@ -514,5 +539,5 @@
     }
   },
   "inventoryHistory": [],
-  "savedAt": "28/07/2026, 12:01 p. m."
+  "savedAt": "28/07/2026, 01:42 p. m."
 }
