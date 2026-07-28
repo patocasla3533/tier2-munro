@@ -750,7 +750,12 @@ async function loadFromGitHub() {
     if (!res.ok) throw new Error(`Error ${res.status}`);
     const json = await res.json();
     currentFileSha = json.sha;
-    const decoded = JSON.parse(atob(json.content.replace(/\n/g,'')));
+    // Decode UTF-8 base64 correctly (handles accented chars like ó, á, é)
+    const base64 = json.content.replace(/\n/g,'');
+    const binaryStr = atob(base64);
+    const bytes = new Uint8Array(binaryStr.length);
+    for (let i = 0; i < binaryStr.length; i++) bytes[i] = binaryStr.charCodeAt(i);
+    const decoded = JSON.parse(new TextDecoder('utf-8').decode(bytes));
     plans            = decoded.plans            || [];
     nextId           = decoded.nextId           || (plans.length ? Math.max(...plans.map(p=>p.id))+1 : 1);
     inventoryData    = decoded.inventoryData    || {};
