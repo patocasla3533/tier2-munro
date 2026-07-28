@@ -35,9 +35,27 @@
           "text": "Plan de acción creado."
         }
       ]
+    },
+    {
+      "id": 3,
+      "materia": "5S",
+      "title": "Espacio en el site",
+      "subtitle": "Falta de espacio en el site",
+      "desc": "-Identificar los espacios con estres dentro del site y sus instancias operativas\n-Terminar de armar y almacenar los pallets en el rack\n-",
+      "responsable": "Patricio",
+      "fecha": "2026-08-15",
+      "status": "pendiente",
+      "updates": [
+        {
+          "type": "created",
+          "author": "Sistema",
+          "date": "28/07/2026, 09:50 a. m.",
+          "text": "Plan de acción creado."
+        }
+      ]
     }
   ],
-  "nextId": 3,
+  "nextId": 4,
   "inventoryData": {
     "Operativo__Conveyor": {
       "op": 1,
@@ -729,5 +747,5 @@
       }
     }
   ],
-  "savedAt": "28/07/2026, 09:43 a. m."
+  "savedAt": "28/07/2026, 09:50 a. m."
 }
