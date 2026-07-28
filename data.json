@@ -2,10 +2,10 @@
   "plans": [
     {
       "id": 1,
-      "materia": "OperaciÃ³n",
+      "materia": "OperaciÃÂ³n",
       "title": "Transicion HH",
       "subtitle": "Debemos planificar una transicion trazable entre la convivencia de los ciclos para las HH",
-      "desc": "-Colgantes en la HH para tener en picking\n-Transicion entre AM1 y AM2 el pase de HH\n-Â¿Como hace ARBA01?",
+      "desc": "-Colgantes en la HH para tener en picking\n-Transicion entre AM1 y AM2 el pase de HH\n-ÃÂ¿Como hace ARBA01?",
       "responsable": "Santino",
       "fecha": "2026-08-08",
       "status": "curso",
@@ -14,62 +14,62 @@
           "type": "created",
           "author": "Sistema",
           "date": "28/07/2026, 09:39 a. m.",
-          "text": "Plan de acciÃ³n creado."
+          "text": "Plan de acciÃÂ³n creado."
         },
         {
           "type": "status",
           "author": "Usuario",
           "date": "28/07/2026, 11:36 a. m.",
-          "text": "Status cambiado de ⏳ Pendiente a 🔄 En Curso.",
+          "text": "Status cambiado de â³ Pendiente a ð En Curso.",
           "images": []
         },
         {
           "type": "status",
           "author": "Usuario",
           "date": "28/07/2026, 11:36 a. m.",
-          "text": "Status cambiado de 🔄 En Curso a ✅ Realizada.",
+          "text": "Status cambiado de ð En Curso a â Realizada.",
           "images": []
         },
         {
           "type": "status",
           "author": "Usuario",
           "date": "28/07/2026, 11:37 a. m.",
-          "text": "Status cambiado de ✅ Realizada a ❌ Cancelada.",
+          "text": "Status cambiado de â Realizada a â Cancelada.",
           "images": []
         },
         {
           "type": "status",
           "author": "Usuario",
           "date": "28/07/2026, 11:37 a. m.",
-          "text": "Status cambiado de ❌ Cancelada a ⏳ Pendiente.",
+          "text": "Status cambiado de â Cancelada a â³ Pendiente.",
           "images": []
         },
         {
           "type": "status",
           "author": "Usuario",
           "date": "28/07/2026, 11:37 a. m.",
-          "text": "Status cambiado de ⏳ Pendiente a 🔄 En Curso.",
+          "text": "Status cambiado de â³ Pendiente a ð En Curso.",
           "images": []
         },
         {
           "type": "status",
           "author": "Usuario",
           "date": "28/07/2026, 11:37 a. m.",
-          "text": "Status cambiado de 🔄 En Curso a ✅ Realizada.",
+          "text": "Status cambiado de ð En Curso a â Realizada.",
           "images": []
         },
         {
           "type": "status",
           "author": "Usuario",
           "date": "28/07/2026, 11:37 a. m.",
-          "text": "Status cambiado de ✅ Realizada a ❌ Cancelada.",
+          "text": "Status cambiado de â Realizada a â Cancelada.",
           "images": []
         },
         {
           "type": "status",
           "author": "Usuario",
           "date": "28/07/2026, 11:37 a. m.",
-          "text": "Status cambiado de ❌ Cancelada a ⏳ Pendiente.",
+          "text": "Status cambiado de â Cancelada a â³ Pendiente.",
           "images": []
         },
         {
@@ -92,7 +92,7 @@
           "type": "status",
           "author": "Usuario",
           "date": "28/07/2026, 11:46 a. m.",
-          "text": "Status cambiado de ⏳ Pendiente a 🔄 En Curso.",
+          "text": "Status cambiado de â³ Pendiente a ð En Curso.",
           "images": []
         }
       ]
@@ -111,7 +111,7 @@
           "type": "created",
           "author": "Sistema",
           "date": "28/07/2026, 09:43 a. m.",
-          "text": "Plan de acciÃ³n creado."
+          "text": "Plan de acciÃÂ³n creado."
         }
       ]
     },
@@ -129,13 +129,13 @@
           "type": "created",
           "author": "Sistema",
           "date": "28/07/2026, 09:50 a. m.",
-          "text": "Plan de acciÃ³n creado."
+          "text": "Plan de acciÃÂ³n creado."
         }
       ]
     },
     {
       "id": 4,
-      "materia": "OperaciÃ³n",
+      "materia": "OperaciÃÂ³n",
       "title": "Q posiciones de oversize",
       "subtitle": "",
       "desc": "Entender hasta cuantas posiciones Munro puede tener de Oversize respetando los estandares de calidad",
@@ -147,13 +147,13 @@
           "type": "created",
           "author": "Sistema",
           "date": "28/07/2026, 09:52 a. m.",
-          "text": "Plan de acciÃ³n creado."
+          "text": "Plan de acciÃÂ³n creado."
         }
       ]
     },
     {
       "id": 5,
-      "materia": "OperaciÃ³n",
+      "materia": "OperaciÃÂ³n",
       "title": "Meli extra PM",
       "subtitle": "",
       "desc": "-Evaluar ETA proxima semana en funcion al FCST\n-Definir tolerancia de espera para suplantar por MLP",
@@ -165,7 +165,7 @@
           "type": "created",
           "author": "Sistema",
           "date": "28/07/2026, 10:06 a. m.",
-          "text": "Plan de acciÃ³n creado."
+          "text": "Plan de acciÃÂ³n creado."
         }
       ]
     }
@@ -200,7 +200,7 @@
       "op": 0,
       "dan": 1
     },
-    "Operativo__TelescÃÂ³picas": {
+    "Operativo__TelescÃÂÃÂ³picas": {
       "op": 0,
       "dan": 0
     },
@@ -212,15 +212,15 @@
       "op": 0,
       "dan": 0
     },
-    "Operativo__Zorras ElÃÂ©ctricas": {
+    "Operativo__Zorras ElÃÂÃÂ©ctricas": {
       "op": 0,
       "dan": 0
     },
-    "Operativo__Zorras ElÃÂ©ctricas (HAB)": {
+    "Operativo__Zorras ElÃÂÃÂ©ctricas (HAB)": {
       "op": 1,
       "dan": 0
     },
-    "Operativo__Apiladores ElÃÂ©ctricos": {
+    "Operativo__Apiladores ElÃÂÃÂ©ctricos": {
       "op": 0,
       "dan": 0
     },
@@ -264,7 +264,7 @@
       "op": 0,
       "dan": 0
     },
-    "IS__Impresoras portÃÂ¡tiles (las chiquitas con correa)": {
+    "IS__Impresoras portÃÂÃÂ¡tiles (las chiquitas con correa)": {
       "op": 0,
       "dan": 0
     },
@@ -288,7 +288,7 @@
       "op": 0,
       "dan": 0
     },
-    "IS__Equipamiento sala de reuniÃÂ³n": {
+    "IS__Equipamiento sala de reuniÃÂÃÂ³n": {
       "op": 0,
       "dan": 0
     },
@@ -316,7 +316,7 @@
       "op": 0,
       "dan": 0
     },
-    "Oficina__Hornos ElÃÂ©ctricos": {
+    "Oficina__Hornos ElÃÂÃÂ©ctricos": {
       "op": 0,
       "dan": 0
     },
@@ -324,11 +324,11 @@
       "op": 0,
       "dan": 0
     },
-    "SHE__Alfombra ErgonÃÂ³mica Etiquetador": {
+    "SHE__Alfombra ErgonÃÂÃÂ³mica Etiquetador": {
       "op": 0,
       "dan": 0
     },
-    "SHE__Alfombra ErgonÃÂ³mica Pescador": {
+    "SHE__Alfombra ErgonÃÂÃÂ³mica Pescador": {
       "op": 0,
       "dan": 0
     },
@@ -380,83 +380,83 @@
       "op": 0,
       "dan": 0
     },
-    "Consumibles__Bolsas NÃÂ°1": {
+    "Consumibles__Bolsas NÃÂÃÂ°1": {
       "op": 0,
       "dan": 0
     },
-    "Consumibles__Bolsas NÃÂ°2": {
+    "Consumibles__Bolsas NÃÂÃÂ°2": {
       "op": 0,
       "dan": 0
     },
-    "Consumibles__Bolsas NÃÂ°3": {
+    "Consumibles__Bolsas NÃÂÃÂ°3": {
       "op": 0,
       "dan": 0
     },
-    "Consumibles__Bolsas NÃÂ°3.5": {
+    "Consumibles__Bolsas NÃÂÃÂ°3.5": {
       "op": 0,
       "dan": 0
     },
-    "Consumibles__Bolsas NÃÂ°4": {
+    "Consumibles__Bolsas NÃÂÃÂ°4": {
       "op": 0,
       "dan": 0
     },
-    "Consumibles__Bolsas NÃÂ°5": {
+    "Consumibles__Bolsas NÃÂÃÂ°5": {
       "op": 0,
       "dan": 0
     },
-    "Consumibles__Bolsas NÃÂ°6": {
+    "Consumibles__Bolsas NÃÂÃÂ°6": {
       "op": 0,
       "dan": 0
     },
-    "Consumibles__Caja NÃÂ°1": {
+    "Consumibles__Caja NÃÂÃÂ°1": {
       "op": 0,
       "dan": 0
     },
-    "Consumibles__Caja NÃÂ°2": {
+    "Consumibles__Caja NÃÂÃÂ°2": {
       "op": 0,
       "dan": 0
     },
-    "Consumibles__Caja NÃÂ°3": {
+    "Consumibles__Caja NÃÂÃÂ°3": {
       "op": 0,
       "dan": 0
     },
-    "Consumibles__Caja NÃÂ°4": {
+    "Consumibles__Caja NÃÂÃÂ°4": {
       "op": 0,
       "dan": 0
     },
-    "Consumibles__Caja NÃÂ°5": {
+    "Consumibles__Caja NÃÂÃÂ°5": {
       "op": 0,
       "dan": 0
     },
-    "Consumibles__Caja NÃÂ°6": {
+    "Consumibles__Caja NÃÂÃÂ°6": {
       "op": 0,
       "dan": 0
     },
-    "Consumibles__Caja NÃÂ°7": {
+    "Consumibles__Caja NÃÂÃÂ°7": {
       "op": 0,
       "dan": 0
     },
-    "Consumibles__Caja NÃÂ°8": {
+    "Consumibles__Caja NÃÂÃÂ°8": {
       "op": 0,
       "dan": 0
     },
-    "Consumibles__Caja NÃÂ°9": {
+    "Consumibles__Caja NÃÂÃÂ°9": {
       "op": 0,
       "dan": 0
     },
-    "Consumibles__Caja NÃÂ°10": {
+    "Consumibles__Caja NÃÂÃÂ°10": {
       "op": 0,
       "dan": 0
     },
-    "Consumibles__Caja NÃÂ°12": {
+    "Consumibles__Caja NÃÂÃÂ°12": {
       "op": 0,
       "dan": 0
     },
-    "Consumibles__Caja NÃÂ° V4": {
+    "Consumibles__Caja NÃÂÃÂ° V4": {
       "op": 0,
       "dan": 0
     },
-    "Consumibles__Caja NÃÂ° V6": {
+    "Consumibles__Caja NÃÂÃÂ° V6": {
       "op": 0,
       "dan": 0
     },
@@ -500,11 +500,11 @@
       "op": 9,
       "dan": 9
     },
-    "Zona de descanso__Mesa plÃÂ¡stico": {
+    "Zona de descanso__Mesa plÃÂÃÂ¡stico": {
       "op": 9,
       "dan": 9
     },
-    "Zona de descanso__Silla plÃÂ¡stico": {
+    "Zona de descanso__Silla plÃÂÃÂ¡stico": {
       "op": 1,
       "dan": 9
     },
@@ -514,5 +514,5 @@
     }
   },
   "inventoryHistory": [],
-  "savedAt": "28/07/2026, 11:46 a. m."
+  "savedAt": "28/07/2026, 12:01 p. m."
 }
