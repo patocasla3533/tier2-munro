@@ -94,6 +94,13 @@
           "author": "Sistema",
           "date": "28/07/2026, 06:26 p. m.",
           "text": "Plan de acción creado."
+        },
+        {
+          "type": "comment",
+          "author": "Patricio",
+          "date": "28/07/2026, 06:29 p. m.",
+          "text": "-Debemos conseguir FCST de proxima semana, evaluar ops clock de semana actual, y entender si con el volumen y OC tenemos oportunidad de adelantar las ME para semana entrante",
+          "images": []
         }
       ]
     }
@@ -442,5 +449,5 @@
     }
   },
   "inventoryHistory": [],
-  "savedAt": "28/07/2026, 06:27 p. m."
+  "savedAt": "28/07/2026, 06:43 p. m."
 }
