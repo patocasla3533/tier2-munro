@@ -165,13 +165,20 @@
       "desc": "Nueva Planilla de despacho.",
       "responsable": "Santi, jere y Juan",
       "fecha": "2026-08-04",
-      "status": "pendiente",
+      "status": "curso",
       "updates": [
         {
           "type": "created",
           "author": "Sistema",
           "date": "31/07/2026, 10:52 a. m.",
           "text": "Plan de acción creado."
+        },
+        {
+          "type": "status",
+          "author": "Usuario",
+          "date": "31/07/2026, 10:57 a. m.",
+          "text": "Status cambiado de ⏳ Pendiente a 🔄 En Curso.",
+          "images": []
         }
       ]
     },
