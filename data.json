@@ -15,6 +15,13 @@
           "author": "Sistema",
           "date": "28/07/2026, 09:43 a. m.",
           "text": "Plan de acciÃÂ³n creado."
+        },
+        {
+          "type": "comment",
+          "author": "Equipo TIER 2",
+          "date": "31/07/2026, 10:45 a. m.",
+          "text": "Espera stock nuevo de ganchos. Compra maguita",
+          "images": []
         }
       ]
     },
@@ -26,13 +33,20 @@
       "desc": "-Identificar los espacios con estres dentro del site y sus instancias operativas\n-Terminar de armar y almacenar los pallets en el rack\n-",
       "responsable": "Patricio",
       "fecha": "2026-08-15",
-      "status": "pendiente",
+      "status": "curso",
       "updates": [
         {
           "type": "created",
           "author": "Sistema",
           "date": "28/07/2026, 09:50 a. m.",
           "text": "Plan de acciÃÂ³n creado."
+        },
+        {
+          "type": "status",
+          "author": "Usuario",
+          "date": "31/07/2026, 10:43 a. m.",
+          "text": "Status cambiado de ⏳ Pendiente a 🔄 En Curso.",
+          "images": []
         }
       ]
     },
@@ -69,13 +83,20 @@
       "desc": "Entender hasta cuantas posiciones Munro puede tener de Oversize respetando los estandares de calidad",
       "responsable": "Tamara",
       "fecha": "2026-08-08",
-      "status": "pendiente",
+      "status": "curso",
       "updates": [
         {
           "type": "created",
           "author": "Sistema",
           "date": "28/07/2026, 06:26 p. m.",
           "text": "Plan de acción creado."
+        },
+        {
+          "type": "status",
+          "author": "Usuario",
+          "date": "31/07/2026, 10:44 a. m.",
+          "text": "Status cambiado de ⏳ Pendiente a 🔄 En Curso.",
+          "images": []
         }
       ]
     },
@@ -87,7 +108,7 @@
       "desc": "-Evaluar ETA proxima semana en funcion al FCST -Definir tolerancia de espera para suplantar por MLP",
       "responsable": "Alex",
       "fecha": "2026-07-30",
-      "status": "pendiente",
+      "status": "realizada",
       "updates": [
         {
           "type": "created",
@@ -101,11 +122,97 @@
           "date": "28/07/2026, 06:29 p. m.",
           "text": "-Debemos conseguir FCST de proxima semana, evaluar ops clock de semana actual, y entender si con el volumen y OC tenemos oportunidad de adelantar las ME para semana entrante",
           "images": []
+        },
+        {
+          "type": "status",
+          "author": "Usuario",
+          "date": "31/07/2026, 10:44 a. m.",
+          "text": "Status cambiado de ⏳ Pendiente a 🔄 En Curso.",
+          "images": []
+        },
+        {
+          "type": "status",
+          "author": "Usuario",
+          "date": "31/07/2026, 10:50 a. m.",
+          "text": "Status cambiado de 🔄 En Curso a ✅ Realizada.",
+          "images": []
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "materia": "Operación",
+      "title": "Picking/ aduanas",
+      "subtitle": "",
+      "desc": "Realizar analisis de aduanas en despacho, impacto en picking.",
+      "responsable": "Nico",
+      "fecha": "2026-08-03",
+      "status": "pendiente",
+      "updates": [
+        {
+          "type": "created",
+          "author": "Sistema",
+          "date": "31/07/2026, 10:51 a. m.",
+          "text": "Plan de acción creado."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "materia": "Operación",
+      "title": "Planilla de despacho",
+      "subtitle": "",
+      "desc": "Nueva Planilla de despacho.",
+      "responsable": "Santi, jere y Juan",
+      "fecha": "2026-08-04",
+      "status": "pendiente",
+      "updates": [
+        {
+          "type": "created",
+          "author": "Sistema",
+          "date": "31/07/2026, 10:52 a. m.",
+          "text": "Plan de acción creado."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "materia": "5S",
+      "title": "Jaula, organización.",
+      "subtitle": "",
+      "desc": "Reorganizacion de jaula, estructuración y detalle de cada bc/roll. \nCreacion de planilla para llevar registro interno.",
+      "responsable": "Juan - Jere",
+      "fecha": "2026-07-31",
+      "status": "realizada",
+      "updates": [
+        {
+          "type": "created",
+          "author": "Sistema",
+          "date": "31/07/2026, 10:55 a. m.",
+          "text": "Plan de acción creado."
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "materia": "Operación",
+      "title": "Definir sector zona returns",
+      "subtitle": "",
+      "desc": "Definir una zona especifica para el proceso de devoluciones 2.0. Reps específicos en el puesto",
+      "responsable": "Aldana",
+      "fecha": "2026-07-31",
+      "status": "realizada",
+      "updates": [
+        {
+          "type": "created",
+          "author": "Sistema",
+          "date": "31/07/2026, 10:56 a. m.",
+          "text": "Plan de acción creado."
         }
       ]
     }
   ],
-  "nextId": 9,
+  "nextId": 13,
   "inventoryData": {
     "Operativo__Conveyor": {
       "op": 2,
@@ -449,5 +556,5 @@
     }
   },
   "inventoryHistory": [],
-  "savedAt": "28/07/2026, 06:43 p. m."
+  "savedAt": "31/07/2026, 10:57 a. m."
 }
