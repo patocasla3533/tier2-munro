@@ -83,7 +83,7 @@
       "desc": "Entender hasta cuantas posiciones Munro puede tener de Oversize respetando los estandares de calidad",
       "responsable": "Tamara",
       "fecha": "2026-08-08",
-      "status": "curso",
+      "status": "realizada",
       "updates": [
         {
           "type": "created",
@@ -96,6 +96,27 @@
           "author": "Usuario",
           "date": "31/07/2026, 10:44 a. m.",
           "text": "Status cambiado de ⏳ Pendiente a 🔄 En Curso.",
+          "images": []
+        },
+        {
+          "type": "status",
+          "author": "Usuario",
+          "date": "01/08/2026, 02:31 p. m.",
+          "text": "Status cambiado de 🔄 En Curso a ⏳ Pendiente.",
+          "images": []
+        },
+        {
+          "type": "status",
+          "author": "Usuario",
+          "date": "01/08/2026, 02:31 p. m.",
+          "text": "Status cambiado de ⏳ Pendiente a 🔄 En Curso.",
+          "images": []
+        },
+        {
+          "type": "status",
+          "author": "Usuario",
+          "date": "01/08/2026, 02:31 p. m.",
+          "text": "Status cambiado de 🔄 En Curso a ✅ Realizada.",
           "images": []
         }
       ]
@@ -252,6 +273,55 @@
           "author": "Sistema",
           "date": "31/07/2026, 10:56 a. m.",
           "text": "Plan de acción creado."
+        },
+        {
+          "type": "status",
+          "author": "Usuario",
+          "date": "01/08/2026, 02:32 p. m.",
+          "text": "Status cambiado de ✅ Realizada a 🔄 En Curso.",
+          "images": []
+        },
+        {
+          "type": "status",
+          "author": "Usuario",
+          "date": "01/08/2026, 02:32 p. m.",
+          "text": "Status cambiado de 🔄 En Curso a ⏳ Pendiente.",
+          "images": []
+        },
+        {
+          "type": "status",
+          "author": "Usuario",
+          "date": "01/08/2026, 02:32 p. m.",
+          "text": "Status cambiado de ⏳ Pendiente a ✅ Realizada.",
+          "images": []
+        },
+        {
+          "type": "status",
+          "author": "Usuario",
+          "date": "01/08/2026, 02:32 p. m.",
+          "text": "Status cambiado de ✅ Realizada a ❌ Cancelada.",
+          "images": []
+        },
+        {
+          "type": "status",
+          "author": "Usuario",
+          "date": "01/08/2026, 02:32 p. m.",
+          "text": "Status cambiado de ❌ Cancelada a ✅ Realizada.",
+          "images": []
+        },
+        {
+          "type": "status",
+          "author": "Usuario",
+          "date": "01/08/2026, 02:32 p. m.",
+          "text": "Status cambiado de ✅ Realizada a 🔄 En Curso.",
+          "images": []
+        },
+        {
+          "type": "status",
+          "author": "Usuario",
+          "date": "01/08/2026, 02:32 p. m.",
+          "text": "Status cambiado de 🔄 En Curso a ✅ Realizada.",
+          "images": []
         }
       ]
     }
@@ -259,43 +329,43 @@
   "nextId": 13,
   "inventoryData": {
     "Operativo__Conveyor": {
-      "op": 2,
+      "op": 1,
       "dan": 0
     },
     "Operativo__Baker Clasico": {
-      "op": 0,
-      "dan": 0
+      "op": 126,
+      "dan": 5
     },
     "Operativo__Baker Negros": {
-      "op": 0,
+      "op": 138,
       "dan": 0
     },
     "Operativo__Baker Pesca": {
-      "op": 0,
-      "dan": 0
+      "op": 25,
+      "dan": 1
     },
     "Operativo__Baker Voluminoso": {
-      "op": 0,
+      "op": 5,
       "dan": 0
     },
     "Operativo__Tolva GM": {
-      "op": 0,
+      "op": 4,
       "dan": 0
     },
     "Operativo__Tolva Voluminoso": {
-      "op": 0,
-      "dan": 1
+      "op": 2,
+      "dan": 0
     },
     "Operativo__TelescÃÂÃÂ³picas": {
       "op": 0,
       "dan": 0
     },
     "Operativo__Roll Containers": {
-      "op": 0,
+      "op": 53,
       "dan": 0
     },
     "Operativo__Zorras Manuales": {
-      "op": 0,
+      "op": 12,
       "dan": 0
     },
     "Operativo__Zorras ElÃÂÃÂ©ctricas": {
@@ -311,7 +381,7 @@
       "dan": 0
     },
     "Operativo__Mesas impresoras": {
-      "op": 0,
+      "op": 10,
       "dan": 0
     },
     "Operativo__Sacas": {
@@ -319,87 +389,87 @@
       "dan": 0
     },
     "Operativo__Carros H&B (zorritas para traslados)": {
-      "op": 0,
+      "op": 8,
       "dan": 0
     },
     "Operativo__Ventiladores": {
-      "op": 0,
+      "op": 17,
       "dan": 0
     },
     "Operativo__Contenedores de basura": {
-      "op": 0,
+      "op": 3,
       "dan": 0
     },
     "IS__Computadoras": {
-      "op": 0,
+      "op": 9,
       "dan": 0
     },
     "IS__Impresoras de oficina": {
-      "op": 0,
+      "op": 2,
       "dan": 0
     },
     "IS__Changuitos": {
-      "op": 0,
+      "op": 81,
       "dan": 0
     },
     "IS__Impresora ZT": {
-      "op": 0,
-      "dan": 0
+      "op": 11,
+      "dan": 1
     },
     "IS__HandHeld": {
-      "op": 0,
-      "dan": 0
+      "op": 51,
+      "dan": 2
     },
     "IS__Impresoras portÃÂÃÂ¡tiles (las chiquitas con correa)": {
       "op": 0,
       "dan": 0
     },
     "IS__Base de Carga HH": {
-      "op": 0,
+      "op": 16,
       "dan": 0
     },
     "IS__Lectoras 2D": {
-      "op": 0,
-      "dan": 0
+      "op": 9,
+      "dan": 7
     },
     "IS__Base de Carga Scanner": {
-      "op": 0,
-      "dan": 0
+      "op": 9,
+      "dan": 7
     },
     "IS__Televisores": {
-      "op": 0,
-      "dan": 0
+      "op": 1,
+      "dan": 1
     },
     "IS__Monitores": {
-      "op": 0,
-      "dan": 0
+      "op": 2,
+      "dan": 2
     },
     "IS__Equipamiento sala de reuniÃÂÃÂ³n": {
       "op": 0,
       "dan": 0
     },
     "Oficina__Cafeteras": {
-      "op": 0,
+      "op": 2,
       "dan": 0
     },
     "Oficina__Licuadoras": {
-      "op": 0,
+      "op": 1,
       "dan": 0
     },
     "Oficina__Tostadoras": {
-      "op": 0,
+      "op": 1,
       "dan": 0
     },
     "Oficina__Heladeras Grandes": {
-      "op": 0,
+      "op": 1,
       "dan": 0
     },
     "Oficina__Heladeras Chicas": {
-      "op": 0,
+      "op": 2,
       "dan": 0
     },
     "Oficina__Microondas": {
-      "op": 0,
+      "op": 1,
       "dan": 0
     },
     "Oficina__Hornos ElÃÂÃÂ©ctricos": {
@@ -407,7 +477,7 @@
       "dan": 0
     },
     "Oficina__Soda": {
-      "op": 0,
+      "op": 6,
       "dan": 0
     },
     "SHE__Alfombra ErgonÃÂÃÂ³mica Etiquetador": {
@@ -419,51 +489,51 @@
       "dan": 0
     },
     "SHE__Punteras": {
-      "op": 0,
+      "op": 34,
       "dan": 0
     },
     "SHE__Cascos": {
-      "op": 0,
+      "op": 30,
       "dan": 0
     },
     "SHE__Kit Antiderrame": {
-      "op": 0,
-      "dan": 0
+      "op": 1,
+      "dan": 1
     },
     "SHE__Lava ojos": {
-      "op": 0,
-      "dan": 0
+      "op": 1,
+      "dan": 1
     },
     "SHE__Kit de primeros auxilios": {
-      "op": 0,
+      "op": 2,
       "dan": 0
     },
     "SHE__Chalecos": {
-      "op": 0,
+      "op": 26,
       "dan": 0
     },
     "SHE__Conos": {
-      "op": 0,
+      "op": 24,
       "dan": 0
     },
     "SHE__Cadenas": {
-      "op": 0,
+      "op": 7,
       "dan": 0
     },
     "SHE__Escalera Burro": {
-      "op": 0,
+      "op": 1,
       "dan": 0
     },
     "SHE__Silla de Ruedas": {
-      "op": 0,
+      "op": 1,
       "dan": 0
     },
     "SHE__Camilla": {
-      "op": 0,
+      "op": 1,
       "dan": 0
     },
     "SHE__DEA": {
-      "op": 0,
+      "op": 1,
       "dan": 0
     },
     "Consumibles__Bolsas NÃÂÃÂ°1": {
@@ -547,11 +617,11 @@
       "dan": 0
     },
     "Consumibles__Cinta Transparente": {
-      "op": 0,
+      "op": 1,
       "dan": 0
     },
     "Consumibles__Cinta Papel": {
-      "op": 0,
+      "op": 2,
       "dan": 0
     },
     "Consumibles__Cinta Meli": {
@@ -559,32 +629,32 @@
       "dan": 0
     },
     "Consumibles__Ribbon": {
-      "op": 0,
+      "op": 312,
       "dan": 0
     },
     "Consumibles__Etiqueta de Ruta": {
-      "op": 0,
+      "op": 800,
       "dan": 0
     },
     "Consumibles__Etiqueta HU": {
-      "op": 0,
+      "op": 628,
       "dan": 0
     },
     "Consumibles__Film Strech Naranja": {
-      "op": 0,
+      "op": 78,
       "dan": 9
     },
     "Consumibles__Film Strech Transparente": {
-      "op": 9,
-      "dan": 99
+      "op": 25,
+      "dan": 0
     },
     "Consumibles__Precintos Blancos": {
-      "op": 9,
-      "dan": 1
+      "op": 0,
+      "dan": 0
     },
     "Consumibles__Precintos Amarillos": {
-      "op": 9,
-      "dan": 9
+      "op": 270,
+      "dan": 0
     },
     "Zona de descanso__Mesa plÃÂÃÂ¡stico": {
       "op": 9,
@@ -597,8 +667,128 @@
     "Zona de descanso__Lockers": {
       "op": 9,
       "dan": 9
+    },
+    "Operativo__Telescópicas": {
+      "op": 2,
+      "dan": 0
+    },
+    "Operativo__Zorras Eléctricas": {
+      "op": 0,
+      "dan": 0
+    },
+    "Operativo__Zorras Eléctricas (HAB)": {
+      "op": 1,
+      "dan": 0
+    },
+    "Operativo__Apiladores Eléctricos": {
+      "op": 1,
+      "dan": 0
+    },
+    "IS__Impresoras portátiles (las chiquitas con correa)": {
+      "op": 4,
+      "dan": 0
+    },
+    "IS__Equipamiento sala de reunión": {
+      "op": 1,
+      "dan": 1
+    },
+    "Oficina__Hornos Eléctricos": {
+      "op": 1,
+      "dan": 0
+    },
+    "SHE__Alfombra Ergonómica Pescador": {
+      "op": 2,
+      "dan": 0
+    },
+    "Consumibles__Bolsas N°1": {
+      "op": 1325,
+      "dan": 0
+    },
+    "Consumibles__Bolsas N°2": {
+      "op": 490,
+      "dan": 0
+    },
+    "Consumibles__Bolsas N°3": {
+      "op": 637,
+      "dan": 0
+    },
+    "Consumibles__Bolsas N°3.5": {
+      "op": 0,
+      "dan": 0
+    },
+    "Consumibles__Bolsas N°4": {
+      "op": 334,
+      "dan": 0
+    },
+    "Consumibles__Bolsas N°5": {
+      "op": 542,
+      "dan": 0
+    },
+    "Consumibles__Bolsas N°6": {
+      "op": 0,
+      "dan": 0
+    },
+    "Consumibles__Caja N°1": {
+      "op": 0,
+      "dan": 0
+    },
+    "Consumibles__Caja N°2": {
+      "op": 1700,
+      "dan": 0
+    },
+    "Consumibles__Caja N°3": {
+      "op": 0,
+      "dan": 0
+    },
+    "Consumibles__Caja N°4": {
+      "op": 0,
+      "dan": 0
+    },
+    "Consumibles__Caja N°5": {
+      "op": 875,
+      "dan": 0
+    },
+    "Consumibles__Caja N°6": {
+      "op": 325,
+      "dan": 0
+    },
+    "Consumibles__Caja N°7": {
+      "op": 0,
+      "dan": 0
+    },
+    "Consumibles__Caja N°8": {
+      "op": 0,
+      "dan": 0
+    },
+    "Consumibles__Caja N°9": {
+      "op": 0,
+      "dan": 0
+    },
+    "Consumibles__Caja N°10": {
+      "op": 500,
+      "dan": 0
+    },
+    "Consumibles__Caja N°12": {
+      "op": 350,
+      "dan": 0
+    },
+    "Consumibles__Caja N° V4": {
+      "op": 0,
+      "dan": 0
+    },
+    "Consumibles__Caja N° V6": {
+      "op": 0,
+      "dan": 0
+    },
+    "Zona de descanso__Mesa plástico": {
+      "op": 7,
+      "dan": 0
+    },
+    "Zona de descanso__Silla plástico": {
+      "op": 39,
+      "dan": 0
     }
   },
   "inventoryHistory": [],
-  "savedAt": "01/08/2026, 01:37 p. m."
+  "savedAt": "01/08/2026, 08:58 p. m."
 }
