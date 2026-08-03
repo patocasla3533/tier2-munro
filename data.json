@@ -787,8 +787,484 @@
     "Zona de descanso__Silla plástico": {
       "op": 39,
       "dan": 0
+    },
+    "SHE__Alfombra Ergonómica Etiquetador": {
+      "op": 6,
+      "dan": 0
     }
   },
-  "inventoryHistory": [],
-  "savedAt": "01/08/2026, 08:59 p. m."
+  "inventoryHistory": [
+    {
+      "date": "03/08/2026, 06:10 p. m.",
+      "label": "Inventario 03/08/2026, 06:10 p. m.",
+      "filled": 85,
+      "data": {
+        "Operativo__Conveyor": {
+          "op": 1,
+          "dan": 0
+        },
+        "Operativo__Baker Clasico": {
+          "op": 126,
+          "dan": 5
+        },
+        "Operativo__Baker Negros": {
+          "op": 138,
+          "dan": 0
+        },
+        "Operativo__Baker Pesca": {
+          "op": 25,
+          "dan": 1
+        },
+        "Operativo__Baker Voluminoso": {
+          "op": 5,
+          "dan": 0
+        },
+        "Operativo__Tolva GM": {
+          "op": 4,
+          "dan": 0
+        },
+        "Operativo__Tolva Voluminoso": {
+          "op": 2,
+          "dan": 0
+        },
+        "Operativo__TelescÃÂÃÂ³picas": {
+          "op": 0,
+          "dan": 0
+        },
+        "Operativo__Roll Containers": {
+          "op": 53,
+          "dan": 0
+        },
+        "Operativo__Zorras Manuales": {
+          "op": 12,
+          "dan": 0
+        },
+        "Operativo__Zorras ElÃÂÃÂ©ctricas": {
+          "op": 0,
+          "dan": 0
+        },
+        "Operativo__Zorras ElÃÂÃÂ©ctricas (HAB)": {
+          "op": 1,
+          "dan": 0
+        },
+        "Operativo__Apiladores ElÃÂÃÂ©ctricos": {
+          "op": 0,
+          "dan": 0
+        },
+        "Operativo__Mesas impresoras": {
+          "op": 10,
+          "dan": 0
+        },
+        "Operativo__Sacas": {
+          "op": 0,
+          "dan": 0
+        },
+        "Operativo__Carros H&B (zorritas para traslados)": {
+          "op": 8,
+          "dan": 0
+        },
+        "Operativo__Ventiladores": {
+          "op": 17,
+          "dan": 0
+        },
+        "Operativo__Contenedores de basura": {
+          "op": 3,
+          "dan": 0
+        },
+        "IS__Computadoras": {
+          "op": 9,
+          "dan": 0
+        },
+        "IS__Impresoras de oficina": {
+          "op": 2,
+          "dan": 0
+        },
+        "IS__Changuitos": {
+          "op": 81,
+          "dan": 0
+        },
+        "IS__Impresora ZT": {
+          "op": 11,
+          "dan": 1
+        },
+        "IS__HandHeld": {
+          "op": 51,
+          "dan": 2
+        },
+        "IS__Impresoras portÃÂÃÂ¡tiles (las chiquitas con correa)": {
+          "op": 0,
+          "dan": 0
+        },
+        "IS__Base de Carga HH": {
+          "op": 16,
+          "dan": 0
+        },
+        "IS__Lectoras 2D": {
+          "op": 9,
+          "dan": 7
+        },
+        "IS__Base de Carga Scanner": {
+          "op": 9,
+          "dan": 7
+        },
+        "IS__Televisores": {
+          "op": 1,
+          "dan": 1
+        },
+        "IS__Monitores": {
+          "op": 2,
+          "dan": 2
+        },
+        "IS__Equipamiento sala de reuniÃÂÃÂ³n": {
+          "op": 0,
+          "dan": 0
+        },
+        "Oficina__Cafeteras": {
+          "op": 2,
+          "dan": 0
+        },
+        "Oficina__Licuadoras": {
+          "op": 1,
+          "dan": 0
+        },
+        "Oficina__Tostadoras": {
+          "op": 1,
+          "dan": 0
+        },
+        "Oficina__Heladeras Grandes": {
+          "op": 1,
+          "dan": 0
+        },
+        "Oficina__Heladeras Chicas": {
+          "op": 2,
+          "dan": 0
+        },
+        "Oficina__Microondas": {
+          "op": 1,
+          "dan": 0
+        },
+        "Oficina__Hornos ElÃÂÃÂ©ctricos": {
+          "op": 0,
+          "dan": 0
+        },
+        "Oficina__Soda": {
+          "op": 6,
+          "dan": 0
+        },
+        "SHE__Alfombra ErgonÃÂÃÂ³mica Etiquetador": {
+          "op": 0,
+          "dan": 0
+        },
+        "SHE__Alfombra ErgonÃÂÃÂ³mica Pescador": {
+          "op": 0,
+          "dan": 0
+        },
+        "SHE__Punteras": {
+          "op": 34,
+          "dan": 0
+        },
+        "SHE__Cascos": {
+          "op": 30,
+          "dan": 0
+        },
+        "SHE__Kit Antiderrame": {
+          "op": 1,
+          "dan": 1
+        },
+        "SHE__Lava ojos": {
+          "op": 1,
+          "dan": 1
+        },
+        "SHE__Kit de primeros auxilios": {
+          "op": 2,
+          "dan": 0
+        },
+        "SHE__Chalecos": {
+          "op": 26,
+          "dan": 0
+        },
+        "SHE__Conos": {
+          "op": 24,
+          "dan": 0
+        },
+        "SHE__Cadenas": {
+          "op": 7,
+          "dan": 0
+        },
+        "SHE__Escalera Burro": {
+          "op": 1,
+          "dan": 0
+        },
+        "SHE__Silla de Ruedas": {
+          "op": 1,
+          "dan": 0
+        },
+        "SHE__Camilla": {
+          "op": 1,
+          "dan": 0
+        },
+        "SHE__DEA": {
+          "op": 1,
+          "dan": 0
+        },
+        "Consumibles__Bolsas NÃÂÃÂ°1": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Bolsas NÃÂÃÂ°2": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Bolsas NÃÂÃÂ°3": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Bolsas NÃÂÃÂ°3.5": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Bolsas NÃÂÃÂ°4": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Bolsas NÃÂÃÂ°5": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Bolsas NÃÂÃÂ°6": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Caja NÃÂÃÂ°1": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Caja NÃÂÃÂ°2": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Caja NÃÂÃÂ°3": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Caja NÃÂÃÂ°4": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Caja NÃÂÃÂ°5": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Caja NÃÂÃÂ°6": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Caja NÃÂÃÂ°7": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Caja NÃÂÃÂ°8": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Caja NÃÂÃÂ°9": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Caja NÃÂÃÂ°10": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Caja NÃÂÃÂ°12": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Caja NÃÂÃÂ° V4": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Caja NÃÂÃÂ° V6": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Cinta Transparente": {
+          "op": 1,
+          "dan": 0
+        },
+        "Consumibles__Cinta Papel": {
+          "op": 2,
+          "dan": 0
+        },
+        "Consumibles__Cinta Meli": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Ribbon": {
+          "op": 312,
+          "dan": 0
+        },
+        "Consumibles__Etiqueta de Ruta": {
+          "op": 800,
+          "dan": 0
+        },
+        "Consumibles__Etiqueta HU": {
+          "op": 628,
+          "dan": 0
+        },
+        "Consumibles__Film Strech Naranja": {
+          "op": 78,
+          "dan": 9
+        },
+        "Consumibles__Film Strech Transparente": {
+          "op": 25,
+          "dan": 0
+        },
+        "Consumibles__Precintos Blancos": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Precintos Amarillos": {
+          "op": 270,
+          "dan": 0
+        },
+        "Zona de descanso__Mesa plÃÂÃÂ¡stico": {
+          "op": 9,
+          "dan": 9
+        },
+        "Zona de descanso__Silla plÃÂÃÂ¡stico": {
+          "op": 1,
+          "dan": 9
+        },
+        "Zona de descanso__Lockers": {
+          "op": 9,
+          "dan": 9
+        },
+        "Operativo__Telescópicas": {
+          "op": 2,
+          "dan": 0
+        },
+        "Operativo__Zorras Eléctricas": {
+          "op": 0,
+          "dan": 0
+        },
+        "Operativo__Zorras Eléctricas (HAB)": {
+          "op": 1,
+          "dan": 0
+        },
+        "Operativo__Apiladores Eléctricos": {
+          "op": 1,
+          "dan": 0
+        },
+        "IS__Impresoras portátiles (las chiquitas con correa)": {
+          "op": 4,
+          "dan": 0
+        },
+        "IS__Equipamiento sala de reunión": {
+          "op": 1,
+          "dan": 1
+        },
+        "Oficina__Hornos Eléctricos": {
+          "op": 1,
+          "dan": 0
+        },
+        "SHE__Alfombra Ergonómica Pescador": {
+          "op": 2,
+          "dan": 0
+        },
+        "Consumibles__Bolsas N°1": {
+          "op": 1325,
+          "dan": 0
+        },
+        "Consumibles__Bolsas N°2": {
+          "op": 490,
+          "dan": 0
+        },
+        "Consumibles__Bolsas N°3": {
+          "op": 637,
+          "dan": 0
+        },
+        "Consumibles__Bolsas N°3.5": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Bolsas N°4": {
+          "op": 334,
+          "dan": 0
+        },
+        "Consumibles__Bolsas N°5": {
+          "op": 542,
+          "dan": 0
+        },
+        "Consumibles__Bolsas N°6": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Caja N°1": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Caja N°2": {
+          "op": 1700,
+          "dan": 0
+        },
+        "Consumibles__Caja N°3": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Caja N°4": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Caja N°5": {
+          "op": 875,
+          "dan": 0
+        },
+        "Consumibles__Caja N°6": {
+          "op": 325,
+          "dan": 0
+        },
+        "Consumibles__Caja N°7": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Caja N°8": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Caja N°9": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Caja N°10": {
+          "op": 500,
+          "dan": 0
+        },
+        "Consumibles__Caja N°12": {
+          "op": 350,
+          "dan": 0
+        },
+        "Consumibles__Caja N° V4": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Caja N° V6": {
+          "op": 0,
+          "dan": 0
+        },
+        "Zona de descanso__Mesa plástico": {
+          "op": 7,
+          "dan": 0
+        },
+        "Zona de descanso__Silla plástico": {
+          "op": 39,
+          "dan": 0
+        },
+        "SHE__Alfombra Ergonómica Etiquetador": {
+          "op": 6,
+          "dan": 0
+        }
+      }
+    }
+  ],
+  "savedAt": "03/08/2026, 06:10 p. m."
 }
