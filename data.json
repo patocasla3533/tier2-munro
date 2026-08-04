@@ -6,7 +6,7 @@
       "title": "Adecuacion de ganchos en BKs",
       "subtitle": "Adecuar todos los ganchos en BKs",
       "desc": "Identificar a los BKs sin ganchos y colocarlos en las islas J y K, para que gestam post AM1 los pueda adecuar.",
-      "responsable": "Aldanada",
+      "responsable": "Aldana",
       "fecha": "2026-08-01",
       "status": "curso",
       "updates": [
@@ -22,6 +22,12 @@
           "date": "31/07/2026, 10:45 a. m.",
           "text": "Espera stock nuevo de ganchos. Compra maguita",
           "images": []
+        },
+        {
+          "type": "status",
+          "author": "Sistema",
+          "date": "04/08/2026, 12:23 p. m.",
+          "text": "Plan editado. Responsable: Aldanada → Aldana."
         }
       ]
     },
@@ -1308,5 +1314,5 @@
       }
     }
   ],
-  "savedAt": "04/08/2026, 09:08 a. m."
+  "savedAt": "04/08/2026, 12:23 p. m."
 }
