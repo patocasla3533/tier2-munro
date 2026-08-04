@@ -166,7 +166,7 @@
       "title": "Picking/ aduanas",
       "subtitle": "",
       "desc": "Realizar analisis de aduanas en despacho, impacto en picking.",
-      "responsable": "Nico",
+      "responsable": "Nicolas",
       "fecha": "2026-08-03",
       "status": "pendiente",
       "updates": [
@@ -175,6 +175,12 @@
           "author": "Sistema",
           "date": "31/07/2026, 10:51 a. m.",
           "text": "Plan de acción creado."
+        },
+        {
+          "type": "status",
+          "author": "Sistema",
+          "date": "04/08/2026, 09:07 a. m.",
+          "text": "Plan editado. Responsable: Nico → Nicolas."
         }
       ]
     },
@@ -184,7 +190,7 @@
       "title": "Planilla de despacho",
       "subtitle": "",
       "desc": "Nueva Planilla de despacho.",
-      "responsable": "Santi, jere y Juan",
+      "responsable": "Santino",
       "fecha": "2026-08-04",
       "status": "curso",
       "updates": [
@@ -237,6 +243,12 @@
           "date": "01/08/2026, 12:52 p. m.",
           "text": "Status cambiado de ⏳ Pendiente a 🔄 En Curso.",
           "images": []
+        },
+        {
+          "type": "status",
+          "author": "Sistema",
+          "date": "04/08/2026, 09:07 a. m.",
+          "text": "Plan editado. Responsable: Santi, jere y Juan → Santino."
         }
       ]
     },
@@ -246,7 +258,7 @@
       "title": "Jaula, organización.",
       "subtitle": "",
       "desc": "Reorganizacion de jaula, estructuración y detalle de cada bc/roll. \nCreacion de planilla para llevar registro interno.",
-      "responsable": "Juan - Jere",
+      "responsable": "Juan",
       "fecha": "2026-07-31",
       "status": "realizada",
       "updates": [
@@ -255,6 +267,12 @@
           "author": "Sistema",
           "date": "31/07/2026, 10:55 a. m.",
           "text": "Plan de acción creado."
+        },
+        {
+          "type": "status",
+          "author": "Sistema",
+          "date": "04/08/2026, 09:07 a. m.",
+          "text": "Plan editado. Responsable: Juan - Jere → Juan."
         }
       ]
     },
@@ -331,7 +349,7 @@
       "title": "Retiros 3.0",
       "subtitle": "Proceso, reacondicionamiento y devoluciones",
       "desc": "Proceso especializado para shipments 3.0\n-Los 3.0 no pueden ni debe continuar en el flujo de devoluciones a origen. Deben continuar con el flujo de entrega al seller, sin importar el estado del mismo.",
-      "responsable": "Team FT (PS)",
+      "responsable": "Juan",
       "fecha": "2026-08-07",
       "status": "pendiente",
       "updates": [
@@ -340,6 +358,12 @@
           "author": "Sistema",
           "date": "04/08/2026, 04:17 a. m.",
           "text": "Plan de acción creado."
+        },
+        {
+          "type": "status",
+          "author": "Sistema",
+          "date": "04/08/2026, 09:07 a. m.",
+          "text": "Plan editado. Responsable: Team FT (PS) → Juan."
         }
       ]
     }
@@ -1284,5 +1308,5 @@
       }
     }
   ],
-  "savedAt": "04/08/2026, 09:01 a. m."
+  "savedAt": "04/08/2026, 09:08 a. m."
 }
