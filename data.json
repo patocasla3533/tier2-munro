@@ -7,7 +7,7 @@
       "subtitle": "Adecuar todos los ganchos en BKs",
       "desc": "Identificar a los BKs sin ganchos y colocarlos en las islas J y K, para que gestam post AM1 los pueda adecuar.",
       "responsable": "Aldana",
-      "fecha": "2026-08-01",
+      "fecha": "2026-09-19",
       "status": "curso",
       "updates": [
         {
@@ -35,6 +35,12 @@
           "date": "04/08/2026, 12:25 p. m.",
           "text": "F falta un solo gancho bk de F10 \nC4 le falta un gancho al bk \nB2 faltan 4 ganchos \nB9 falta 1 gancho \nI11 faltan 3 ganchos \n\nK3 faltan 2 ganchos \nK5 faltan 3 ganchos \nK6 faltan 7 ganchos \nK7 faltan 6 ganchos \nK8 faltan 7 ganchos \nK9 faltan 8 ganchos\nK10 faltan 9 ganchos\nK11 faltan 8 ganchos \nK12 faltan 9 ganchos",
           "images": []
+        },
+        {
+          "type": "status",
+          "author": "Sistema",
+          "date": "04/08/2026, 12:26 p. m.",
+          "text": "Plan editado."
         }
       ]
     },
@@ -1321,5 +1327,5 @@
       }
     }
   ],
-  "savedAt": "04/08/2026, 12:25 p. m."
+  "savedAt": "04/08/2026, 12:26 p. m."
 }
