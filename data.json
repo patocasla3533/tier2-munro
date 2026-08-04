@@ -392,9 +392,27 @@
           "text": "Plan editado. Responsable: Team FT (PS) → Juan."
         }
       ]
+    },
+    {
+      "id": 14,
+      "materia": "5S",
+      "title": "Logistica de sacas",
+      "subtitle": "todos los turnos",
+      "desc": "Logística inversa de Sacas, el chofer nos devuelve las sacas que se llevo en el día y las devuelve dobladas con el QR para arriba. \nNombramos un reps en un horario especial para esta tarea",
+      "responsable": "Aldana",
+      "fecha": "2026-08-04",
+      "status": "realizada",
+      "updates": [
+        {
+          "type": "created",
+          "author": "Sistema",
+          "date": "04/08/2026, 03:57 p. m.",
+          "text": "Plan de acción creado."
+        }
+      ]
     }
   ],
-  "nextId": 14,
+  "nextId": 15,
   "inventoryData": {
     "Operativo__Conveyor": {
       "op": 1,
@@ -1334,5 +1352,5 @@
       }
     }
   ],
-  "savedAt": "04/08/2026, 03:20 p. m."
+  "savedAt": "04/08/2026, 03:57 p. m."
 }
