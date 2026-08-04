@@ -324,9 +324,27 @@
           "images": []
         }
       ]
+    },
+    {
+      "id": 13,
+      "materia": "Operación",
+      "title": "Retiros 3.0",
+      "subtitle": "Proceso, reacondicionamiento y devoluciones",
+      "desc": "Proceso especializado para shipments 3.0\n-Los 3.0 no pueden ni debe continuar en el flujo de devoluciones a origen. Deben continuar con el flujo de entrega al seller, sin importar el estado del mismo.",
+      "responsable": "Team FT (PS)",
+      "fecha": "2026-08-07",
+      "status": "pendiente",
+      "updates": [
+        {
+          "type": "created",
+          "author": "Sistema",
+          "date": "04/08/2026, 04:17 a. m.",
+          "text": "Plan de acción creado."
+        }
+      ]
     }
   ],
-  "nextId": 13,
+  "nextId": 14,
   "inventoryData": {
     "Operativo__Conveyor": {
       "op": 1,
@@ -1266,5 +1284,5 @@
       }
     }
   ],
-  "savedAt": "03/08/2026, 06:10 p. m."
+  "savedAt": "04/08/2026, 04:30 a. m."
 }
