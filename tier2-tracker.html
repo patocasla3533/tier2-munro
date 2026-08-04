@@ -548,15 +548,29 @@
 
 </div>
 
-<!-- MODAL NUEVO PLAN -->
+<!-- MODAL NUEVO / EDITAR PLAN -->
 <div class="modal-overlay" id="modalOverlay">
   <div class="modal">
-    <h2>Nuevo Plan de Acción</h2>
+    <h2 id="modalTitle">Nuevo Plan de Acción</h2>
     <div class="form-group"><label>📌 Título del Plan *</label><input type="text" id="fTitle" placeholder="Ej: Revisión proceso de paletizado"></div>
     <div class="form-group"><label>🏷️ Subtítulo / Señalización</label><input type="text" id="fSubtitle" placeholder="Ej: Turno noche · Zona descarga"></div>
     <div class="form-group"><label>📝 Descripción / Dolor detectado</label><textarea id="fDesc" placeholder="Describí el problema o situación..."></textarea></div>
     <div class="form-row">
-      <div class="form-group"><label>👤 Responsable *</label><input type="text" id="fResp" placeholder="Nombre del responsable"></div>
+      <div class="form-group"><label>👤 Responsable *</label>
+        <select id="fResp">
+          <option value="">Seleccionar responsable...</option>
+          <option>Santino</option>
+          <option>Aldana</option>
+          <option>Tamara</option>
+          <option>Camila</option>
+          <option>Nicolas</option>
+          <option>Patricio</option>
+          <option>Juan</option>
+          <option>Jere</option>
+          <option>Agustin</option>
+          <option>Alex</option>
+        </select>
+      </div>
       <div class="form-group"><label>🏭 Área / Materia *</label>
         <select id="fMateria">
           <option value="">Seleccionar...</option>
@@ -568,7 +582,7 @@
       </div>
     </div>
     <div class="form-group"><label>📅 Plazo Objetivo</label><input type="date" id="fFecha"></div>
-    <div class="form-group"><label>🔄 Status inicial</label>
+    <div class="form-group"><label>🔄 Status</label>
       <div class="status-selector">
         <div class="status-opt pendiente selected" onclick="selectStatus('pendiente')">⏳ Pendiente</div>
         <div class="status-opt curso" onclick="selectStatus('curso')">🔄 En Curso</div>
@@ -624,6 +638,7 @@
         <div class="drawer-plan-title" id="dTitle"></div>
         <div class="drawer-subtitle" id="dSubtitle"></div>
       </div>
+      <button class="btn-sm" onclick="openModal(activeDrawerPlanId)" style="background:#f0fdf4;border-color:#86efac;color:#166534;font-size:12px;padding:4px 12px">✏️ Editar</button>
       <button class="drawer-close" onclick="closeDrawer()">✕</button>
     </div>
     <div class="drawer-meta" id="dMeta"></div>
@@ -788,6 +803,7 @@ let nextId = 1;
 let currentStatus = 'pendiente';
 let pendingUpdateFiles = [];
 let activeDrawerPlanId = null;
+let editingPlanId = null;   // null = nuevo plan, number = editar plan existente
 let charts = {};
 let currentFileSha = null;
 let hasUnsavedChanges = false;
@@ -1295,6 +1311,7 @@ function renderPlanes() {
       <div class="plan-actions">
         <button class="btn-sm btn-detail" onclick="openDrawer(${p.id})">📈 Ver Progreso</button>
         <button class="btn-sm btn-status" onclick="cycleStatus(${p.id},event)">Cambiar Status</button>
+        <button class="btn-sm" onclick="openModal(${p.id});event.stopPropagation()" style="background:#f0fdf4;border-color:#86efac;color:#166534">✏️ Editar</button>
         <button class="btn-sm danger" onclick="deletePlan(${p.id},event)">Eliminar</button>
       </div>
     </div>`;
@@ -1334,31 +1351,73 @@ function deletePlan(id, e) {
 // ═══════════════════════════════
 //  MODAL PLAN
 // ═══════════════════════════════
-function openModal() {
-  currentStatus='pendiente';
-  ['fTitle','fSubtitle','fDesc','fResp'].forEach(id=>document.getElementById(id).value='');
-  document.getElementById('fFecha').value=''; document.getElementById('fMateria').value='';
+function openModal(planId) {
+  editingPlanId = planId || null;
+  if (editingPlanId) {
+    // Modo edición — pre-llenar con datos del plan
+    const plan = plans.find(p=>p.id===editingPlanId);
+    if (!plan) return;
+    document.getElementById('modalTitle').textContent = '✏️ Editar Plan de Acción';
+    document.getElementById('fTitle').value    = plan.title    || '';
+    document.getElementById('fSubtitle').value = plan.subtitle || '';
+    document.getElementById('fDesc').value     = plan.desc     || '';
+    document.getElementById('fResp').value     = plan.responsable || '';
+    document.getElementById('fMateria').value  = plan.materia  || '';
+    document.getElementById('fFecha').value    = plan.fecha    || '';
+    currentStatus = plan.status || 'pendiente';
+  } else {
+    // Modo nuevo plan
+    document.getElementById('modalTitle').textContent = 'Nuevo Plan de Acción';
+    ['fTitle','fSubtitle','fDesc'].forEach(id=>document.getElementById(id).value='');
+    document.getElementById('fResp').value    = '';
+    document.getElementById('fFecha').value   = '';
+    document.getElementById('fMateria').value = '';
+    currentStatus = 'pendiente';
+  }
   document.querySelectorAll('.status-opt').forEach(o=>o.classList.remove('selected'));
-  document.querySelector('.status-opt.pendiente').classList.add('selected');
+  document.querySelector('.status-opt.'+currentStatus).classList.add('selected');
   document.getElementById('modalOverlay').classList.add('open');
 }
-function closeModal() { document.getElementById('modalOverlay').classList.remove('open'); }
+function closeModal() { document.getElementById('modalOverlay').classList.remove('open'); editingPlanId=null; }
 function selectStatus(st) {
   currentStatus=st;
   document.querySelectorAll('.status-opt').forEach(o=>o.classList.remove('selected'));
   document.querySelector('.status-opt.'+st).classList.add('selected');
 }
 function savePlan() {
-  const title=document.getElementById('fTitle').value.trim();
-  const materia=document.getElementById('fMateria').value;
-  const resp=document.getElementById('fResp').value.trim();
-  if (!title){alert('Título obligatorio');return;}
-  if (!materia){alert('Seleccioná un área');return;}
-  if (!resp){alert('Responsable obligatorio');return;}
-  plans.push({id:nextId++,materia,title,subtitle:document.getElementById('fSubtitle').value.trim(),
-    desc:document.getElementById('fDesc').value.trim(),responsable:resp,
-    fecha:document.getElementById('fFecha').value,status:currentStatus,
-    updates:[{type:'created',author:'Sistema',date:nowStr(),text:'Plan de acción creado.'}]});
+  const title   = document.getElementById('fTitle').value.trim();
+  const materia = document.getElementById('fMateria').value;
+  const resp    = document.getElementById('fResp').value;
+  if (!title)  { alert('Título obligatorio'); return; }
+  if (!materia){ alert('Seleccioná un área'); return; }
+  if (!resp)   { alert('Seleccioná un responsable'); return; }
+
+  if (editingPlanId) {
+    // Actualizar plan existente
+    const plan = plans.find(p=>p.id===editingPlanId);
+    if (plan) {
+      const prevResp = plan.responsable;
+      plan.title      = title;
+      plan.subtitle   = document.getElementById('fSubtitle').value.trim();
+      plan.desc       = document.getElementById('fDesc').value.trim();
+      plan.responsable = resp;
+      plan.materia    = materia;
+      plan.fecha      = document.getElementById('fFecha').value;
+      plan.status     = currentStatus;
+      plan.updates    = plan.updates || [];
+      plan.updates.push({type:'status',author:'Sistema',date:nowStr(),text:`Plan editado.${prevResp!==resp?' Responsable: '+prevResp+' → '+resp+'.':''}`});
+    }
+  } else {
+    // Crear plan nuevo
+    plans.push({id:nextId++, materia, title,
+      subtitle: document.getElementById('fSubtitle').value.trim(),
+      desc:     document.getElementById('fDesc').value.trim(),
+      responsable: resp,
+      fecha:    document.getElementById('fFecha').value,
+      status:   currentStatus,
+      updates:  [{type:'created',author:'Sistema',date:nowStr(),text:'Plan de acción creado.'}]
+    });
+  }
   closeModal(); renderPlanes(); updateStats(); renderCharts(); markDirty();
 }
 
