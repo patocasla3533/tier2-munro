@@ -888,8 +888,8 @@
   },
   "inventoryHistory": [
     {
-      "date": "05/08/2026, 03:01 p. m.",
-      "label": "Inventario 05/08/2026, 03:01 p. m.",
+      "date": "05/08/2026, 04:17 p. m.",
+      "label": "Inventario 05/08/2026, 04:17 p. m.",
       "filled": 85,
       "data": {
         "Operativo__Conveyor": {
@@ -1359,8 +1359,8 @@
       }
     },
     {
-      "date": "03/08/2026, 06:10 p. m.",
-      "label": "Inventario 03/08/2026, 06:10 p. m.",
+      "date": "05/08/2026, 03:01 p. m.",
+      "label": "Inventario 05/08/2026, 03:01 p. m.",
       "filled": 85,
       "data": {
         "Operativo__Conveyor": {
@@ -1368,7 +1368,7 @@
           "dan": 0
         },
         "Operativo__Baker Clasico": {
-          "op": 126,
+          "op": 157,
           "dan": 5
         },
         "Operativo__Baker Negros": {
@@ -1830,5 +1830,5 @@
       }
     }
   ],
-  "savedAt": "05/08/2026, 03:01 p. m."
+  "savedAt": "05/08/2026, 04:17 p. m."
 }
