@@ -91,7 +91,7 @@
       "desc": "-Colgantes en la HH para tener en picking -Transicion entre AM1 y AM2 el pase de HH \n-¿Como hace ARBA01?",
       "responsable": "Santino",
       "fecha": "2026-08-08",
-      "status": "curso",
+      "status": "realizada",
       "updates": [
         {
           "type": "created",
@@ -104,6 +104,13 @@
           "author": "Santino",
           "date": "28/07/2026, 01:42 p. m.",
           "text": "Santi propone correa para sujetar la HH sobre todo en instancia de picking\n\nEjemplo de correa que podemos comprar desde Mercado Libre, dejo link de la publicacion: https://articulo.mercadolibre.com.ar/MLA-1617176240-correa-universal-adaptador-transparente-para-funda-celular-_JM?attributes=Dise%C3%B1o_correa_31785a33_vpp%3ATmVncm8%3D&picker=true&quantity=1",
+          "images": []
+        },
+        {
+          "type": "status",
+          "author": "Usuario",
+          "date": "06/08/2026, 11:22 a. m.",
+          "text": "Status cambiado de 🔄 En Curso a ✅ Realizada.",
           "images": []
         }
       ]
@@ -1892,5 +1899,5 @@
       }
     }
   ],
-  "savedAt": "06/08/2026, 11:20 a. m."
+  "savedAt": "06/08/2026, 11:22 a. m."
 }
