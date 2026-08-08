@@ -563,8 +563,8 @@
       "dan": 0
     },
     "IS__Computadoras": {
-      "op": 9,
-      "dan": 0
+      "op": 8,
+      "dan": 1
     },
     "IS__Impresoras de oficina": {
       "op": 2,
@@ -1899,5 +1899,5 @@
       }
     }
   ],
-  "savedAt": "06/08/2026, 03:02 p. m."
+  "savedAt": "08/08/2026, 01:37 p. m."
 }
