@@ -8,7 +8,7 @@
       "desc": "Identificar a los BKs sin ganchos y colocarlos en las islas J y K, para que gestam post AM1 los pueda adecuar.",
       "responsable": "Aldana",
       "fecha": "2026-09-19",
-      "status": "curso",
+      "status": "realizada",
       "updates": [
         {
           "type": "created",
@@ -41,6 +41,13 @@
           "author": "Sistema",
           "date": "04/08/2026, 12:26 p. m.",
           "text": "Plan editado."
+        },
+        {
+          "type": "status",
+          "author": "Usuario",
+          "date": "14/08/2026, 11:09 a. m.",
+          "text": "Status cambiado de 🔄 En Curso a ✅ Realizada.",
+          "images": []
         }
       ]
     },
@@ -2384,5 +2391,5 @@
       }
     }
   ],
-  "savedAt": "14/08/2026, 11:08 a. m."
+  "savedAt": "14/08/2026, 11:18 a. m."
 }
