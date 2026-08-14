@@ -123,7 +123,7 @@
       "desc": "Entender hasta cuantas posiciones Munro puede tener de Oversize respetando los estandares de calidad",
       "responsable": "Tamara",
       "fecha": "2026-08-15",
-      "status": "curso",
+      "status": "realizada",
       "updates": [
         {
           "type": "created",
@@ -219,6 +219,13 @@
           "author": "Equipo TIER 2",
           "date": "06/08/2026, 11:20 a. m.",
           "text": "Se logra optimizar espacio en la nave, para desestresar el trafico en picking y sorting. A la vez, se busca con IT modificar y optimizar la cantidad de posiciones alineadas al share en este tipo de producto (CONFIRMAR IT).",
+          "images": []
+        },
+        {
+          "type": "status",
+          "author": "Usuario",
+          "date": "14/08/2026, 10:53 a. m.",
+          "text": "Status cambiado de 🔄 En Curso a ✅ Realizada.",
           "images": []
         }
       ]
@@ -2377,5 +2384,5 @@
       }
     }
   ],
-  "savedAt": "14/08/2026, 10:48 a. m."
+  "savedAt": "14/08/2026, 10:53 a. m."
 }
