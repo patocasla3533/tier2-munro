@@ -507,9 +507,27 @@
           "text": "Plan de acción creado."
         }
       ]
+    },
+    {
+      "id": 15,
+      "materia": "Operación",
+      "title": "Procesamiento PM SAME DAY - Oportunidades",
+      "subtitle": "",
+      "desc": "-Aprovechar el etiquetado anticipado del punta de linea + segregacion de large\n-Descarga del LH con 2 apiladoras\n-Preparacion anticipada de insumos para ingreso de vans",
+      "responsable": "Patricio",
+      "fecha": "2026-08-22",
+      "status": "pendiente",
+      "updates": [
+        {
+          "type": "created",
+          "author": "Sistema",
+          "date": "15/08/2026, 03:43 p. m.",
+          "text": "Plan de acción creado."
+        }
+      ]
     }
   ],
-  "nextId": 15,
+  "nextId": 16,
   "inventoryData": {
     "Operativo__Conveyor": {
       "op": 1,
@@ -2391,5 +2409,5 @@
       }
     }
   ],
-  "savedAt": "15/08/2026, 03:08 p. m."
+  "savedAt": "15/08/2026, 03:43 p. m."
 }
