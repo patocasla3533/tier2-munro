@@ -248,6 +248,11 @@
     padding: 7px 16px; border-radius: 6px; font-weight: 700; font-size: 13px; cursor: pointer;
   }
   .btn-inv-csv:hover { background: #dcfce7; }
+  .btn-inv-clear {
+    background: #fff7ed; border: 2px solid #FB923C; color: #9A3412;
+    padding: 7px 16px; border-radius: 6px; font-weight: 700; font-size: 13px; cursor: pointer;
+  }
+  .btn-inv-clear:hover { background: #ffedd5; }
   .btn-inv-save {
     background: #FFE600; border: 2px solid #333;
     padding: 7px 18px; border-radius: 6px; font-weight: 700; font-size: 13px; cursor: pointer;
@@ -498,6 +503,7 @@
         <div class="inv-progress-outer"><div class="inv-progress-inner" id="invProgBar" style="width:0%"></div></div>
         <span class="inv-progress-label" id="invProgLabel">0 / 85 ítems</span>
       </div>
+      <button class="btn-inv-clear" onclick="clearInventoryInputs()">🧹 Limpiar para nuevo inventario</button>
       <button class="btn-inv-csv" onclick="downloadCSV()">⬇️ Descargar CSV</button>
       <button class="btn-inv-save" id="btnInvSave" onclick="saveInventory()" disabled>🔒 Completar todo</button>
     </div>
@@ -1028,6 +1034,20 @@ function calcTotal(key) {
   if (alert) alert.style.display = 'none';
   updateInvProgress();
   markDirty();
+}
+
+function clearInventoryInputs() {
+  if (!confirm('¿Poner todos los casilleros en 0 para arrancar un inventario nuevo?\n\nEsto NO borra el historial ya guardado, solo limpia la carga actual en pantalla.')) return;
+  inventoryItems.forEach(({cat, item}) => {
+    const key   = invKey(cat, item);
+    const opEl  = document.getElementById('op__'  + key);
+    const danEl = document.getElementById('dan__' + key);
+    if (!opEl || !danEl) return;
+    opEl.value  = 0;
+    danEl.value = 0;
+    calcTotal(key);
+  });
+  showToast('🧹 Casilleros en 0 — listo para el nuevo inventario', 'success');
 }
 
 function collectInventoryFromInputs() {
