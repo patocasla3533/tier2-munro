@@ -543,9 +543,27 @@
           "text": "Plan de acción creado."
         }
       ]
+    },
+    {
+      "id": 17,
+      "materia": "5S",
+      "title": "Demarcación de la nuevas sendas peatonales",
+      "subtitle": "AM/PM",
+      "desc": "Demarcación de las nuevas sendas peatonales establecidas luego de la vuelta SHE 360°",
+      "responsable": "Santino",
+      "fecha": "2026-09-12",
+      "status": "pendiente",
+      "updates": [
+        {
+          "type": "created",
+          "author": "Sistema",
+          "date": "04/09/2026, 08:29 a. m.",
+          "text": "Plan de acción creado."
+        }
+      ]
     }
   ],
-  "nextId": 17,
+  "nextId": 18,
   "inventoryData": {
     "Operativo__Conveyor": {
       "op": 1,
@@ -4311,5 +4329,5 @@
       }
     }
   ],
-  "savedAt": "04/09/2026, 08:26 a. m."
+  "savedAt": "04/09/2026, 08:29 a. m."
 }
