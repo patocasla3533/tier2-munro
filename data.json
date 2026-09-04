@@ -525,9 +525,27 @@
           "text": "Plan de acción creado."
         }
       ]
+    },
+    {
+      "id": 16,
+      "materia": "5S",
+      "title": "Reorganizar sector rack",
+      "subtitle": "PM",
+      "desc": "Re ordenar el sector de las devoluciones bulky + el sector sacas y insumos",
+      "responsable": "Aldana",
+      "fecha": "2026-09-12",
+      "status": "pendiente",
+      "updates": [
+        {
+          "type": "created",
+          "author": "Sistema",
+          "date": "04/09/2026, 08:24 a. m.",
+          "text": "Plan de acción creado."
+        }
+      ]
     }
   ],
-  "nextId": 16,
+  "nextId": 17,
   "inventoryData": {
     "Operativo__Conveyor": {
       "op": 1,
@@ -4293,5 +4311,5 @@
       }
     }
   ],
-  "savedAt": "29/08/2026, 02:00 p. m."
+  "savedAt": "04/09/2026, 08:24 a. m."
 }
