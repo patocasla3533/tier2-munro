@@ -1,28 +1,28 @@
 {
-  "generatedAt": "06/09/2026 21:57",
+  "generatedAt": "06/09/2026 22:02",
   "reps": [
     {
       "curso": "Desafío - Gestión de insumos reutilizables | Reps | ES",
       "link": "https://learning.mercadolibre.com/programs/view/2037",
-      "deadlineLabel": "Fri Aug 28 2026 00:00:00 GMT-0300 (Argentina Standard Time)",
-      "deadlineISO": null,
-      "pct": 1,
+      "deadlineLabel": "28/08",
+      "deadlineISO": "2026-08-28",
+      "pct": 100,
       "review": false
     },
     {
       "curso": "REVERSA DE INSUMOS| REP DESAFIO",
       "link": "https://learning.mercadolibre.com/programs/view/2043",
-      "deadlineLabel": "Fri Aug 28 2026 00:00:00 GMT-0300 (Argentina Standard Time)",
-      "deadlineISO": null,
-      "pct": 1,
+      "deadlineLabel": "28/08",
+      "deadlineISO": "2026-08-28",
+      "pct": 62,
       "review": false
     },
     {
       "curso": "Nuevas WIs de Inventario para paquetes at_station| DES",
       "link": "https://learning.mercadolibre.com/programs/view/2080",
-      "deadlineLabel": "Fri Sep 04 2026 00:00:00 GMT-0300 (Argentina Standard Time)",
-      "deadlineISO": null,
-      "pct": 1,
+      "deadlineLabel": "04/09",
+      "deadlineISO": "2026-09-04",
+      "pct": 100,
       "review": false
     }
   ],
@@ -35,8 +35,8 @@
         {
           "curso": "DESAFIO NTM",
           "link": "https://learning.mercadolibre.com/programs/view/1013",
-          "deadlineISO": null,
-          "deadlineLabel": "Fri Aug 21 2026 00:00:00 GMT-0300 (Argentina Standard Time)",
+          "deadlineISO": "2026-08-21",
+          "deadlineLabel": "21/08",
           "review": false,
           "na": false,
           "pct": 0
@@ -44,8 +44,8 @@
         {
           "curso": "REVERSA DE INSUMOS| LÍDERES",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_REVERSAINSUMOS_UTR_TTES_LID_NF_LI+V1_2026/course/",
-          "deadlineISO": null,
-          "deadlineLabel": "Fri Aug 28 2026 00:00:00 GMT-0300 (Argentina Standard Time)",
+          "deadlineISO": "2026-08-28",
+          "deadlineLabel": "28/08",
           "review": false,
           "na": true,
           "pct": null
@@ -53,11 +53,11 @@
         {
           "curso": "PORTAL INFOWOW",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_INFOWOW_UTR_SHIPPING_TRAIN_NF_TR+V1_2026/course/",
-          "deadlineISO": null,
-          "deadlineLabel": "Fri Aug 28 2026 00:00:00 GMT-0300 (Argentina Standard Time)",
+          "deadlineISO": "2026-08-28",
+          "deadlineLabel": "28/08",
           "review": false,
           "na": false,
-          "pct": 1
+          "pct": 100
         },
         {
           "curso": "Rollout de NTM (HSP-TLs)",
@@ -66,37 +66,37 @@
           "deadlineLabel": null,
           "review": false,
           "na": false,
-          "pct": 1
+          "pct": 100
         },
         {
           "curso": "[Audits] Nuevo sistema My Audit",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_MYAUDIT_UTR_REP_NF_RE+1/about",
-          "deadlineISO": null,
-          "deadlineLabel": "Fri Sep 04 2026 00:00:00 GMT-0300 (Argentina Standard Time)",
+          "deadlineISO": "2026-09-04",
+          "deadlineLabel": "04/09",
           "review": false,
           "na": false,
-          "pct": 1
+          "pct": 100
         },
         {
           "curso": "Staging Zones en SVC - Líderes | ESP",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_STAGE_ZONES_EN_SVC_UTR_SVC_TL_NF_TL+V1/course/",
-          "deadlineISO": null,
-          "deadlineLabel": "Fri Sep 04 2026 00:00:00 GMT-0300 (Argentina Standard Time)",
+          "deadlineISO": "2026-09-04",
+          "deadlineLabel": "04/09",
           "review": false,
           "na": false,
-          "pct": 1
+          "pct": 100
         },
         {
           "curso": "Setup y Aduana · PS y Team Leaders (ES)",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+Setup01Lideres+2026_07esp/course/",
-          "deadlineISO": null,
-          "deadlineLabel": "Fri Sep 11 2026 00:00:00 GMT-0300 (Argentina Standard Time)",
+          "deadlineISO": "2026-09-11",
+          "deadlineLabel": "11/09",
           "review": false,
           "na": false,
           "pct": 0
         }
       ],
-      "overallPct": 1
+      "overallPct": 67
     },
     {
       "ldap": "patortiz",
@@ -106,8 +106,8 @@
         {
           "curso": "DESAFIO NTM",
           "link": "https://learning.mercadolibre.com/programs/view/1013",
-          "deadlineISO": null,
-          "deadlineLabel": "Fri Aug 21 2026 00:00:00 GMT-0300 (Argentina Standard Time)",
+          "deadlineISO": "2026-08-21",
+          "deadlineLabel": "21/08",
           "review": false,
           "na": true,
           "pct": null
@@ -115,8 +115,8 @@
         {
           "curso": "REVERSA DE INSUMOS| LÍDERES",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_REVERSAINSUMOS_UTR_TTES_LID_NF_LI+V1_2026/course/",
-          "deadlineISO": null,
-          "deadlineLabel": "Fri Aug 28 2026 00:00:00 GMT-0300 (Argentina Standard Time)",
+          "deadlineISO": "2026-08-28",
+          "deadlineLabel": "28/08",
           "review": false,
           "na": true,
           "pct": null
@@ -124,8 +124,8 @@
         {
           "curso": "PORTAL INFOWOW",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_INFOWOW_UTR_SHIPPING_TRAIN_NF_TR+V1_2026/course/",
-          "deadlineISO": null,
-          "deadlineLabel": "Fri Aug 28 2026 00:00:00 GMT-0300 (Argentina Standard Time)",
+          "deadlineISO": "2026-08-28",
+          "deadlineLabel": "28/08",
           "review": false,
           "na": false,
           "pct": 0
@@ -142,8 +142,8 @@
         {
           "curso": "[Audits] Nuevo sistema My Audit",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_MYAUDIT_UTR_REP_NF_RE+1/about",
-          "deadlineISO": null,
-          "deadlineLabel": "Fri Sep 04 2026 00:00:00 GMT-0300 (Argentina Standard Time)",
+          "deadlineISO": "2026-09-04",
+          "deadlineLabel": "04/09",
           "review": false,
           "na": false,
           "pct": 0
@@ -151,23 +151,23 @@
         {
           "curso": "Staging Zones en SVC - Líderes | ESP",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_STAGE_ZONES_EN_SVC_UTR_SVC_TL_NF_TL+V1/course/",
-          "deadlineISO": null,
-          "deadlineLabel": "Fri Sep 04 2026 00:00:00 GMT-0300 (Argentina Standard Time)",
+          "deadlineISO": "2026-09-04",
+          "deadlineLabel": "04/09",
           "review": false,
           "na": false,
-          "pct": 1
+          "pct": 100
         },
         {
           "curso": "Setup y Aduana · PS y Team Leaders (ES)",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+Setup01Lideres+2026_07esp/course/",
-          "deadlineISO": null,
-          "deadlineLabel": "Fri Sep 11 2026 00:00:00 GMT-0300 (Argentina Standard Time)",
+          "deadlineISO": "2026-09-11",
+          "deadlineLabel": "11/09",
           "review": false,
           "na": false,
           "pct": 0
         }
       ],
-      "overallPct": 0
+      "overallPct": 25
     },
     {
       "ldap": "nfogliaro",
@@ -177,17 +177,17 @@
         {
           "curso": "DESAFIO NTM",
           "link": "https://learning.mercadolibre.com/programs/view/1013",
-          "deadlineISO": null,
-          "deadlineLabel": "Fri Aug 21 2026 00:00:00 GMT-0300 (Argentina Standard Time)",
+          "deadlineISO": "2026-08-21",
+          "deadlineLabel": "21/08",
           "review": false,
           "na": false,
-          "pct": 1
+          "pct": 100
         },
         {
           "curso": "REVERSA DE INSUMOS| LÍDERES",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_REVERSAINSUMOS_UTR_TTES_LID_NF_LI+V1_2026/course/",
-          "deadlineISO": null,
-          "deadlineLabel": "Fri Aug 28 2026 00:00:00 GMT-0300 (Argentina Standard Time)",
+          "deadlineISO": "2026-08-28",
+          "deadlineLabel": "28/08",
           "review": false,
           "na": true,
           "pct": null
@@ -195,11 +195,11 @@
         {
           "curso": "PORTAL INFOWOW",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_INFOWOW_UTR_SHIPPING_TRAIN_NF_TR+V1_2026/course/",
-          "deadlineISO": null,
-          "deadlineLabel": "Fri Aug 28 2026 00:00:00 GMT-0300 (Argentina Standard Time)",
+          "deadlineISO": "2026-08-28",
+          "deadlineLabel": "28/08",
           "review": false,
           "na": false,
-          "pct": 1
+          "pct": 100
         },
         {
           "curso": "Rollout de NTM (HSP-TLs)",
@@ -208,37 +208,37 @@
           "deadlineLabel": null,
           "review": false,
           "na": false,
-          "pct": 1
+          "pct": 100
         },
         {
           "curso": "[Audits] Nuevo sistema My Audit",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_MYAUDIT_UTR_REP_NF_RE+1/about",
-          "deadlineISO": null,
-          "deadlineLabel": "Fri Sep 04 2026 00:00:00 GMT-0300 (Argentina Standard Time)",
+          "deadlineISO": "2026-09-04",
+          "deadlineLabel": "04/09",
           "review": false,
           "na": false,
-          "pct": 1
+          "pct": 100
         },
         {
           "curso": "Staging Zones en SVC - Líderes | ESP",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_STAGE_ZONES_EN_SVC_UTR_SVC_TL_NF_TL+V1/course/",
-          "deadlineISO": null,
-          "deadlineLabel": "Fri Sep 04 2026 00:00:00 GMT-0300 (Argentina Standard Time)",
+          "deadlineISO": "2026-09-04",
+          "deadlineLabel": "04/09",
           "review": false,
           "na": false,
-          "pct": 1
+          "pct": 100
         },
         {
           "curso": "Setup y Aduana · PS y Team Leaders (ES)",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+Setup01Lideres+2026_07esp/course/",
-          "deadlineISO": null,
-          "deadlineLabel": "Fri Sep 11 2026 00:00:00 GMT-0300 (Argentina Standard Time)",
+          "deadlineISO": "2026-09-11",
+          "deadlineLabel": "11/09",
           "review": false,
           "na": false,
-          "pct": 1
+          "pct": 100
         }
       ],
-      "overallPct": 1
+      "overallPct": 100
     },
     {
       "ldap": "aschmale",
@@ -248,8 +248,8 @@
         {
           "curso": "DESAFIO NTM",
           "link": "https://learning.mercadolibre.com/programs/view/1013",
-          "deadlineISO": null,
-          "deadlineLabel": "Fri Aug 21 2026 00:00:00 GMT-0300 (Argentina Standard Time)",
+          "deadlineISO": "2026-08-21",
+          "deadlineLabel": "21/08",
           "review": false,
           "na": true,
           "pct": null
@@ -257,8 +257,8 @@
         {
           "curso": "REVERSA DE INSUMOS| LÍDERES",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_REVERSAINSUMOS_UTR_TTES_LID_NF_LI+V1_2026/course/",
-          "deadlineISO": null,
-          "deadlineLabel": "Fri Aug 28 2026 00:00:00 GMT-0300 (Argentina Standard Time)",
+          "deadlineISO": "2026-08-28",
+          "deadlineLabel": "28/08",
           "review": false,
           "na": true,
           "pct": null
@@ -266,8 +266,8 @@
         {
           "curso": "PORTAL INFOWOW",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_INFOWOW_UTR_SHIPPING_TRAIN_NF_TR+V1_2026/course/",
-          "deadlineISO": null,
-          "deadlineLabel": "Fri Aug 28 2026 00:00:00 GMT-0300 (Argentina Standard Time)",
+          "deadlineISO": "2026-08-28",
+          "deadlineLabel": "28/08",
           "review": false,
           "na": false,
           "pct": 0
@@ -284,8 +284,8 @@
         {
           "curso": "[Audits] Nuevo sistema My Audit",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_MYAUDIT_UTR_REP_NF_RE+1/about",
-          "deadlineISO": null,
-          "deadlineLabel": "Fri Sep 04 2026 00:00:00 GMT-0300 (Argentina Standard Time)",
+          "deadlineISO": "2026-09-04",
+          "deadlineLabel": "04/09",
           "review": false,
           "na": false,
           "pct": 0
@@ -293,23 +293,23 @@
         {
           "curso": "Staging Zones en SVC - Líderes | ESP",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_STAGE_ZONES_EN_SVC_UTR_SVC_TL_NF_TL+V1/course/",
-          "deadlineISO": null,
-          "deadlineLabel": "Fri Sep 04 2026 00:00:00 GMT-0300 (Argentina Standard Time)",
+          "deadlineISO": "2026-09-04",
+          "deadlineLabel": "04/09",
           "review": false,
           "na": false,
-          "pct": 1
+          "pct": 100
         },
         {
           "curso": "Setup y Aduana · PS y Team Leaders (ES)",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+Setup01Lideres+2026_07esp/course/",
-          "deadlineISO": null,
-          "deadlineLabel": "Fri Sep 11 2026 00:00:00 GMT-0300 (Argentina Standard Time)",
+          "deadlineISO": "2026-09-11",
+          "deadlineLabel": "11/09",
           "review": false,
           "na": false,
           "pct": 0
         }
       ],
-      "overallPct": 0
+      "overallPct": 25
     },
     {
       "ldap": "ext_almaidan",
@@ -319,17 +319,17 @@
         {
           "curso": "DESAFIO NTM",
           "link": "https://learning.mercadolibre.com/programs/view/1013",
-          "deadlineISO": null,
-          "deadlineLabel": "Fri Aug 21 2026 00:00:00 GMT-0300 (Argentina Standard Time)",
+          "deadlineISO": "2026-08-21",
+          "deadlineLabel": "21/08",
           "review": false,
           "na": false,
-          "pct": 1
+          "pct": 100
         },
         {
           "curso": "REVERSA DE INSUMOS| LÍDERES",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_REVERSAINSUMOS_UTR_TTES_LID_NF_LI+V1_2026/course/",
-          "deadlineISO": null,
-          "deadlineLabel": "Fri Aug 28 2026 00:00:00 GMT-0300 (Argentina Standard Time)",
+          "deadlineISO": "2026-08-28",
+          "deadlineLabel": "28/08",
           "review": false,
           "na": false,
           "pct": 0
@@ -337,8 +337,8 @@
         {
           "curso": "PORTAL INFOWOW",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_INFOWOW_UTR_SHIPPING_TRAIN_NF_TR+V1_2026/course/",
-          "deadlineISO": null,
-          "deadlineLabel": "Fri Aug 28 2026 00:00:00 GMT-0300 (Argentina Standard Time)",
+          "deadlineISO": "2026-08-28",
+          "deadlineLabel": "28/08",
           "review": false,
           "na": true,
           "pct": null
@@ -350,37 +350,37 @@
           "deadlineLabel": null,
           "review": false,
           "na": false,
-          "pct": 1
+          "pct": 100
         },
         {
           "curso": "[Audits] Nuevo sistema My Audit",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_MYAUDIT_UTR_REP_NF_RE+1/about",
-          "deadlineISO": null,
-          "deadlineLabel": "Fri Sep 04 2026 00:00:00 GMT-0300 (Argentina Standard Time)",
+          "deadlineISO": "2026-09-04",
+          "deadlineLabel": "04/09",
           "review": false,
           "na": false,
-          "pct": 1
+          "pct": 100
         },
         {
           "curso": "Staging Zones en SVC - Líderes | ESP",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_STAGE_ZONES_EN_SVC_UTR_SVC_TL_NF_TL+V1/course/",
-          "deadlineISO": null,
-          "deadlineLabel": "Fri Sep 04 2026 00:00:00 GMT-0300 (Argentina Standard Time)",
+          "deadlineISO": "2026-09-04",
+          "deadlineLabel": "04/09",
           "review": false,
           "na": false,
-          "pct": 1
+          "pct": 100
         },
         {
           "curso": "Setup y Aduana · PS y Team Leaders (ES)",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+Setup01Lideres+2026_07esp/course/",
-          "deadlineISO": null,
-          "deadlineLabel": "Fri Sep 11 2026 00:00:00 GMT-0300 (Argentina Standard Time)",
+          "deadlineISO": "2026-09-11",
+          "deadlineLabel": "11/09",
           "review": false,
           "na": false,
-          "pct": 1
+          "pct": 100
         }
       ],
-      "overallPct": 1
+      "overallPct": 83
     },
     {
       "ldap": "ext_camimira",
@@ -390,17 +390,17 @@
         {
           "curso": "DESAFIO NTM",
           "link": "https://learning.mercadolibre.com/programs/view/1013",
-          "deadlineISO": null,
-          "deadlineLabel": "Fri Aug 21 2026 00:00:00 GMT-0300 (Argentina Standard Time)",
+          "deadlineISO": "2026-08-21",
+          "deadlineLabel": "21/08",
           "review": false,
           "na": false,
-          "pct": 1
+          "pct": 100
         },
         {
           "curso": "REVERSA DE INSUMOS| LÍDERES",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_REVERSAINSUMOS_UTR_TTES_LID_NF_LI+V1_2026/course/",
-          "deadlineISO": null,
-          "deadlineLabel": "Fri Aug 28 2026 00:00:00 GMT-0300 (Argentina Standard Time)",
+          "deadlineISO": "2026-08-28",
+          "deadlineLabel": "28/08",
           "review": false,
           "na": false,
           "pct": 0
@@ -408,8 +408,8 @@
         {
           "curso": "PORTAL INFOWOW",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_INFOWOW_UTR_SHIPPING_TRAIN_NF_TR+V1_2026/course/",
-          "deadlineISO": null,
-          "deadlineLabel": "Fri Aug 28 2026 00:00:00 GMT-0300 (Argentina Standard Time)",
+          "deadlineISO": "2026-08-28",
+          "deadlineLabel": "28/08",
           "review": false,
           "na": true,
           "pct": null
@@ -426,8 +426,8 @@
         {
           "curso": "[Audits] Nuevo sistema My Audit",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_MYAUDIT_UTR_REP_NF_RE+1/about",
-          "deadlineISO": null,
-          "deadlineLabel": "Fri Sep 04 2026 00:00:00 GMT-0300 (Argentina Standard Time)",
+          "deadlineISO": "2026-09-04",
+          "deadlineLabel": "04/09",
           "review": false,
           "na": false,
           "pct": 0
@@ -435,23 +435,23 @@
         {
           "curso": "Staging Zones en SVC - Líderes | ESP",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_STAGE_ZONES_EN_SVC_UTR_SVC_TL_NF_TL+V1/course/",
-          "deadlineISO": null,
-          "deadlineLabel": "Fri Sep 04 2026 00:00:00 GMT-0300 (Argentina Standard Time)",
+          "deadlineISO": "2026-09-04",
+          "deadlineLabel": "04/09",
           "review": false,
           "na": false,
-          "pct": 1
+          "pct": 100
         },
         {
           "curso": "Setup y Aduana · PS y Team Leaders (ES)",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+Setup01Lideres+2026_07esp/course/",
-          "deadlineISO": null,
-          "deadlineLabel": "Fri Sep 11 2026 00:00:00 GMT-0300 (Argentina Standard Time)",
+          "deadlineISO": "2026-09-11",
+          "deadlineLabel": "11/09",
           "review": false,
           "na": false,
-          "pct": 1
+          "pct": 100
         }
       ],
-      "overallPct": 1
+      "overallPct": 50
     },
     {
       "ldap": "ext_tamvega",
@@ -461,17 +461,17 @@
         {
           "curso": "DESAFIO NTM",
           "link": "https://learning.mercadolibre.com/programs/view/1013",
-          "deadlineISO": null,
-          "deadlineLabel": "Fri Aug 21 2026 00:00:00 GMT-0300 (Argentina Standard Time)",
+          "deadlineISO": "2026-08-21",
+          "deadlineLabel": "21/08",
           "review": false,
           "na": false,
-          "pct": 1
+          "pct": 100
         },
         {
           "curso": "REVERSA DE INSUMOS| LÍDERES",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_REVERSAINSUMOS_UTR_TTES_LID_NF_LI+V1_2026/course/",
-          "deadlineISO": null,
-          "deadlineLabel": "Fri Aug 28 2026 00:00:00 GMT-0300 (Argentina Standard Time)",
+          "deadlineISO": "2026-08-28",
+          "deadlineLabel": "28/08",
           "review": false,
           "na": false,
           "pct": 0
@@ -479,8 +479,8 @@
         {
           "curso": "PORTAL INFOWOW",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_INFOWOW_UTR_SHIPPING_TRAIN_NF_TR+V1_2026/course/",
-          "deadlineISO": null,
-          "deadlineLabel": "Fri Aug 28 2026 00:00:00 GMT-0300 (Argentina Standard Time)",
+          "deadlineISO": "2026-08-28",
+          "deadlineLabel": "28/08",
           "review": false,
           "na": true,
           "pct": null
@@ -497,8 +497,8 @@
         {
           "curso": "[Audits] Nuevo sistema My Audit",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_MYAUDIT_UTR_REP_NF_RE+1/about",
-          "deadlineISO": null,
-          "deadlineLabel": "Fri Sep 04 2026 00:00:00 GMT-0300 (Argentina Standard Time)",
+          "deadlineISO": "2026-09-04",
+          "deadlineLabel": "04/09",
           "review": false,
           "na": false,
           "pct": 0
@@ -506,23 +506,23 @@
         {
           "curso": "Staging Zones en SVC - Líderes | ESP",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_STAGE_ZONES_EN_SVC_UTR_SVC_TL_NF_TL+V1/course/",
-          "deadlineISO": null,
-          "deadlineLabel": "Fri Sep 04 2026 00:00:00 GMT-0300 (Argentina Standard Time)",
+          "deadlineISO": "2026-09-04",
+          "deadlineLabel": "04/09",
           "review": false,
           "na": false,
-          "pct": 1
+          "pct": 100
         },
         {
           "curso": "Setup y Aduana · PS y Team Leaders (ES)",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+Setup01Lideres+2026_07esp/course/",
-          "deadlineISO": null,
-          "deadlineLabel": "Fri Sep 11 2026 00:00:00 GMT-0300 (Argentina Standard Time)",
+          "deadlineISO": "2026-09-11",
+          "deadlineLabel": "11/09",
           "review": false,
           "na": false,
           "pct": 0
         }
       ],
-      "overallPct": 0
+      "overallPct": 33
     },
     {
       "ldap": "ext_sabianch",
@@ -532,17 +532,17 @@
         {
           "curso": "DESAFIO NTM",
           "link": "https://learning.mercadolibre.com/programs/view/1013",
-          "deadlineISO": null,
-          "deadlineLabel": "Fri Aug 21 2026 00:00:00 GMT-0300 (Argentina Standard Time)",
+          "deadlineISO": "2026-08-21",
+          "deadlineLabel": "21/08",
           "review": false,
           "na": false,
-          "pct": 1
+          "pct": 100
         },
         {
           "curso": "REVERSA DE INSUMOS| LÍDERES",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_REVERSAINSUMOS_UTR_TTES_LID_NF_LI+V1_2026/course/",
-          "deadlineISO": null,
-          "deadlineLabel": "Fri Aug 28 2026 00:00:00 GMT-0300 (Argentina Standard Time)",
+          "deadlineISO": "2026-08-28",
+          "deadlineLabel": "28/08",
           "review": false,
           "na": false,
           "pct": 0
@@ -550,8 +550,8 @@
         {
           "curso": "PORTAL INFOWOW",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_INFOWOW_UTR_SHIPPING_TRAIN_NF_TR+V1_2026/course/",
-          "deadlineISO": null,
-          "deadlineLabel": "Fri Aug 28 2026 00:00:00 GMT-0300 (Argentina Standard Time)",
+          "deadlineISO": "2026-08-28",
+          "deadlineLabel": "28/08",
           "review": false,
           "na": true,
           "pct": null
@@ -568,8 +568,8 @@
         {
           "curso": "[Audits] Nuevo sistema My Audit",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_MYAUDIT_UTR_REP_NF_RE+1/about",
-          "deadlineISO": null,
-          "deadlineLabel": "Fri Sep 04 2026 00:00:00 GMT-0300 (Argentina Standard Time)",
+          "deadlineISO": "2026-09-04",
+          "deadlineLabel": "04/09",
           "review": false,
           "na": false,
           "pct": 0
@@ -577,8 +577,8 @@
         {
           "curso": "Staging Zones en SVC - Líderes | ESP",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_STAGE_ZONES_EN_SVC_UTR_SVC_TL_NF_TL+V1/course/",
-          "deadlineISO": null,
-          "deadlineLabel": "Fri Sep 04 2026 00:00:00 GMT-0300 (Argentina Standard Time)",
+          "deadlineISO": "2026-09-04",
+          "deadlineLabel": "04/09",
           "review": false,
           "na": false,
           "pct": 0
@@ -586,14 +586,14 @@
         {
           "curso": "Setup y Aduana · PS y Team Leaders (ES)",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+Setup01Lideres+2026_07esp/course/",
-          "deadlineISO": null,
-          "deadlineLabel": "Fri Sep 11 2026 00:00:00 GMT-0300 (Argentina Standard Time)",
+          "deadlineISO": "2026-09-11",
+          "deadlineLabel": "11/09",
           "review": false,
           "na": false,
           "pct": 0
         }
       ],
-      "overallPct": 0
+      "overallPct": 17
     }
   ]
 }
