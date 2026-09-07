@@ -1,6 +1,14 @@
 {
-  "generatedAt": "06/09/2026 22:03",
+  "generatedAt": "06/09/2026 22:34",
   "reps": [
+    {
+      "curso": "DESAFIO NTM",
+      "link": "https://learning.mercadolibre.com/programs/view/1012",
+      "deadlineLabel": "21/08",
+      "deadlineISO": "2026-08-21",
+      "pct": 100,
+      "review": false
+    },
     {
       "curso": "Desafío - Gestión de insumos reutilizables | Reps | ES",
       "link": "https://learning.mercadolibre.com/programs/view/2037",
@@ -18,11 +26,35 @@
       "review": false
     },
     {
+      "curso": "[DESAFÍO] Staging Zones en SVC - Reps y PS | ESP",
+      "link": "https://learning.mercadolibre.com/programs/view/1925?tpa_hint=saml-auth0-saml",
+      "deadlineLabel": "04/09",
+      "deadlineISO": "2026-09-04",
+      "pct": 76,
+      "review": false
+    },
+    {
       "curso": "Nuevas WIs de Inventario para paquetes at_station| DES",
       "link": "https://learning.mercadolibre.com/programs/view/2080",
       "deadlineLabel": "04/09",
       "deadlineISO": "2026-09-04",
       "pct": 100,
+      "review": false
+    },
+    {
+      "curso": "Curso Mandatorio SHE",
+      "link": "https://learning.mercadolibre.com/courses/course-v1:shp_all+Cur_Man_SHE_esp+V1_2026/courseware/36f19a581d464cd6ade264aedc97b21a/55f0ef0d195e4954958b6d32433cc565/",
+      "deadlineLabel": "30/09",
+      "deadlineISO": "2026-09-30",
+      "pct": 0,
+      "review": true
+    },
+    {
+      "curso": "Setup y Aduana desafio - ESP",
+      "link": "https://learning.mercadolibre.com/programs/view/2063",
+      "deadlineLabel": "11/09",
+      "deadlineISO": "2026-09-11",
+      "pct": 11,
       "review": false
     }
   ],
