@@ -388,6 +388,58 @@
   .delta-up { color:#10B981; font-weight:800; }
   .delta-down { color:#EF4444; font-weight:800; }
   .delta-eq { color:#d1d5db; }
+
+  /* ══════════════════════════════════════
+     ── FAROL DE ENTRENAMIENTOS ──
+  ══════════════════════════════════════ */
+  .tr-subtitle { font-size:14px; font-weight:800; color:#333; margin:18px 0 10px; display:flex; align-items:center; gap:8px; }
+  .tr-subtitle:first-child { margin-top:0; }
+  .tr-list { display:flex; flex-direction:column; gap:8px; margin-bottom:8px; }
+  .tr-card { background:#fff; border:1px solid #e8e8e8; border-radius:10px; padding:12px 16px; display:flex; align-items:center; gap:12px; flex-wrap:wrap; }
+  .tr-card-link { font-size:16px; color:#2563EB; flex-shrink:0; text-decoration:none; }
+  .tr-card-body { flex:1; min-width:180px; }
+  .tr-card-title { font-size:14px; font-weight:700; color:#333; }
+  .tr-card-title a { color:#333; text-decoration:none; }
+  .tr-card-title a:hover { text-decoration:underline; color:#2563EB; }
+  .tr-card-meta { font-size:12px; color:#888; margin-top:2px; }
+  .tr-review-badge { background:#fff7ed; color:#9A3412; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; display:inline-block; margin-top:4px; }
+  .tr-bar-wrap { width:100px; height:7px; background:#e5e7eb; border-radius:4px; overflow:hidden; flex-shrink:0; }
+  .tr-bar-inner { height:100%; border-radius:4px; }
+  .tr-pct { font-size:13px; font-weight:800; min-width:42px; text-align:right; flex-shrink:0; }
+  .tr-empty { text-align:center; padding:24px; color:#aaa; font-size:13px; border:2px dashed #e0e0e0; border-radius:10px; }
+
+  .tr-toolbar { display:flex; align-items:center; gap:10px; margin-bottom:12px; flex-wrap:wrap; }
+  .btn-tr-toggle { background:#f5f3ff; border:2px solid #c4b5fd; color:#5b21b6; padding:7px 16px; border-radius:6px; font-weight:700; font-size:12px; cursor:pointer; }
+  .btn-tr-toggle:hover { background:#ede9fe; }
+  .btn-tr-toggle.active { background:#5b21b6; color:#fff; }
+  .tr-person-select { padding:7px 10px; border:1.5px solid #e0e0e0; border-radius:6px; font-size:12px; background:#fafafa; }
+
+  .tr-grid-wrap { background:#fff; border:1px solid #e8e8e8; border-radius:10px; overflow-x:auto; margin-bottom:20px; }
+  .tr-grid { width:100%; border-collapse:collapse; font-size:12px; min-width:600px; }
+  .tr-grid th { background:#333; color:#FFE600; padding:9px 12px; text-align:left; font-size:10px; text-transform:uppercase; letter-spacing:.4px; white-space:nowrap; }
+  .tr-grid th.num { text-align:center; }
+  .tr-grid td { padding:7px 12px; border-bottom:1px solid #f0f0f0; white-space:nowrap; }
+  .tr-grid td.num { text-align:center; font-weight:700; }
+  .tr-grid tr:last-child td { border-bottom:none; }
+  .tr-grid tr:hover td { background:#fafafa; }
+  .tr-name-cell { font-weight:700; color:#333; }
+  .tr-role-cell { color:#888; font-size:11px; }
+  .tr-na { color:#d1d5db; font-weight:400; }
+  .tr-nodeadline { color:#9ca3af; font-size:10px; font-style:italic; }
+
+  .tr-person-card { background:#fff; border:1px solid #e8e8e8; border-radius:10px; padding:16px; margin-bottom:16px; }
+  .tr-person-head { display:flex; align-items:center; gap:12px; margin-bottom:12px; }
+  .tr-avatar { width:40px; height:40px; border-radius:50%; background:#ede9fe; color:#5b21b6; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:14px; flex-shrink:0; }
+  .tr-person-name { font-size:15px; font-weight:800; color:#333; }
+  .tr-person-role { font-size:12px; color:#888; }
+  .tr-person-overall { margin-left:auto; font-size:20px; font-weight:800; }
+
+  .agility-grid { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  .agility-item { display:flex; align-items:center; gap:8px; padding:6px 0; border-bottom:1px solid #f5f5f5; font-size:13px; }
+  .agility-item:last-child { border-bottom:none; }
+  .agility-rank { width:24px; height:24px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:13px; flex-shrink:0; }
+  .agility-name { flex:1; font-weight:600; }
+  .agility-days { font-size:11px; font-weight:800; white-space:nowrap; }
 </style>
 </head>
 <body>
@@ -431,6 +483,7 @@
   <div class="tab active" onclick="switchTab('dashboard',this)">📊 Dashboard</div>
   <div class="tab" onclick="switchTab('planes',this)">📋 Planes de Acción</div>
   <div class="tab" onclick="switchTab('inventario',this)">📦 Inventario Activos Fijos</div>
+  <div class="tab" onclick="switchTab('training',this)">🎓 Farol de Entrenamientos</div>
 </div>
 
 <div class="content">
@@ -550,6 +603,38 @@
       <h3>🕐 Historial de Inventarios</h3>
       <div id="historyList"></div>
     </div>
+  </div>
+
+  <!-- FAROL DE ENTRENAMIENTOS -->
+  <div class="section" id="sec-training">
+
+    <div class="tr-subtitle">👷 Entrenamientos Reps — SBU3</div>
+    <div class="tr-list" id="trainingRepsList"><div class="tr-empty">Cargando desde Google Sheets...</div></div>
+
+    <div class="tr-subtitle" style="margin-top:24px">👑 Entrenamientos Líderes — por persona</div>
+    <div class="tr-toolbar">
+      <button class="btn-tr-toggle" id="btnTrToggle" onclick="toggleTrPersonalView()">🔍 Ver mi progreso</button>
+      <select class="tr-person-select" id="trPersonSelect" style="display:none" onchange="renderTrPersonalView()"></select>
+    </div>
+    <div class="tr-grid-wrap" id="trGridWrap">
+      <table class="tr-grid" id="trGridTable"><tbody><tr><td style="padding:16px;color:#aaa">Cargando desde Google Sheets...</td></tr></tbody></table>
+    </div>
+    <div id="trPersonalView" style="display:none"></div>
+
+    <div class="tr-subtitle" style="margin-top:24px">🏆 Ranking de Agilidad — Líderes</div>
+    <div class="chart-box full" style="padding:16px 18px">
+      <div class="agility-grid">
+        <div class="hof-card fame" style="border-top:none;padding:0">
+          <div class="hof-card-title">🏆 Más rápidos (mayor anticipación al deadline)</div>
+          <div id="agility-fame-list"><div class="hof-empty">Sin historial todavía</div></div>
+        </div>
+        <div class="hof-card shame" style="border-top:none;padding:0">
+          <div class="hof-card-title">🐢 Tortugas / deudores</div>
+          <div id="agility-shame-list"><div class="hof-empty">Sin historial todavía</div></div>
+        </div>
+      </div>
+    </div>
+
   </div>
 
 </div>
@@ -838,13 +923,13 @@ function saveConfig() {
   const user  = document.getElementById('cfgUser').value.trim();
   const repo  = document.getElementById('cfgRepo').value.trim();
   const token = document.getElementById('cfgToken').value.trim();
-  if (!user || !repo || !token) { alert('Completá todos los campos.'); return; }
+  if (!user || !repo || !token) { alert('Completá todos los campos de GitHub.'); return; }
   localStorage.setItem('t2_gh_user', user);
   localStorage.setItem('t2_gh_repo', repo);
   localStorage.setItem('t2_gh_token', token);
   closeConfig();
   showToast('Configuración guardada ✓', 'success');
-  loadFromGitHub();
+  (async () => { await loadFromGitHub(); await loadTrainingData(); })();
 }
 
 // ═══════════════════════════════
@@ -868,6 +953,7 @@ async function loadFromGitHub() {
     if (res.status === 404) {
       plans = []; nextId = 1; currentFileSha = null;
       inventoryData = {}; inventoryHistory = [];
+      trCompletions = []; trLastKnown = {};
       finishLoad('Repositorio vacío — listo para usar');
       return;
     }
@@ -884,6 +970,8 @@ async function loadFromGitHub() {
     nextId           = decoded.nextId           || (plans.length ? Math.max(...plans.map(p=>p.id))+1 : 1);
     inventoryData    = decoded.inventoryData    || {};
     inventoryHistory = decoded.inventoryHistory || [];
+    trCompletions    = decoded.trainingCompletions || [];
+    trLastKnown      = decoded.trainingLastKnown    || {};
     hasUnsavedChanges = false;
     finishLoad(decoded.savedAt ? `Últ. guardado: ${decoded.savedAt}` : 'Datos cargados de GitHub');
   } catch(e) {
@@ -1821,6 +1909,222 @@ function renderInventoryDelta() {
     : `<tr><td colspan="5" style="text-align:center;padding:18px;color:#aaa">🎉 Sin cambios respecto al inventario anterior</td></tr>`;
 }
 
+// ══════════════════════════════════════════════
+//  FAROL DE ENTRENAMIENTOS — training-data.json (generado por Apps Script)
+// ══════════════════════════════════════════════
+const TR_DATA_URL = 'https://raw.githubusercontent.com/patocasla3533/tier2-munro/main/training-data.json';
+
+let trRepsData = [];        // [{ curso, link, deadlineDate, deadlineLabel, pct, review }]
+let trLideresData = [];     // [{ ldap, name, rol, cursos:[{curso, link, deadlineDate, deadlineLabel, pct, na, review}], overallPct }]
+let trCompletions = [];     // historial persistido en GitHub data.json
+let trLastKnown = {};       // idem
+let trPersonalOpen = false;
+
+function trNorm(s) { return (s||'').toString().trim().toLowerCase(); }
+
+// El JSON trae deadlineISO ("2026-08-28"); acá lo convertimos a Date para los cálculos de semáforo
+function trToDate(iso) {
+  if (!iso) return null;
+  const d = new Date(iso + 'T23:59:59');
+  return isNaN(d) ? null : d;
+}
+
+function trAdaptCourse(c) {
+  return Object.assign({}, c, { deadlineDate: trToDate(c.deadlineISO) });
+}
+
+// ── Carga principal: fetch directo del JSON público en GitHub, sin credenciales ──
+async function loadTrainingData() {
+  try {
+    const res = await fetch(TR_DATA_URL + '?_=' + Date.now());
+    if (!res.ok) throw new Error(`GitHub ${res.status}`);
+    const json = await res.json();
+    trRepsData = (json.reps || []).map(trAdaptCourse);
+    trLideresData = (json.lideres || []).map(p => Object.assign({}, p, {
+      cursos: (p.cursos || []).map(trAdaptCourse)
+    }));
+    renderTrReps();
+    renderTrGrid();
+    populateTrPersonSelect();
+    await trDetectCompletionsAndSave();
+    renderAgilityRanking();
+  } catch(e) {
+    document.getElementById('trainingRepsList').innerHTML = `<div class="tr-empty">Error al cargar training-data.json: ${e.message}</div>`;
+    document.getElementById('trGridTable').innerHTML = `<tbody><tr><td style="padding:16px;color:#aaa">Error al cargar training-data.json: ${e.message}</td></tr></tbody>`;
+  }
+}
+
+function trDeadlineColor(deadlineDate) {
+  if (!deadlineDate) return '#9ca3af';
+  const days = Math.ceil((deadlineDate - new Date())/86400000);
+  if (days > 7) return '#10B981';
+  if (days >= 0) return '#F59E0B';
+  return '#EF4444';
+}
+function trDeadlineLabelText(deadlineDate, deadlineLabel) {
+  if (!deadlineDate) return 'Sin deadline definido';
+  const days = Math.ceil((deadlineDate - new Date())/86400000);
+  if (days > 0) return `Deadline ${deadlineLabel} · quedan ${days}d`;
+  if (days === 0) return `Deadline ${deadlineLabel} · vence hoy`;
+  return `Deadline ${deadlineLabel} · vencido hace ${Math.abs(days)}d`;
+}
+
+function renderTrReps() {
+  const el = document.getElementById('trainingRepsList');
+  if (!trRepsData.length) { el.innerHTML = '<div class="tr-empty">No hay entrenamientos Reps vigentes para SBU3 en este momento.</div>'; return; }
+  el.innerHTML = trRepsData.map(c => {
+    if (c.review) {
+      return `<div class="tr-card">
+        <i class="tr-card-link">🔗</i>
+        <div class="tr-card-body">
+          <div class="tr-card-title">${c.link?`<a href="${c.link}" target="_blank">${c.curso}</a>`:c.curso}</div>
+          <div class="tr-review-badge">⚠️ ENTRENAMIENTO EN REVISIÓN - CONSULTAR MELI</div>
+        </div>
+      </div>`;
+    }
+    const color = trDeadlineColor(c.deadlineDate);
+    return `<div class="tr-card">
+      <i class="tr-card-link">🔗</i>
+      <div class="tr-card-body">
+        <div class="tr-card-title">${c.link?`<a href="${c.link}" target="_blank">${c.curso}</a>`:c.curso}</div>
+        <div class="tr-card-meta">${trDeadlineLabelText(c.deadlineDate, c.deadlineLabel)}</div>
+      </div>
+      <div class="tr-bar-wrap"><div class="tr-bar-inner" style="width:${c.pct}%;background:${color}"></div></div>
+      <div class="tr-pct" style="color:${color}">${c.pct}%</div>
+    </div>`;
+  }).join('');
+}
+
+function renderTrGrid() {
+  const wrap = document.getElementById('trGridTable');
+  if (!trLideresData.length) { wrap.innerHTML = '<tbody><tr><td style="padding:16px;color:#aaa">No se encontraron personas de SBU3 en DETALLE LIDERES.</td></tr></tbody>'; return; }
+  const courseNames = [...new Set(trLideresData.flatMap(p=>p.cursos.map(c=>c.curso)))];
+  let html = '<thead><tr><th>Persona</th><th>Rol</th>';
+  courseNames.forEach(c => html += `<th class="num">${c}</th>`);
+  html += '<th class="num">General</th></tr></thead><tbody>';
+  trLideresData.forEach(p => {
+    html += `<tr><td class="tr-name-cell">${p.name}</td><td class="tr-role-cell">${p.rol}</td>`;
+    courseNames.forEach(cn => {
+      const c = p.cursos.find(x=>x.curso===cn);
+      if (!c) { html += '<td class="num tr-na">—</td>'; return; }
+      if (c.na) { html += '<td class="num tr-na">No aplica</td>'; return; }
+      const color = c.pct==='LICENCIA' ? '#9ca3af' : (c.pct>=100?'#10B981':c.pct>=50?'#F59E0B':'#EF4444');
+      html += `<td class="num" style="color:${color};font-weight:700">${c.pct==='LICENCIA'?'Licencia':c.pct+'%'}</td>`;
+    });
+    const oColor = p.overallPct>=100?'#10B981':p.overallPct>=50?'#F59E0B':'#EF4444';
+    html += `<td class="num" style="color:${oColor}">${p.overallPct}%</td></tr>`;
+  });
+  html += '</tbody>';
+  wrap.innerHTML = html;
+}
+
+function populateTrPersonSelect() {
+  const sel = document.getElementById('trPersonSelect');
+  sel.innerHTML = '<option value="">Elegí tu nombre...</option>' + trLideresData.map(p=>`<option value="${p.ldap}">${p.name}</option>`).join('');
+}
+
+function toggleTrPersonalView() {
+  trPersonalOpen = !trPersonalOpen;
+  const btn = document.getElementById('btnTrToggle');
+  btn.classList.toggle('active', trPersonalOpen);
+  document.getElementById('trPersonSelect').style.display = trPersonalOpen ? '' : 'none';
+  document.getElementById('trGridWrap').style.display = trPersonalOpen ? 'none' : '';
+  document.getElementById('trPersonalView').style.display = trPersonalOpen ? '' : 'none';
+  if (!trPersonalOpen) document.getElementById('trPersonalView').innerHTML = '';
+}
+
+function renderTrPersonalView() {
+  const ldap = document.getElementById('trPersonSelect').value;
+  const el = document.getElementById('trPersonalView');
+  if (!ldap) { el.innerHTML = ''; return; }
+  const p = trLideresData.find(x=>x.ldap===ldap);
+  if (!p) { el.innerHTML = ''; return; }
+  const pendientes = p.cursos.filter(c => !c.na && c.pct !== 100);
+  const initials = p.name.split(' ').map(w=>w[0]).slice(0,2).join('').toUpperCase();
+  const oColor = p.overallPct>=100?'#10B981':p.overallPct>=50?'#F59E0B':'#EF4444';
+  let html = `<div class="tr-person-card">
+    <div class="tr-person-head">
+      <div class="tr-avatar">${initials}</div>
+      <div><div class="tr-person-name">${p.name}</div><div class="tr-person-role">${p.rol}</div></div>
+      <div class="tr-person-overall" style="color:${oColor}">${p.overallPct}%</div>
+    </div>`;
+  if (!pendientes.length) {
+    html += '<div class="tr-empty">🎉 ¡Sin pendientes! Todos los entrenamientos aplicables están al 100%.</div>';
+  } else {
+    html += '<div class="tr-list">' + pendientes.map(c => {
+      const color = trDeadlineColor(c.deadlineDate);
+      const pctShow = c.pct==='LICENCIA' ? 0 : c.pct;
+      return `<div class="tr-card">
+        <div class="tr-card-body">
+          <div class="tr-card-title">${c.link?`<a href="${c.link}" target="_blank">${c.curso}</a>`:c.curso}</div>
+          <div class="tr-card-meta">${trDeadlineLabelText(c.deadlineDate, c.deadlineLabel)}${c.pct==='LICENCIA'?' · Licencia':''}</div>
+        </div>
+        <div class="tr-bar-wrap"><div class="tr-bar-inner" style="width:${pctShow}%;background:${color}"></div></div>
+        <div class="tr-pct" style="color:${color}">${pctShow}%</div>
+      </div>`;
+    }).join('') + '</div>';
+  }
+  html += '</div>';
+  el.innerHTML = html;
+}
+
+// ── Ranking de agilidad: detecta finalizaciones nuevas y las guarda en GitHub ──
+async function trDetectCompletionsAndSave() {
+  const c = getConfig();
+  if (!c.user || !c.repo || !c.token) return;
+  let changed = false;
+  const today = nowStr();
+  trLideresData.forEach(p => {
+    p.cursos.forEach(course => {
+      if (course.na) return;
+      const key = p.ldap + '|' + trNorm(course.curso);
+      const prev = trLastKnown[key];
+      if (course.pct === 100 && prev !== 100) {
+        const diasAnticipacion = course.deadlineDate ? Math.round((course.deadlineDate - new Date())/86400000) : null;
+        trCompletions.push({ ldap:p.ldap, name:p.name, curso:course.curso, fecha:today, diasAnticipacion });
+        changed = true;
+      }
+      trLastKnown[key] = course.pct;
+    });
+  });
+  if (changed) {
+    const payload = { plans, nextId, inventoryData, inventoryHistory, trainingCompletions: trCompletions, trainingLastKnown: trLastKnown, savedAt: nowStr() };
+    await pushToGitHub(c, payload, nowStr(), null, '');
+  }
+}
+
+function renderAgilityRanking() {
+  const fameEl  = document.getElementById('agility-fame-list');
+  const shameEl = document.getElementById('agility-shame-list');
+  if (!fameEl || !shameEl) return;
+  if (!trCompletions.length) {
+    fameEl.innerHTML  = '<div class="hof-empty">Sin historial todavía — se va a ir completando con el tiempo</div>';
+    shameEl.innerHTML = '<div class="hof-empty">Sin historial todavía</div>';
+    return;
+  }
+  const byPerson = {};
+  trCompletions.forEach(c => {
+    if (c.diasAnticipacion == null) return;
+    if (!byPerson[c.name]) byPerson[c.name] = [];
+    byPerson[c.name].push(c.diasAnticipacion);
+  });
+  const avgs = Object.keys(byPerson).map(name => ({
+    name, avg: Math.round(byPerson[name].reduce((s,d)=>s+d,0)/byPerson[name].length)
+  }));
+  const fame  = [...avgs].sort((a,b)=>b.avg-a.avg).slice(0,5);
+  const shame = [...avgs].sort((a,b)=>a.avg-b.avg).slice(0,5);
+  const fameIcons  = ['🥇','🥈','🥉','4️⃣','5️⃣'];
+  const shameIcons = ['🐢','🐌','🦥','🦗','🐛'];
+  fameEl.innerHTML = fame.map((d,i)=>`
+    <div class="agility-item"><div class="agility-rank">${fameIcons[i]||i+1}</div>
+    <div class="agility-name">${d.name}</div>
+    <div class="agility-days" style="color:${d.avg>=0?'#059669':'#DC2626'}">${d.avg>=0?'+':''}${d.avg}d</div></div>`).join('');
+  shameEl.innerHTML = shame.map((d,i)=>`
+    <div class="agility-item"><div class="agility-rank">${shameIcons[i]||i+1}</div>
+    <div class="agility-name">${d.name}</div>
+    <div class="agility-days" style="color:${d.avg>=0?'#059669':'#DC2626'}">${d.avg>=0?'+':''}${d.avg}d</div></div>`).join('');
+}
+
 // ═══════════════════════════════
 //  INIT
 // ═══════════════════════════════
@@ -1828,7 +2132,10 @@ document.getElementById('modalOverlay').addEventListener('click',e=>{if(e.target
 document.getElementById('configOverlay').addEventListener('click',e=>{if(e.target===e.currentTarget)closeConfig();});
 document.getElementById('histModalOverlay').addEventListener('click',e=>{if(e.target===e.currentTarget)document.getElementById('histModalOverlay').classList.remove('open');});
 
-loadFromGitHub();
+(async () => {
+  await loadFromGitHub();
+  await loadTrainingData();
+})();
 </script>
 </body>
 </html>
