@@ -609,6 +609,14 @@
   <div class="section" id="sec-training">
 
     <div class="tr-subtitle">👷 Entrenamientos Reps — SBU3</div>
+    <div class="tr-toolbar">
+      <label style="font-size:13px;color:#888;margin-right:6px">Ordenar por:</label>
+      <select class="tr-person-select" id="trRepsSortSelect" style="display:inline-block" onchange="trRepsSort=this.value;renderTrReps()">
+        <option value="default">Por defecto</option>
+        <option value="pct">Adherencia (menor → mayor)</option>
+        <option value="deadline">Deadline (próximo → lejano)</option>
+      </select>
+    </div>
     <div class="tr-list" id="trainingRepsList"><div class="tr-empty">Cargando desde Google Sheets...</div></div>
 
     <div class="tr-subtitle" style="margin-top:24px">👑 Entrenamientos Líderes — por persona</div>
@@ -1975,10 +1983,26 @@ function trRepsPctColor(pct) {
   return '#EF4444'; // rojo
 }
 
+let trRepsSort = 'default';
+
+function sortedTrReps() {
+  const arr = trRepsData.slice();
+  if (trRepsSort === 'pct') {
+    arr.sort((a, b) => (a.pct ?? 0) - (b.pct ?? 0));
+  } else if (trRepsSort === 'deadline') {
+    arr.sort((a, b) => {
+      const da = a.deadlineDate ? a.deadlineDate.getTime() : Infinity;
+      const db = b.deadlineDate ? b.deadlineDate.getTime() : Infinity;
+      return da - db;
+    });
+  }
+  return arr;
+}
+
 function renderTrReps() {
   const el = document.getElementById('trainingRepsList');
   if (!trRepsData.length) { el.innerHTML = '<div class="tr-empty">No hay entrenamientos Reps vigentes para SBU3 en este momento.</div>'; return; }
-  el.innerHTML = trRepsData.map(c => {
+  el.innerHTML = sortedTrReps().map(c => {
     if (c.review) {
       return `<div class="tr-card">
         <i class="tr-card-link">🔗</i>
