@@ -1969,6 +1969,12 @@ function trDeadlineLabelText(deadlineDate, deadlineLabel) {
   return `Deadline ${deadlineLabel} · vencido hace ${Math.abs(days)}d`;
 }
 
+function trRepsPctColor(pct) {
+  if (pct >= 100) return '#10B981'; // verde
+  if (pct >= 75)  return '#F59E0B'; // naranja
+  return '#EF4444'; // rojo
+}
+
 function renderTrReps() {
   const el = document.getElementById('trainingRepsList');
   if (!trRepsData.length) { el.innerHTML = '<div class="tr-empty">No hay entrenamientos Reps vigentes para SBU3 en este momento.</div>'; return; }
@@ -1982,7 +1988,7 @@ function renderTrReps() {
         </div>
       </div>`;
     }
-    const color = trDeadlineColor(c.deadlineDate);
+    const color = trRepsPctColor(c.pct);
     return `<div class="tr-card">
       <i class="tr-card-link">🔗</i>
       <div class="tr-card-body">
