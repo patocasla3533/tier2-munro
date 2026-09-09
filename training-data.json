@@ -1,5 +1,5 @@
 {
-  "generatedAt": "08/09/2026 06:25",
+  "generatedAt": "09/09/2026 06:26",
   "reps": [
     {
       "curso": "DESAFIO NTM",
@@ -83,6 +83,15 @@
           "pct": null
         },
         {
+          "curso": "REVERSA DE INSUMOS| REP DESAFIO",
+          "link": "https://learning.mercadolibre.com/programs/view/2043",
+          "deadlineISO": "2026-08-28",
+          "deadlineLabel": "28/08",
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
           "curso": "PORTAL INFOWOW",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_INFOWOW_UTR_SHIPPING_TRAIN_NF_TR+V1_2026/course/",
           "deadlineISO": "2026-08-28",
@@ -119,6 +128,24 @@
           "pct": 100
         },
         {
+          "curso": "[DESAFÍO] Staging Zones en SVC - Reps y PS | ESP",
+          "link": "https://learning.mercadolibre.com/programs/view/1925?tpa_hint=saml-auth0-saml",
+          "deadlineISO": "2026-09-04",
+          "deadlineLabel": "04/09",
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
+          "curso": "Nuevas WIs de Inventario para paquetes at_station| DES",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_InventarioparapaquetesatStationDes_PS_NF_PS+V1_2026/course/",
+          "deadlineISO": "2026-09-04",
+          "deadlineLabel": "04/09",
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
           "curso": "Setup y Aduana · PS y Team Leaders (ES)",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+Setup01Lideres+2026_07esp/course/",
           "deadlineISO": "2026-09-11",
@@ -128,7 +155,7 @@
           "pct": 100
         }
       ],
-      "overallPct": 83
+      "overallPct": 56
     },
     {
       "ldap": "patortiz",
@@ -154,6 +181,15 @@
           "pct": null
         },
         {
+          "curso": "REVERSA DE INSUMOS| REP DESAFIO",
+          "link": "https://learning.mercadolibre.com/programs/view/2043",
+          "deadlineISO": "2026-08-28",
+          "deadlineLabel": "28/08",
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
           "curso": "PORTAL INFOWOW",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_INFOWOW_UTR_SHIPPING_TRAIN_NF_TR+V1_2026/course/",
           "deadlineISO": "2026-08-28",
@@ -190,6 +226,24 @@
           "pct": 100
         },
         {
+          "curso": "[DESAFÍO] Staging Zones en SVC - Reps y PS | ESP",
+          "link": "https://learning.mercadolibre.com/programs/view/1925?tpa_hint=saml-auth0-saml",
+          "deadlineISO": "2026-09-04",
+          "deadlineLabel": "04/09",
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
+          "curso": "Nuevas WIs de Inventario para paquetes at_station| DES",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_InventarioparapaquetesatStationDes_PS_NF_PS+V1_2026/course/",
+          "deadlineISO": "2026-09-04",
+          "deadlineLabel": "04/09",
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
           "curso": "Setup y Aduana · PS y Team Leaders (ES)",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+Setup01Lideres+2026_07esp/course/",
           "deadlineISO": "2026-09-11",
@@ -199,7 +253,7 @@
           "pct": 0
         }
       ],
-      "overallPct": 25
+      "overallPct": 14
     },
     {
       "ldap": "nfogliaro",
@@ -225,6 +279,15 @@
           "pct": null
         },
         {
+          "curso": "REVERSA DE INSUMOS| REP DESAFIO",
+          "link": "https://learning.mercadolibre.com/programs/view/2043",
+          "deadlineISO": "2026-08-28",
+          "deadlineLabel": "28/08",
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
           "curso": "PORTAL INFOWOW",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_INFOWOW_UTR_SHIPPING_TRAIN_NF_TR+V1_2026/course/",
           "deadlineISO": "2026-08-28",
@@ -261,6 +324,24 @@
           "pct": 100
         },
         {
+          "curso": "[DESAFÍO] Staging Zones en SVC - Reps y PS | ESP",
+          "link": "https://learning.mercadolibre.com/programs/view/1925?tpa_hint=saml-auth0-saml",
+          "deadlineISO": "2026-09-04",
+          "deadlineLabel": "04/09",
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
+          "curso": "Nuevas WIs de Inventario para paquetes at_station| DES",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_InventarioparapaquetesatStationDes_PS_NF_PS+V1_2026/course/",
+          "deadlineISO": "2026-09-04",
+          "deadlineLabel": "04/09",
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
           "curso": "Setup y Aduana · PS y Team Leaders (ES)",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+Setup01Lideres+2026_07esp/course/",
           "deadlineISO": "2026-09-11",
@@ -270,7 +351,7 @@
           "pct": 100
         }
       ],
-      "overallPct": 100
+      "overallPct": 67
     },
     {
       "ldap": "aschmale",
@@ -296,13 +377,22 @@
           "pct": null
         },
         {
+          "curso": "REVERSA DE INSUMOS| REP DESAFIO",
+          "link": "https://learning.mercadolibre.com/programs/view/2043",
+          "deadlineISO": "2026-08-28",
+          "deadlineLabel": "28/08",
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
           "curso": "PORTAL INFOWOW",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_INFOWOW_UTR_SHIPPING_TRAIN_NF_TR+V1_2026/course/",
           "deadlineISO": "2026-08-28",
           "deadlineLabel": "28/08",
           "review": false,
           "na": false,
-          "pct": 0
+          "pct": 100
         },
         {
           "curso": "Rollout de NTM (HSP-TLs)",
@@ -332,6 +422,24 @@
           "pct": 100
         },
         {
+          "curso": "[DESAFÍO] Staging Zones en SVC - Reps y PS | ESP",
+          "link": "https://learning.mercadolibre.com/programs/view/1925?tpa_hint=saml-auth0-saml",
+          "deadlineISO": "2026-09-04",
+          "deadlineLabel": "04/09",
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
+          "curso": "Nuevas WIs de Inventario para paquetes at_station| DES",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_InventarioparapaquetesatStationDes_PS_NF_PS+V1_2026/course/",
+          "deadlineISO": "2026-09-04",
+          "deadlineLabel": "04/09",
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
           "curso": "Setup y Aduana · PS y Team Leaders (ES)",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+Setup01Lideres+2026_07esp/course/",
           "deadlineISO": "2026-09-11",
@@ -341,7 +449,7 @@
           "pct": 100
         }
       ],
-      "overallPct": 75
+      "overallPct": 57
     },
     {
       "ldap": "ext_almaidan",
@@ -367,6 +475,15 @@
           "pct": 0
         },
         {
+          "curso": "REVERSA DE INSUMOS| REP DESAFIO",
+          "link": "https://learning.mercadolibre.com/programs/view/2043",
+          "deadlineISO": "2026-08-28",
+          "deadlineLabel": "28/08",
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
           "curso": "PORTAL INFOWOW",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_INFOWOW_UTR_SHIPPING_TRAIN_NF_TR+V1_2026/course/",
           "deadlineISO": "2026-08-28",
@@ -403,6 +520,24 @@
           "pct": 100
         },
         {
+          "curso": "[DESAFÍO] Staging Zones en SVC - Reps y PS | ESP",
+          "link": "https://learning.mercadolibre.com/programs/view/1925?tpa_hint=saml-auth0-saml",
+          "deadlineISO": "2026-09-04",
+          "deadlineLabel": "04/09",
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
+          "curso": "Nuevas WIs de Inventario para paquetes at_station| DES",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_InventarioparapaquetesatStationDes_PS_NF_PS+V1_2026/course/",
+          "deadlineISO": "2026-09-04",
+          "deadlineLabel": "04/09",
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
           "curso": "Setup y Aduana · PS y Team Leaders (ES)",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+Setup01Lideres+2026_07esp/course/",
           "deadlineISO": "2026-09-11",
@@ -412,7 +547,7 @@
           "pct": 100
         }
       ],
-      "overallPct": 83
+      "overallPct": 56
     },
     {
       "ldap": "ext_camimira",
@@ -438,6 +573,15 @@
           "pct": 0
         },
         {
+          "curso": "REVERSA DE INSUMOS| REP DESAFIO",
+          "link": "https://learning.mercadolibre.com/programs/view/2043",
+          "deadlineISO": "2026-08-28",
+          "deadlineLabel": "28/08",
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
           "curso": "PORTAL INFOWOW",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_INFOWOW_UTR_SHIPPING_TRAIN_NF_TR+V1_2026/course/",
           "deadlineISO": "2026-08-28",
@@ -474,6 +618,24 @@
           "pct": 100
         },
         {
+          "curso": "[DESAFÍO] Staging Zones en SVC - Reps y PS | ESP",
+          "link": "https://learning.mercadolibre.com/programs/view/1925?tpa_hint=saml-auth0-saml",
+          "deadlineISO": "2026-09-04",
+          "deadlineLabel": "04/09",
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
+          "curso": "Nuevas WIs de Inventario para paquetes at_station| DES",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_InventarioparapaquetesatStationDes_PS_NF_PS+V1_2026/course/",
+          "deadlineISO": "2026-09-04",
+          "deadlineLabel": "04/09",
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
           "curso": "Setup y Aduana · PS y Team Leaders (ES)",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+Setup01Lideres+2026_07esp/course/",
           "deadlineISO": "2026-09-11",
@@ -483,7 +645,7 @@
           "pct": 100
         }
       ],
-      "overallPct": 67
+      "overallPct": 44
     },
     {
       "ldap": "ext_tamvega",
@@ -509,6 +671,15 @@
           "pct": 100
         },
         {
+          "curso": "REVERSA DE INSUMOS| REP DESAFIO",
+          "link": "https://learning.mercadolibre.com/programs/view/2043",
+          "deadlineISO": "2026-08-28",
+          "deadlineLabel": "28/08",
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
           "curso": "PORTAL INFOWOW",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_INFOWOW_UTR_SHIPPING_TRAIN_NF_TR+V1_2026/course/",
           "deadlineISO": "2026-08-28",
@@ -545,6 +716,24 @@
           "pct": 100
         },
         {
+          "curso": "[DESAFÍO] Staging Zones en SVC - Reps y PS | ESP",
+          "link": "https://learning.mercadolibre.com/programs/view/1925?tpa_hint=saml-auth0-saml",
+          "deadlineISO": "2026-09-04",
+          "deadlineLabel": "04/09",
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
+          "curso": "Nuevas WIs de Inventario para paquetes at_station| DES",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_InventarioparapaquetesatStationDes_PS_NF_PS+V1_2026/course/",
+          "deadlineISO": "2026-09-04",
+          "deadlineLabel": "04/09",
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
           "curso": "Setup y Aduana · PS y Team Leaders (ES)",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+Setup01Lideres+2026_07esp/course/",
           "deadlineISO": "2026-09-11",
@@ -554,7 +743,7 @@
           "pct": 100
         }
       ],
-      "overallPct": 100
+      "overallPct": 67
     },
     {
       "ldap": "ext_sabianch",
@@ -580,6 +769,15 @@
           "pct": 0
         },
         {
+          "curso": "REVERSA DE INSUMOS| REP DESAFIO",
+          "link": "https://learning.mercadolibre.com/programs/view/2043",
+          "deadlineISO": "2026-08-28",
+          "deadlineLabel": "28/08",
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
           "curso": "PORTAL INFOWOW",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_INFOWOW_UTR_SHIPPING_TRAIN_NF_TR+V1_2026/course/",
           "deadlineISO": "2026-08-28",
@@ -616,6 +814,24 @@
           "pct": 0
         },
         {
+          "curso": "[DESAFÍO] Staging Zones en SVC - Reps y PS | ESP",
+          "link": "https://learning.mercadolibre.com/programs/view/1925?tpa_hint=saml-auth0-saml",
+          "deadlineISO": "2026-09-04",
+          "deadlineLabel": "04/09",
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
+          "curso": "Nuevas WIs de Inventario para paquetes at_station| DES",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_InventarioparapaquetesatStationDes_PS_NF_PS+V1_2026/course/",
+          "deadlineISO": "2026-09-04",
+          "deadlineLabel": "04/09",
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
           "curso": "Setup y Aduana · PS y Team Leaders (ES)",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+Setup01Lideres+2026_07esp/course/",
           "deadlineISO": "2026-09-11",
@@ -625,7 +841,7 @@
           "pct": 0
         }
       ],
-      "overallPct": 33
+      "overallPct": 22
     }
   ]
 }
