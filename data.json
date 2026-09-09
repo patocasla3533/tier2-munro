@@ -5024,6 +5024,13 @@
       "curso": "[Audits] Nuevo sistema My Audit",
       "fecha": "08/09/2026, 07:58 a. m.",
       "diasAnticipacion": -3
+    },
+    {
+      "ldap": "aschmale",
+      "name": "Schamale Alex",
+      "curso": "PORTAL INFOWOW",
+      "fecha": "09/09/2026, 10:29 a. m.",
+      "diasAnticipacion": -11
     }
   ],
   "trainingLastKnown": {
@@ -5043,7 +5050,7 @@
     "nfogliaro|[audits] nuevo sistema my audit": 100,
     "nfogliaro|staging zones en svc - líderes | esp": 100,
     "nfogliaro|setup y aduana · ps y team leaders (es)": 100,
-    "aschmale|portal infowow": 0,
+    "aschmale|portal infowow": 100,
     "aschmale|[audits] nuevo sistema my audit": 100,
     "aschmale|staging zones en svc - líderes | esp": 100,
     "aschmale|setup y aduana · ps y team leaders (es)": 100,
@@ -5070,7 +5077,31 @@
     "ext_sabianch|rollout de ntm (hsp-tls)": 0,
     "ext_sabianch|[audits] nuevo sistema my audit": 100,
     "ext_sabianch|staging zones en svc - líderes | esp": 0,
-    "ext_sabianch|setup y aduana · ps y team leaders (es)": 0
+    "ext_sabianch|setup y aduana · ps y team leaders (es)": 0,
+    "cparrinello|reversa de insumos| rep desafio": 0,
+    "cparrinello|[desafío] staging zones en svc - reps y ps | esp": 0,
+    "cparrinello|nuevas wis de inventario para paquetes at_station| des": 0,
+    "patortiz|reversa de insumos| rep desafio": 0,
+    "patortiz|[desafío] staging zones en svc - reps y ps | esp": 0,
+    "patortiz|nuevas wis de inventario para paquetes at_station| des": 0,
+    "nfogliaro|reversa de insumos| rep desafio": 0,
+    "nfogliaro|[desafío] staging zones en svc - reps y ps | esp": 0,
+    "nfogliaro|nuevas wis de inventario para paquetes at_station| des": 0,
+    "aschmale|reversa de insumos| rep desafio": 0,
+    "aschmale|[desafío] staging zones en svc - reps y ps | esp": 0,
+    "aschmale|nuevas wis de inventario para paquetes at_station| des": 0,
+    "ext_almaidan|reversa de insumos| rep desafio": 0,
+    "ext_almaidan|[desafío] staging zones en svc - reps y ps | esp": 0,
+    "ext_almaidan|nuevas wis de inventario para paquetes at_station| des": 0,
+    "ext_camimira|reversa de insumos| rep desafio": 0,
+    "ext_camimira|[desafío] staging zones en svc - reps y ps | esp": 0,
+    "ext_camimira|nuevas wis de inventario para paquetes at_station| des": 0,
+    "ext_tamvega|reversa de insumos| rep desafio": 0,
+    "ext_tamvega|[desafío] staging zones en svc - reps y ps | esp": 0,
+    "ext_tamvega|nuevas wis de inventario para paquetes at_station| des": 0,
+    "ext_sabianch|reversa de insumos| rep desafio": 0,
+    "ext_sabianch|[desafío] staging zones en svc - reps y ps | esp": 0,
+    "ext_sabianch|nuevas wis de inventario para paquetes at_station| des": 0
   },
-  "savedAt": "08/09/2026, 07:58 a. m."
+  "savedAt": "09/09/2026, 10:29 a. m."
 }
