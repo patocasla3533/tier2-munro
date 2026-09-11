@@ -1,5 +1,5 @@
 {
-  "generatedAt": "10/09/2026 06:25",
+  "generatedAt": "11/09/2026 06:26",
   "reps": [
     {
       "curso": "DESAFIO NTM",
@@ -55,6 +55,14 @@
       "deadlineLabel": "11/09",
       "deadlineISO": "2026-09-11",
       "pct": 78,
+      "review": false
+    },
+    {
+      "curso": "[FOS-Inbound] Migracion de FOS a Lego - Desafio",
+      "link": "https://learning.mercadolibre.com/programs/view/2093",
+      "deadlineLabel": "18/09",
+      "deadlineISO": "2026-09-18",
+      "pct": 3,
       "review": false
     }
   ],
@@ -153,9 +161,18 @@
           "review": false,
           "na": false,
           "pct": 100
+        },
+        {
+          "curso": "Devoluciones con Colecta",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_RTS_DEVOS_COLECTA_UTR_SVC_LIDERES_NF_RE+V2_2026/course/",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
         }
       ],
-      "overallPct": 56
+      "overallPct": 50
     },
     {
       "ldap": "patortiz",
@@ -214,7 +231,7 @@
           "deadlineLabel": "04/09",
           "review": false,
           "na": false,
-          "pct": 0
+          "pct": 100
         },
         {
           "curso": "Staging Zones en SVC - Líderes | ESP",
@@ -250,10 +267,19 @@
           "deadlineLabel": "11/09",
           "review": false,
           "na": false,
+          "pct": 100
+        },
+        {
+          "curso": "Devoluciones con Colecta",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_RTS_DEVOS_COLECTA_UTR_SVC_LIDERES_NF_RE+V2_2026/course/",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
           "pct": 0
         }
       ],
-      "overallPct": 14
+      "overallPct": 38
     },
     {
       "ldap": "nfogliaro",
@@ -349,9 +375,18 @@
           "review": false,
           "na": false,
           "pct": 100
+        },
+        {
+          "curso": "Devoluciones con Colecta",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_RTS_DEVOS_COLECTA_UTR_SVC_LIDERES_NF_RE+V2_2026/course/",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
         }
       ],
-      "overallPct": 67
+      "overallPct": 60
     },
     {
       "ldap": "aschmale",
@@ -447,9 +482,18 @@
           "review": false,
           "na": false,
           "pct": 100
+        },
+        {
+          "curso": "Devoluciones con Colecta",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_RTS_DEVOS_COLECTA_UTR_SVC_LIDERES_NF_RE+V2_2026/course/",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
         }
       ],
-      "overallPct": 57
+      "overallPct": 50
     },
     {
       "ldap": "ext_almaidan",
@@ -545,9 +589,18 @@
           "review": false,
           "na": false,
           "pct": 100
+        },
+        {
+          "curso": "Devoluciones con Colecta",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_RTS_DEVOS_COLECTA_UTR_SVC_LIDERES_NF_RE+V2_2026/course/",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
         }
       ],
-      "overallPct": 56
+      "overallPct": 50
     },
     {
       "ldap": "ext_camimira",
@@ -643,9 +696,18 @@
           "review": false,
           "na": false,
           "pct": 100
+        },
+        {
+          "curso": "Devoluciones con Colecta",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_RTS_DEVOS_COLECTA_UTR_SVC_LIDERES_NF_RE+V2_2026/course/",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
         }
       ],
-      "overallPct": 44
+      "overallPct": 40
     },
     {
       "ldap": "ext_tamvega",
@@ -741,9 +803,18 @@
           "review": false,
           "na": false,
           "pct": 100
+        },
+        {
+          "curso": "Devoluciones con Colecta",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_RTS_DEVOS_COLECTA_UTR_SVC_LIDERES_NF_RE+V2_2026/course/",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
         }
       ],
-      "overallPct": 67
+      "overallPct": 60
     },
     {
       "ldap": "ext_sabianch",
@@ -839,9 +910,18 @@
           "review": false,
           "na": false,
           "pct": 0
+        },
+        {
+          "curso": "Devoluciones con Colecta",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_RTS_DEVOS_COLECTA_UTR_SVC_LIDERES_NF_RE+V2_2026/course/",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
         }
       ],
-      "overallPct": 22
+      "overallPct": 20
     }
   ]
 }
