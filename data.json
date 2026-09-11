@@ -5031,6 +5031,20 @@
       "curso": "PORTAL INFOWOW",
       "fecha": "09/09/2026, 10:29 a. m.",
       "diasAnticipacion": -11
+    },
+    {
+      "ldap": "patortiz",
+      "name": "Ortiz Patricio",
+      "curso": "[Audits] Nuevo sistema My Audit",
+      "fecha": "11/09/2026, 07:28 a. m.",
+      "diasAnticipacion": -6
+    },
+    {
+      "ldap": "patortiz",
+      "name": "Ortiz Patricio",
+      "curso": "Setup y Aduana · PS y Team Leaders (ES)",
+      "fecha": "11/09/2026, 07:28 a. m.",
+      "diasAnticipacion": 1
     }
   ],
   "trainingLastKnown": {
@@ -5041,9 +5055,9 @@
     "cparrinello|staging zones en svc - líderes | esp": 100,
     "cparrinello|setup y aduana · ps y team leaders (es)": 100,
     "patortiz|portal infowow": 0,
-    "patortiz|[audits] nuevo sistema my audit": 0,
+    "patortiz|[audits] nuevo sistema my audit": 100,
     "patortiz|staging zones en svc - líderes | esp": 100,
-    "patortiz|setup y aduana · ps y team leaders (es)": 0,
+    "patortiz|setup y aduana · ps y team leaders (es)": 100,
     "nfogliaro|desafio ntm": 100,
     "nfogliaro|portal infowow": 100,
     "nfogliaro|rollout de ntm (hsp-tls)": 100,
@@ -5101,7 +5115,15 @@
     "ext_tamvega|nuevas wis de inventario para paquetes at_station| des": 0,
     "ext_sabianch|reversa de insumos| rep desafio": 0,
     "ext_sabianch|[desafío] staging zones en svc - reps y ps | esp": 0,
-    "ext_sabianch|nuevas wis de inventario para paquetes at_station| des": 0
+    "ext_sabianch|nuevas wis de inventario para paquetes at_station| des": 0,
+    "cparrinello|devoluciones con colecta": 0,
+    "patortiz|devoluciones con colecta": 0,
+    "nfogliaro|devoluciones con colecta": 0,
+    "aschmale|devoluciones con colecta": 0,
+    "ext_almaidan|devoluciones con colecta": 0,
+    "ext_camimira|devoluciones con colecta": 0,
+    "ext_tamvega|devoluciones con colecta": 0,
+    "ext_sabianch|devoluciones con colecta": 0
   },
-  "savedAt": "09/09/2026, 10:29 a. m."
+  "savedAt": "11/09/2026, 07:28 a. m."
 }
