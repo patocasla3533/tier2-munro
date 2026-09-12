@@ -1,5 +1,5 @@
 {
-  "generatedAt": "11/09/2026 06:26",
+  "generatedAt": "12/09/2026 06:25",
   "reps": [
     {
       "curso": "DESAFIO NTM",
@@ -22,7 +22,7 @@
       "link": "https://learning.mercadolibre.com/programs/view/2043",
       "deadlineLabel": "28/08",
       "deadlineISO": "2026-08-28",
-      "pct": 62,
+      "pct": 100,
       "review": false
     },
     {
@@ -30,7 +30,7 @@
       "link": "https://learning.mercadolibre.com/programs/view/1925?tpa_hint=saml-auth0-saml",
       "deadlineLabel": "04/09",
       "deadlineISO": "2026-09-04",
-      "pct": 76,
+      "pct": 84,
       "review": false
     },
     {
@@ -54,7 +54,7 @@
       "link": "https://learning.mercadolibre.com/programs/view/2063",
       "deadlineLabel": "11/09",
       "deadlineISO": "2026-09-11",
-      "pct": 78,
+      "pct": 81,
       "review": false
     },
     {
@@ -141,8 +141,8 @@
           "deadlineISO": "2026-09-04",
           "deadlineLabel": "04/09",
           "review": false,
-          "na": false,
-          "pct": 0
+          "na": true,
+          "pct": null
         },
         {
           "curso": "Nuevas WIs de Inventario para paquetes at_station| DES",
@@ -150,8 +150,8 @@
           "deadlineISO": "2026-09-04",
           "deadlineLabel": "04/09",
           "review": false,
-          "na": false,
-          "pct": 0
+          "na": true,
+          "pct": null
         },
         {
           "curso": "Setup y Aduana · PS y Team Leaders (ES)",
@@ -172,7 +172,7 @@
           "pct": 0
         }
       ],
-      "overallPct": 50
+      "overallPct": 63
     },
     {
       "ldap": "patortiz",
@@ -248,8 +248,8 @@
           "deadlineISO": "2026-09-04",
           "deadlineLabel": "04/09",
           "review": false,
-          "na": false,
-          "pct": 0
+          "na": true,
+          "pct": null
         },
         {
           "curso": "Nuevas WIs de Inventario para paquetes at_station| DES",
@@ -257,8 +257,8 @@
           "deadlineISO": "2026-09-04",
           "deadlineLabel": "04/09",
           "review": false,
-          "na": false,
-          "pct": 0
+          "na": true,
+          "pct": null
         },
         {
           "curso": "Setup y Aduana · PS y Team Leaders (ES)",
@@ -279,7 +279,7 @@
           "pct": 0
         }
       ],
-      "overallPct": 38
+      "overallPct": 50
     },
     {
       "ldap": "nfogliaro",
@@ -355,8 +355,8 @@
           "deadlineISO": "2026-09-04",
           "deadlineLabel": "04/09",
           "review": false,
-          "na": false,
-          "pct": 0
+          "na": true,
+          "pct": null
         },
         {
           "curso": "Nuevas WIs de Inventario para paquetes at_station| DES",
@@ -364,8 +364,8 @@
           "deadlineISO": "2026-09-04",
           "deadlineLabel": "04/09",
           "review": false,
-          "na": false,
-          "pct": 0
+          "na": true,
+          "pct": null
         },
         {
           "curso": "Setup y Aduana · PS y Team Leaders (ES)",
@@ -386,7 +386,7 @@
           "pct": 0
         }
       ],
-      "overallPct": 60
+      "overallPct": 75
     },
     {
       "ldap": "aschmale",
@@ -462,8 +462,8 @@
           "deadlineISO": "2026-09-04",
           "deadlineLabel": "04/09",
           "review": false,
-          "na": false,
-          "pct": 0
+          "na": true,
+          "pct": null
         },
         {
           "curso": "Nuevas WIs de Inventario para paquetes at_station| DES",
@@ -471,8 +471,8 @@
           "deadlineISO": "2026-09-04",
           "deadlineLabel": "04/09",
           "review": false,
-          "na": false,
-          "pct": 0
+          "na": true,
+          "pct": null
         },
         {
           "curso": "Setup y Aduana · PS y Team Leaders (ES)",
@@ -493,7 +493,7 @@
           "pct": 0
         }
       ],
-      "overallPct": 50
+      "overallPct": 67
     },
     {
       "ldap": "ext_almaidan",
@@ -569,8 +569,8 @@
           "deadlineISO": "2026-09-04",
           "deadlineLabel": "04/09",
           "review": false,
-          "na": false,
-          "pct": 0
+          "na": true,
+          "pct": null
         },
         {
           "curso": "Nuevas WIs de Inventario para paquetes at_station| DES",
@@ -578,8 +578,8 @@
           "deadlineISO": "2026-09-04",
           "deadlineLabel": "04/09",
           "review": false,
-          "na": false,
-          "pct": 0
+          "na": true,
+          "pct": null
         },
         {
           "curso": "Setup y Aduana · PS y Team Leaders (ES)",
@@ -600,7 +600,7 @@
           "pct": 0
         }
       ],
-      "overallPct": 50
+      "overallPct": 63
     },
     {
       "ldap": "ext_camimira",
@@ -676,8 +676,8 @@
           "deadlineISO": "2026-09-04",
           "deadlineLabel": "04/09",
           "review": false,
-          "na": false,
-          "pct": 0
+          "na": true,
+          "pct": null
         },
         {
           "curso": "Nuevas WIs de Inventario para paquetes at_station| DES",
@@ -685,8 +685,8 @@
           "deadlineISO": "2026-09-04",
           "deadlineLabel": "04/09",
           "review": false,
-          "na": false,
-          "pct": 0
+          "na": true,
+          "pct": null
         },
         {
           "curso": "Setup y Aduana · PS y Team Leaders (ES)",
@@ -707,7 +707,7 @@
           "pct": 0
         }
       ],
-      "overallPct": 40
+      "overallPct": 50
     },
     {
       "ldap": "ext_tamvega",
@@ -783,8 +783,8 @@
           "deadlineISO": "2026-09-04",
           "deadlineLabel": "04/09",
           "review": false,
-          "na": false,
-          "pct": 0
+          "na": true,
+          "pct": null
         },
         {
           "curso": "Nuevas WIs de Inventario para paquetes at_station| DES",
@@ -792,8 +792,8 @@
           "deadlineISO": "2026-09-04",
           "deadlineLabel": "04/09",
           "review": false,
-          "na": false,
-          "pct": 0
+          "na": true,
+          "pct": null
         },
         {
           "curso": "Setup y Aduana · PS y Team Leaders (ES)",
@@ -814,7 +814,7 @@
           "pct": 0
         }
       ],
-      "overallPct": 60
+      "overallPct": 75
     },
     {
       "ldap": "ext_sabianch",
@@ -890,8 +890,8 @@
           "deadlineISO": "2026-09-04",
           "deadlineLabel": "04/09",
           "review": false,
-          "na": false,
-          "pct": 0
+          "na": true,
+          "pct": null
         },
         {
           "curso": "Nuevas WIs de Inventario para paquetes at_station| DES",
@@ -899,8 +899,8 @@
           "deadlineISO": "2026-09-04",
           "deadlineLabel": "04/09",
           "review": false,
-          "na": false,
-          "pct": 0
+          "na": true,
+          "pct": null
         },
         {
           "curso": "Setup y Aduana · PS y Team Leaders (ES)",
@@ -921,7 +921,7 @@
           "pct": 0
         }
       ],
-      "overallPct": 20
+      "overallPct": 25
     }
   ]
 }
