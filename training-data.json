@@ -1,5 +1,5 @@
 {
-  "generatedAt": "14/09/2026 06:25",
+  "generatedAt": "15/09/2026 06:25",
   "reps": [
     {
       "curso": "DESAFIO NTM",
@@ -30,7 +30,7 @@
       "link": "https://learning.mercadolibre.com/programs/view/1925?tpa_hint=saml-auth0-saml",
       "deadlineLabel": "04/09",
       "deadlineISO": "2026-09-04",
-      "pct": 84,
+      "pct": 100,
       "review": false
     },
     {
@@ -47,14 +47,14 @@
       "deadlineLabel": "30/09",
       "deadlineISO": "2026-09-30",
       "pct": 0,
-      "review": true
+      "review": false
     },
     {
       "curso": "Setup y Aduana desafio - ESP",
       "link": "https://learning.mercadolibre.com/programs/view/2063",
       "deadlineLabel": "11/09",
       "deadlineISO": "2026-09-11",
-      "pct": 81,
+      "pct": 97,
       "review": false
     },
     {
@@ -62,7 +62,7 @@
       "link": "https://learning.mercadolibre.com/programs/view/2093",
       "deadlineLabel": "18/09",
       "deadlineISO": "2026-09-18",
-      "pct": 3,
+      "pct": 81,
       "review": false
     }
   ],
@@ -383,10 +383,10 @@
           "deadlineLabel": null,
           "review": false,
           "na": false,
-          "pct": 0
+          "pct": 100
         }
       ],
-      "overallPct": 75
+      "overallPct": 88
     },
     {
       "ldap": "aschmale",
@@ -811,10 +811,10 @@
           "deadlineLabel": null,
           "review": false,
           "na": false,
-          "pct": 0
+          "pct": 100
         }
       ],
-      "overallPct": 75
+      "overallPct": 88
     },
     {
       "ldap": "ext_sabianch",
