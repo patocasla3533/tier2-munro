@@ -5516,6 +5516,20 @@
       "curso": "[Audits] Nuevo sistema My Audit",
       "fecha": "14/09/2026, 10:00 a. m.",
       "diasAnticipacion": -9
+    },
+    {
+      "ldap": "nfogliaro",
+      "name": "Fogliaro Nicolas",
+      "curso": "Devoluciones con Colecta",
+      "fecha": "15/09/2026, 10:38 a. m.",
+      "diasAnticipacion": null
+    },
+    {
+      "ldap": "ext_tamvega",
+      "name": "Vega Tamara",
+      "curso": "Devoluciones con Colecta",
+      "fecha": "15/09/2026, 10:38 a. m.",
+      "diasAnticipacion": null
     }
   ],
   "trainingLastKnown": {
@@ -5540,7 +5554,7 @@
     "nfogliaro|[audits] nuevo sistema my audit": 100,
     "nfogliaro|staging zones en svc - líderes | esp": 100,
     "nfogliaro|setup y aduana · ps y team leaders (es)": 100,
-    "nfogliaro|devoluciones con colecta": 0,
+    "nfogliaro|devoluciones con colecta": 100,
     "aschmale|reversa de insumos| rep desafio": 0,
     "aschmale|portal infowow": 100,
     "aschmale|[audits] nuevo sistema my audit": 100,
@@ -5570,7 +5584,7 @@
     "ext_tamvega|[audits] nuevo sistema my audit": 100,
     "ext_tamvega|staging zones en svc - líderes | esp": 100,
     "ext_tamvega|setup y aduana · ps y team leaders (es)": 100,
-    "ext_tamvega|devoluciones con colecta": 0,
+    "ext_tamvega|devoluciones con colecta": 100,
     "ext_sabianch|desafio ntm": 100,
     "ext_sabianch|reversa de insumos| líderes": 0,
     "ext_sabianch|reversa de insumos| rep desafio": 0,
@@ -5580,5 +5594,5 @@
     "ext_sabianch|setup y aduana · ps y team leaders (es)": 0,
     "ext_sabianch|devoluciones con colecta": 0
   },
-  "savedAt": "14/09/2026, 10:00 a. m."
+  "savedAt": "15/09/2026, 10:38 a. m."
 }
