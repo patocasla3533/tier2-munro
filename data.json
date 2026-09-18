@@ -474,7 +474,7 @@
       "desc": "Proceso especializado para shipments 3.0\n-Los 3.0 no pueden ni debe continuar en el flujo de devoluciones a origen. Deben continuar con el flujo de entrega al seller, sin importar el estado del mismo.",
       "responsable": "Juan",
       "fecha": "2026-08-07",
-      "status": "curso",
+      "status": "realizada",
       "updates": [
         {
           "type": "created",
@@ -493,6 +493,13 @@
           "author": "Usuario",
           "date": "18/09/2026, 04:20 a. m.",
           "text": "Status cambiado de ⏳ Pendiente a 🔄 En Curso.",
+          "images": []
+        },
+        {
+          "type": "status",
+          "author": "Usuario",
+          "date": "18/09/2026, 04:20 a. m.",
+          "text": "Status cambiado de 🔄 En Curso a ✅ Realizada.",
           "images": []
         }
       ]
@@ -541,7 +548,7 @@
       "desc": "Re ordenar el sector de las devoluciones bulky + el sector sacas y insumos",
       "responsable": "Aldana",
       "fecha": "2026-09-12",
-      "status": "curso",
+      "status": "realizada",
       "updates": [
         {
           "type": "created",
@@ -555,6 +562,13 @@
           "date": "18/09/2026, 04:20 a. m.",
           "text": "Status cambiado de ⏳ Pendiente a 🔄 En Curso.",
           "images": []
+        },
+        {
+          "type": "status",
+          "author": "Usuario",
+          "date": "18/09/2026, 04:20 a. m.",
+          "text": "Status cambiado de 🔄 En Curso a ✅ Realizada.",
+          "images": []
         }
       ]
     },
@@ -566,7 +580,7 @@
       "desc": "Demarcación de las nuevas sendas peatonales establecidas luego de la vuelta SHE 360°",
       "responsable": "Santino",
       "fecha": "2026-09-12",
-      "status": "curso",
+      "status": "realizada",
       "updates": [
         {
           "type": "created",
@@ -579,6 +593,13 @@
           "author": "Usuario",
           "date": "18/09/2026, 04:20 a. m.",
           "text": "Status cambiado de ⏳ Pendiente a 🔄 En Curso.",
+          "images": []
+        },
+        {
+          "type": "status",
+          "author": "Usuario",
+          "date": "18/09/2026, 04:21 a. m.",
+          "text": "Status cambiado de 🔄 En Curso a ✅ Realizada.",
           "images": []
         }
       ]
@@ -5292,5 +5313,5 @@
       }
     }
   ],
-  "savedAt": "18/09/2026, 04:20 a. m."
+  "savedAt": "18/09/2026, 04:21 a. m."
 }
