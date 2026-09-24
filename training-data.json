@@ -1,5 +1,5 @@
 {
-  "generatedAt": "23/09/2026 06:25",
+  "generatedAt": "24/09/2026 06:26",
   "reps": [
     {
       "curso": "DESAFIO NTM",
@@ -163,16 +163,25 @@
           "pct": 100
         },
         {
+          "curso": "[FOS-Inbound] Migracion de FOS a Lego - Desafio",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_DESMIGRACIONDEFOSALEGO_UTR_SVC_REP_NF_RE+v1/course/",
+          "deadlineISO": "2026-09-18",
+          "deadlineLabel": "18/09",
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
           "curso": "Devoluciones con Colecta",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_RTS_DEVOS_COLECTA_UTR_SVC_LIDERES_NF_RE+V2_2026/course/",
           "deadlineISO": null,
           "deadlineLabel": null,
           "review": false,
           "na": false,
-          "pct": 0
+          "pct": 100
         }
       ],
-      "overallPct": 63
+      "overallPct": 67
     },
     {
       "ldap": "patortiz",
@@ -270,6 +279,15 @@
           "pct": 100
         },
         {
+          "curso": "[FOS-Inbound] Migracion de FOS a Lego - Desafio",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_DESMIGRACIONDEFOSALEGO_UTR_SVC_REP_NF_RE+v1/course/",
+          "deadlineISO": "2026-09-18",
+          "deadlineLabel": "18/09",
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
           "curso": "Devoluciones con Colecta",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_RTS_DEVOS_COLECTA_UTR_SVC_LIDERES_NF_RE+V2_2026/course/",
           "deadlineISO": null,
@@ -279,7 +297,7 @@
           "pct": 0
         }
       ],
-      "overallPct": 50
+      "overallPct": 43
     },
     {
       "ldap": "nfogliaro",
@@ -377,6 +395,15 @@
           "pct": 100
         },
         {
+          "curso": "[FOS-Inbound] Migracion de FOS a Lego - Desafio",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_DESMIGRACIONDEFOSALEGO_UTR_SVC_REP_NF_RE+v1/course/",
+          "deadlineISO": "2026-09-18",
+          "deadlineLabel": "18/09",
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
           "curso": "Devoluciones con Colecta",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_RTS_DEVOS_COLECTA_UTR_SVC_LIDERES_NF_RE+V2_2026/course/",
           "deadlineISO": null,
@@ -386,7 +413,7 @@
           "pct": 100
         }
       ],
-      "overallPct": 88
+      "overallPct": 78
     },
     {
       "ldap": "aschmale",
@@ -484,16 +511,25 @@
           "pct": 100
         },
         {
+          "curso": "[FOS-Inbound] Migracion de FOS a Lego - Desafio",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_DESMIGRACIONDEFOSALEGO_UTR_SVC_REP_NF_RE+v1/course/",
+          "deadlineISO": "2026-09-18",
+          "deadlineLabel": "18/09",
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
           "curso": "Devoluciones con Colecta",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_RTS_DEVOS_COLECTA_UTR_SVC_LIDERES_NF_RE+V2_2026/course/",
           "deadlineISO": null,
           "deadlineLabel": null,
           "review": false,
           "na": false,
-          "pct": 0
+          "pct": 100
         }
       ],
-      "overallPct": 67
+      "overallPct": 71
     },
     {
       "ldap": "ext_almaidan",
@@ -591,6 +627,15 @@
           "pct": 100
         },
         {
+          "curso": "[FOS-Inbound] Migracion de FOS a Lego - Desafio",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_DESMIGRACIONDEFOSALEGO_UTR_SVC_REP_NF_RE+v1/course/",
+          "deadlineISO": "2026-09-18",
+          "deadlineLabel": "18/09",
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
           "curso": "Devoluciones con Colecta",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_RTS_DEVOS_COLECTA_UTR_SVC_LIDERES_NF_RE+V2_2026/course/",
           "deadlineISO": null,
@@ -600,7 +645,7 @@
           "pct": 0
         }
       ],
-      "overallPct": 63
+      "overallPct": 56
     },
     {
       "ldap": "ext_camimira",
@@ -698,6 +743,15 @@
           "pct": 100
         },
         {
+          "curso": "[FOS-Inbound] Migracion de FOS a Lego - Desafio",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_DESMIGRACIONDEFOSALEGO_UTR_SVC_REP_NF_RE+v1/course/",
+          "deadlineISO": "2026-09-18",
+          "deadlineLabel": "18/09",
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
           "curso": "Devoluciones con Colecta",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_RTS_DEVOS_COLECTA_UTR_SVC_LIDERES_NF_RE+V2_2026/course/",
           "deadlineISO": null,
@@ -707,7 +761,7 @@
           "pct": 0
         }
       ],
-      "overallPct": 50
+      "overallPct": 44
     },
     {
       "ldap": "ext_tamvega",
@@ -805,6 +859,15 @@
           "pct": 100
         },
         {
+          "curso": "[FOS-Inbound] Migracion de FOS a Lego - Desafio",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_DESMIGRACIONDEFOSALEGO_UTR_SVC_REP_NF_RE+v1/course/",
+          "deadlineISO": "2026-09-18",
+          "deadlineLabel": "18/09",
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
           "curso": "Devoluciones con Colecta",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_RTS_DEVOS_COLECTA_UTR_SVC_LIDERES_NF_RE+V2_2026/course/",
           "deadlineISO": null,
@@ -814,7 +877,7 @@
           "pct": 100
         }
       ],
-      "overallPct": 88
+      "overallPct": 78
     },
     {
       "ldap": "ext_sabianch",
@@ -837,7 +900,7 @@
           "deadlineLabel": "28/08",
           "review": false,
           "na": false,
-          "pct": 0
+          "pct": 100
         },
         {
           "curso": "REVERSA DE INSUMOS| REP DESAFIO",
@@ -864,7 +927,7 @@
           "deadlineLabel": null,
           "review": false,
           "na": false,
-          "pct": 0
+          "pct": 100
         },
         {
           "curso": "[Audits] Nuevo sistema My Audit",
@@ -882,7 +945,7 @@
           "deadlineLabel": "04/09",
           "review": false,
           "na": false,
-          "pct": 0
+          "pct": 100
         },
         {
           "curso": "[DESAFÍO] Staging Zones en SVC - Reps y PS | ESP",
@@ -912,16 +975,25 @@
           "pct": 0
         },
         {
+          "curso": "[FOS-Inbound] Migracion de FOS a Lego - Desafio",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_DESMIGRACIONDEFOSALEGO_UTR_SVC_REP_NF_RE+v1/course/",
+          "deadlineISO": "2026-09-18",
+          "deadlineLabel": "18/09",
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
           "curso": "Devoluciones con Colecta",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_RTS_DEVOS_COLECTA_UTR_SVC_LIDERES_NF_RE+V2_2026/course/",
           "deadlineISO": null,
           "deadlineLabel": null,
           "review": false,
           "na": false,
-          "pct": 0
+          "pct": 100
         }
       ],
-      "overallPct": 25
+      "overallPct": 67
     }
   ]
 }
