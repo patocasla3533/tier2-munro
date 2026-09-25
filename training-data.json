@@ -1,5 +1,5 @@
 {
-  "generatedAt": "24/09/2026 06:26",
+  "generatedAt": "25/09/2026 06:25",
   "reps": [
     {
       "curso": "DESAFIO NTM",
@@ -179,6 +179,15 @@
           "review": false,
           "na": false,
           "pct": 100
+        },
+        {
+          "curso": "[Desafío REPS ] Actualización gestión de insumos reutilizables",
+          "link": "https://learning.mercadolibre.com/programs/view/2106",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": true,
+          "pct": null
         }
       ],
       "overallPct": 67
@@ -295,6 +304,15 @@
           "review": false,
           "na": false,
           "pct": 0
+        },
+        {
+          "curso": "[Desafío REPS ] Actualización gestión de insumos reutilizables",
+          "link": "https://learning.mercadolibre.com/programs/view/2106",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": true,
+          "pct": null
         }
       ],
       "overallPct": 43
@@ -411,6 +429,15 @@
           "review": false,
           "na": false,
           "pct": 100
+        },
+        {
+          "curso": "[Desafío REPS ] Actualización gestión de insumos reutilizables",
+          "link": "https://learning.mercadolibre.com/programs/view/2106",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": true,
+          "pct": null
         }
       ],
       "overallPct": 78
@@ -527,6 +554,15 @@
           "review": false,
           "na": false,
           "pct": 100
+        },
+        {
+          "curso": "[Desafío REPS ] Actualización gestión de insumos reutilizables",
+          "link": "https://learning.mercadolibre.com/programs/view/2106",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": true,
+          "pct": null
         }
       ],
       "overallPct": 71
@@ -643,9 +679,18 @@
           "review": false,
           "na": false,
           "pct": 0
+        },
+        {
+          "curso": "[Desafío REPS ] Actualización gestión de insumos reutilizables",
+          "link": "https://learning.mercadolibre.com/programs/view/2106",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
         }
       ],
-      "overallPct": 56
+      "overallPct": 50
     },
     {
       "ldap": "ext_camimira",
@@ -758,10 +803,19 @@
           "deadlineLabel": null,
           "review": false,
           "na": false,
+          "pct": 29
+        },
+        {
+          "curso": "[Desafío REPS ] Actualización gestión de insumos reutilizables",
+          "link": "https://learning.mercadolibre.com/programs/view/2106",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
           "pct": 0
         }
       ],
-      "overallPct": 44
+      "overallPct": 43
     },
     {
       "ldap": "ext_tamvega",
@@ -875,9 +929,18 @@
           "review": false,
           "na": false,
           "pct": 100
+        },
+        {
+          "curso": "[Desafío REPS ] Actualización gestión de insumos reutilizables",
+          "link": "https://learning.mercadolibre.com/programs/view/2106",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
         }
       ],
-      "overallPct": 78
+      "overallPct": 70
     },
     {
       "ldap": "ext_sabianch",
@@ -991,9 +1054,18 @@
           "review": false,
           "na": false,
           "pct": 100
+        },
+        {
+          "curso": "[Desafío REPS ] Actualización gestión de insumos reutilizables",
+          "link": "https://learning.mercadolibre.com/programs/view/2106",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
         }
       ],
-      "overallPct": 67
+      "overallPct": 60
     }
   ]
 }
