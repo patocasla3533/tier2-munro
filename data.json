@@ -6043,6 +6043,48 @@
       "curso": "[Audits] Nuevo sistema My Audit",
       "fecha": "22/09/2026, 06:33 a. m.",
       "diasAnticipacion": -17
+    },
+    {
+      "ldap": "cparrinello",
+      "name": "Parrinello Camila",
+      "curso": "Devoluciones con Colecta",
+      "fecha": "25/09/2026, 10:18 a. m.",
+      "diasAnticipacion": null
+    },
+    {
+      "ldap": "aschmale",
+      "name": "Schamale Alex",
+      "curso": "Devoluciones con Colecta",
+      "fecha": "25/09/2026, 10:18 a. m.",
+      "diasAnticipacion": null
+    },
+    {
+      "ldap": "ext_sabianch",
+      "name": "Bianchi Santino",
+      "curso": "REVERSA DE INSUMOS| LÍDERES",
+      "fecha": "25/09/2026, 10:18 a. m.",
+      "diasAnticipacion": -27
+    },
+    {
+      "ldap": "ext_sabianch",
+      "name": "Bianchi Santino",
+      "curso": "Rollout de NTM (HSP-TLs)",
+      "fecha": "25/09/2026, 10:18 a. m.",
+      "diasAnticipacion": null
+    },
+    {
+      "ldap": "ext_sabianch",
+      "name": "Bianchi Santino",
+      "curso": "Staging Zones en SVC - Líderes | ESP",
+      "fecha": "25/09/2026, 10:18 a. m.",
+      "diasAnticipacion": -20
+    },
+    {
+      "ldap": "ext_sabianch",
+      "name": "Bianchi Santino",
+      "curso": "Devoluciones con Colecta",
+      "fecha": "25/09/2026, 10:18 a. m.",
+      "diasAnticipacion": null
     }
   ],
   "trainingLastKnown": {
@@ -6053,7 +6095,7 @@
     "cparrinello|[audits] nuevo sistema my audit": 100,
     "cparrinello|staging zones en svc - líderes | esp": 100,
     "cparrinello|setup y aduana · ps y team leaders (es)": 100,
-    "cparrinello|devoluciones con colecta": 0,
+    "cparrinello|devoluciones con colecta": 100,
     "patortiz|reversa de insumos| rep desafio": 0,
     "patortiz|portal infowow": 0,
     "patortiz|[audits] nuevo sistema my audit": 100,
@@ -6073,7 +6115,7 @@
     "aschmale|[audits] nuevo sistema my audit": 100,
     "aschmale|staging zones en svc - líderes | esp": 100,
     "aschmale|setup y aduana · ps y team leaders (es)": 100,
-    "aschmale|devoluciones con colecta": 0,
+    "aschmale|devoluciones con colecta": 100,
     "ext_almaidan|desafio ntm": 100,
     "ext_almaidan|reversa de insumos| líderes": 0,
     "ext_almaidan|reversa de insumos| rep desafio": 0,
@@ -6089,7 +6131,7 @@
     "ext_camimira|[audits] nuevo sistema my audit": 100,
     "ext_camimira|staging zones en svc - líderes | esp": 100,
     "ext_camimira|setup y aduana · ps y team leaders (es)": 100,
-    "ext_camimira|devoluciones con colecta": 0,
+    "ext_camimira|devoluciones con colecta": 29,
     "ext_tamvega|desafio ntm": 100,
     "ext_tamvega|reversa de insumos| líderes": 100,
     "ext_tamvega|reversa de insumos| rep desafio": 0,
@@ -6099,13 +6141,25 @@
     "ext_tamvega|setup y aduana · ps y team leaders (es)": 100,
     "ext_tamvega|devoluciones con colecta": 100,
     "ext_sabianch|desafio ntm": 100,
-    "ext_sabianch|reversa de insumos| líderes": 0,
+    "ext_sabianch|reversa de insumos| líderes": 100,
     "ext_sabianch|reversa de insumos| rep desafio": 0,
-    "ext_sabianch|rollout de ntm (hsp-tls)": 0,
+    "ext_sabianch|rollout de ntm (hsp-tls)": 100,
     "ext_sabianch|[audits] nuevo sistema my audit": 100,
-    "ext_sabianch|staging zones en svc - líderes | esp": 0,
+    "ext_sabianch|staging zones en svc - líderes | esp": 100,
     "ext_sabianch|setup y aduana · ps y team leaders (es)": 0,
-    "ext_sabianch|devoluciones con colecta": 0
+    "ext_sabianch|devoluciones con colecta": 100,
+    "cparrinello|[fos-inbound] migracion de fos a lego - desafio": 0,
+    "patortiz|[fos-inbound] migracion de fos a lego - desafio": 0,
+    "nfogliaro|[fos-inbound] migracion de fos a lego - desafio": 0,
+    "aschmale|[fos-inbound] migracion de fos a lego - desafio": 0,
+    "ext_almaidan|[fos-inbound] migracion de fos a lego - desafio": 0,
+    "ext_almaidan|[desafío reps ] actualización gestión de insumos reutilizables": 0,
+    "ext_camimira|[fos-inbound] migracion de fos a lego - desafio": 0,
+    "ext_camimira|[desafío reps ] actualización gestión de insumos reutilizables": 0,
+    "ext_tamvega|[fos-inbound] migracion de fos a lego - desafio": 0,
+    "ext_tamvega|[desafío reps ] actualización gestión de insumos reutilizables": 0,
+    "ext_sabianch|[fos-inbound] migracion de fos a lego - desafio": 0,
+    "ext_sabianch|[desafío reps ] actualización gestión de insumos reutilizables": 0
   },
-  "savedAt": "22/09/2026, 06:33 a. m."
+  "savedAt": "25/09/2026, 10:18 a. m."
 }
