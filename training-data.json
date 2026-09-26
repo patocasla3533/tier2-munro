@@ -1,5 +1,5 @@
 {
-  "generatedAt": "25/09/2026 06:25",
+  "generatedAt": "26/09/2026 06:26",
   "reps": [
     {
       "curso": "DESAFIO NTM",
@@ -188,9 +188,36 @@
           "review": false,
           "na": true,
           "pct": null
+        },
+        {
+          "curso": "[H&B - Multibultos] - Migración de nuevos dominios| LIDERES",
+          "link": "https://docs.google.com/presentation/d/1JcgcDtwq5HgmQjruFYVK46yG2Q8K04KGRwgnPPVBomg/edit?slide=id.g3f9f166727f_1_158#slide=id.g3f9f166727f_1_158",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
+          "curso": "[YMS] Panel de alertas | Painel de Alertas - Líderes",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+YMS_Panel_de_Alertas_ES_PT_LIDERES+V1/about",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
+          "curso": "ADN Auditor: Líder en gestión operativa",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:fbm+ADNAUD+2026_v1/about",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
         }
       ],
-      "overallPct": 67
+      "overallPct": 50
     },
     {
       "ldap": "patortiz",
@@ -313,9 +340,36 @@
           "review": false,
           "na": true,
           "pct": null
+        },
+        {
+          "curso": "[H&B - Multibultos] - Migración de nuevos dominios| LIDERES",
+          "link": "https://docs.google.com/presentation/d/1JcgcDtwq5HgmQjruFYVK46yG2Q8K04KGRwgnPPVBomg/edit?slide=id.g3f9f166727f_1_158#slide=id.g3f9f166727f_1_158",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
+          "curso": "[YMS] Panel de alertas | Painel de Alertas - Líderes",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+YMS_Panel_de_Alertas_ES_PT_LIDERES+V1/about",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
+          "curso": "ADN Auditor: Líder en gestión operativa",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:fbm+ADNAUD+2026_v1/about",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
         }
       ],
-      "overallPct": 43
+      "overallPct": 30
     },
     {
       "ldap": "nfogliaro",
@@ -438,9 +492,36 @@
           "review": false,
           "na": true,
           "pct": null
+        },
+        {
+          "curso": "[H&B - Multibultos] - Migración de nuevos dominios| LIDERES",
+          "link": "https://docs.google.com/presentation/d/1JcgcDtwq5HgmQjruFYVK46yG2Q8K04KGRwgnPPVBomg/edit?slide=id.g3f9f166727f_1_158#slide=id.g3f9f166727f_1_158",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
+          "curso": "[YMS] Panel de alertas | Painel de Alertas - Líderes",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+YMS_Panel_de_Alertas_ES_PT_LIDERES+V1/about",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
+          "curso": "ADN Auditor: Líder en gestión operativa",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:fbm+ADNAUD+2026_v1/about",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
         }
       ],
-      "overallPct": 78
+      "overallPct": 58
     },
     {
       "ldap": "aschmale",
@@ -563,9 +644,36 @@
           "review": false,
           "na": true,
           "pct": null
+        },
+        {
+          "curso": "[H&B - Multibultos] - Migración de nuevos dominios| LIDERES",
+          "link": "https://docs.google.com/presentation/d/1JcgcDtwq5HgmQjruFYVK46yG2Q8K04KGRwgnPPVBomg/edit?slide=id.g3f9f166727f_1_158#slide=id.g3f9f166727f_1_158",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
+          "curso": "[YMS] Panel de alertas | Painel de Alertas - Líderes",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+YMS_Panel_de_Alertas_ES_PT_LIDERES+V1/about",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
+          "curso": "ADN Auditor: Líder en gestión operativa",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:fbm+ADNAUD+2026_v1/about",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
         }
       ],
-      "overallPct": 71
+      "overallPct": 50
     },
     {
       "ldap": "ext_almaidan",
@@ -688,9 +796,36 @@
           "review": false,
           "na": false,
           "pct": 0
+        },
+        {
+          "curso": "[H&B - Multibultos] - Migración de nuevos dominios| LIDERES",
+          "link": "https://docs.google.com/presentation/d/1JcgcDtwq5HgmQjruFYVK46yG2Q8K04KGRwgnPPVBomg/edit?slide=id.g3f9f166727f_1_158#slide=id.g3f9f166727f_1_158",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
+          "curso": "[YMS] Panel de alertas | Painel de Alertas - Líderes",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+YMS_Panel_de_Alertas_ES_PT_LIDERES+V1/about",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
+          "curso": "ADN Auditor: Líder en gestión operativa",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:fbm+ADNAUD+2026_v1/about",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
         }
       ],
-      "overallPct": 50
+      "overallPct": 38
     },
     {
       "ldap": "ext_camimira",
@@ -813,9 +948,36 @@
           "review": false,
           "na": false,
           "pct": 0
+        },
+        {
+          "curso": "[H&B - Multibultos] - Migración de nuevos dominios| LIDERES",
+          "link": "https://docs.google.com/presentation/d/1JcgcDtwq5HgmQjruFYVK46yG2Q8K04KGRwgnPPVBomg/edit?slide=id.g3f9f166727f_1_158#slide=id.g3f9f166727f_1_158",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
+          "curso": "[YMS] Panel de alertas | Painel de Alertas - Líderes",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+YMS_Panel_de_Alertas_ES_PT_LIDERES+V1/about",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
+          "curso": "ADN Auditor: Líder en gestión operativa",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:fbm+ADNAUD+2026_v1/about",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
         }
       ],
-      "overallPct": 43
+      "overallPct": 33
     },
     {
       "ldap": "ext_tamvega",
@@ -938,9 +1100,36 @@
           "review": false,
           "na": false,
           "pct": 0
+        },
+        {
+          "curso": "[H&B - Multibultos] - Migración de nuevos dominios| LIDERES",
+          "link": "https://docs.google.com/presentation/d/1JcgcDtwq5HgmQjruFYVK46yG2Q8K04KGRwgnPPVBomg/edit?slide=id.g3f9f166727f_1_158#slide=id.g3f9f166727f_1_158",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
+          "curso": "[YMS] Panel de alertas | Painel de Alertas - Líderes",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+YMS_Panel_de_Alertas_ES_PT_LIDERES+V1/about",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
+          "curso": "ADN Auditor: Líder en gestión operativa",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:fbm+ADNAUD+2026_v1/about",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
         }
       ],
-      "overallPct": 70
+      "overallPct": 54
     },
     {
       "ldap": "ext_sabianch",
@@ -1063,9 +1252,36 @@
           "review": false,
           "na": false,
           "pct": 0
+        },
+        {
+          "curso": "[H&B - Multibultos] - Migración de nuevos dominios| LIDERES",
+          "link": "https://docs.google.com/presentation/d/1JcgcDtwq5HgmQjruFYVK46yG2Q8K04KGRwgnPPVBomg/edit?slide=id.g3f9f166727f_1_158#slide=id.g3f9f166727f_1_158",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
+          "curso": "[YMS] Panel de alertas | Painel de Alertas - Líderes",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+YMS_Panel_de_Alertas_ES_PT_LIDERES+V1/about",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
+          "curso": "ADN Auditor: Líder en gestión operativa",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:fbm+ADNAUD+2026_v1/about",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
         }
       ],
-      "overallPct": 60
+      "overallPct": 46
     }
   ]
 }
