@@ -1,5 +1,5 @@
 {
-  "generatedAt": "28/09/2026 06:25",
+  "generatedAt": "29/09/2026 06:25",
   "reps": [
     {
       "curso": "DESAFIO NTM",
@@ -63,6 +63,22 @@
       "deadlineLabel": "18/09",
       "deadlineISO": "2026-09-18",
       "pct": 100,
+      "review": false
+    },
+    {
+      "curso": "[Desafío REPS ] Actualización gestión de insumos reutilizables",
+      "link": "https://learning.mercadolibre.com/programs/view/2106",
+      "deadlineLabel": "02/10",
+      "deadlineISO": "2026-10-02",
+      "pct": 0,
+      "review": false
+    },
+    {
+      "curso": "[DESAFIO] YMS | Panel de Alertas | Reps",
+      "link": "https://learning.mercadolibre.com/programs/view/2114",
+      "deadlineLabel": "09/10",
+      "deadlineISO": "2026-10-09",
+      "pct": 0,
       "review": false
     }
   ],
@@ -183,8 +199,8 @@
         {
           "curso": "[Desafío REPS ] Actualización gestión de insumos reutilizables",
           "link": "https://learning.mercadolibre.com/programs/view/2106",
-          "deadlineISO": null,
-          "deadlineLabel": null,
+          "deadlineISO": "2026-10-02",
+          "deadlineLabel": "02/10",
           "review": false,
           "na": true,
           "pct": null
@@ -210,8 +226,8 @@
         {
           "curso": "ADN Auditor: Líder en gestión operativa",
           "link": "https://learning.mercadolibre.com/courses/course-v1:fbm+ADNAUD+2026_v1/about",
-          "deadlineISO": null,
-          "deadlineLabel": null,
+          "deadlineISO": "2026-10-09",
+          "deadlineLabel": "09/10",
           "review": false,
           "na": false,
           "pct": 0
@@ -335,8 +351,8 @@
         {
           "curso": "[Desafío REPS ] Actualización gestión de insumos reutilizables",
           "link": "https://learning.mercadolibre.com/programs/view/2106",
-          "deadlineISO": null,
-          "deadlineLabel": null,
+          "deadlineISO": "2026-10-02",
+          "deadlineLabel": "02/10",
           "review": false,
           "na": true,
           "pct": null
@@ -362,8 +378,8 @@
         {
           "curso": "ADN Auditor: Líder en gestión operativa",
           "link": "https://learning.mercadolibre.com/courses/course-v1:fbm+ADNAUD+2026_v1/about",
-          "deadlineISO": null,
-          "deadlineLabel": null,
+          "deadlineISO": "2026-10-09",
+          "deadlineLabel": "09/10",
           "review": false,
           "na": false,
           "pct": 0
@@ -487,8 +503,8 @@
         {
           "curso": "[Desafío REPS ] Actualización gestión de insumos reutilizables",
           "link": "https://learning.mercadolibre.com/programs/view/2106",
-          "deadlineISO": null,
-          "deadlineLabel": null,
+          "deadlineISO": "2026-10-02",
+          "deadlineLabel": "02/10",
           "review": false,
           "na": true,
           "pct": null
@@ -514,8 +530,8 @@
         {
           "curso": "ADN Auditor: Líder en gestión operativa",
           "link": "https://learning.mercadolibre.com/courses/course-v1:fbm+ADNAUD+2026_v1/about",
-          "deadlineISO": null,
-          "deadlineLabel": null,
+          "deadlineISO": "2026-10-09",
+          "deadlineLabel": "09/10",
           "review": false,
           "na": false,
           "pct": 0
@@ -639,8 +655,8 @@
         {
           "curso": "[Desafío REPS ] Actualización gestión de insumos reutilizables",
           "link": "https://learning.mercadolibre.com/programs/view/2106",
-          "deadlineISO": null,
-          "deadlineLabel": null,
+          "deadlineISO": "2026-10-02",
+          "deadlineLabel": "02/10",
           "review": false,
           "na": true,
           "pct": null
@@ -666,8 +682,8 @@
         {
           "curso": "ADN Auditor: Líder en gestión operativa",
           "link": "https://learning.mercadolibre.com/courses/course-v1:fbm+ADNAUD+2026_v1/about",
-          "deadlineISO": null,
-          "deadlineLabel": null,
+          "deadlineISO": "2026-10-09",
+          "deadlineLabel": "09/10",
           "review": false,
           "na": false,
           "pct": 0
@@ -696,7 +712,7 @@
           "deadlineLabel": "28/08",
           "review": false,
           "na": false,
-          "pct": 0
+          "pct": 100
         },
         {
           "curso": "REVERSA DE INSUMOS| REP DESAFIO",
@@ -786,13 +802,13 @@
           "deadlineLabel": null,
           "review": false,
           "na": false,
-          "pct": 0
+          "pct": 100
         },
         {
           "curso": "[Desafío REPS ] Actualización gestión de insumos reutilizables",
           "link": "https://learning.mercadolibre.com/programs/view/2106",
-          "deadlineISO": null,
-          "deadlineLabel": null,
+          "deadlineISO": "2026-10-02",
+          "deadlineLabel": "02/10",
           "review": false,
           "na": false,
           "pct": 0
@@ -818,14 +834,14 @@
         {
           "curso": "ADN Auditor: Líder en gestión operativa",
           "link": "https://learning.mercadolibre.com/courses/course-v1:fbm+ADNAUD+2026_v1/about",
-          "deadlineISO": null,
-          "deadlineLabel": null,
+          "deadlineISO": "2026-10-09",
+          "deadlineLabel": "09/10",
           "review": false,
           "na": false,
           "pct": 0
         }
       ],
-      "overallPct": 38
+      "overallPct": 54
     },
     {
       "ldap": "ext_camimira",
@@ -943,8 +959,8 @@
         {
           "curso": "[Desafío REPS ] Actualización gestión de insumos reutilizables",
           "link": "https://learning.mercadolibre.com/programs/view/2106",
-          "deadlineISO": null,
-          "deadlineLabel": null,
+          "deadlineISO": "2026-10-02",
+          "deadlineLabel": "02/10",
           "review": false,
           "na": false,
           "pct": 0
@@ -970,8 +986,8 @@
         {
           "curso": "ADN Auditor: Líder en gestión operativa",
           "link": "https://learning.mercadolibre.com/courses/course-v1:fbm+ADNAUD+2026_v1/about",
-          "deadlineISO": null,
-          "deadlineLabel": null,
+          "deadlineISO": "2026-10-09",
+          "deadlineLabel": "09/10",
           "review": false,
           "na": false,
           "pct": 0
@@ -1095,8 +1111,8 @@
         {
           "curso": "[Desafío REPS ] Actualización gestión de insumos reutilizables",
           "link": "https://learning.mercadolibre.com/programs/view/2106",
-          "deadlineISO": null,
-          "deadlineLabel": null,
+          "deadlineISO": "2026-10-02",
+          "deadlineLabel": "02/10",
           "review": false,
           "na": false,
           "pct": 0
@@ -1122,8 +1138,8 @@
         {
           "curso": "ADN Auditor: Líder en gestión operativa",
           "link": "https://learning.mercadolibre.com/courses/course-v1:fbm+ADNAUD+2026_v1/about",
-          "deadlineISO": null,
-          "deadlineLabel": null,
+          "deadlineISO": "2026-10-09",
+          "deadlineLabel": "09/10",
           "review": false,
           "na": false,
           "pct": 0
@@ -1247,8 +1263,8 @@
         {
           "curso": "[Desafío REPS ] Actualización gestión de insumos reutilizables",
           "link": "https://learning.mercadolibre.com/programs/view/2106",
-          "deadlineISO": null,
-          "deadlineLabel": null,
+          "deadlineISO": "2026-10-02",
+          "deadlineLabel": "02/10",
           "review": false,
           "na": false,
           "pct": 0
@@ -1274,8 +1290,8 @@
         {
           "curso": "ADN Auditor: Líder en gestión operativa",
           "link": "https://learning.mercadolibre.com/courses/course-v1:fbm+ADNAUD+2026_v1/about",
-          "deadlineISO": null,
-          "deadlineLabel": null,
+          "deadlineISO": "2026-10-09",
+          "deadlineLabel": "09/10",
           "review": false,
           "na": false,
           "pct": 0
