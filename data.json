@@ -908,11 +908,11 @@
       "dan": 0
     },
     "Consumibles__Ribbon": {
-      "op": 216,
+      "op": 249,
       "dan": 0
     },
     "Consumibles__Etiqueta de Ruta": {
-      "op": 636,
+      "op": 240,
       "dan": 0
     },
     "Consumibles__Etiqueta HU": {
@@ -1073,6 +1073,477 @@
     }
   },
   "inventoryHistory": [
+    {
+      "date": "01/10/2026, 03:20 p. m.",
+      "label": "Inventario 01/10/2026, 03:20 p. m.",
+      "filled": 85,
+      "data": {
+        "Operativo__Conveyor": {
+          "op": 1,
+          "dan": 0
+        },
+        "Operativo__Baker Clasico": {
+          "op": 154,
+          "dan": 1
+        },
+        "Operativo__Baker Negros": {
+          "op": 203,
+          "dan": 2
+        },
+        "Operativo__Baker Pesca": {
+          "op": 79,
+          "dan": 0
+        },
+        "Operativo__Baker Voluminoso": {
+          "op": 1,
+          "dan": 0
+        },
+        "Operativo__Tolva GM": {
+          "op": 0,
+          "dan": 0
+        },
+        "Operativo__Tolva Voluminoso": {
+          "op": 0,
+          "dan": 0
+        },
+        "Operativo__TelescÃÂÃÂ³picas": {
+          "op": 0,
+          "dan": 0
+        },
+        "Operativo__Roll Containers": {
+          "op": 51,
+          "dan": 0
+        },
+        "Operativo__Zorras Manuales": {
+          "op": 12,
+          "dan": 0
+        },
+        "Operativo__Zorras ElÃÂÃÂ©ctricas": {
+          "op": 0,
+          "dan": 0
+        },
+        "Operativo__Zorras ElÃÂÃÂ©ctricas (HAB)": {
+          "op": 1,
+          "dan": 0
+        },
+        "Operativo__Apiladores ElÃÂÃÂ©ctricos": {
+          "op": 0,
+          "dan": 0
+        },
+        "Operativo__Mesas impresoras": {
+          "op": 12,
+          "dan": 0
+        },
+        "Operativo__Sacas": {
+          "op": 0,
+          "dan": 0
+        },
+        "Operativo__Carros H&B (zorritas para traslados)": {
+          "op": 7,
+          "dan": 0
+        },
+        "Operativo__Ventiladores": {
+          "op": 0,
+          "dan": 0
+        },
+        "Operativo__Contenedores de basura": {
+          "op": 3,
+          "dan": 0
+        },
+        "IS__Computadoras": {
+          "op": 9,
+          "dan": 2
+        },
+        "IS__Impresoras de oficina": {
+          "op": 2,
+          "dan": 0
+        },
+        "IS__Changuitos": {
+          "op": 79,
+          "dan": 0
+        },
+        "IS__Impresora ZT": {
+          "op": 12,
+          "dan": 0
+        },
+        "IS__HandHeld": {
+          "op": 58,
+          "dan": 0
+        },
+        "IS__Impresoras portÃÂÃÂ¡tiles (las chiquitas con correa)": {
+          "op": 0,
+          "dan": 0
+        },
+        "IS__Base de Carga HH": {
+          "op": 14,
+          "dan": 0
+        },
+        "IS__Lectoras 2D": {
+          "op": 9,
+          "dan": 0
+        },
+        "IS__Base de Carga Scanner": {
+          "op": 9,
+          "dan": 0
+        },
+        "IS__Televisores": {
+          "op": 3,
+          "dan": 0
+        },
+        "IS__Monitores": {
+          "op": 0,
+          "dan": 0
+        },
+        "IS__Equipamiento sala de reuniÃÂÃÂ³n": {
+          "op": 0,
+          "dan": 0
+        },
+        "Oficina__Cafeteras": {
+          "op": 2,
+          "dan": 0
+        },
+        "Oficina__Licuadoras": {
+          "op": 2,
+          "dan": 0
+        },
+        "Oficina__Tostadoras": {
+          "op": 1,
+          "dan": 0
+        },
+        "Oficina__Heladeras Grandes": {
+          "op": 2,
+          "dan": 0
+        },
+        "Oficina__Heladeras Chicas": {
+          "op": 2,
+          "dan": 0
+        },
+        "Oficina__Microondas": {
+          "op": 3,
+          "dan": 0
+        },
+        "Oficina__Hornos ElÃÂÃÂ©ctricos": {
+          "op": 0,
+          "dan": 0
+        },
+        "Oficina__Soda": {
+          "op": 1,
+          "dan": 0
+        },
+        "SHE__Alfombra ErgonÃÂÃÂ³mica Etiquetador": {
+          "op": 0,
+          "dan": 0
+        },
+        "SHE__Alfombra ErgonÃÂÃÂ³mica Pescador": {
+          "op": 0,
+          "dan": 0
+        },
+        "SHE__Punteras": {
+          "op": 35,
+          "dan": 0
+        },
+        "SHE__Cascos": {
+          "op": 21,
+          "dan": 0
+        },
+        "SHE__Kit Antiderrame": {
+          "op": 2,
+          "dan": 0
+        },
+        "SHE__Lava ojos": {
+          "op": 2,
+          "dan": 0
+        },
+        "SHE__Kit de primeros auxilios": {
+          "op": 2,
+          "dan": 0
+        },
+        "SHE__Chalecos": {
+          "op": 26,
+          "dan": 0
+        },
+        "SHE__Conos": {
+          "op": 26,
+          "dan": 0
+        },
+        "SHE__Cadenas": {
+          "op": 6,
+          "dan": 0
+        },
+        "SHE__Escalera Burro": {
+          "op": 1,
+          "dan": 0
+        },
+        "SHE__Silla de Ruedas": {
+          "op": 1,
+          "dan": 0
+        },
+        "SHE__Camilla": {
+          "op": 1,
+          "dan": 0
+        },
+        "SHE__DEA": {
+          "op": 1,
+          "dan": 0
+        },
+        "Consumibles__Bolsas NÃÂÃÂ°1": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Bolsas NÃÂÃÂ°2": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Bolsas NÃÂÃÂ°3": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Bolsas NÃÂÃÂ°3.5": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Bolsas NÃÂÃÂ°4": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Bolsas NÃÂÃÂ°5": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Bolsas NÃÂÃÂ°6": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Caja NÃÂÃÂ°1": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Caja NÃÂÃÂ°2": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Caja NÃÂÃÂ°3": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Caja NÃÂÃÂ°4": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Caja NÃÂÃÂ°5": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Caja NÃÂÃÂ°6": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Caja NÃÂÃÂ°7": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Caja NÃÂÃÂ°8": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Caja NÃÂÃÂ°9": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Caja NÃÂÃÂ°10": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Caja NÃÂÃÂ°12": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Caja NÃÂÃÂ° V4": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Caja NÃÂÃÂ° V6": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Cinta Transparente": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Cinta Papel": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Cinta Meli": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Ribbon": {
+          "op": 249,
+          "dan": 0
+        },
+        "Consumibles__Etiqueta de Ruta": {
+          "op": 240,
+          "dan": 0
+        },
+        "Consumibles__Etiqueta HU": {
+          "op": 488,
+          "dan": 0
+        },
+        "Consumibles__Film Strech Naranja": {
+          "op": 335,
+          "dan": 0
+        },
+        "Consumibles__Film Strech Transparente": {
+          "op": 170,
+          "dan": 0
+        },
+        "Consumibles__Precintos Blancos": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Precintos Amarillos": {
+          "op": 0,
+          "dan": 0
+        },
+        "Zona de descanso__Mesa plÃÂÃÂ¡stico": {
+          "op": 9,
+          "dan": 9
+        },
+        "Zona de descanso__Silla plÃÂÃÂ¡stico": {
+          "op": 1,
+          "dan": 9
+        },
+        "Zona de descanso__Lockers": {
+          "op": 60,
+          "dan": 0
+        },
+        "Operativo__Telescópicas": {
+          "op": 0,
+          "dan": 0
+        },
+        "Operativo__Zorras Eléctricas": {
+          "op": 0,
+          "dan": 0
+        },
+        "Operativo__Zorras Eléctricas (HAB)": {
+          "op": 1,
+          "dan": 0
+        },
+        "Operativo__Apiladores Eléctricos": {
+          "op": 1,
+          "dan": 0
+        },
+        "IS__Impresoras portátiles (las chiquitas con correa)": {
+          "op": 4,
+          "dan": 0
+        },
+        "IS__Equipamiento sala de reunión": {
+          "op": 0,
+          "dan": 0
+        },
+        "Oficina__Hornos Eléctricos": {
+          "op": 1,
+          "dan": 0
+        },
+        "SHE__Alfombra Ergonómica Pescador": {
+          "op": 12,
+          "dan": 0
+        },
+        "Consumibles__Bolsas N°1": {
+          "op": 1325,
+          "dan": 0
+        },
+        "Consumibles__Bolsas N°2": {
+          "op": 490,
+          "dan": 0
+        },
+        "Consumibles__Bolsas N°3": {
+          "op": 589,
+          "dan": 0
+        },
+        "Consumibles__Bolsas N°3.5": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Bolsas N°4": {
+          "op": 226,
+          "dan": 0
+        },
+        "Consumibles__Bolsas N°5": {
+          "op": 687,
+          "dan": 0
+        },
+        "Consumibles__Bolsas N°6": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Caja N°1": {
+          "op": 1710,
+          "dan": 0
+        },
+        "Consumibles__Caja N°2": {
+          "op": 125,
+          "dan": 0
+        },
+        "Consumibles__Caja N°3": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Caja N°4": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Caja N°5": {
+          "op": 941,
+          "dan": 0
+        },
+        "Consumibles__Caja N°6": {
+          "op": 159,
+          "dan": 0
+        },
+        "Consumibles__Caja N°7": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Caja N°8": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Caja N°9": {
+          "op": 50,
+          "dan": 0
+        },
+        "Consumibles__Caja N°10": {
+          "op": 477,
+          "dan": 0
+        },
+        "Consumibles__Caja N°12": {
+          "op": 390,
+          "dan": 0
+        },
+        "Consumibles__Caja N° V4": {
+          "op": 0,
+          "dan": 0
+        },
+        "Consumibles__Caja N° V6": {
+          "op": 100,
+          "dan": 0
+        },
+        "Zona de descanso__Mesa plástico": {
+          "op": 7,
+          "dan": 0
+        },
+        "Zona de descanso__Silla plástico": {
+          "op": 39,
+          "dan": 0
+        },
+        "SHE__Alfombra Ergonómica Etiquetador": {
+          "op": 8,
+          "dan": 0
+        }
+      }
+    },
     {
       "date": "01/10/2026, 01:55 p. m.",
       "label": "Inventario 01/10/2026, 01:55 p. m.",
@@ -6255,420 +6726,5 @@
       }
     }
   ],
-  "trainingCompletions": [
-    {
-      "ldap": "cparrinello",
-      "name": "Parrinello Camila",
-      "curso": "PORTAL INFOWOW",
-      "fecha": "01/10/2026, 02:50 p. m.",
-      "diasAnticipacion": -34
-    },
-    {
-      "ldap": "cparrinello",
-      "name": "Parrinello Camila",
-      "curso": "Rollout de NTM (HSP-TLs)",
-      "fecha": "01/10/2026, 02:50 p. m.",
-      "diasAnticipacion": null
-    },
-    {
-      "ldap": "cparrinello",
-      "name": "Parrinello Camila",
-      "curso": "[Audits] Nuevo sistema My Audit",
-      "fecha": "01/10/2026, 02:50 p. m.",
-      "diasAnticipacion": -27
-    },
-    {
-      "ldap": "cparrinello",
-      "name": "Parrinello Camila",
-      "curso": "Staging Zones en SVC - Líderes | ESP",
-      "fecha": "01/10/2026, 02:50 p. m.",
-      "diasAnticipacion": -27
-    },
-    {
-      "ldap": "cparrinello",
-      "name": "Parrinello Camila",
-      "curso": "Setup y Aduana · PS y Team Leaders (ES)",
-      "fecha": "01/10/2026, 02:50 p. m.",
-      "diasAnticipacion": -20
-    },
-    {
-      "ldap": "cparrinello",
-      "name": "Parrinello Camila",
-      "curso": "Devoluciones con Colecta",
-      "fecha": "01/10/2026, 02:50 p. m.",
-      "diasAnticipacion": null
-    },
-    {
-      "ldap": "patortiz",
-      "name": "Ortiz Patricio",
-      "curso": "[Audits] Nuevo sistema My Audit",
-      "fecha": "01/10/2026, 02:50 p. m.",
-      "diasAnticipacion": -27
-    },
-    {
-      "ldap": "patortiz",
-      "name": "Ortiz Patricio",
-      "curso": "Staging Zones en SVC - Líderes | ESP",
-      "fecha": "01/10/2026, 02:50 p. m.",
-      "diasAnticipacion": -27
-    },
-    {
-      "ldap": "patortiz",
-      "name": "Ortiz Patricio",
-      "curso": "Setup y Aduana · PS y Team Leaders (ES)",
-      "fecha": "01/10/2026, 02:50 p. m.",
-      "diasAnticipacion": -20
-    },
-    {
-      "ldap": "nfogliaro",
-      "name": "Fogliaro Nicolas",
-      "curso": "DESAFIO NTM",
-      "fecha": "01/10/2026, 02:50 p. m.",
-      "diasAnticipacion": -41
-    },
-    {
-      "ldap": "nfogliaro",
-      "name": "Fogliaro Nicolas",
-      "curso": "PORTAL INFOWOW",
-      "fecha": "01/10/2026, 02:50 p. m.",
-      "diasAnticipacion": -34
-    },
-    {
-      "ldap": "nfogliaro",
-      "name": "Fogliaro Nicolas",
-      "curso": "Rollout de NTM (HSP-TLs)",
-      "fecha": "01/10/2026, 02:50 p. m.",
-      "diasAnticipacion": null
-    },
-    {
-      "ldap": "nfogliaro",
-      "name": "Fogliaro Nicolas",
-      "curso": "[Audits] Nuevo sistema My Audit",
-      "fecha": "01/10/2026, 02:50 p. m.",
-      "diasAnticipacion": -27
-    },
-    {
-      "ldap": "nfogliaro",
-      "name": "Fogliaro Nicolas",
-      "curso": "Staging Zones en SVC - Líderes | ESP",
-      "fecha": "01/10/2026, 02:50 p. m.",
-      "diasAnticipacion": -27
-    },
-    {
-      "ldap": "nfogliaro",
-      "name": "Fogliaro Nicolas",
-      "curso": "Setup y Aduana · PS y Team Leaders (ES)",
-      "fecha": "01/10/2026, 02:50 p. m.",
-      "diasAnticipacion": -20
-    },
-    {
-      "ldap": "nfogliaro",
-      "name": "Fogliaro Nicolas",
-      "curso": "Devoluciones con Colecta",
-      "fecha": "01/10/2026, 02:50 p. m.",
-      "diasAnticipacion": null
-    },
-    {
-      "ldap": "aschmale",
-      "name": "Schamale Alex",
-      "curso": "PORTAL INFOWOW",
-      "fecha": "01/10/2026, 02:50 p. m.",
-      "diasAnticipacion": -34
-    },
-    {
-      "ldap": "aschmale",
-      "name": "Schamale Alex",
-      "curso": "[Audits] Nuevo sistema My Audit",
-      "fecha": "01/10/2026, 02:50 p. m.",
-      "diasAnticipacion": -27
-    },
-    {
-      "ldap": "aschmale",
-      "name": "Schamale Alex",
-      "curso": "Staging Zones en SVC - Líderes | ESP",
-      "fecha": "01/10/2026, 02:50 p. m.",
-      "diasAnticipacion": -27
-    },
-    {
-      "ldap": "aschmale",
-      "name": "Schamale Alex",
-      "curso": "Setup y Aduana · PS y Team Leaders (ES)",
-      "fecha": "01/10/2026, 02:50 p. m.",
-      "diasAnticipacion": -20
-    },
-    {
-      "ldap": "aschmale",
-      "name": "Schamale Alex",
-      "curso": "Devoluciones con Colecta",
-      "fecha": "01/10/2026, 02:50 p. m.",
-      "diasAnticipacion": null
-    },
-    {
-      "ldap": "ext_almaidan",
-      "name": "Maidana Aldana",
-      "curso": "DESAFIO NTM",
-      "fecha": "01/10/2026, 02:50 p. m.",
-      "diasAnticipacion": -41
-    },
-    {
-      "ldap": "ext_almaidan",
-      "name": "Maidana Aldana",
-      "curso": "REVERSA DE INSUMOS| LÍDERES",
-      "fecha": "01/10/2026, 02:50 p. m.",
-      "diasAnticipacion": -34
-    },
-    {
-      "ldap": "ext_almaidan",
-      "name": "Maidana Aldana",
-      "curso": "Rollout de NTM (HSP-TLs)",
-      "fecha": "01/10/2026, 02:50 p. m.",
-      "diasAnticipacion": null
-    },
-    {
-      "ldap": "ext_almaidan",
-      "name": "Maidana Aldana",
-      "curso": "[Audits] Nuevo sistema My Audit",
-      "fecha": "01/10/2026, 02:50 p. m.",
-      "diasAnticipacion": -27
-    },
-    {
-      "ldap": "ext_almaidan",
-      "name": "Maidana Aldana",
-      "curso": "Staging Zones en SVC - Líderes | ESP",
-      "fecha": "01/10/2026, 02:50 p. m.",
-      "diasAnticipacion": -27
-    },
-    {
-      "ldap": "ext_almaidan",
-      "name": "Maidana Aldana",
-      "curso": "Setup y Aduana · PS y Team Leaders (ES)",
-      "fecha": "01/10/2026, 02:50 p. m.",
-      "diasAnticipacion": -20
-    },
-    {
-      "ldap": "ext_almaidan",
-      "name": "Maidana Aldana",
-      "curso": "Devoluciones con Colecta",
-      "fecha": "01/10/2026, 02:50 p. m.",
-      "diasAnticipacion": null
-    },
-    {
-      "ldap": "ext_camimira",
-      "name": "Miranda Camila",
-      "curso": "DESAFIO NTM",
-      "fecha": "01/10/2026, 02:50 p. m.",
-      "diasAnticipacion": -41
-    },
-    {
-      "ldap": "ext_camimira",
-      "name": "Miranda Camila",
-      "curso": "[Audits] Nuevo sistema My Audit",
-      "fecha": "01/10/2026, 02:50 p. m.",
-      "diasAnticipacion": -27
-    },
-    {
-      "ldap": "ext_camimira",
-      "name": "Miranda Camila",
-      "curso": "Staging Zones en SVC - Líderes | ESP",
-      "fecha": "01/10/2026, 02:50 p. m.",
-      "diasAnticipacion": -27
-    },
-    {
-      "ldap": "ext_camimira",
-      "name": "Miranda Camila",
-      "curso": "Setup y Aduana · PS y Team Leaders (ES)",
-      "fecha": "01/10/2026, 02:50 p. m.",
-      "diasAnticipacion": -20
-    },
-    {
-      "ldap": "ext_tamvega",
-      "name": "Vega Tamara",
-      "curso": "DESAFIO NTM",
-      "fecha": "01/10/2026, 02:50 p. m.",
-      "diasAnticipacion": -41
-    },
-    {
-      "ldap": "ext_tamvega",
-      "name": "Vega Tamara",
-      "curso": "REVERSA DE INSUMOS| LÍDERES",
-      "fecha": "01/10/2026, 02:50 p. m.",
-      "diasAnticipacion": -34
-    },
-    {
-      "ldap": "ext_tamvega",
-      "name": "Vega Tamara",
-      "curso": "Rollout de NTM (HSP-TLs)",
-      "fecha": "01/10/2026, 02:50 p. m.",
-      "diasAnticipacion": null
-    },
-    {
-      "ldap": "ext_tamvega",
-      "name": "Vega Tamara",
-      "curso": "[Audits] Nuevo sistema My Audit",
-      "fecha": "01/10/2026, 02:50 p. m.",
-      "diasAnticipacion": -27
-    },
-    {
-      "ldap": "ext_tamvega",
-      "name": "Vega Tamara",
-      "curso": "Staging Zones en SVC - Líderes | ESP",
-      "fecha": "01/10/2026, 02:50 p. m.",
-      "diasAnticipacion": -27
-    },
-    {
-      "ldap": "ext_tamvega",
-      "name": "Vega Tamara",
-      "curso": "Setup y Aduana · PS y Team Leaders (ES)",
-      "fecha": "01/10/2026, 02:50 p. m.",
-      "diasAnticipacion": -20
-    },
-    {
-      "ldap": "ext_tamvega",
-      "name": "Vega Tamara",
-      "curso": "Devoluciones con Colecta",
-      "fecha": "01/10/2026, 02:50 p. m.",
-      "diasAnticipacion": null
-    },
-    {
-      "ldap": "ext_sabianch",
-      "name": "Bianchi Santino",
-      "curso": "DESAFIO NTM",
-      "fecha": "01/10/2026, 02:50 p. m.",
-      "diasAnticipacion": -41
-    },
-    {
-      "ldap": "ext_sabianch",
-      "name": "Bianchi Santino",
-      "curso": "REVERSA DE INSUMOS| LÍDERES",
-      "fecha": "01/10/2026, 02:50 p. m.",
-      "diasAnticipacion": -34
-    },
-    {
-      "ldap": "ext_sabianch",
-      "name": "Bianchi Santino",
-      "curso": "Rollout de NTM (HSP-TLs)",
-      "fecha": "01/10/2026, 02:50 p. m.",
-      "diasAnticipacion": null
-    },
-    {
-      "ldap": "ext_sabianch",
-      "name": "Bianchi Santino",
-      "curso": "[Audits] Nuevo sistema My Audit",
-      "fecha": "01/10/2026, 02:50 p. m.",
-      "diasAnticipacion": -27
-    },
-    {
-      "ldap": "ext_sabianch",
-      "name": "Bianchi Santino",
-      "curso": "Staging Zones en SVC - Líderes | ESP",
-      "fecha": "01/10/2026, 02:50 p. m.",
-      "diasAnticipacion": -27
-    },
-    {
-      "ldap": "ext_sabianch",
-      "name": "Bianchi Santino",
-      "curso": "Devoluciones con Colecta",
-      "fecha": "01/10/2026, 02:50 p. m.",
-      "diasAnticipacion": null
-    }
-  ],
-  "trainingLastKnown": {
-    "cparrinello|desafio ntm": 0,
-    "cparrinello|reversa de insumos| rep desafio": 0,
-    "cparrinello|portal infowow": 100,
-    "cparrinello|rollout de ntm (hsp-tls)": 100,
-    "cparrinello|[audits] nuevo sistema my audit": 100,
-    "cparrinello|staging zones en svc - líderes | esp": 100,
-    "cparrinello|setup y aduana · ps y team leaders (es)": 100,
-    "cparrinello|[fos-inbound] migracion de fos a lego - desafio": 0,
-    "cparrinello|devoluciones con colecta": 100,
-    "cparrinello|[h&b - multibultos] - migración de nuevos dominios| lideres": 0,
-    "cparrinello|[yms] panel de alertas | painel de alertas - líderes": 0,
-    "cparrinello|adn auditor: líder en gestión operativa": 0,
-    "patortiz|reversa de insumos| rep desafio": 0,
-    "patortiz|portal infowow": 0,
-    "patortiz|[audits] nuevo sistema my audit": 100,
-    "patortiz|staging zones en svc - líderes | esp": 100,
-    "patortiz|setup y aduana · ps y team leaders (es)": 100,
-    "patortiz|[fos-inbound] migracion de fos a lego - desafio": 0,
-    "patortiz|devoluciones con colecta": 0,
-    "patortiz|[h&b - multibultos] - migración de nuevos dominios| lideres": 0,
-    "patortiz|[yms] panel de alertas | painel de alertas - líderes": 0,
-    "patortiz|adn auditor: líder en gestión operativa": 0,
-    "nfogliaro|desafio ntm": 100,
-    "nfogliaro|reversa de insumos| rep desafio": 0,
-    "nfogliaro|portal infowow": 100,
-    "nfogliaro|rollout de ntm (hsp-tls)": 100,
-    "nfogliaro|[audits] nuevo sistema my audit": 100,
-    "nfogliaro|staging zones en svc - líderes | esp": 100,
-    "nfogliaro|setup y aduana · ps y team leaders (es)": 100,
-    "nfogliaro|[fos-inbound] migracion de fos a lego - desafio": 0,
-    "nfogliaro|devoluciones con colecta": 100,
-    "nfogliaro|[h&b - multibultos] - migración de nuevos dominios| lideres": 0,
-    "nfogliaro|[yms] panel de alertas | painel de alertas - líderes": 0,
-    "nfogliaro|adn auditor: líder en gestión operativa": 0,
-    "aschmale|reversa de insumos| rep desafio": 0,
-    "aschmale|portal infowow": 100,
-    "aschmale|[audits] nuevo sistema my audit": 100,
-    "aschmale|staging zones en svc - líderes | esp": 100,
-    "aschmale|setup y aduana · ps y team leaders (es)": 100,
-    "aschmale|[fos-inbound] migracion de fos a lego - desafio": 0,
-    "aschmale|devoluciones con colecta": 100,
-    "aschmale|[h&b - multibultos] - migración de nuevos dominios| lideres": 0,
-    "aschmale|[yms] panel de alertas | painel de alertas - líderes": 0,
-    "aschmale|adn auditor: líder en gestión operativa": 0,
-    "ext_almaidan|desafio ntm": 100,
-    "ext_almaidan|reversa de insumos| líderes": 100,
-    "ext_almaidan|reversa de insumos| rep desafio": 0,
-    "ext_almaidan|rollout de ntm (hsp-tls)": 100,
-    "ext_almaidan|[audits] nuevo sistema my audit": 100,
-    "ext_almaidan|staging zones en svc - líderes | esp": 100,
-    "ext_almaidan|setup y aduana · ps y team leaders (es)": 100,
-    "ext_almaidan|[fos-inbound] migracion de fos a lego - desafio": 0,
-    "ext_almaidan|devoluciones con colecta": 100,
-    "ext_almaidan|[desafío reps ] actualización gestión de insumos reutilizables": 0,
-    "ext_almaidan|[h&b - multibultos] - migración de nuevos dominios| lideres": 0,
-    "ext_almaidan|[yms] panel de alertas | painel de alertas - líderes": 0,
-    "ext_almaidan|adn auditor: líder en gestión operativa": 0,
-    "ext_camimira|desafio ntm": 100,
-    "ext_camimira|reversa de insumos| líderes": 0,
-    "ext_camimira|reversa de insumos| rep desafio": 0,
-    "ext_camimira|rollout de ntm (hsp-tls)": 0,
-    "ext_camimira|[audits] nuevo sistema my audit": 100,
-    "ext_camimira|staging zones en svc - líderes | esp": 100,
-    "ext_camimira|setup y aduana · ps y team leaders (es)": 100,
-    "ext_camimira|[fos-inbound] migracion de fos a lego - desafio": 0,
-    "ext_camimira|devoluciones con colecta": 29,
-    "ext_camimira|[desafío reps ] actualización gestión de insumos reutilizables": 0,
-    "ext_camimira|[h&b - multibultos] - migración de nuevos dominios| lideres": 0,
-    "ext_camimira|[yms] panel de alertas | painel de alertas - líderes": 0,
-    "ext_camimira|adn auditor: líder en gestión operativa": 0,
-    "ext_tamvega|desafio ntm": 100,
-    "ext_tamvega|reversa de insumos| líderes": 100,
-    "ext_tamvega|reversa de insumos| rep desafio": 0,
-    "ext_tamvega|rollout de ntm (hsp-tls)": 100,
-    "ext_tamvega|[audits] nuevo sistema my audit": 100,
-    "ext_tamvega|staging zones en svc - líderes | esp": 100,
-    "ext_tamvega|setup y aduana · ps y team leaders (es)": 100,
-    "ext_tamvega|[fos-inbound] migracion de fos a lego - desafio": 0,
-    "ext_tamvega|devoluciones con colecta": 100,
-    "ext_tamvega|[desafío reps ] actualización gestión de insumos reutilizables": 0,
-    "ext_tamvega|[h&b - multibultos] - migración de nuevos dominios| lideres": 0,
-    "ext_tamvega|[yms] panel de alertas | painel de alertas - líderes": 0,
-    "ext_tamvega|adn auditor: líder en gestión operativa": 0,
-    "ext_sabianch|desafio ntm": 100,
-    "ext_sabianch|reversa de insumos| líderes": 100,
-    "ext_sabianch|reversa de insumos| rep desafio": 0,
-    "ext_sabianch|rollout de ntm (hsp-tls)": 100,
-    "ext_sabianch|[audits] nuevo sistema my audit": 100,
-    "ext_sabianch|staging zones en svc - líderes | esp": 100,
-    "ext_sabianch|setup y aduana · ps y team leaders (es)": 0,
-    "ext_sabianch|[fos-inbound] migracion de fos a lego - desafio": 0,
-    "ext_sabianch|devoluciones con colecta": 100,
-    "ext_sabianch|[desafío reps ] actualización gestión de insumos reutilizables": 0,
-    "ext_sabianch|[h&b - multibultos] - migración de nuevos dominios| lideres": 0,
-    "ext_sabianch|[yms] panel de alertas | painel de alertas - líderes": 0,
-    "ext_sabianch|adn auditor: líder en gestión operativa": 0
-  },
-  "savedAt": "01/10/2026, 02:50 p. m."
+  "savedAt": "01/10/2026, 03:20 p. m."
 }
