@@ -1,5 +1,5 @@
 {
-  "generatedAt": "02/10/2026 06:26",
+  "generatedAt": "03/10/2026 06:26",
   "reps": [
     {
       "curso": "DESAFIO NTM",
@@ -211,8 +211,8 @@
           "deadlineISO": null,
           "deadlineLabel": null,
           "review": false,
-          "na": false,
-          "pct": 0
+          "na": true,
+          "pct": null
         },
         {
           "curso": "[YMS] Panel de alertas | Painel de Alertas - Líderes",
@@ -233,7 +233,7 @@
           "pct": 0
         }
       ],
-      "overallPct": 50
+      "overallPct": 55
     },
     {
       "ldap": "patortiz",
@@ -363,8 +363,8 @@
           "deadlineISO": null,
           "deadlineLabel": null,
           "review": false,
-          "na": false,
-          "pct": 0
+          "na": true,
+          "pct": null
         },
         {
           "curso": "[YMS] Panel de alertas | Painel de Alertas - Líderes",
@@ -385,7 +385,7 @@
           "pct": 0
         }
       ],
-      "overallPct": 30
+      "overallPct": 33
     },
     {
       "ldap": "nfogliaro",
@@ -515,8 +515,8 @@
           "deadlineISO": null,
           "deadlineLabel": null,
           "review": false,
-          "na": false,
-          "pct": 0
+          "na": true,
+          "pct": null
         },
         {
           "curso": "[YMS] Panel de alertas | Painel de Alertas - Líderes",
@@ -537,7 +537,7 @@
           "pct": 0
         }
       ],
-      "overallPct": 58
+      "overallPct": 64
     },
     {
       "ldap": "aschmale",
@@ -667,8 +667,8 @@
           "deadlineISO": null,
           "deadlineLabel": null,
           "review": false,
-          "na": false,
-          "pct": 0
+          "na": true,
+          "pct": null
         },
         {
           "curso": "[YMS] Panel de alertas | Painel de Alertas - Líderes",
@@ -689,7 +689,7 @@
           "pct": 0
         }
       ],
-      "overallPct": 50
+      "overallPct": 56
     },
     {
       "ldap": "ext_almaidan",
@@ -819,8 +819,8 @@
           "deadlineISO": null,
           "deadlineLabel": null,
           "review": false,
-          "na": false,
-          "pct": 0
+          "na": true,
+          "pct": null
         },
         {
           "curso": "[YMS] Panel de alertas | Painel de Alertas - Líderes",
@@ -841,7 +841,7 @@
           "pct": 0
         }
       ],
-      "overallPct": 54
+      "overallPct": 58
     },
     {
       "ldap": "ext_camimira",
@@ -971,8 +971,8 @@
           "deadlineISO": null,
           "deadlineLabel": null,
           "review": false,
-          "na": false,
-          "pct": 0
+          "na": true,
+          "pct": null
         },
         {
           "curso": "[YMS] Panel de alertas | Painel de Alertas - Líderes",
@@ -993,7 +993,7 @@
           "pct": 0
         }
       ],
-      "overallPct": 33
+      "overallPct": 36
     },
     {
       "ldap": "ext_tamvega",
@@ -1123,8 +1123,8 @@
           "deadlineISO": null,
           "deadlineLabel": null,
           "review": false,
-          "na": false,
-          "pct": 0
+          "na": true,
+          "pct": null
         },
         {
           "curso": "[YMS] Panel de alertas | Painel de Alertas - Líderes",
@@ -1145,7 +1145,7 @@
           "pct": 0
         }
       ],
-      "overallPct": 54
+      "overallPct": 58
     },
     {
       "ldap": "ext_sabianch",
@@ -1275,8 +1275,8 @@
           "deadlineISO": null,
           "deadlineLabel": null,
           "review": false,
-          "na": false,
-          "pct": 0
+          "na": true,
+          "pct": null
         },
         {
           "curso": "[YMS] Panel de alertas | Painel de Alertas - Líderes",
@@ -1297,7 +1297,7 @@
           "pct": 0
         }
       ],
-      "overallPct": 46
+      "overallPct": 50
     }
   ]
 }
