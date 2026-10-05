@@ -1,5 +1,5 @@
 {
-  "generatedAt": "04/10/2026 06:26",
+  "generatedAt": "05/10/2026 06:26",
   "reps": [
     {
       "curso": "DESAFIO NTM",
@@ -54,7 +54,7 @@
       "link": "https://learning.mercadolibre.com/programs/view/2063",
       "deadlineLabel": "11/09",
       "deadlineISO": "2026-09-11",
-      "pct": 97,
+      "pct": 100,
       "review": false
     },
     {
@@ -70,7 +70,7 @@
       "link": "https://learning.mercadolibre.com/programs/view/2106",
       "deadlineLabel": "02/10",
       "deadlineISO": "2026-10-02",
-      "pct": 0,
+      "pct": 100,
       "review": false
     },
     {
@@ -1115,7 +1115,7 @@
           "deadlineLabel": "02/10",
           "review": false,
           "na": false,
-          "pct": 0
+          "pct": 100
         },
         {
           "curso": "[H&B - Multibultos] - Migración de nuevos dominios| LIDERES",
@@ -1145,7 +1145,7 @@
           "pct": 0
         }
       ],
-      "overallPct": 58
+      "overallPct": 67
     },
     {
       "ldap": "ext_sabianch",
