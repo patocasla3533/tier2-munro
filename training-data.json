@@ -1,5 +1,5 @@
 {
-  "generatedAt": "06/10/2026 06:26",
+  "generatedAt": "07/10/2026 06:26",
   "reps": [
     {
       "curso": "DESAFIO NTM",
@@ -46,7 +46,7 @@
       "link": "https://learning.mercadolibre.com/courses/course-v1:shp_all+Cur_Man_SHE_esp+V1_2026/courseware/36f19a581d464cd6ade264aedc97b21a/55f0ef0d195e4954958b6d32433cc565/",
       "deadlineLabel": "30/09",
       "deadlineISO": "2026-09-30",
-      "pct": 0,
+      "pct": 44,
       "review": false
     },
     {
@@ -75,7 +75,7 @@
     },
     {
       "curso": "[DESAFIO] YMS | Panel de Alertas | Reps",
-      "link": "https://learning.mercadolibre.com/programs/view/2114",
+      "link": null,
       "deadlineLabel": "09/10",
       "deadlineISO": "2026-10-09",
       "pct": 0,
@@ -240,9 +240,18 @@
           "review": false,
           "na": false,
           "pct": 0
+        },
+        {
+          "curso": "[Gestión de usuarios] Aplicación de contextos + App Sinergia TTES",
+          "link": "https://docs.google.com/presentation/d/13tR5GLY30eTvYZycmH0Iu_wXfTTcOQjpevu9VqwMk14/edit?slide=id.h1663eb6c8fb14fc5_1_0#slide=id.h1663eb6c8fb14fc5_1_0",
+          "deadlineISO": "2026-10-16",
+          "deadlineLabel": "16/10",
+          "review": false,
+          "na": false,
+          "pct": 0
         }
       ],
-      "overallPct": 50
+      "overallPct": 46
     },
     {
       "ldap": "patortiz",
@@ -401,9 +410,18 @@
           "review": false,
           "na": false,
           "pct": 0
+        },
+        {
+          "curso": "[Gestión de usuarios] Aplicación de contextos + App Sinergia TTES",
+          "link": "https://docs.google.com/presentation/d/13tR5GLY30eTvYZycmH0Iu_wXfTTcOQjpevu9VqwMk14/edit?slide=id.h1663eb6c8fb14fc5_1_0#slide=id.h1663eb6c8fb14fc5_1_0",
+          "deadlineISO": "2026-10-16",
+          "deadlineLabel": "16/10",
+          "review": false,
+          "na": false,
+          "pct": 0
         }
       ],
-      "overallPct": 30
+      "overallPct": 27
     },
     {
       "ldap": "nfogliaro",
@@ -562,9 +580,18 @@
           "review": false,
           "na": false,
           "pct": 0
+        },
+        {
+          "curso": "[Gestión de usuarios] Aplicación de contextos + App Sinergia TTES",
+          "link": "https://docs.google.com/presentation/d/13tR5GLY30eTvYZycmH0Iu_wXfTTcOQjpevu9VqwMk14/edit?slide=id.h1663eb6c8fb14fc5_1_0#slide=id.h1663eb6c8fb14fc5_1_0",
+          "deadlineISO": "2026-10-16",
+          "deadlineLabel": "16/10",
+          "review": false,
+          "na": false,
+          "pct": 0
         }
       ],
-      "overallPct": 58
+      "overallPct": 54
     },
     {
       "ldap": "aschmale",
@@ -723,9 +750,18 @@
           "review": false,
           "na": false,
           "pct": 0
+        },
+        {
+          "curso": "[Gestión de usuarios] Aplicación de contextos + App Sinergia TTES",
+          "link": "https://docs.google.com/presentation/d/13tR5GLY30eTvYZycmH0Iu_wXfTTcOQjpevu9VqwMk14/edit?slide=id.h1663eb6c8fb14fc5_1_0#slide=id.h1663eb6c8fb14fc5_1_0",
+          "deadlineISO": "2026-10-16",
+          "deadlineLabel": "16/10",
+          "review": false,
+          "na": false,
+          "pct": 0
         }
       ],
-      "overallPct": 50
+      "overallPct": 45
     },
     {
       "ldap": "ext_almaidan",
@@ -855,8 +891,8 @@
           "deadlineISO": null,
           "deadlineLabel": null,
           "review": false,
-          "na": true,
-          "pct": null
+          "na": false,
+          "pct": 0
         },
         {
           "curso": "[YMS] Panel de alertas | Painel de Alertas - Líderes",
@@ -884,9 +920,18 @@
           "review": false,
           "na": false,
           "pct": 0
+        },
+        {
+          "curso": "[Gestión de usuarios] Aplicación de contextos + App Sinergia TTES",
+          "link": "https://docs.google.com/presentation/d/13tR5GLY30eTvYZycmH0Iu_wXfTTcOQjpevu9VqwMk14/edit?slide=id.h1663eb6c8fb14fc5_1_0#slide=id.h1663eb6c8fb14fc5_1_0",
+          "deadlineISO": "2026-10-16",
+          "deadlineLabel": "16/10",
+          "review": false,
+          "na": false,
+          "pct": 0
         }
       ],
-      "overallPct": 54
+      "overallPct": 47
     },
     {
       "ldap": "ext_camimira",
@@ -1016,8 +1061,8 @@
           "deadlineISO": null,
           "deadlineLabel": null,
           "review": false,
-          "na": true,
-          "pct": null
+          "na": false,
+          "pct": 0
         },
         {
           "curso": "[YMS] Panel de alertas | Painel de Alertas - Líderes",
@@ -1045,9 +1090,18 @@
           "review": false,
           "na": false,
           "pct": 0
+        },
+        {
+          "curso": "[Gestión de usuarios] Aplicación de contextos + App Sinergia TTES",
+          "link": "https://docs.google.com/presentation/d/13tR5GLY30eTvYZycmH0Iu_wXfTTcOQjpevu9VqwMk14/edit?slide=id.h1663eb6c8fb14fc5_1_0#slide=id.h1663eb6c8fb14fc5_1_0",
+          "deadlineISO": "2026-10-16",
+          "deadlineLabel": "16/10",
+          "review": false,
+          "na": false,
+          "pct": 0
         }
       ],
-      "overallPct": 33
+      "overallPct": 29
     },
     {
       "ldap": "ext_tamvega",
@@ -1177,8 +1231,8 @@
           "deadlineISO": null,
           "deadlineLabel": null,
           "review": false,
-          "na": true,
-          "pct": null
+          "na": false,
+          "pct": 0
         },
         {
           "curso": "[YMS] Panel de alertas | Painel de Alertas - Líderes",
@@ -1206,9 +1260,18 @@
           "review": false,
           "na": false,
           "pct": 0
+        },
+        {
+          "curso": "[Gestión de usuarios] Aplicación de contextos + App Sinergia TTES",
+          "link": "https://docs.google.com/presentation/d/13tR5GLY30eTvYZycmH0Iu_wXfTTcOQjpevu9VqwMk14/edit?slide=id.h1663eb6c8fb14fc5_1_0#slide=id.h1663eb6c8fb14fc5_1_0",
+          "deadlineISO": "2026-10-16",
+          "deadlineLabel": "16/10",
+          "review": false,
+          "na": false,
+          "pct": 0
         }
       ],
-      "overallPct": 62
+      "overallPct": 53
     },
     {
       "ldap": "ext_sabianch",
@@ -1338,8 +1401,8 @@
           "deadlineISO": null,
           "deadlineLabel": null,
           "review": false,
-          "na": true,
-          "pct": null
+          "na": false,
+          "pct": 0
         },
         {
           "curso": "[YMS] Panel de alertas | Painel de Alertas - Líderes",
@@ -1367,9 +1430,18 @@
           "review": false,
           "na": false,
           "pct": 0
+        },
+        {
+          "curso": "[Gestión de usuarios] Aplicación de contextos + App Sinergia TTES",
+          "link": "https://docs.google.com/presentation/d/13tR5GLY30eTvYZycmH0Iu_wXfTTcOQjpevu9VqwMk14/edit?slide=id.h1663eb6c8fb14fc5_1_0#slide=id.h1663eb6c8fb14fc5_1_0",
+          "deadlineISO": "2026-10-16",
+          "deadlineLabel": "16/10",
+          "review": false,
+          "na": false,
+          "pct": 0
         }
       ],
-      "overallPct": 46
+      "overallPct": 40
     }
   ]
 }
