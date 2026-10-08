@@ -1,5 +1,5 @@
 {
-  "generatedAt": "07/10/2026 06:26",
+  "generatedAt": "08/10/2026 06:27",
   "reps": [
     {
       "curso": "DESAFIO NTM",
@@ -71,6 +71,14 @@
       "deadlineLabel": "02/10",
       "deadlineISO": "2026-10-02",
       "pct": 100,
+      "review": false
+    },
+    {
+      "curso": "[H&B - Multibultos] - Migración de nuevos dominios| DESAFIO",
+      "link": "https://learning.mercadolibre.com/programs/view/2107",
+      "deadlineLabel": "02/10",
+      "deadlineISO": "2026-10-02",
+      "pct": 0,
       "review": false
     },
     {
@@ -208,8 +216,8 @@
         {
           "curso": "[H&B - Multibultos] - Migración de nuevos dominios| LIDERES",
           "link": "https://docs.google.com/presentation/d/1JcgcDtwq5HgmQjruFYVK46yG2Q8K04KGRwgnPPVBomg/edit?slide=id.g3f9f166727f_1_158#slide=id.g3f9f166727f_1_158",
-          "deadlineISO": null,
-          "deadlineLabel": null,
+          "deadlineISO": "2026-10-02",
+          "deadlineLabel": "02/10",
           "review": false,
           "na": true,
           "pct": null
@@ -378,8 +386,8 @@
         {
           "curso": "[H&B - Multibultos] - Migración de nuevos dominios| LIDERES",
           "link": "https://docs.google.com/presentation/d/1JcgcDtwq5HgmQjruFYVK46yG2Q8K04KGRwgnPPVBomg/edit?slide=id.g3f9f166727f_1_158#slide=id.g3f9f166727f_1_158",
-          "deadlineISO": null,
-          "deadlineLabel": null,
+          "deadlineISO": "2026-10-02",
+          "deadlineLabel": "02/10",
           "review": false,
           "na": true,
           "pct": null
@@ -548,8 +556,8 @@
         {
           "curso": "[H&B - Multibultos] - Migración de nuevos dominios| LIDERES",
           "link": "https://docs.google.com/presentation/d/1JcgcDtwq5HgmQjruFYVK46yG2Q8K04KGRwgnPPVBomg/edit?slide=id.g3f9f166727f_1_158#slide=id.g3f9f166727f_1_158",
-          "deadlineISO": null,
-          "deadlineLabel": null,
+          "deadlineISO": "2026-10-02",
+          "deadlineLabel": "02/10",
           "review": false,
           "na": true,
           "pct": null
@@ -718,8 +726,8 @@
         {
           "curso": "[H&B - Multibultos] - Migración de nuevos dominios| LIDERES",
           "link": "https://docs.google.com/presentation/d/1JcgcDtwq5HgmQjruFYVK46yG2Q8K04KGRwgnPPVBomg/edit?slide=id.g3f9f166727f_1_158#slide=id.g3f9f166727f_1_158",
-          "deadlineISO": null,
-          "deadlineLabel": null,
+          "deadlineISO": "2026-10-02",
+          "deadlineLabel": "02/10",
           "review": false,
           "na": true,
           "pct": null
@@ -888,8 +896,8 @@
         {
           "curso": "[H&B - Multibultos] - Migración de nuevos dominios| LIDERES",
           "link": "https://docs.google.com/presentation/d/1JcgcDtwq5HgmQjruFYVK46yG2Q8K04KGRwgnPPVBomg/edit?slide=id.g3f9f166727f_1_158#slide=id.g3f9f166727f_1_158",
-          "deadlineISO": null,
-          "deadlineLabel": null,
+          "deadlineISO": "2026-10-02",
+          "deadlineLabel": "02/10",
           "review": false,
           "na": false,
           "pct": 0
@@ -1058,8 +1066,8 @@
         {
           "curso": "[H&B - Multibultos] - Migración de nuevos dominios| LIDERES",
           "link": "https://docs.google.com/presentation/d/1JcgcDtwq5HgmQjruFYVK46yG2Q8K04KGRwgnPPVBomg/edit?slide=id.g3f9f166727f_1_158#slide=id.g3f9f166727f_1_158",
-          "deadlineISO": null,
-          "deadlineLabel": null,
+          "deadlineISO": "2026-10-02",
+          "deadlineLabel": "02/10",
           "review": false,
           "na": false,
           "pct": 0
@@ -1228,8 +1236,8 @@
         {
           "curso": "[H&B - Multibultos] - Migración de nuevos dominios| LIDERES",
           "link": "https://docs.google.com/presentation/d/1JcgcDtwq5HgmQjruFYVK46yG2Q8K04KGRwgnPPVBomg/edit?slide=id.g3f9f166727f_1_158#slide=id.g3f9f166727f_1_158",
-          "deadlineISO": null,
-          "deadlineLabel": null,
+          "deadlineISO": "2026-10-02",
+          "deadlineLabel": "02/10",
           "review": false,
           "na": false,
           "pct": 0
@@ -1398,8 +1406,8 @@
         {
           "curso": "[H&B - Multibultos] - Migración de nuevos dominios| LIDERES",
           "link": "https://docs.google.com/presentation/d/1JcgcDtwq5HgmQjruFYVK46yG2Q8K04KGRwgnPPVBomg/edit?slide=id.g3f9f166727f_1_158#slide=id.g3f9f166727f_1_158",
-          "deadlineISO": null,
-          "deadlineLabel": null,
+          "deadlineISO": "2026-10-02",
+          "deadlineLabel": "02/10",
           "review": false,
           "na": false,
           "pct": 0
