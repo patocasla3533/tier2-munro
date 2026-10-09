@@ -1,5 +1,5 @@
 {
-  "generatedAt": "08/10/2026 06:27",
+  "generatedAt": "09/10/2026 06:26",
   "reps": [
     {
       "curso": "DESAFIO NTM",
@@ -248,18 +248,9 @@
           "review": false,
           "na": false,
           "pct": 0
-        },
-        {
-          "curso": "[Gestión de usuarios] Aplicación de contextos + App Sinergia TTES",
-          "link": "https://docs.google.com/presentation/d/13tR5GLY30eTvYZycmH0Iu_wXfTTcOQjpevu9VqwMk14/edit?slide=id.h1663eb6c8fb14fc5_1_0#slide=id.h1663eb6c8fb14fc5_1_0",
-          "deadlineISO": "2026-10-16",
-          "deadlineLabel": "16/10",
-          "review": false,
-          "na": false,
-          "pct": 0
         }
       ],
-      "overallPct": 46
+      "overallPct": 50
     },
     {
       "ldap": "patortiz",
@@ -418,18 +409,9 @@
           "review": false,
           "na": false,
           "pct": 0
-        },
-        {
-          "curso": "[Gestión de usuarios] Aplicación de contextos + App Sinergia TTES",
-          "link": "https://docs.google.com/presentation/d/13tR5GLY30eTvYZycmH0Iu_wXfTTcOQjpevu9VqwMk14/edit?slide=id.h1663eb6c8fb14fc5_1_0#slide=id.h1663eb6c8fb14fc5_1_0",
-          "deadlineISO": "2026-10-16",
-          "deadlineLabel": "16/10",
-          "review": false,
-          "na": false,
-          "pct": 0
         }
       ],
-      "overallPct": 27
+      "overallPct": 30
     },
     {
       "ldap": "nfogliaro",
@@ -588,18 +570,9 @@
           "review": false,
           "na": false,
           "pct": 0
-        },
-        {
-          "curso": "[Gestión de usuarios] Aplicación de contextos + App Sinergia TTES",
-          "link": "https://docs.google.com/presentation/d/13tR5GLY30eTvYZycmH0Iu_wXfTTcOQjpevu9VqwMk14/edit?slide=id.h1663eb6c8fb14fc5_1_0#slide=id.h1663eb6c8fb14fc5_1_0",
-          "deadlineISO": "2026-10-16",
-          "deadlineLabel": "16/10",
-          "review": false,
-          "na": false,
-          "pct": 0
         }
       ],
-      "overallPct": 54
+      "overallPct": 58
     },
     {
       "ldap": "aschmale",
@@ -758,18 +731,9 @@
           "review": false,
           "na": false,
           "pct": 0
-        },
-        {
-          "curso": "[Gestión de usuarios] Aplicación de contextos + App Sinergia TTES",
-          "link": "https://docs.google.com/presentation/d/13tR5GLY30eTvYZycmH0Iu_wXfTTcOQjpevu9VqwMk14/edit?slide=id.h1663eb6c8fb14fc5_1_0#slide=id.h1663eb6c8fb14fc5_1_0",
-          "deadlineISO": "2026-10-16",
-          "deadlineLabel": "16/10",
-          "review": false,
-          "na": false,
-          "pct": 0
         }
       ],
-      "overallPct": 45
+      "overallPct": 50
     },
     {
       "ldap": "ext_almaidan",
@@ -928,18 +892,9 @@
           "review": false,
           "na": false,
           "pct": 0
-        },
-        {
-          "curso": "[Gestión de usuarios] Aplicación de contextos + App Sinergia TTES",
-          "link": "https://docs.google.com/presentation/d/13tR5GLY30eTvYZycmH0Iu_wXfTTcOQjpevu9VqwMk14/edit?slide=id.h1663eb6c8fb14fc5_1_0#slide=id.h1663eb6c8fb14fc5_1_0",
-          "deadlineISO": "2026-10-16",
-          "deadlineLabel": "16/10",
-          "review": false,
-          "na": false,
-          "pct": 0
         }
       ],
-      "overallPct": 47
+      "overallPct": 50
     },
     {
       "ldap": "ext_camimira",
@@ -1098,18 +1053,9 @@
           "review": false,
           "na": false,
           "pct": 0
-        },
-        {
-          "curso": "[Gestión de usuarios] Aplicación de contextos + App Sinergia TTES",
-          "link": "https://docs.google.com/presentation/d/13tR5GLY30eTvYZycmH0Iu_wXfTTcOQjpevu9VqwMk14/edit?slide=id.h1663eb6c8fb14fc5_1_0#slide=id.h1663eb6c8fb14fc5_1_0",
-          "deadlineISO": "2026-10-16",
-          "deadlineLabel": "16/10",
-          "review": false,
-          "na": false,
-          "pct": 0
         }
       ],
-      "overallPct": 29
+      "overallPct": 31
     },
     {
       "ldap": "ext_tamvega",
@@ -1268,18 +1214,9 @@
           "review": false,
           "na": false,
           "pct": 0
-        },
-        {
-          "curso": "[Gestión de usuarios] Aplicación de contextos + App Sinergia TTES",
-          "link": "https://docs.google.com/presentation/d/13tR5GLY30eTvYZycmH0Iu_wXfTTcOQjpevu9VqwMk14/edit?slide=id.h1663eb6c8fb14fc5_1_0#slide=id.h1663eb6c8fb14fc5_1_0",
-          "deadlineISO": "2026-10-16",
-          "deadlineLabel": "16/10",
-          "review": false,
-          "na": false,
-          "pct": 0
         }
       ],
-      "overallPct": 53
+      "overallPct": 57
     },
     {
       "ldap": "ext_sabianch",
@@ -1438,18 +1375,9 @@
           "review": false,
           "na": false,
           "pct": 0
-        },
-        {
-          "curso": "[Gestión de usuarios] Aplicación de contextos + App Sinergia TTES",
-          "link": "https://docs.google.com/presentation/d/13tR5GLY30eTvYZycmH0Iu_wXfTTcOQjpevu9VqwMk14/edit?slide=id.h1663eb6c8fb14fc5_1_0#slide=id.h1663eb6c8fb14fc5_1_0",
-          "deadlineISO": "2026-10-16",
-          "deadlineLabel": "16/10",
-          "review": false,
-          "na": false,
-          "pct": 0
         }
       ],
-      "overallPct": 40
+      "overallPct": 43
     }
   ]
 }
