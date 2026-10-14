@@ -1,5 +1,5 @@
 {
-  "generatedAt": "13/10/2026 06:26",
+  "generatedAt": "14/10/2026 06:25",
   "reps": [
     {
       "curso": "DESAFIO NTM",
@@ -46,7 +46,7 @@
       "link": "https://learning.mercadolibre.com/courses/course-v1:shp_all+Cur_Man_SHE_esp+V1_2026/courseware/36f19a581d464cd6ade264aedc97b21a/55f0ef0d195e4954958b6d32433cc565/",
       "deadlineLabel": "30/09",
       "deadlineISO": "2026-09-30",
-      "pct": 44,
+      "pct": 60,
       "review": false
     },
     {
@@ -243,8 +243,8 @@
         {
           "curso": "Accesos Contextuales — Transportes (SVC/XD)",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+acessottes+2026_09/about",
-          "deadlineISO": null,
-          "deadlineLabel": null,
+          "deadlineISO": "2026-10-16",
+          "deadlineLabel": "16/10",
           "review": false,
           "na": false,
           "pct": 0
@@ -413,8 +413,8 @@
         {
           "curso": "Accesos Contextuales — Transportes (SVC/XD)",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+acessottes+2026_09/about",
-          "deadlineISO": null,
-          "deadlineLabel": null,
+          "deadlineISO": "2026-10-16",
+          "deadlineLabel": "16/10",
           "review": false,
           "na": false,
           "pct": 0
@@ -583,8 +583,8 @@
         {
           "curso": "Accesos Contextuales — Transportes (SVC/XD)",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+acessottes+2026_09/about",
-          "deadlineISO": null,
-          "deadlineLabel": null,
+          "deadlineISO": "2026-10-16",
+          "deadlineLabel": "16/10",
           "review": false,
           "na": false,
           "pct": 0
@@ -753,8 +753,8 @@
         {
           "curso": "Accesos Contextuales — Transportes (SVC/XD)",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+acessottes+2026_09/about",
-          "deadlineISO": null,
-          "deadlineLabel": null,
+          "deadlineISO": "2026-10-16",
+          "deadlineLabel": "16/10",
           "review": false,
           "na": false,
           "pct": 0
@@ -923,8 +923,8 @@
         {
           "curso": "Accesos Contextuales — Transportes (SVC/XD)",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+acessottes+2026_09/about",
-          "deadlineISO": null,
-          "deadlineLabel": null,
+          "deadlineISO": "2026-10-16",
+          "deadlineLabel": "16/10",
           "review": false,
           "na": false,
           "pct": 0
@@ -1093,8 +1093,8 @@
         {
           "curso": "Accesos Contextuales — Transportes (SVC/XD)",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+acessottes+2026_09/about",
-          "deadlineISO": null,
-          "deadlineLabel": null,
+          "deadlineISO": "2026-10-16",
+          "deadlineLabel": "16/10",
           "review": false,
           "na": false,
           "pct": 0
@@ -1263,8 +1263,8 @@
         {
           "curso": "Accesos Contextuales — Transportes (SVC/XD)",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+acessottes+2026_09/about",
-          "deadlineISO": null,
-          "deadlineLabel": null,
+          "deadlineISO": "2026-10-16",
+          "deadlineLabel": "16/10",
           "review": false,
           "na": false,
           "pct": 0
@@ -1433,8 +1433,8 @@
         {
           "curso": "Accesos Contextuales — Transportes (SVC/XD)",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+acessottes+2026_09/about",
-          "deadlineISO": null,
-          "deadlineLabel": null,
+          "deadlineISO": "2026-10-16",
+          "deadlineLabel": "16/10",
           "review": false,
           "na": false,
           "pct": 0
