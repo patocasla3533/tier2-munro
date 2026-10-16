@@ -1,5 +1,5 @@
 {
-  "generatedAt": "15/10/2026 06:26",
+  "generatedAt": "16/10/2026 06:26",
   "reps": [
     {
       "curso": "DESAFIO NTM",
@@ -87,6 +87,22 @@
       "deadlineLabel": "09/10",
       "deadlineISO": "2026-10-09",
       "pct": 0,
+      "review": false
+    },
+    {
+      "curso": "Curso Mandatorio SHE II",
+      "link": "https://learning.mercadolibre.com/courses/course-v1:fbm+SHE_mandatorioII_esp+V1_2026/course/",
+      "deadlineLabel": "31/12",
+      "deadlineISO": "2026-12-31",
+      "pct": 0,
+      "review": false
+    },
+    {
+      "curso": "[IS] DRP para Cyberataques",
+      "link": "https://learning.mercadolibre.com/programs/view/1533",
+      "deadlineLabel": "23/10",
+      "deadlineISO": "2026-10-23",
+      "pct": 13,
       "review": false
     }
   ],
@@ -205,6 +221,15 @@
           "pct": 100
         },
         {
+          "curso": "Devoluciones con Colecta H&B - Desafío",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_RTS_DEVOS_COLECTA_UTR_SVC_REP_Desafio+V1_2026/about?tpa_hint=saml-auth0-saml",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
           "curso": "[Desafío REPS ] Actualización gestión de insumos reutilizables",
           "link": "https://learning.mercadolibre.com/programs/view/2106",
           "deadlineISO": "2026-10-02",
@@ -247,11 +272,20 @@
           "deadlineLabel": "16/10",
           "review": false,
           "na": false,
+          "pct": 100
+        },
+        {
+          "curso": "Mandatoria SHE Líderes",
+          "link": "https://docs.google.com/presentation/d/1-ldWE-VaEbRukZQ_VKER2CITJsW5_ntmCJzwfFsY53M/edit?slide=id.g36f828d6c87_0_9#slide=id.g36f828d6c87_0_9",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
           "pct": 0
         },
         {
-          "curso": "Curso Mandatório SHE II",
-          "link": "https://docs.google.com/presentation/d/1-ldWE-VaEbRukZQ_VKER2CITJsW5_ntmCJzwfFsY53M/edit?slide=id.g36f828d6c87_0_9#slide=id.g36f828d6c87_0_9",
+          "curso": "DRP para CYBERATTACKS: Plan de Recuperación ante Desastres | Líderes | PS",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_DRPCYBERATTACKS_UTR_XD_SVC_LID_NF+V1/course/",
           "deadlineISO": null,
           "deadlineLabel": null,
           "review": false,
@@ -259,7 +293,7 @@
           "pct": 0
         }
       ],
-      "overallPct": 46
+      "overallPct": 47
     },
     {
       "ldap": "patortiz",
@@ -375,6 +409,15 @@
           "pct": 0
         },
         {
+          "curso": "Devoluciones con Colecta H&B - Desafío",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_RTS_DEVOS_COLECTA_UTR_SVC_REP_Desafio+V1_2026/about?tpa_hint=saml-auth0-saml",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
           "curso": "[Desafío REPS ] Actualización gestión de insumos reutilizables",
           "link": "https://learning.mercadolibre.com/programs/view/2106",
           "deadlineISO": "2026-10-02",
@@ -420,8 +463,17 @@
           "pct": 0
         },
         {
-          "curso": "Curso Mandatório SHE II",
+          "curso": "Mandatoria SHE Líderes",
           "link": "https://docs.google.com/presentation/d/1-ldWE-VaEbRukZQ_VKER2CITJsW5_ntmCJzwfFsY53M/edit?slide=id.g36f828d6c87_0_9#slide=id.g36f828d6c87_0_9",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
+          "curso": "DRP para CYBERATTACKS: Plan de Recuperación ante Desastres | Líderes | PS",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_DRPCYBERATTACKS_UTR_XD_SVC_LID_NF+V1/course/",
           "deadlineISO": null,
           "deadlineLabel": null,
           "review": false,
@@ -429,7 +481,7 @@
           "pct": 0
         }
       ],
-      "overallPct": 27
+      "overallPct": 23
     },
     {
       "ldap": "nfogliaro",
@@ -545,6 +597,15 @@
           "pct": 100
         },
         {
+          "curso": "Devoluciones con Colecta H&B - Desafío",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_RTS_DEVOS_COLECTA_UTR_SVC_REP_Desafio+V1_2026/about?tpa_hint=saml-auth0-saml",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
           "curso": "[Desafío REPS ] Actualización gestión de insumos reutilizables",
           "link": "https://learning.mercadolibre.com/programs/view/2106",
           "deadlineISO": "2026-10-02",
@@ -590,16 +651,25 @@
           "pct": 0
         },
         {
-          "curso": "Curso Mandatório SHE II",
+          "curso": "Mandatoria SHE Líderes",
           "link": "https://docs.google.com/presentation/d/1-ldWE-VaEbRukZQ_VKER2CITJsW5_ntmCJzwfFsY53M/edit?slide=id.g36f828d6c87_0_9#slide=id.g36f828d6c87_0_9",
           "deadlineISO": null,
           "deadlineLabel": null,
           "review": false,
           "na": false,
           "pct": 0
+        },
+        {
+          "curso": "DRP para CYBERATTACKS: Plan de Recuperación ante Desastres | Líderes | PS",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_DRPCYBERATTACKS_UTR_XD_SVC_LID_NF+V1/course/",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 100
         }
       ],
-      "overallPct": 54
+      "overallPct": 53
     },
     {
       "ldap": "aschmale",
@@ -715,6 +785,15 @@
           "pct": 100
         },
         {
+          "curso": "Devoluciones con Colecta H&B - Desafío",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_RTS_DEVOS_COLECTA_UTR_SVC_REP_Desafio+V1_2026/about?tpa_hint=saml-auth0-saml",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
           "curso": "[Desafío REPS ] Actualización gestión de insumos reutilizables",
           "link": "https://learning.mercadolibre.com/programs/view/2106",
           "deadlineISO": "2026-10-02",
@@ -760,8 +839,17 @@
           "pct": 0
         },
         {
-          "curso": "Curso Mandatório SHE II",
+          "curso": "Mandatoria SHE Líderes",
           "link": "https://docs.google.com/presentation/d/1-ldWE-VaEbRukZQ_VKER2CITJsW5_ntmCJzwfFsY53M/edit?slide=id.g36f828d6c87_0_9#slide=id.g36f828d6c87_0_9",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
+          "curso": "DRP para CYBERATTACKS: Plan de Recuperación ante Desastres | Líderes | PS",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_DRPCYBERATTACKS_UTR_XD_SVC_LID_NF+V1/course/",
           "deadlineISO": null,
           "deadlineLabel": null,
           "review": false,
@@ -769,7 +857,7 @@
           "pct": 0
         }
       ],
-      "overallPct": 45
+      "overallPct": 38
     },
     {
       "ldap": "ext_almaidan",
@@ -885,6 +973,15 @@
           "pct": 100
         },
         {
+          "curso": "Devoluciones con Colecta H&B - Desafío",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_RTS_DEVOS_COLECTA_UTR_SVC_REP_Desafio+V1_2026/about?tpa_hint=saml-auth0-saml",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
           "curso": "[Desafío REPS ] Actualización gestión de insumos reutilizables",
           "link": "https://learning.mercadolibre.com/programs/view/2106",
           "deadlineISO": "2026-10-02",
@@ -930,8 +1027,17 @@
           "pct": 0
         },
         {
-          "curso": "Curso Mandatório SHE II",
+          "curso": "Mandatoria SHE Líderes",
           "link": "https://docs.google.com/presentation/d/1-ldWE-VaEbRukZQ_VKER2CITJsW5_ntmCJzwfFsY53M/edit?slide=id.g36f828d6c87_0_9#slide=id.g36f828d6c87_0_9",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
+          "curso": "DRP para CYBERATTACKS: Plan de Recuperación ante Desastres | Líderes | PS",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_DRPCYBERATTACKS_UTR_XD_SVC_LID_NF+V1/course/",
           "deadlineISO": null,
           "deadlineLabel": null,
           "review": false,
@@ -939,7 +1045,7 @@
           "pct": 0
         }
       ],
-      "overallPct": 47
+      "overallPct": 41
     },
     {
       "ldap": "ext_camimira",
@@ -1055,6 +1161,15 @@
           "pct": 29
         },
         {
+          "curso": "Devoluciones con Colecta H&B - Desafío",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_RTS_DEVOS_COLECTA_UTR_SVC_REP_Desafio+V1_2026/about?tpa_hint=saml-auth0-saml",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
           "curso": "[Desafío REPS ] Actualización gestión de insumos reutilizables",
           "link": "https://learning.mercadolibre.com/programs/view/2106",
           "deadlineISO": "2026-10-02",
@@ -1100,8 +1215,17 @@
           "pct": 0
         },
         {
-          "curso": "Curso Mandatório SHE II",
+          "curso": "Mandatoria SHE Líderes",
           "link": "https://docs.google.com/presentation/d/1-ldWE-VaEbRukZQ_VKER2CITJsW5_ntmCJzwfFsY53M/edit?slide=id.g36f828d6c87_0_9#slide=id.g36f828d6c87_0_9",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
+          "curso": "DRP para CYBERATTACKS: Plan de Recuperación ante Desastres | Líderes | PS",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_DRPCYBERATTACKS_UTR_XD_SVC_LID_NF+V1/course/",
           "deadlineISO": null,
           "deadlineLabel": null,
           "review": false,
@@ -1109,7 +1233,7 @@
           "pct": 0
         }
       ],
-      "overallPct": 29
+      "overallPct": 25
     },
     {
       "ldap": "ext_tamvega",
@@ -1225,6 +1349,15 @@
           "pct": 100
         },
         {
+          "curso": "Devoluciones con Colecta H&B - Desafío",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_RTS_DEVOS_COLECTA_UTR_SVC_REP_Desafio+V1_2026/about?tpa_hint=saml-auth0-saml",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
           "curso": "[Desafío REPS ] Actualización gestión de insumos reutilizables",
           "link": "https://learning.mercadolibre.com/programs/view/2106",
           "deadlineISO": "2026-10-02",
@@ -1270,13 +1403,22 @@
           "pct": 0
         },
         {
-          "curso": "Curso Mandatório SHE II",
+          "curso": "Mandatoria SHE Líderes",
           "link": "https://docs.google.com/presentation/d/1-ldWE-VaEbRukZQ_VKER2CITJsW5_ntmCJzwfFsY53M/edit?slide=id.g36f828d6c87_0_9#slide=id.g36f828d6c87_0_9",
           "deadlineISO": null,
           "deadlineLabel": null,
           "review": false,
           "na": false,
           "pct": 0
+        },
+        {
+          "curso": "DRP para CYBERATTACKS: Plan de Recuperación ante Desastres | Líderes | PS",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_DRPCYBERATTACKS_UTR_XD_SVC_LID_NF+V1/course/",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 100
         }
       ],
       "overallPct": 53
@@ -1395,6 +1537,15 @@
           "pct": 100
         },
         {
+          "curso": "Devoluciones con Colecta H&B - Desafío",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_RTS_DEVOS_COLECTA_UTR_SVC_REP_Desafio+V1_2026/about?tpa_hint=saml-auth0-saml",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
           "curso": "[Desafío REPS ] Actualización gestión de insumos reutilizables",
           "link": "https://learning.mercadolibre.com/programs/view/2106",
           "deadlineISO": "2026-10-02",
@@ -1440,8 +1591,17 @@
           "pct": 0
         },
         {
-          "curso": "Curso Mandatório SHE II",
+          "curso": "Mandatoria SHE Líderes",
           "link": "https://docs.google.com/presentation/d/1-ldWE-VaEbRukZQ_VKER2CITJsW5_ntmCJzwfFsY53M/edit?slide=id.g36f828d6c87_0_9#slide=id.g36f828d6c87_0_9",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
+          "curso": "DRP para CYBERATTACKS: Plan de Recuperación ante Desastres | Líderes | PS",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+HIS_DRPCYBERATTACKS_UTR_XD_SVC_LID_NF+V1/course/",
           "deadlineISO": null,
           "deadlineLabel": null,
           "review": false,
@@ -1449,7 +1609,7 @@
           "pct": 0
         }
       ],
-      "overallPct": 40
+      "overallPct": 35
     }
   ]
 }
