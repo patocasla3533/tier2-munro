@@ -680,19 +680,19 @@
       "dan": 0
     },
     "IS__Computadoras": {
-      "op": 0,
+      "op": 11,
       "dan": 0
     },
     "IS__Impresoras de oficina": {
-      "op": 0,
+      "op": 2,
       "dan": 0
     },
     "IS__Changuitos": {
-      "op": 0,
+      "op": 80,
       "dan": 0
     },
     "IS__Impresora ZT": {
-      "op": 0,
+      "op": 14,
       "dan": 0
     },
     "IS__HandHeld": {
@@ -7197,5 +7197,5 @@
       }
     }
   ],
-  "savedAt": "17/10/2026, 02:52 p. m."
+  "savedAt": "17/10/2026, 02:56 p. m."
 }
