@@ -768,7 +768,7 @@
       "dan": 0
     },
     "SHE__Punteras": {
-      "op": 0,
+      "op": 35,
       "dan": 0
     },
     "SHE__Cascos": {
@@ -776,43 +776,43 @@
       "dan": 0
     },
     "SHE__Kit Antiderrame": {
-      "op": 0,
+      "op": 1,
       "dan": 0
     },
     "SHE__Lava ojos": {
-      "op": 0,
+      "op": 2,
       "dan": 0
     },
     "SHE__Kit de primeros auxilios": {
-      "op": 0,
+      "op": 2,
       "dan": 0
     },
     "SHE__Chalecos": {
-      "op": 0,
+      "op": 1,
       "dan": 0
     },
     "SHE__Conos": {
-      "op": 0,
+      "op": 21,
       "dan": 0
     },
     "SHE__Cadenas": {
-      "op": 0,
+      "op": 6,
       "dan": 0
     },
     "SHE__Escalera Burro": {
-      "op": 0,
+      "op": 1,
       "dan": 0
     },
     "SHE__Silla de Ruedas": {
-      "op": 0,
+      "op": 1,
       "dan": 0
     },
     "SHE__Camilla": {
-      "op": 0,
+      "op": 1,
       "dan": 0
     },
     "SHE__DEA": {
-      "op": 0,
+      "op": 1,
       "dan": 0
     },
     "Consumibles__Bolsas NÃÂÃÂ°1": {
@@ -908,23 +908,23 @@
       "dan": 0
     },
     "Consumibles__Ribbon": {
-      "op": 0,
+      "op": 216,
       "dan": 0
     },
     "Consumibles__Etiqueta de Ruta": {
-      "op": 0,
+      "op": 484,
       "dan": 0
     },
     "Consumibles__Etiqueta HU": {
-      "op": 0,
+      "op": 488,
       "dan": 0
     },
     "Consumibles__Film Strech Naranja": {
-      "op": 0,
+      "op": 272,
       "dan": 0
     },
     "Consumibles__Film Strech Transparente": {
-      "op": 0,
+      "op": 100,
       "dan": 0
     },
     "Consumibles__Precintos Blancos": {
@@ -976,19 +976,19 @@
       "dan": 0
     },
     "SHE__Alfombra Ergonómica Pescador": {
-      "op": 0,
+      "op": 41,
       "dan": 0
     },
     "Consumibles__Bolsas N°1": {
-      "op": 0,
+      "op": 1185,
       "dan": 0
     },
     "Consumibles__Bolsas N°2": {
-      "op": 0,
+      "op": 489,
       "dan": 0
     },
     "Consumibles__Bolsas N°3": {
-      "op": 0,
+      "op": 480,
       "dan": 0
     },
     "Consumibles__Bolsas N°3.5": {
@@ -996,11 +996,11 @@
       "dan": 0
     },
     "Consumibles__Bolsas N°4": {
-      "op": 0,
+      "op": 195,
       "dan": 0
     },
     "Consumibles__Bolsas N°5": {
-      "op": 0,
+      "op": 351,
       "dan": 0
     },
     "Consumibles__Bolsas N°6": {
@@ -1008,11 +1008,11 @@
       "dan": 0
     },
     "Consumibles__Caja N°1": {
-      "op": 0,
+      "op": 1904,
       "dan": 0
     },
     "Consumibles__Caja N°2": {
-      "op": 0,
+      "op": 125,
       "dan": 0
     },
     "Consumibles__Caja N°3": {
@@ -1024,11 +1024,11 @@
       "dan": 0
     },
     "Consumibles__Caja N°5": {
-      "op": 0,
+      "op": 927,
       "dan": 0
     },
     "Consumibles__Caja N°6": {
-      "op": 0,
+      "op": 125,
       "dan": 0
     },
     "Consumibles__Caja N°7": {
@@ -1044,11 +1044,11 @@
       "dan": 0
     },
     "Consumibles__Caja N°10": {
-      "op": 0,
+      "op": 390,
       "dan": 0
     },
     "Consumibles__Caja N°12": {
-      "op": 0,
+      "op": 304,
       "dan": 0
     },
     "Consumibles__Caja N° V4": {
@@ -1056,7 +1056,7 @@
       "dan": 0
     },
     "Consumibles__Caja N° V6": {
-      "op": 0,
+      "op": 93,
       "dan": 0
     },
     "Zona de descanso__Mesa plástico": {
@@ -1068,7 +1068,7 @@
       "dan": 0
     },
     "SHE__Alfombra Ergonómica Etiquetador": {
-      "op": 0,
+      "op": 8,
       "dan": 0
     }
   },
@@ -7197,5 +7197,5 @@
       }
     }
   ],
-  "savedAt": "17/10/2026, 02:41 p. m."
+  "savedAt": "17/10/2026, 02:52 p. m."
 }
