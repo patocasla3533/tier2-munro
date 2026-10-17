@@ -7519,6 +7519,27 @@
       "curso": "Devoluciones con Colecta",
       "fecha": "06/10/2026, 02:48 p. m.",
       "diasAnticipacion": null
+    },
+    {
+      "ldap": "cparrinello",
+      "name": "Parrinello Camila",
+      "curso": "Accesos Contextuales — Transportes (SVC/XD)",
+      "fecha": "17/10/2026, 12:24 p. m.",
+      "diasAnticipacion": -1
+    },
+    {
+      "ldap": "nfogliaro",
+      "name": "Fogliaro Nicolas",
+      "curso": "DRP para CYBERATTACKS: Plan de Recuperación ante Desastres | Líderes | PS",
+      "fecha": "17/10/2026, 12:24 p. m.",
+      "diasAnticipacion": null
+    },
+    {
+      "ldap": "ext_tamvega",
+      "name": "Vega Tamara",
+      "curso": "DRP para CYBERATTACKS: Plan de Recuperación ante Desastres | Líderes | PS",
+      "fecha": "17/10/2026, 12:24 p. m.",
+      "diasAnticipacion": null
     }
   ],
   "trainingLastKnown": {
@@ -7533,7 +7554,7 @@
     "cparrinello|devoluciones con colecta": 100,
     "cparrinello|[yms] panel de alertas | painel de alertas - líderes": 0,
     "cparrinello|adn auditor: líder en gestión operativa": 0,
-    "cparrinello|accesos contextuales — transportes (svc/xd)": 0,
+    "cparrinello|accesos contextuales — transportes (svc/xd)": 100,
     "patortiz|reversa de insumos| rep desafio": 0,
     "patortiz|portal infowow": 0,
     "patortiz|[audits] nuevo sistema my audit": 100,
@@ -7617,7 +7638,35 @@
     "ext_sabianch|[desafío reps ] actualización gestión de insumos reutilizables": 0,
     "ext_sabianch|[yms] panel de alertas | painel de alertas - líderes": 0,
     "ext_sabianch|adn auditor: líder en gestión operativa": 0,
-    "ext_sabianch|accesos contextuales — transportes (svc/xd)": 0
+    "ext_sabianch|accesos contextuales — transportes (svc/xd)": 0,
+    "cparrinello|devoluciones con colecta h&b - desafío": 0,
+    "cparrinello|mandatoria she líderes": 0,
+    "cparrinello|drp para cyberattacks: plan de recuperación ante desastres | líderes | ps": 0,
+    "patortiz|devoluciones con colecta h&b - desafío": 0,
+    "patortiz|mandatoria she líderes": 0,
+    "patortiz|drp para cyberattacks: plan de recuperación ante desastres | líderes | ps": 0,
+    "nfogliaro|devoluciones con colecta h&b - desafío": 0,
+    "nfogliaro|mandatoria she líderes": 0,
+    "nfogliaro|drp para cyberattacks: plan de recuperación ante desastres | líderes | ps": 100,
+    "aschmale|devoluciones con colecta h&b - desafío": 0,
+    "aschmale|mandatoria she líderes": 0,
+    "aschmale|drp para cyberattacks: plan de recuperación ante desastres | líderes | ps": 0,
+    "ext_almaidan|devoluciones con colecta h&b - desafío": 0,
+    "ext_almaidan|[h&b - multibultos] - migración de nuevos dominios| lideres": 0,
+    "ext_almaidan|mandatoria she líderes": 0,
+    "ext_almaidan|drp para cyberattacks: plan de recuperación ante desastres | líderes | ps": 0,
+    "ext_camimira|devoluciones con colecta h&b - desafío": 0,
+    "ext_camimira|[h&b - multibultos] - migración de nuevos dominios| lideres": 0,
+    "ext_camimira|mandatoria she líderes": 0,
+    "ext_camimira|drp para cyberattacks: plan de recuperación ante desastres | líderes | ps": 0,
+    "ext_tamvega|devoluciones con colecta h&b - desafío": 0,
+    "ext_tamvega|[h&b - multibultos] - migración de nuevos dominios| lideres": 0,
+    "ext_tamvega|mandatoria she líderes": 0,
+    "ext_tamvega|drp para cyberattacks: plan de recuperación ante desastres | líderes | ps": 100,
+    "ext_sabianch|devoluciones con colecta h&b - desafío": 0,
+    "ext_sabianch|[h&b - multibultos] - migración de nuevos dominios| lideres": 0,
+    "ext_sabianch|mandatoria she líderes": 0,
+    "ext_sabianch|drp para cyberattacks: plan de recuperación ante desastres | líderes | ps": 0
   },
-  "savedAt": "06/10/2026, 02:48 p. m."
+  "savedAt": "17/10/2026, 12:24 p. m."
 }
