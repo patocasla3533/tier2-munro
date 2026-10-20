@@ -1,5 +1,5 @@
 {
-  "generatedAt": "19/10/2026 06:26",
+  "generatedAt": "20/10/2026 06:25",
   "reps": [
     {
       "curso": "DESAFIO NTM",
@@ -1042,10 +1042,10 @@
           "deadlineLabel": null,
           "review": false,
           "na": false,
-          "pct": 0
+          "pct": 100
         }
       ],
-      "overallPct": 41
+      "overallPct": 47
     },
     {
       "ldap": "ext_camimira",
