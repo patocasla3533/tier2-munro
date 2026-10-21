@@ -8482,6 +8482,13 @@
       "curso": "Devoluciones con Colecta",
       "fecha": "19/10/2026, 11:29 a. m.",
       "diasAnticipacion": null
+    },
+    {
+      "ldap": "ext_almaidan",
+      "name": "Maidana Aldana",
+      "curso": "DRP para CYBERATTACKS: Plan de Recuperación ante Desastres | Líderes | PS",
+      "fecha": "20/10/2026, 09:09 p. m.",
+      "diasAnticipacion": null
     }
   ],
   "trainingLastKnown": {
@@ -8557,7 +8564,7 @@
     "ext_almaidan|adn auditor: líder en gestión operativa": 0,
     "ext_almaidan|accesos contextuales — transportes (svc/xd)": 0,
     "ext_almaidan|mandatoria she líderes": 0,
-    "ext_almaidan|drp para cyberattacks: plan de recuperación ante desastres | líderes | ps": 0,
+    "ext_almaidan|drp para cyberattacks: plan de recuperación ante desastres | líderes | ps": 100,
     "ext_camimira|desafio ntm": 100,
     "ext_camimira|reversa de insumos| líderes": 0,
     "ext_camimira|reversa de insumos| rep desafio": 0,
@@ -8610,5 +8617,5 @@
     "ext_sabianch|mandatoria she líderes": 0,
     "ext_sabianch|drp para cyberattacks: plan de recuperación ante desastres | líderes | ps": 0
   },
-  "savedAt": "19/10/2026, 11:29 a. m."
+  "savedAt": "20/10/2026, 09:09 p. m."
 }
