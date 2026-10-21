@@ -1,5 +1,5 @@
 {
-  "generatedAt": "20/10/2026 06:25",
+  "generatedAt": "21/10/2026 06:26",
   "reps": [
     {
       "curso": "DESAFIO NTM",
@@ -248,6 +248,15 @@
           "pct": null
         },
         {
+          "curso": "[H&B - Multibultos] - Migración de nuevos dominios| DESAFIO",
+          "link": "https://docs.google.com/presentation/d/1JcgcDtwq5HgmQjruFYVK46yG2Q8K04KGRwgnPPVBomg/edit?slide=id.g3f9f166727f_1_158#slide=id.g3f9f166727f_1_158",
+          "deadlineISO": "2026-10-02",
+          "deadlineLabel": "02/10",
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
           "curso": "[YMS] Panel de alertas | Painel de Alertas - Líderes",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+YMS_Panel_de_Alertas_ES_PT_LIDERES+V1/about",
           "deadlineISO": null,
@@ -293,7 +302,7 @@
           "pct": 0
         }
       ],
-      "overallPct": 47
+      "overallPct": 44
     },
     {
       "ldap": "patortiz",
@@ -436,6 +445,15 @@
           "pct": null
         },
         {
+          "curso": "[H&B - Multibultos] - Migración de nuevos dominios| DESAFIO",
+          "link": "https://docs.google.com/presentation/d/1JcgcDtwq5HgmQjruFYVK46yG2Q8K04KGRwgnPPVBomg/edit?slide=id.g3f9f166727f_1_158#slide=id.g3f9f166727f_1_158",
+          "deadlineISO": "2026-10-02",
+          "deadlineLabel": "02/10",
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
           "curso": "[YMS] Panel de alertas | Painel de Alertas - Líderes",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+YMS_Panel_de_Alertas_ES_PT_LIDERES+V1/about",
           "deadlineISO": null,
@@ -481,7 +499,7 @@
           "pct": 0
         }
       ],
-      "overallPct": 23
+      "overallPct": 21
     },
     {
       "ldap": "nfogliaro",
@@ -624,6 +642,15 @@
           "pct": null
         },
         {
+          "curso": "[H&B - Multibultos] - Migración de nuevos dominios| DESAFIO",
+          "link": "https://docs.google.com/presentation/d/1JcgcDtwq5HgmQjruFYVK46yG2Q8K04KGRwgnPPVBomg/edit?slide=id.g3f9f166727f_1_158#slide=id.g3f9f166727f_1_158",
+          "deadlineISO": "2026-10-02",
+          "deadlineLabel": "02/10",
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
           "curso": "[YMS] Panel de alertas | Painel de Alertas - Líderes",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+YMS_Panel_de_Alertas_ES_PT_LIDERES+V1/about",
           "deadlineISO": null,
@@ -669,7 +696,7 @@
           "pct": 100
         }
       ],
-      "overallPct": 53
+      "overallPct": 50
     },
     {
       "ldap": "aschmale",
@@ -812,6 +839,15 @@
           "pct": null
         },
         {
+          "curso": "[H&B - Multibultos] - Migración de nuevos dominios| DESAFIO",
+          "link": "https://docs.google.com/presentation/d/1JcgcDtwq5HgmQjruFYVK46yG2Q8K04KGRwgnPPVBomg/edit?slide=id.g3f9f166727f_1_158#slide=id.g3f9f166727f_1_158",
+          "deadlineISO": "2026-10-02",
+          "deadlineLabel": "02/10",
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
           "curso": "[YMS] Panel de alertas | Painel de Alertas - Líderes",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+YMS_Panel_de_Alertas_ES_PT_LIDERES+V1/about",
           "deadlineISO": null,
@@ -857,7 +893,7 @@
           "pct": 0
         }
       ],
-      "overallPct": 38
+      "overallPct": 36
     },
     {
       "ldap": "ext_almaidan",
@@ -1000,6 +1036,15 @@
           "pct": 0
         },
         {
+          "curso": "[H&B - Multibultos] - Migración de nuevos dominios| DESAFIO",
+          "link": "https://docs.google.com/presentation/d/1JcgcDtwq5HgmQjruFYVK46yG2Q8K04KGRwgnPPVBomg/edit?slide=id.g3f9f166727f_1_158#slide=id.g3f9f166727f_1_158",
+          "deadlineISO": "2026-10-02",
+          "deadlineLabel": "02/10",
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
           "curso": "[YMS] Panel de alertas | Painel de Alertas - Líderes",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+YMS_Panel_de_Alertas_ES_PT_LIDERES+V1/about",
           "deadlineISO": null,
@@ -1045,7 +1090,7 @@
           "pct": 100
         }
       ],
-      "overallPct": 47
+      "overallPct": 44
     },
     {
       "ldap": "ext_camimira",
@@ -1188,6 +1233,15 @@
           "pct": 0
         },
         {
+          "curso": "[H&B - Multibultos] - Migración de nuevos dominios| DESAFIO",
+          "link": "https://docs.google.com/presentation/d/1JcgcDtwq5HgmQjruFYVK46yG2Q8K04KGRwgnPPVBomg/edit?slide=id.g3f9f166727f_1_158#slide=id.g3f9f166727f_1_158",
+          "deadlineISO": "2026-10-02",
+          "deadlineLabel": "02/10",
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
           "curso": "[YMS] Panel de alertas | Painel de Alertas - Líderes",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+YMS_Panel_de_Alertas_ES_PT_LIDERES+V1/about",
           "deadlineISO": null,
@@ -1233,7 +1287,7 @@
           "pct": 0
         }
       ],
-      "overallPct": 25
+      "overallPct": 24
     },
     {
       "ldap": "ext_tamvega",
@@ -1376,6 +1430,15 @@
           "pct": 0
         },
         {
+          "curso": "[H&B - Multibultos] - Migración de nuevos dominios| DESAFIO",
+          "link": "https://docs.google.com/presentation/d/1JcgcDtwq5HgmQjruFYVK46yG2Q8K04KGRwgnPPVBomg/edit?slide=id.g3f9f166727f_1_158#slide=id.g3f9f166727f_1_158",
+          "deadlineISO": "2026-10-02",
+          "deadlineLabel": "02/10",
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
           "curso": "[YMS] Panel de alertas | Painel de Alertas - Líderes",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+YMS_Panel_de_Alertas_ES_PT_LIDERES+V1/about",
           "deadlineISO": null,
@@ -1421,7 +1484,7 @@
           "pct": 100
         }
       ],
-      "overallPct": 53
+      "overallPct": 50
     },
     {
       "ldap": "ext_sabianch",
@@ -1564,6 +1627,15 @@
           "pct": 0
         },
         {
+          "curso": "[H&B - Multibultos] - Migración de nuevos dominios| DESAFIO",
+          "link": "https://docs.google.com/presentation/d/1JcgcDtwq5HgmQjruFYVK46yG2Q8K04KGRwgnPPVBomg/edit?slide=id.g3f9f166727f_1_158#slide=id.g3f9f166727f_1_158",
+          "deadlineISO": "2026-10-02",
+          "deadlineLabel": "02/10",
+          "review": false,
+          "na": false,
+          "pct": 0
+        },
+        {
           "curso": "[YMS] Panel de alertas | Painel de Alertas - Líderes",
           "link": "https://learning.mercadolibre.com/courses/course-v1:transporte+YMS_Panel_de_Alertas_ES_PT_LIDERES+V1/about",
           "deadlineISO": null,
@@ -1609,7 +1681,7 @@
           "pct": 0
         }
       ],
-      "overallPct": 35
+      "overallPct": 33
     }
   ]
 }
