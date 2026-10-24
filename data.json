@@ -908,23 +908,23 @@
       "dan": 0
     },
     "Consumibles__Ribbon": {
-      "op": 216,
+      "op": 168,
       "dan": 0
     },
     "Consumibles__Etiqueta de Ruta": {
-      "op": 484,
+      "op": 392,
       "dan": 0
     },
     "Consumibles__Etiqueta HU": {
-      "op": 488,
+      "op": 484,
       "dan": 0
     },
     "Consumibles__Film Strech Naranja": {
-      "op": 272,
+      "op": 276,
       "dan": 0
     },
     "Consumibles__Film Strech Transparente": {
-      "op": 100,
+      "op": 105,
       "dan": 0
     },
     "Consumibles__Precintos Blancos": {
@@ -1048,7 +1048,7 @@
       "dan": 0
     },
     "Consumibles__Caja N°12": {
-      "op": 304,
+      "op": 240,
       "dan": 0
     },
     "Consumibles__Caja N° V4": {
@@ -1056,11 +1056,11 @@
       "dan": 0
     },
     "Consumibles__Caja N° V6": {
-      "op": 93,
+      "op": 100,
       "dan": 0
     },
     "Zona de descanso__Mesa plástico": {
-      "op": 9,
+      "op": 6,
       "dan": 0
     },
     "Zona de descanso__Silla plástico": {
@@ -8139,5 +8139,5 @@
       }
     }
   ],
-  "savedAt": "24/10/2026, 02:48 p. m."
+  "savedAt": "24/10/2026, 02:53 p. m."
 }
