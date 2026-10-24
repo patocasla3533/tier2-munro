@@ -708,11 +708,11 @@
       "dan": 0
     },
     "IS__Lectoras 2D": {
-      "op": 0,
+      "op": 9,
       "dan": 0
     },
     "IS__Base de Carga Scanner": {
-      "op": 0,
+      "op": 9,
       "dan": 0
     },
     "IS__Televisores": {
@@ -896,11 +896,11 @@
       "dan": 0
     },
     "Consumibles__Cinta Transparente": {
-      "op": 0,
+      "op": 2,
       "dan": 0
     },
     "Consumibles__Cinta Papel": {
-      "op": 0,
+      "op": 7,
       "dan": 0
     },
     "Consumibles__Cinta Meli": {
@@ -8139,5 +8139,5 @@
       }
     }
   ],
-  "savedAt": "24/10/2026, 02:53 p. m."
+  "savedAt": "24/10/2026, 07:11 p. m."
 }
