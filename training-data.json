@@ -1,5 +1,5 @@
 {
-  "generatedAt": "26/10/2026 06:25",
+  "generatedAt": "27/10/2026 06:26",
   "reps": [
     {
       "curso": "DESAFIO NTM",
@@ -102,7 +102,7 @@
       "link": "https://learning.mercadolibre.com/programs/view/1533",
       "deadlineLabel": "23/10",
       "deadlineISO": "2026-10-23",
-      "pct": 13,
+      "pct": 20,
       "review": false
     }
   ],
@@ -300,9 +300,18 @@
           "review": false,
           "na": false,
           "pct": 0
+        },
+        {
+          "curso": "Herramienta de Feedback",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:fbm+HIS_HerramientaFeedback_SHIPPING_OPS_LID_NF_LI+V1_2026/course/?tpa_hint=saml-auth0-saml",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
         }
       ],
-      "overallPct": 44
+      "overallPct": 41
     },
     {
       "ldap": "patortiz",
@@ -497,9 +506,18 @@
           "review": false,
           "na": false,
           "pct": 0
+        },
+        {
+          "curso": "Herramienta de Feedback",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:fbm+HIS_HerramientaFeedback_SHIPPING_OPS_LID_NF_LI+V1_2026/course/?tpa_hint=saml-auth0-saml",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
         }
       ],
-      "overallPct": 21
+      "overallPct": 20
     },
     {
       "ldap": "nfogliaro",
@@ -675,7 +693,7 @@
           "deadlineLabel": "16/10",
           "review": false,
           "na": false,
-          "pct": 0
+          "pct": 64
         },
         {
           "curso": "Mandatoria SHE Líderes",
@@ -694,9 +712,18 @@
           "review": false,
           "na": false,
           "pct": 100
+        },
+        {
+          "curso": "Herramienta de Feedback",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:fbm+HIS_HerramientaFeedback_SHIPPING_OPS_LID_NF_LI+V1_2026/course/?tpa_hint=saml-auth0-saml",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
         }
       ],
-      "overallPct": 50
+      "overallPct": 51
     },
     {
       "ldap": "aschmale",
@@ -891,9 +918,18 @@
           "review": false,
           "na": false,
           "pct": 0
+        },
+        {
+          "curso": "Herramienta de Feedback",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:fbm+HIS_HerramientaFeedback_SHIPPING_OPS_LID_NF_LI+V1_2026/course/?tpa_hint=saml-auth0-saml",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
         }
       ],
-      "overallPct": 36
+      "overallPct": 33
     },
     {
       "ldap": "ext_almaidan",
@@ -1088,9 +1124,18 @@
           "review": false,
           "na": false,
           "pct": 100
+        },
+        {
+          "curso": "Herramienta de Feedback",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:fbm+HIS_HerramientaFeedback_SHIPPING_OPS_LID_NF_LI+V1_2026/course/?tpa_hint=saml-auth0-saml",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
         }
       ],
-      "overallPct": 44
+      "overallPct": 42
     },
     {
       "ldap": "ext_camimira",
@@ -1285,9 +1330,18 @@
           "review": false,
           "na": false,
           "pct": 0
+        },
+        {
+          "curso": "Herramienta de Feedback",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:fbm+HIS_HerramientaFeedback_SHIPPING_OPS_LID_NF_LI+V1_2026/course/?tpa_hint=saml-auth0-saml",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
         }
       ],
-      "overallPct": 24
+      "overallPct": 23
     },
     {
       "ldap": "ext_tamvega",
@@ -1482,9 +1536,18 @@
           "review": false,
           "na": false,
           "pct": 100
+        },
+        {
+          "curso": "Herramienta de Feedback",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:fbm+HIS_HerramientaFeedback_SHIPPING_OPS_LID_NF_LI+V1_2026/course/?tpa_hint=saml-auth0-saml",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
         }
       ],
-      "overallPct": 50
+      "overallPct": 47
     },
     {
       "ldap": "ext_sabianch",
@@ -1679,9 +1742,18 @@
           "review": false,
           "na": false,
           "pct": 0
+        },
+        {
+          "curso": "Herramienta de Feedback",
+          "link": "https://learning.mercadolibre.com/courses/course-v1:fbm+HIS_HerramientaFeedback_SHIPPING_OPS_LID_NF_LI+V1_2026/course/?tpa_hint=saml-auth0-saml",
+          "deadlineISO": null,
+          "deadlineLabel": null,
+          "review": false,
+          "na": false,
+          "pct": 0
         }
       ],
-      "overallPct": 33
+      "overallPct": 32
     }
   ]
 }
