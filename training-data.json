@@ -1,12 +1,20 @@
 {
-  "generatedAt": "03/11/2026 06:25",
+  "generatedAt": "04/11/2026 06:26",
   "reps": [
+    {
+      "curso": "[DESAFIO] TTE | Sacas Mellizas | N Sacas | Reps",
+      "link": "https://learning.mercadolibre.com/programs/view/2071",
+      "deadlineLabel": "21/08",
+      "deadlineISO": "2026-08-21",
+      "pct": 0,
+      "review": false
+    },
     {
       "curso": "DESAFIO NTM",
       "link": "https://learning.mercadolibre.com/programs/view/1012",
       "deadlineLabel": "21/08",
       "deadlineISO": "2026-08-21",
-      "pct": 100,
+      "pct": 0,
       "review": false
     },
     {
@@ -14,7 +22,7 @@
       "link": "https://learning.mercadolibre.com/programs/view/2037",
       "deadlineLabel": "28/08",
       "deadlineISO": "2026-08-28",
-      "pct": 100,
+      "pct": 0,
       "review": false
     },
     {
@@ -22,7 +30,7 @@
       "link": "https://learning.mercadolibre.com/programs/view/2043",
       "deadlineLabel": "28/08",
       "deadlineISO": "2026-08-28",
-      "pct": 100,
+      "pct": 0,
       "review": false
     },
     {
@@ -30,7 +38,7 @@
       "link": "https://learning.mercadolibre.com/programs/view/1925?tpa_hint=saml-auth0-saml",
       "deadlineLabel": "04/09",
       "deadlineISO": "2026-09-04",
-      "pct": 100,
+      "pct": 0,
       "review": false
     },
     {
@@ -38,7 +46,7 @@
       "link": "https://learning.mercadolibre.com/programs/view/2080",
       "deadlineLabel": "04/09",
       "deadlineISO": "2026-09-04",
-      "pct": 100,
+      "pct": 0,
       "review": false
     },
     {
@@ -54,7 +62,7 @@
       "link": "https://learning.mercadolibre.com/programs/view/2063",
       "deadlineLabel": "11/09",
       "deadlineISO": "2026-09-11",
-      "pct": 100,
+      "pct": 0,
       "review": false
     },
     {
@@ -62,7 +70,7 @@
       "link": "https://learning.mercadolibre.com/programs/view/2093",
       "deadlineLabel": "18/09",
       "deadlineISO": "2026-09-18",
-      "pct": 100,
+      "pct": 0,
       "review": false
     },
     {
@@ -70,7 +78,7 @@
       "link": "https://learning.mercadolibre.com/programs/view/2106",
       "deadlineLabel": "02/10",
       "deadlineISO": "2026-10-02",
-      "pct": 100,
+      "pct": 0,
       "review": false
     },
     {
@@ -102,7 +110,7 @@
       "link": "https://learning.mercadolibre.com/programs/view/1533",
       "deadlineLabel": "23/10",
       "deadlineISO": "2026-10-23",
-      "pct": 54,
+      "pct": 0,
       "review": false
     }
   ],
