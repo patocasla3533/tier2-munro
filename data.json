@@ -664,8 +664,8 @@
       "dan": 0
     },
     "Operativo__Sacas": {
-      "op": 21300,
-      "dan": 0
+      "op": 22880,
+      "dan": 2697
     },
     "Operativo__Carros H&B (zorritas para traslados)": {
       "op": 9,
@@ -9552,5 +9552,5 @@
       }
     }
   ],
-  "savedAt": "21/11/2026, 12:17 p. m."
+  "savedAt": "21/11/2026, 12:26 p. m."
 }
